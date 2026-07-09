@@ -1,0 +1,17 @@
+{
+  "submissions": {
+    "142:0": {
+      "jobId": 142,
+      "submissionId": 0,
+      "prepareTx": "0x5e34270206159c174fc2bf76bf502583e6299c0f928b8bead72bc8ad126be1d0",
+      "startTx": "0xe44322a64281292d85e7843ae655fc7517dff69eb55db72f43b1ba395ed5e813",
+      "ethMaxBudgetWei": "240000000000000",
+      "submittedAt": "2026-07-09T21:41:45.217241+00:00",
+      "status": "PENDING_EVALUATION",
+      "finalizeTx": null
+    }
+  },
+  "daily": {
+    "2026-07-09": 1
+  }
+}
