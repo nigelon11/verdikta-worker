@@ -52,5 +52,9 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4
+  },
+  "write-tweet": {
+    "last_dispatch": "2026-07-09T22:27:23Z",
+    "last_status": "dispatched"
   }
 }
