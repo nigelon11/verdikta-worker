@@ -1,0 +1,16 @@
+{
+  "model": "grok-4-1-fast",
+  "input": [
+    {
+      "role": "user",
+      "content": "List every X post mentioning \"Verdikta\" or bounties.verdikta.org posted between 2026-07-02 and 2026-07-09, including posts from the project's own account @verdikta19633 and any other accounts. For each: @handle, full post text, date, engagement counts (likes/retweets/replies), and link https://x.com/handle/status/ID. Do not filter anything out - return every post found, numbered."
+    }
+  ],
+  "tools": [
+    {
+      "type": "x_search",
+      "from_date": "2026-07-02",
+      "to_date": "2026-07-09"
+    }
+  ]
+}

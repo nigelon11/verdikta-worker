@@ -1,0 +1,271 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Mention Radar — Verdikta",
+        "description": "2026-07-09"
+      },
+      "children": [
+        "section-verdikta",
+        "sep1",
+        "section-engagement",
+        "sep2",
+        "section-quiet"
+      ]
+    },
+    "section-verdikta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-verdikta",
+        "account-card",
+        "web-findings",
+        "github-section"
+      ]
+    },
+    "heading-verdikta": {
+      "type": "Heading",
+      "props": {
+        "text": "VERDIKTA",
+        "level": "h2"
+      }
+    },
+    "account-card": {
+      "type": "Card",
+      "props": {
+        "title": "@AjAkmarudi72937",
+        "description": "6 posts (2026-07-07/08)"
+      },
+      "children": [
+        "account-stack"
+      ]
+    },
+    "account-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "classification-badge",
+        "content-description",
+        "posting-details",
+        "engagement-stats",
+        "confidence-alert",
+        "twitter-link"
+      ]
+    },
+    "classification-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Discovery / Press-like",
+        "variant": "default"
+      }
+    },
+    "content-description": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "desc-bounty",
+        "desc-audience"
+      ]
+    },
+    "desc-bounty": {
+      "type": "Text",
+      "props": {
+        "text": "Explaining the bounty flow (escrow→submit→AI jury→payout) and driving traffic to bounties.verdikta.org",
+        "variant": "body"
+      }
+    },
+    "desc-audience": {
+      "type": "Text",
+      "props": {
+        "text": "Several posts in Chinese for 华语开发者 (Mandarin-speaking developers) audience",
+        "variant": "body"
+      }
+    },
+    "posting-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "posting-label",
+        "posting-time"
+      ]
+    },
+    "posting-label": {
+      "type": "Text",
+      "props": {
+        "text": "Posting Pattern",
+        "variant": "lead"
+      }
+    },
+    "posting-time": {
+      "type": "Text",
+      "props": {
+        "text": "6 near-identical, templated posts fired within a 2-minute window (17:25–17:27 GMT)",
+        "variant": "body"
+      }
+    },
+    "engagement-stats": {
+      "type": "Text",
+      "props": {
+        "text": "Engagement: 1-2 likes, 0-2 replies per post",
+        "variant": "caption"
+      }
+    },
+    "confidence-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "⚠️ Low confidence",
+        "message": "Reads as scripted/possibly incentivized rather than organic — worth confirming whether this is a known ambassador or unaffiliated promoter before treating as a real lead.",
+        "type": "warning"
+      }
+    },
+    "twitter-link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X/Twitter",
+        "href": "https://x.com/AjAkmarudi72937/status/2074545464905728432"
+      }
+    },
+    "web-findings": {
+      "type": "Alert",
+      "props": {
+        "title": "Web findings",
+        "message": "No Reddit/HN/Farcaster/Product Hunt/blog mentions found in the last 7 days.",
+        "type": "info"
+      }
+    },
+    "github-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "github-heading",
+        "github-baseline-note",
+        "github-table"
+      ]
+    },
+    "github-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Stars",
+        "level": "h3"
+      }
+    },
+    "github-baseline-note": {
+      "type": "Text",
+      "props": {
+        "text": "First mention-radar run; recording as baseline (no prior data to diff)",
+        "variant": "caption"
+      }
+    },
+    "github-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Stars"
+        ],
+        "rows": [
+          [
+            "verdikta-docs",
+            "72"
+          ],
+          [
+            "verdikta-applications",
+            "24"
+          ],
+          [
+            "verdikta-arbiter",
+            "22"
+          ],
+          [
+            "verdikta-dispatcher",
+            "17"
+          ],
+          [
+            "verdikta-roadmap",
+            "0"
+          ]
+        ]
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-engagement": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-engagement",
+        "engagement-text"
+      ]
+    },
+    "heading-engagement": {
+      "type": "Heading",
+      "props": {
+        "text": "ENGAGEMENT OPPORTUNITIES",
+        "level": "h2"
+      }
+    },
+    "engagement-text": {
+      "type": "Text",
+      "props": {
+        "text": "None with high confidence this cycle. @AjAkmarudi72937's threads got 1-2 replies each (posts 7-10) — worth a human glance at who replied before deciding whether to engage, given the scripted-looking posting pattern.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-quiet": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-quiet",
+        "quiet-text"
+      ]
+    },
+    "heading-quiet": {
+      "type": "Heading",
+      "props": {
+        "text": "QUIET",
+        "level": "h2"
+      }
+    },
+    "quiet-text": {
+      "type": "Text",
+      "props": {
+        "text": "Verdikta — no confirmed organic third-party discovery/confusion/friction/comparison this cycle; the one non-project account found reads more like scripted promo than organic engagement.",
+        "variant": "body"
+      }
+    }
+  }
+}

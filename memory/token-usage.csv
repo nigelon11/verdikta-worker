@@ -2,3 +2,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-09,heartbeat,claude-sonnet-5,2233,14427,726051,73927
 2026-07-09,github-monitor,claude-sonnet-5,2509,13624,1345406,49961
 2026-07-09,verdikta-hunter,claude-sonnet-5,2388,9665,1529732,47575
+2026-07-09,mention-radar,claude-sonnet-5,2686,13999,2442390,104217

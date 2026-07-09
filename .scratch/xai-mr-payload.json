@@ -1,0 +1,16 @@
+{
+  "model": "grok-4-1-fast",
+  "input": [
+    {
+      "role": "user",
+      "content": "Search X for posts by OTHER people mentioning the project \"Verdikta\" (also its site bounties.verdikta.org and its GitHub org verdikta), posted between 2026-07-02 and 2026-07-09. Exclude posts by the project's own account @verdikta19633. For each mention return: @handle, the full post text, date, exact engagement counts (likes, retweets, replies; 0 if unknown), the poster's approximate follower count if visible, and the direct link https://x.com/handle/status/ID. Prioritize people discovering it for the first time, asking confused questions, hitting friction (setup/docs/missing feature), comparing it to a competitor, or requesting a feature. Return a numbered list; if nobody is talking about it, say so explicitly."
+    }
+  ],
+  "tools": [
+    {
+      "type": "x_search",
+      "from_date": "2026-07-02",
+      "to_date": "2026-07-09"
+    }
+  ]
+}
