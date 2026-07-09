@@ -18,6 +18,7 @@ type: Index
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-07-09 | AI agents that transact onchain | Ritual TEE bounty judge, AIsa funding, Moonbeam→Base |
 
 ## Skills Built
 | Skill | Date | Notes |
