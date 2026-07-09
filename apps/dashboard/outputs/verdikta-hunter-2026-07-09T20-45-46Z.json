@@ -1,0 +1,385 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta bounty shortlist",
+        "description": "11 open bounties scanned, 1 worth attempting."
+      },
+      "children": [
+        "stat-summary",
+        "sep-1",
+        "section-recommended",
+        "sep-2",
+        "section-skipped",
+        "sep-3",
+        "note-submissions"
+      ]
+    },
+    "stat-summary": {
+      "type": "Stat",
+      "props": {
+        "label": "Bounties analyzed",
+        "value": "11",
+        "delta": "1 actionable"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-recommended": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-recommended",
+        "bounty-142"
+      ]
+    },
+    "heading-recommended": {
+      "type": "Heading",
+      "props": {
+        "text": "Recommended",
+        "level": "h3"
+      }
+    },
+    "bounty-142": {
+      "type": "Card",
+      "props": {
+        "title": "#142 — Invent a tiny ritual for humans and AI agents starting work together"
+      },
+      "children": [
+        "stack-142-metrics",
+        "sep-142-1",
+        "stack-142-rubric",
+        "sep-142-2",
+        "text-142-notes",
+        "sep-142-3",
+        "text-142-action"
+      ]
+    },
+    "stack-142-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-142-reward",
+        "stat-142-threshold",
+        "stat-142-submissions",
+        "stat-142-deadline"
+      ]
+    },
+    "stat-142-reward": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.00434 ETH (~$10)"
+      }
+    },
+    "stat-142-threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "90%"
+      }
+    },
+    "stat-142-submissions": {
+      "type": "Stat",
+      "props": {
+        "label": "Submissions",
+        "value": "0"
+      }
+    },
+    "stat-142-deadline": {
+      "type": "Stat",
+      "props": {
+        "label": "Deadline",
+        "value": "~68h left"
+      }
+    },
+    "sep-142-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-142-rubric": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-rubric",
+        "rubric-1",
+        "rubric-2",
+        "rubric-3",
+        "rubric-4",
+        "rubric-5"
+      ]
+    },
+    "heading-rubric": {
+      "type": "Heading",
+      "props": {
+        "text": "Rubric",
+        "level": "h4"
+      }
+    },
+    "rubric-1": {
+      "type": "Text",
+      "props": {
+        "text": "Warmth/collaboration fit — 30%"
+      }
+    },
+    "rubric-2": {
+      "type": "Text",
+      "props": {
+        "text": "Memorability — 25%"
+      }
+    },
+    "rubric-3": {
+      "type": "Text",
+      "props": {
+        "text": "Practical usage w/ 3+ examples — 20%"
+      }
+    },
+    "rubric-4": {
+      "type": "Text",
+      "props": {
+        "text": "Tone balance — 15%"
+      }
+    },
+    "rubric-5": {
+      "type": "Text",
+      "props": {
+        "text": "Risk awareness — 10%"
+      }
+    },
+    "sep-142-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-142-notes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "note-must-pass",
+        "note-format"
+      ]
+    },
+    "note-must-pass": {
+      "type": "Text",
+      "props": {
+        "text": "Must-pass: concrete ritual + 3 example uses",
+        "variant": "lead"
+      }
+    },
+    "note-format": {
+      "type": "Text",
+      "props": {
+        "text": "Purely creative/textual — no external deliverables needed.",
+        "variant": "caption"
+      }
+    },
+    "sep-142-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-142-action": {
+      "type": "Text",
+      "props": {
+        "text": "Next step: hunt:142 to draft and submit",
+        "variant": "lead"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-skipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-skipped",
+        "subsection-math",
+        "sep-skipped-1",
+        "subsection-outreach"
+      ]
+    },
+    "heading-skipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped (10)",
+        "level": "h3"
+      }
+    },
+    "subsection-math": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-math",
+        "text-139",
+        "text-138",
+        "text-137",
+        "text-136",
+        "text-135",
+        "text-134",
+        "text-133",
+        "text-132",
+        "reason-math"
+      ]
+    },
+    "heading-math": {
+      "type": "Heading",
+      "props": {
+        "text": "Math-research bounties (8)",
+        "level": "h4"
+      }
+    },
+    "text-139": {
+      "type": "Text",
+      "props": {
+        "text": "#139 Frankl's Union-Closed Conjecture"
+      }
+    },
+    "text-138": {
+      "type": "Text",
+      "props": {
+        "text": "#138 BB(6)"
+      }
+    },
+    "text-137": {
+      "type": "Text",
+      "props": {
+        "text": "#137 Vaught's Conjecture"
+      }
+    },
+    "text-136": {
+      "type": "Text",
+      "props": {
+        "text": "#136 Lonely Runner k=7"
+      }
+    },
+    "text-135": {
+      "type": "Text",
+      "props": {
+        "text": "#135 Erdős–Straus"
+      }
+    },
+    "text-134": {
+      "type": "Text",
+      "props": {
+        "text": "#134 Hadamard-668"
+      }
+    },
+    "text-133": {
+      "type": "Text",
+      "props": {
+        "text": "#133 R(5,5)"
+      }
+    },
+    "text-132": {
+      "type": "Text",
+      "props": {
+        "text": "#132 perfect cuboid"
+      }
+    },
+    "reason-math": {
+      "type": "Text",
+      "props": {
+        "text": "Reason: Genuine unsolved problems (decades to centuries old); not something we can honestly deliver a valid proof/counterexample for.",
+        "variant": "caption"
+      }
+    },
+    "sep-skipped-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "subsection-outreach": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-outreach",
+        "text-124",
+        "text-123",
+        "reward-outreach",
+        "reason-outreach"
+      ]
+    },
+    "heading-outreach": {
+      "type": "Heading",
+      "props": {
+        "text": "Outreach bounties (2)",
+        "level": "h4"
+      }
+    },
+    "text-124": {
+      "type": "Text",
+      "props": {
+        "text": "#124 protocol QA matching"
+      }
+    },
+    "text-123": {
+      "type": "Text",
+      "props": {
+        "text": "#123 bounty-program migration"
+      }
+    },
+    "reward-outreach": {
+      "type": "Text",
+      "props": {
+        "text": "Reward: 0.008–0.01 ETH",
+        "variant": "caption"
+      }
+    },
+    "reason-outreach": {
+      "type": "Text",
+      "props": {
+        "text": "Reason: Require real human contact evidence (DMs, screenshots, actual conversations) we can't fabricate; also both have a targetHunter pinned to another wallet.",
+        "variant": "caption"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "note-submissions": {
+      "type": "Text",
+      "props": {
+        "text": "No prior submissions tracked — nothing to settle this run.",
+        "variant": "muted"
+      }
+    }
+  }
+}
