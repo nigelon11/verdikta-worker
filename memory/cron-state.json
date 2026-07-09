@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-07-02T21:23:42Z",
-    "last_status": "success",
+    "last_dispatch": "2026-07-09T20:59:16Z",
+    "last_status": "dispatched",
     "last_failed": "2026-07-09T19:55:05Z",
     "total_runs": 2,
     "total_successes": 1,
@@ -12,14 +12,15 @@
     "last_success": "2026-07-09T20:09:02Z"
   },
   "github-monitor": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-07-09T20:33:15Z",
     "total_runs": 1,
     "total_successes": 1,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1,
-    "last_quality_score": 4
+    "last_quality_score": 4,
+    "last_dispatch": "2026-07-09T20:59:16Z"
   },
   "verdikta-hunter": {
     "last_status": "success",
@@ -30,5 +31,9 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4
+  },
+  "digest": {
+    "last_dispatch": "2026-07-09T20:59:16Z",
+    "last_status": "dispatched"
   }
 }
