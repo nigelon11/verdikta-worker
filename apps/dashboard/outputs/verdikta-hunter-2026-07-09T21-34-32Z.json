@@ -1,0 +1,258 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — dry-run #142",
+        "description": "Executor gate is fixed"
+      },
+      "children": [
+        "status-badge",
+        "sep-1",
+        "explanation-text",
+        "sep-2",
+        "bounty-section",
+        "sep-3",
+        "result-section",
+        "sep-4",
+        "tracking-section",
+        "sep-5",
+        "skipped-section",
+        "sep-6",
+        "action-alert"
+      ]
+    },
+    "status-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "VALID",
+        "variant": "default"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "explanation-text": {
+      "type": "Text",
+      "props": {
+        "text": "This morning's dry-run for #142 died at scripts/verdikta-exec.sh because the script wasn't allowlisted; that's now patched (commit b73a317) and this run completed end-to-end.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bounty-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-heading",
+        "bounty-title",
+        "bounty-reward",
+        "bounty-threshold",
+        "bounty-submissions",
+        "bounty-time"
+      ]
+    },
+    "bounty-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bounty #142",
+        "level": "h3"
+      }
+    },
+    "bounty-title": {
+      "type": "Text",
+      "props": {
+        "text": "Invent a tiny ritual for humans and AI agents starting work together",
+        "variant": "lead"
+      }
+    },
+    "bounty-reward": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.00434 ETH"
+      }
+    },
+    "bounty-threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "90%"
+      }
+    },
+    "bounty-submissions": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Submissions",
+        "value": "0"
+      }
+    },
+    "bounty-time": {
+      "type": "Stat",
+      "props": {
+        "label": "Time Remaining",
+        "value": "~67.5 hours"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "result-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "result-heading",
+        "result-files",
+        "result-size",
+        "result-readable",
+        "result-oracle",
+        "result-spend"
+      ]
+    },
+    "result-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dry-run Validation",
+        "level": "h3"
+      }
+    },
+    "result-files": {
+      "type": "Text",
+      "props": {
+        "text": "✓ Files present",
+        "variant": "body"
+      }
+    },
+    "result-size": {
+      "type": "Text",
+      "props": {
+        "text": "✓ Size OK (7.1KB)",
+        "variant": "body"
+      }
+    },
+    "result-readable": {
+      "type": "Text",
+      "props": {
+        "text": "✓ Readable",
+        "variant": "body"
+      }
+    },
+    "result-oracle": {
+      "type": "Text",
+      "props": {
+        "text": "✓ Oracle-readable",
+        "variant": "body"
+      }
+    },
+    "result-spend": {
+      "type": "Text",
+      "props": {
+        "text": "✓ No transactions sent, no spend",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tracking-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tracking-heading",
+        "tracking-text"
+      ]
+    },
+    "tracking-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Prior Submissions",
+        "level": "h3"
+      }
+    },
+    "tracking-text": {
+      "type": "Text",
+      "props": {
+        "text": "No prior submissions tracked — nothing to settle this run.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skipped-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skipped-heading",
+        "skipped-math",
+        "skipped-outreach"
+      ]
+    },
+    "skipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped",
+        "level": "h3"
+      }
+    },
+    "skipped-math": {
+      "type": "Text",
+      "props": {
+        "text": "8 open-math-research bounties (unsolved decades/centuries-old problems, not honestly deliverable)",
+        "variant": "body"
+      }
+    },
+    "skipped-outreach": {
+      "type": "Text",
+      "props": {
+        "text": "2 outreach bounties (targetHunter-pinned to another wallet)",
+        "variant": "body"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Ready for Production",
+        "message": "Ready for a real hunt:142 whenever you want to spend the 0.00434 ETH prepay for real.",
+        "type": "info"
+      }
+    }
+  }
+}
