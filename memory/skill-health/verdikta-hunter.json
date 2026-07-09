@@ -1,14 +1,18 @@
 {
   "skill": "verdikta-hunter",
-  "last_analyzed": "2026-07-09T20:45:46Z",
-  "quality_score": 4,
-  "assessment": "Substantive discover pass with specific candidate shortlist and clear filtering logic; ready for next phase.",
+  "last_analyzed": "2026-07-09T21:18:26Z",
+  "quality_score": 3,
+  "assessment": "Quality report generation and bounty analysis completed, but blocked by tool-permission layer before final submission step; infrastructure issue, not skill failure.",
   "flags": [],
-  "avg_score": 4,
+  "avg_score": 3.5,
   "history": [
     {
       "date": "2026-07-09",
       "score": 4
+    },
+    {
+      "date": "2026-07-09",
+      "score": 3
     }
   ]
 }

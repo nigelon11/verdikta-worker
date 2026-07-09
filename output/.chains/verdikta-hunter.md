@@ -1,17 +1,13 @@
-ℹ️ Verdikta bounty shortlist
+⚠️ Verdikta Hunter — executor blocked
 
-## Verdikta bounty shortlist
+## Verdikta Hunter — dry-run blocked before it could fire
 
-11 open bounties scanned, 1 worth attempting.
+**Target:** #142 "Invent a tiny ritual for humans and AI agents starting work together" — 0.00434 ETH, threshold 90%, 0 submissions, ~67.7h left. Same bounty this morning's discover pass shortlisted as the one genuinely deliverable candidate out of 11 open (the rest are math open-problems or outreach bounties pinned to another hunter).
 
-**#142 — Invent a tiny ritual for humans and AI agents starting work together**
-- Reward: 0.00434 ETH (~$10) · Threshold: 90% · Submissions so far: 0
-- Deadline: ~68h left
-- Rubric: warmth/collaboration fit (30%), memorability (25%), practical usage w/ 3+ examples (20%), tone balance (15%), risk awareness (10%); must-pass = concrete ritual + 3 example uses. Purely creative/textual — no external deliverables needed.
-- Next step: `hunt:142` to draft and submit.
+**What's done:** Wrote a full report addressing every rubric criterion in order (warmth/collaboration, memorability, practical usage w/ 3 examples, tone balance, risk awareness, must-pass ritual+examples), no metadata sections, no fabricated claims. Prepared `.pending-verdikta/submit-142.json` with `dryRun: true`.
 
-**Skipped (10):**
-- 8 open math-research bounties (#139 Frankl's Union-Closed Conjecture, #138 BB(6), #137 Vaught's Conjecture, #136 Lonely Runner k=7, #135 Erdős–Straus, #134 Hadamard-668, #133 R(5,5), #132 perfect cuboid) — genuine unsolved problems (decades to centuries old); not something we can honestly deliver a valid proof/counterexample for.
-- 2 outreach bounties (#124 protocol QA matching, #123 bounty-program migration, 0.008–0.01 ETH) — require real human contact evidence (DMs, screenshots, actual conversations) we can't fabricate; also both have a `targetHunter` pinned to another wallet.
+**What failed:** `scripts/verdikta-exec.sh` — the only thing allowed to call the submission API — was refused by this session's tool-permission layer before it ran at all (`bash scripts/verdikta-exec.sh`, `./scripts/verdikta-exec.sh` direct, and unsandboxed all returned "This command requires approval"). This is an approval gate on the script itself, not a cap refusal or executor logic failure — no `/submit/dry-run` call was ever made. Per the skill's rules I did not work around it by calling the submission endpoints manually.
 
-No prior submissions tracked — nothing to settle this run.
+**Ask:** if this worker is meant to run the executor unattended, `scripts/verdikta-exec.sh` needs to be pre-approved in this run's tool allowlist (same as `git`/`gh` are for write-mode skills) — worth checking the workflow's `--allowedTools` config for this skill.
+
+No spend occurred, nothing was submitted.

@@ -1,0 +1,178 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — Executor Blocked",
+        "description": "Submission preparation complete, executor blocked by tool-permission layer"
+      },
+      "children": [
+        "alert-blocker",
+        "stack-content"
+      ]
+    },
+    "alert-blocker": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Executor Not Approved",
+        "message": "scripts/verdikta-exec.sh was refused by this session's tool-permission layer before it could fire. No /submit/dry-run call was made. No spend occurred."
+      }
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section-target",
+        "section-done",
+        "section-failed",
+        "section-ask"
+      ]
+    },
+    "section-target": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-target",
+        "story-bounty",
+        "metrics-grid"
+      ]
+    },
+    "heading-target": {
+      "type": "Heading",
+      "props": {
+        "text": "Target",
+        "level": "h3"
+      }
+    },
+    "story-bounty": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#142: Invent a tiny ritual for humans and AI agents starting work together",
+        "source": "Verdikta",
+        "score": "0.00434 ETH"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-value",
+        "stat-threshold",
+        "stat-submissions",
+        "stat-time"
+      ]
+    },
+    "stat-value": {
+      "type": "Stat",
+      "props": {
+        "label": "Bounty Value",
+        "value": "0.00434 ETH"
+      }
+    },
+    "stat-threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Acceptance Threshold",
+        "value": "90%"
+      }
+    },
+    "stat-submissions": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Submissions",
+        "value": "0"
+      }
+    },
+    "stat-time": {
+      "type": "Stat",
+      "props": {
+        "label": "Time Remaining",
+        "value": "~67.7h"
+      }
+    },
+    "section-done": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-done",
+        "text-done"
+      ]
+    },
+    "heading-done": {
+      "type": "Heading",
+      "props": {
+        "text": "What's Done",
+        "level": "h3"
+      }
+    },
+    "text-done": {
+      "type": "Text",
+      "props": {
+        "text": "Wrote a full report addressing every rubric criterion in order (warmth/collaboration, memorability, practical usage w/ 3 examples, tone balance, risk awareness, must-pass ritual+examples), no metadata sections, no fabricated claims. Prepared .pending-verdikta/submit-142.json with dryRun: true."
+      }
+    },
+    "section-failed": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-failed",
+        "text-failed"
+      ]
+    },
+    "heading-failed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Failed",
+        "level": "h3"
+      }
+    },
+    "text-failed": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/verdikta-exec.sh — the only thing allowed to call the submission API — was refused by this session's tool-permission layer before it ran at all. This is an approval gate on the script itself, not a cap refusal or executor logic failure. No /submit/dry-run call was ever made. Per the skill's rules, did not work around it by calling submission endpoints manually."
+      }
+    },
+    "section-ask": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-ask",
+        "text-ask"
+      ]
+    },
+    "heading-ask": {
+      "type": "Heading",
+      "props": {
+        "text": "Ask",
+        "level": "h3"
+      }
+    },
+    "text-ask": {
+      "type": "Text",
+      "props": {
+        "text": "If this worker is meant to run the executor unattended, scripts/verdikta-exec.sh needs to be pre-approved in this run's tool allowlist (same as git/gh are for write-mode skills) — worth checking the workflow's --allowedTools config for this skill."
+      }
+    }
+  }
+}
