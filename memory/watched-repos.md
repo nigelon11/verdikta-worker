@@ -3,4 +3,8 @@ type: Reference
 ---
 
 # Watched Repos
-- aaronjmars/aeon
+- verdikta/verdikta-applications
+- verdikta/verdikta-arbiter
+- verdikta/verdikta-dispatcher
+- verdikta/verdikta-docs
+- verdikta/verdikta-roadmap
