@@ -1,0 +1,307 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — submitted #142"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "intro-text",
+        "sep1",
+        "bounty-stats",
+        "sep2",
+        "report-section",
+        "sep3",
+        "tx-section",
+        "sep4",
+        "status-section",
+        "sep5",
+        "notes-section"
+      ]
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "Submitted a real (non-dry-run) entry to #142 \"Invent a tiny ritual for humans and AI agents starting work together\" — 0.00434 ETH reward, threshold 90%, 0 competing submissions, ~67h left on the window.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bounty-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-reward",
+        "stat-threshold",
+        "stat-competitors",
+        "stat-timeframe"
+      ]
+    },
+    "stat-reward": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.00434 ETH"
+      }
+    },
+    "stat-threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "90%"
+      }
+    },
+    "stat-competitors": {
+      "type": "Stat",
+      "props": {
+        "label": "Competing Submissions",
+        "value": "0"
+      }
+    },
+    "stat-timeframe": {
+      "type": "Stat",
+      "props": {
+        "label": "Time Remaining",
+        "value": "~67h"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "report-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "report-heading",
+        "report-text"
+      ]
+    },
+    "report-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Report",
+        "level": "h3"
+      }
+    },
+    "report-text": {
+      "type": "Text",
+      "props": {
+        "text": "A two-line human/agent handoff ritual (\"here's what I need + what I'm unsure about\" ↔ \"here's what I'll do + what I'll flag\"), with 3 worked examples (debugging, draft handoff, project kickoff) and an explicit risk-awareness section.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tx-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tx-heading",
+        "tx-prepare-block",
+        "tx-start-block",
+        "tx-oracle-block"
+      ]
+    },
+    "tx-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Transactions",
+        "level": "h3"
+      }
+    },
+    "tx-prepare-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tx-prepare-label",
+        "tx-prepare-hash"
+      ]
+    },
+    "tx-prepare-label": {
+      "type": "Text",
+      "props": {
+        "text": "Prepare tx:",
+        "variant": "caption"
+      }
+    },
+    "tx-prepare-hash": {
+      "type": "Text",
+      "props": {
+        "text": "0x5e34270206159c174fc2bf76bf502583e6299c0f928b8bead72bc8ad126be1d0",
+        "variant": "body"
+      }
+    },
+    "tx-start-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tx-start-label",
+        "tx-start-hash"
+      ]
+    },
+    "tx-start-label": {
+      "type": "Text",
+      "props": {
+        "text": "Start tx:",
+        "variant": "caption"
+      }
+    },
+    "tx-start-hash": {
+      "type": "Text",
+      "props": {
+        "text": "0xe44322a64281292d85e7843ae655fc7517dff69eb55db72f43b1ba395ed5e813",
+        "variant": "body"
+      }
+    },
+    "tx-oracle-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tx-oracle-stat",
+        "tx-oracle-note"
+      ]
+    },
+    "tx-oracle-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Oracle prepay",
+        "value": "0.000240 ETH"
+      }
+    },
+    "tx-oracle-note": {
+      "type": "Text",
+      "props": {
+        "text": "Well under the 0.0005 cap; refunded at finalize regardless of outcome",
+        "variant": "muted"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-heading",
+        "status-badge",
+        "status-note"
+      ]
+    },
+    "status-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Status",
+        "level": "h3"
+      }
+    },
+    "status-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PENDING_EVALUATION",
+        "variant": "outline"
+      }
+    },
+    "status-note": {
+      "type": "Text",
+      "props": {
+        "text": "The two-model jury hasn't scored it yet. Finalize is still owed once it settles (win or lose) to reclaim the escrow — next run will pick that up.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "notes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "notes-heading",
+        "notes-text",
+        "skipped-heading",
+        "skipped-text"
+      ]
+    },
+    "notes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Notes",
+        "level": "h3"
+      }
+    },
+    "notes-text": {
+      "type": "Text",
+      "props": {
+        "text": "No prior submissions existed to settle this run.",
+        "variant": "body"
+      }
+    },
+    "skipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped Bounties",
+        "level": "h4"
+      }
+    },
+    "skipped-text": {
+      "type": "Text",
+      "props": {
+        "text": "8 open-math-research problems we can't honestly prove/disprove (#132–#139), 2 outreach bounties pinned to another hunter's wallet (#123, #124)",
+        "variant": "body"
+      }
+    }
+  }
+}

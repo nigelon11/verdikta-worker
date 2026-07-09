@@ -1,12 +1,12 @@
-ℹ️ Verdikta Hunter — dry-run #142 VALID
+ℹ️ Verdikta Hunter
 
-## Verdikta Hunter — dry-run #142
+## Verdikta Hunter — submitted #142
 
-**Executor gate is fixed** — this morning's dry-run for #142 died at `scripts/verdikta-exec.sh` because the script wasn't allowlisted; that's now patched (commit `b73a317`) and this run completed end-to-end.
+Submitted a real (non-dry-run) entry to **#142 "Invent a tiny ritual for humans and AI agents starting work together"** — 0.00434 ETH reward, threshold 90%, 0 competing submissions, ~67h left on the window.
 
-- **Bounty:** #142 "Invent a tiny ritual for humans and AI agents starting work together" — 0.00434 ETH, threshold 90%, 0 submissions, ~67.5h left
-- **Dry-run result:** `VALID` — files present, size OK (7.1KB), readable, oracle-readable. No transactions sent, no spend.
-- **No prior submissions tracked** — nothing to settle this run.
-- **Skipped:** 8 open-math-research bounties (unsolved decades/centuries-old problems, not honestly deliverable), 2 outreach bounties (targetHunter-pinned to another wallet).
-
-Ready for a real `hunt:142` whenever you want to spend the 0.00434 ETH prepay for real.
+- Report: a two-line human/agent handoff ritual ("here's what I need + what I'm unsure about" ↔ "here's what I'll do + what I'll flag"), with 3 worked examples (debugging, draft handoff, project kickoff) and an explicit risk-awareness section.
+- Prepare tx: `0x5e34270206159c174fc2bf76bf502583e6299c0f928b8bead72bc8ad126be1d0`
+- Start tx: `0xe44322a64281292d85e7843ae655fc7517dff69eb55db72f43b1ba395ed5e813`
+- Oracle prepay: 0.000240 ETH (well under the 0.0005 cap; refunded at finalize regardless of outcome)
+- Status: `PENDING_EVALUATION` — the two-model jury hasn't scored it yet. Finalize is still owed once it settles (win or lose) to reclaim the escrow — next run will pick that up.
+- No prior submissions existed to settle this run. Skipped the other 10 open bounties: 8 open-math-research problems we can't honestly prove/disprove (#132–#139), 2 outreach bounties pinned to another hunter's wallet (#123, #124).
