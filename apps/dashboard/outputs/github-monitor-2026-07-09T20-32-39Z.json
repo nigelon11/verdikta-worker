@@ -1,0 +1,128 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ GitHub Monitor",
+        "description": "5 repos scanned, 1 needs action"
+      },
+      "children": [
+        "section-actnow",
+        "sep1",
+        "section-info",
+        "sep2",
+        "link-footer"
+      ]
+    },
+    "section-actnow": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-actnow",
+        "story-docs-1"
+      ]
+    },
+    "heading-actnow": {
+      "type": "Heading",
+      "props": {
+        "text": "▶ ACT NOW",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "story-docs-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — Vercel deploy check failing since May 1, still red",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-info",
+        "story-app-8",
+        "story-app-4",
+        "story-app-2",
+        "story-issue-16"
+      ]
+    },
+    "heading-info": {
+      "type": "Heading",
+      "props": {
+        "text": "▶ INFO",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "story-app-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — idle since Apr 5, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "story-app-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — idle since Feb 26",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "story-app-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — idle since Feb 4, checks passing",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "story-issue-16": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications!16 — new issue, no labels, opened today",
+        "href": "https://github.com/verdikta/verdikta-applications/issues/16",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-footer": {
+      "type": "Link",
+      "props": {
+        "label": "🔗 https://github.com/verdikta/verdikta-docs/pull/1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1"
+      },
+      "children": []
+    }
+  }
+}
