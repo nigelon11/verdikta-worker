@@ -47,6 +47,15 @@ WRITE_TOOLS="Write,Edit,Bash(gh:*),Bash(git:*),Bash(python3:*),Bash(python:*)"
 # a live-test showed the run logging that denial as "Blocked by sandbox". These are
 # read-only static-analysis tools (no repo/network mutation of their own).
 WRITE_TOOLS="$WRITE_TOOLS,Bash(semgrep:*),Bash(osv-scanner:*),Bash(trufflehog:*),Bash(slither:*)"
+# verdikta-hunter's deterministic spend executor — the ONLY sanctioned signing path
+# for that skill. Granted here the same way ./notify and ./secretcurl are, so the
+# skill can invoke it as its final in-run action; without the grant every hunt /
+# dry-run dies at the permission layer (verified live: run 29050659497). This grants
+# INVOCATION of that one script only (invoked directly, never via a `bash` prefix —
+# no wildcard shell). The fund-safety envelope (pinned BountyEscrow address, chainId
+# 8453, VERDIKTA_MAX_SPEND_ETH, daily cap, balance preflight) lives inside the script
+# and is unaffected. Runs are headless: allowlisted => runs unattended, no prompt.
+WRITE_TOOLS="$WRITE_TOOLS,Bash(./scripts/verdikta-exec.sh:*)"
 
 resolve_mode() {
   local skill="$1" f="skills/$1/SKILL.md" m=""
@@ -104,7 +113,7 @@ write_tools() { echo "$BASE_TOOLS,$WRITE_TOOLS"; }
 # Bash command globs allowed on every tier (mirror BASE_TOOLS' Bash(...:*) set).
 GROK_BASE_BASH="curl jq ./notify ./notify-jsonrender mkdir ls cat chmod date echo node npm npx head tail wc sort grep"
 # Additional Bash command globs for the write tier (mirror WRITE_TOOLS).
-GROK_WRITE_BASH="gh git python3 python semgrep osv-scanner trufflehog slither"
+GROK_WRITE_BASH="gh git python3 python semgrep osv-scanner trufflehog slither ./scripts/verdikta-exec.sh"
 
 grok_args() {
   local mode="$1"

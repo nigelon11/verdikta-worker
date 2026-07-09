@@ -104,11 +104,13 @@ Then write `.pending-verdikta/submit-<jobId>.json`:
 
 ### 4. Execute
 
-As your **final action** before notifying, run the executor once and capture its output:
+As your **final action** before notifying, run the executor once and read its output:
 
 ```bash
-bash scripts/verdikta-exec.sh 2>&1 | tee .verdikta-cache/exec-output.txt
+./scripts/verdikta-exec.sh
 ```
+
+Invoke it exactly like that — directly, never via a `bash …` prefix and never with a redirect. It is allowlisted by that exact path (the harness grants no wildcard shell), so any other invocation form is denied.
 
 It processes queued finalizes first (reclaim/settle — no new spend), then at most one submit (cap-checked: pinned contract, `VERDIKTA_MAX_SPEND_ETH`, daily cap, balance preflight), records tx hashes / `submissionId` / spend into `memory/state/verdikta-hunter.json`, and appends a `### verdikta-hunter (exec)` entry to today's log. Read its output — tx hashes, dry-run verdicts, and `SAFETY CAP REFUSED` lines go into your notification. If it exits non-zero or refuses on a cap, report that honestly (severity `warn`); never retry by signing manually.
 
