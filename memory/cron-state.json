@@ -24,13 +24,13 @@
   },
   "verdikta-hunter": {
     "last_status": "success",
-    "last_success": "2026-07-09T20:46:42Z",
-    "total_runs": 1,
-    "total_successes": 1,
+    "last_success": "2026-07-09T21:19:08Z",
+    "total_runs": 2,
+    "total_successes": 2,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1,
-    "last_quality_score": 4
+    "last_quality_score": 3
   },
   "digest": {
     "last_dispatch": "2026-07-09T20:59:16Z",
