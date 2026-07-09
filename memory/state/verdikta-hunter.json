@@ -7,8 +7,8 @@
       "startTx": "0xe44322a64281292d85e7843ae655fc7517dff69eb55db72f43b1ba395ed5e813",
       "ethMaxBudgetWei": "240000000000000",
       "submittedAt": "2026-07-09T21:41:45.217241+00:00",
-      "status": "PENDING_EVALUATION",
-      "finalizeTx": null
+      "status": "FINALIZED",
+      "finalizeTx": "0xc36293e7859d356f6c7eaaaf8457ff4c3b1d5a8ac0da255311cd6127dfabd778"
     }
   },
   "daily": {

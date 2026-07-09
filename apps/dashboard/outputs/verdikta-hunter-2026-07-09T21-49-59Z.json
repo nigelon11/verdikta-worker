@@ -1,0 +1,233 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — #142 WON 🏆",
+        "description": "First bounty win on Verdikta protocol"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "alert_win",
+        "sep1",
+        "section_results",
+        "sep2",
+        "section_onchain",
+        "sep3",
+        "section_context",
+        "sep4",
+        "section_open_bounties"
+      ]
+    },
+    "alert_win": {
+      "type": "Alert",
+      "props": {
+        "title": "Bounty #142 Won",
+        "message": "\"tiny ritual\" collaboration-ritual proposal — score 93.375 vs threshold 90 (passed by 3.4 pts)",
+        "type": "success"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_results": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_results",
+        "grid_metrics"
+      ]
+    },
+    "heading_results": {
+      "type": "Heading",
+      "props": {
+        "text": "Scoring & Reward",
+        "level": "h3"
+      }
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_score",
+        "stat_reward",
+        "stat_threshold",
+        "stat_margin"
+      ]
+    },
+    "stat_score": {
+      "type": "Stat",
+      "props": {
+        "label": "Final Score",
+        "value": "93.375"
+      }
+    },
+    "stat_reward": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.00434 ETH (~$10)"
+      }
+    },
+    "stat_threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "90"
+      }
+    },
+    "stat_margin": {
+      "type": "Stat",
+      "props": {
+        "label": "Margin",
+        "value": "3.4 pts",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_onchain": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_onchain",
+        "badge_status",
+        "text_wallet",
+        "link_tx"
+      ]
+    },
+    "heading_onchain": {
+      "type": "Heading",
+      "props": {
+        "text": "On-Chain Status",
+        "level": "h3"
+      }
+    },
+    "badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "AWARDED",
+        "variant": "default"
+      }
+    },
+    "text_wallet": {
+      "type": "Text",
+      "props": {
+        "text": "Winner: 0xb25E11ad9d82e2723e6f368C8602DD55B7b544ce",
+        "variant": "body"
+      }
+    },
+    "link_tx": {
+      "type": "Link",
+      "props": {
+        "label": "Finalize Tx: 0xc36293e7859d356f6c7eaaaf8457ff4c3b1d5a8ac0da255311cd6127dfabd778",
+        "href": "https://basescan.io/tx/0xc36293e7859d356f6c7eaaaf8457ff4c3b1d5a8ac0da255311cd6127dfabd778"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_context": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_process",
+        "text_timeline",
+        "text_process"
+      ]
+    },
+    "heading_process": {
+      "type": "Heading",
+      "props": {
+        "text": "Process Timeline",
+        "level": "h3"
+      }
+    },
+    "text_timeline": {
+      "type": "Text",
+      "props": {
+        "text": "Full round trip from submission to finalized award: ~7 minutes",
+        "variant": "body"
+      }
+    },
+    "text_process": {
+      "type": "Text",
+      "props": {
+        "text": "Prepare → Start (0.000240 ETH oracle prepay) → EVALUATED_PASSED → Finalize",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_open_bounties": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_open",
+        "text_open_count",
+        "text_open_breakdown"
+      ]
+    },
+    "heading_open": {
+      "type": "Heading",
+      "props": {
+        "text": "Open Bounties Status",
+        "level": "h3"
+      }
+    },
+    "text_open_count": {
+      "type": "Text",
+      "props": {
+        "text": "11 open bounties remain. No new candidates this pass — discover mode made zero new spend.",
+        "variant": "body"
+      }
+    },
+    "text_open_breakdown": {
+      "type": "Text",
+      "props": {
+        "text": "• 8 unsolvable open-math-research problems: Frankl Conjecture, Busy Beaver BB(6), Vaught's Conjecture, Lonely Runner k=7, Erdős–Straus, Hadamard-668, Ramsey R(5,5) — decades/centuries-old, cannot honestly deliver\n• 2 outreach bounties (#124, #123) pinned to another wallet's targetHunter\n• Nothing to submit",
+        "variant": "caption"
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
-ℹ️ Verdikta Hunter
+✅ Verdikta Hunter — #142 WON
 
-## Verdikta Hunter — submitted #142
+## Verdikta Hunter — first win 🏆
 
-Submitted a real (non-dry-run) entry to **#142 "Invent a tiny ritual for humans and AI agents starting work together"** — 0.00434 ETH reward, threshold 90%, 0 competing submissions, ~67h left on the window.
+Bounty **#142** ("tiny ritual" collaboration-ritual proposal) — **WON**.
 
-- Report: a two-line human/agent handoff ritual ("here's what I need + what I'm unsure about" ↔ "here's what I'll do + what I'll flag"), with 3 worked examples (debugging, draft handoff, project kickoff) and an explicit risk-awareness section.
-- Prepare tx: `0x5e34270206159c174fc2bf76bf502583e6299c0f928b8bead72bc8ad126be1d0`
-- Start tx: `0xe44322a64281292d85e7843ae655fc7517dff69eb55db72f43b1ba395ed5e813`
-- Oracle prepay: 0.000240 ETH (well under the 0.0005 cap; refunded at finalize regardless of outcome)
-- Status: `PENDING_EVALUATION` — the two-model jury hasn't scored it yet. Finalize is still owed once it settles (win or lose) to reclaim the escrow — next run will pick that up.
-- No prior submissions existed to settle this run. Skipped the other 10 open bounties: 8 open-math-research problems we can't honestly prove/disprove (#132–#139), 2 outreach bounties pinned to another hunter's wallet (#123, #124).
+- Score: **93.375** vs threshold 90 (passed by 3.4 pts)
+- Reward: **0.00434 ETH** (~$10)
+- Finalize tx: `0xc36293e7859d356f6c7eaaaf8457ff4c3b1d5a8ac0da255311cd6127dfabd778`
+- On-chain status: `AWARDED`, winner = our wallet `0xb25E11ad9d82e2723e6f368C8602DD55B7b544ce`
+
+This closes the loop that started earlier today: prepare → start (0.000240 ETH oracle prepay) → EVALUATED_PASSED → finalize. Full round trip in ~7 minutes from submission to finalized award.
+
+No new candidates this pass — same 11 open bounties as prior runs today: 8 unsolvable open-math-research problems (Frankl, Busy Beaver BB(6), Vaught's Conjecture, Lonely Runner k=7, Erdős–Straus, Hadamard-668, R(5,5) — decades/centuries-old, can't honestly deliver), 2 outreach bounties (#124, #123) pinned to another wallet's `targetHunter`. Nothing to submit; discover mode made zero new spend.
