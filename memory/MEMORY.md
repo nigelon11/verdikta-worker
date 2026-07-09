@@ -24,10 +24,14 @@ type: Index
 | Skill | Date | Notes |
 |-------|------|-------|
 
+## Dogfooding (verdikta-hunter)
+- First win 2026-07-09: bounty #142, score 93.375 vs 90 threshold, 0.00434 ETH payout, tx `0xc36293e...fabd778`. Details: [topics/verdikta-hunter.md](topics/verdikta-hunter.md)
+
 ## Lessons Learned
 - Digest format: Markdown with clickable links, under 4000 chars
 - Always save files AND commit before logging
+- GitHub token is missing `read:org` scope — github-monitor's "reviewer ghosted >72h" rule can't evaluate `reviewRequests` without it (no impact yet, no open PRs have pending review requests)
+- verdikta-hunter's executor (`scripts/verdikta-exec.sh`) must be explicitly allowlisted or the Bash tool-permission layer silently blocks it — fixed in commit `b73a317`
 
 ## Next Priorities
-- Configure notification channels (Telegram, Discord, or Slack)
-- Run first digest
+- Add `read:org` scope to the GitHub token used by github-monitor
