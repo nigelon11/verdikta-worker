@@ -7,3 +7,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-09,verdikta-hunter,claude-sonnet-5,2535,11267,2197385,49076
 2026-07-09,verdikta-hunter,claude-sonnet-5,2398,13134,2001613,56003
 2026-07-09,verdikta-hunter,claude-sonnet-5,2947,12733,2579704,63464
+2026-07-09,write-tweet,claude-sonnet-5,2835,23189,4156230,65787
