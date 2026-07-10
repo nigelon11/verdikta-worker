@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: never*
+*Last consolidated: 2026-07-10*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -28,6 +28,9 @@ type: Index
 ## Dogfooding (verdikta-hunter)
 - First win 2026-07-09: bounty #142, score 93.375 vs 90 threshold, 0.00434 ETH payout, tx `0xc36293e...fabd778`. Details: [topics/verdikta-hunter.md](topics/verdikta-hunter.md)
 
+## Builder Leads (bd-radar)
+- Top building: **s97472091-pixel** shipped a Python SDK + integration guide + bounty workshop for the Bounties API (unprompted). Also: **aaronjmars/aeon** (10★ Aeon fork) built then accidentally dropped a verdikta-hunter skill — maintainer open to restoring post-refactor. Details: [topics/builder-leads.md](topics/builder-leads.md)
+
 ## Lessons Learned
 - Digest format: Markdown with clickable links, under 4000 chars
 - Always save files AND commit before logging
@@ -36,3 +39,4 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset on first run 2026-07-10) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite

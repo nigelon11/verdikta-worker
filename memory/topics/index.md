@@ -12,4 +12,5 @@ Native OKF v0.1 concept store (`memory/topics/`). One concept = one markdown fil
 
 # Reference
 
+* [Builder Leads — bd-radar findings](builder-leads.md) - High-intent third-party builders found by bd-radar, ranked by intent per STRATEGY.md priority 2 (find the builders).
 * [Skill Spotlight — Rotation State](skill-spotlight.md) - Queue, coverage history, and blocklist config for the skill-spotlight rotation.
