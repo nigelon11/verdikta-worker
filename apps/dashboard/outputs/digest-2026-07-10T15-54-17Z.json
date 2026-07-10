@@ -1,0 +1,137 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain"
+      },
+      "children": [
+        "text-subtitle",
+        "text-date",
+        "sep-1",
+        "heading-tldr",
+        "text-tldr",
+        "sep-2",
+        "heading-story1",
+        "text-story1-desc",
+        "text-story1-why",
+        "link-story1",
+        "sep-3",
+        "heading-story2",
+        "text-story2-desc",
+        "text-story2-why",
+        "link-story2",
+        "sep-4",
+        "text-note"
+      ]
+    },
+    "text-subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Agent payments, AI-judged bounties, decentralized AI oracles",
+        "variant": "muted"
+      }
+    },
+    "text-date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-10",
+        "variant": "caption"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      }
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "GenLayer's \"Internet Court\" — a live, beta-stage AI jury for agent-to-agent disputes backed by 27 companies including OKX and MetaMask — is the clearest signal yet that multi-model AI arbitration for onchain commerce is becoming a category, not a novelty."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-story1": {
+      "type": "Heading",
+      "props": {
+        "text": "GenLayer launches \"Internet Court,\" an AI jury for AI-agent disputes",
+        "level": "h3"
+      }
+    },
+    "text-story1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "27 companies (OKX, MetaMask, Matter Labs, BNB Chain, and others) backed the launch of a protocol where 5 randomly-selected validators — each running a different model (Claude, GPT, Gemini) — vote blind, reveal, and escalate to 11 validators on disagreement, built on Condorcet's Jury Theorem. Already processing ~350K transactions/day (20-25K decisions) in beta; public launch with a validator token planned later this year."
+      }
+    },
+    "text-story1-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: A second live reference architecture for AI-judged onchain arbitration, at meaningfully larger scale than most single-project judges — useful comparison point for anyone evaluating trust layers for agent commerce, Verdikta included.",
+        "variant": "body"
+      }
+    },
+    "link-story1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "All Rise: Internet Court for AI Agents Is in Session",
+        "href": "https://www.forbes.com/sites/ninabambysheva/2026/07/10/all-rise-internet-court-for-ai-agents-is-in-session/",
+        "source": "Forbes"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-story2": {
+      "type": "Heading",
+      "props": {
+        "text": "Ethereum Foundation's AI agents find a critical libp2p bug, CVE-2026-34219",
+        "level": "h3"
+      }
+    },
+    "text-story2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The Ethereum Foundation's Protocol Security team ran coordinated, role-specialized AI agents (recon, hunting, gap-filling, validation) against core protocol code and surfaced a remotely-triggerable panic in gossipsub, the p2p layer every consensus client depends on. Patched; each finding still required an independent human-reproduced exploit before disclosure."
+      }
+    },
+    "text-story2-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Concrete evidence that AI-driven verification is now doing consequential work on live crypto infrastructure, not just demos — the same \"let AI judge the work, but require independent verification\" pattern Verdikta applies to bounty submissions.",
+        "variant": "body"
+      }
+    },
+    "link-story2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Protocol Security AI Agents Ethereum Triage",
+        "href": "https://www.coinspeaker.com/protocol-security-ai-agents-ethereum-triage/",
+        "source": "Coinspeaker"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-note": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise: the usual agent-payments headlines (OKX marketplace, Visa/Mastercard agent rails, x402 volume stats) were all 5+ days old with no new development today, so they were cut rather than repeated.",
+        "variant": "muted"
+      }
+    }
+  }
+}

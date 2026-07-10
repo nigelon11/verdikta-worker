@@ -1,5 +1,3 @@
-ℹ️ Digest: AI agents that transact onchain
-
 *AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-10*
 
 _TL;DR: GenLayer's "Internet Court" — a live, beta-stage AI jury for agent-to-agent disputes backed by 27 companies including OKX and MetaMask — is the clearest signal yet that multi-model AI arbitration for onchain commerce is becoming a category, not a novelty._

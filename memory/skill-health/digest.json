@@ -1,13 +1,17 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-09T21:07:01Z",
+  "last_analyzed": "2026-07-10T15:54:17Z",
   "quality_score": 4,
-  "assessment": "Substantive digest with critical filtering applied; found 4 relevant builder leads (Ritual, AIsa, Moonbeam, OpenCovenant) aligned with strategy; proper logging and memory updates; transparent about technical workarounds.",
+  "assessment": "Thorough search (14 WebSearch, X-search, 13 verification passes) with rigorous filtering delivered two substantive, strategy-aligned items (GenLayer jury, EF CVE); thin output reflects the news day rather than execution gaps.",
   "flags": [],
   "avg_score": 4,
   "history": [
     {
       "date": "2026-07-09",
+      "score": 4
+    },
+    {
+      "date": "2026-07-10",
       "score": 4
     }
   ]
