@@ -1,0 +1,50 @@
+{
+  "leads": [
+    {
+      "key": "github:s97472091-pixel",
+      "class": "building",
+      "who": "s97472091-pixel (\"pipsss\")",
+      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97",
+      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop"],
+      "fit": 3,
+      "score": 15,
+      "date_found": "2026-07-10"
+    },
+    {
+      "key": "github:aaronjmars/aeon-verdikta-hunter",
+      "class": "integrating",
+      "who": "aaronjmars/aeon (10-star public Aeon framework fork) + maintainer @aaronjmars",
+      "signal": "Built in-tree verdikta-hunter skill Jul1-6, accidentally dropped in restructure PR #647, issue #681 (opened by nigelon11) got a 'will keep an eye on it once refactor lands' reply, closed 2026-07-08",
+      "links": ["https://github.com/aaronjmars/aeon/issues/681"],
+      "fit": 3,
+      "score": 12,
+      "date_found": "2026-07-10"
+    },
+    {
+      "key": "x:Fishhead8u",
+      "class": "mentioning",
+      "who": "@Fishhead8u",
+      "signal": "Friction complaint about targeted-bounty pay/access, 2026-07-08",
+      "links": ["https://x.com/Fishhead8u/status/2074929843800601076"],
+      "fit": 1,
+      "score": 2,
+      "date_found": "2026-07-10"
+    },
+    {
+      "key": "x:AjAkmarudi72937",
+      "class": "mentioning",
+      "who": "@AjAkmarudi72937",
+      "signal": "3 posts 2026-07-07 explaining Verdikta bounty flow to CN Web3 audience, organic evangelism",
+      "links": ["https://x.com/AjAkmarudi72937/status/2074605184676958704"],
+      "fit": 2,
+      "score": 4,
+      "date_found": "2026-07-10"
+    }
+  ],
+  "surfaced": [
+    "github:s97472091-pixel",
+    "github:aaronjmars/aeon-verdikta-hunter",
+    "x:Fishhead8u",
+    "x:AjAkmarudi72937"
+  ]
+}
