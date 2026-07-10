@@ -1,0 +1,169 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "heading-1",
+        "stack-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Farcaster capability check",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-1",
+        "stack-2",
+        "sep-1",
+        "stack-3",
+        "sep-2",
+        "stack-4",
+        "sep-3",
+        "text-closing"
+      ]
+    },
+    "alert-1": {
+      "type": "Alert",
+      "props": {
+        "title": "No Farcaster capability",
+        "message": "There is currently no Farcaster posting capability wired up anywhere in this repo.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "stack-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-checks",
+        "text-1",
+        "text-2"
+      ]
+    },
+    "heading-checks": {
+      "type": "Heading",
+      "props": {
+        "text": "What was checked",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "No skill declares a Neynar/Warpcast API key or signer in requires",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-2": {
+      "type": "Text",
+      "props": {
+        "text": "No FARCASTER_* secret exists in aeon.yml or docs, and no code calls a casting endpoint. Farcaster shows up only as a passive search surface in mention-radar (read-only, for spotting external mentions of Verdikta).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-current",
+        "text-3"
+      ]
+    },
+    "heading-current": {
+      "type": "Heading",
+      "props": {
+        "text": "Current social capabilities",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-3": {
+      "type": "Text",
+      "props": {
+        "text": "All social output right now is X/Twitter, draft-only: write-tweet drafts tweets/threads/remixes, reply-maker drafts copy-paste replies — neither auto-posts, per STRATEGY.md's hard constraint that drafted content needs human approval.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-needed",
+        "text-4"
+      ]
+    },
+    "heading-needed": {
+      "type": "Heading",
+      "props": {
+        "text": "What's needed for Farcaster engagement",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-4": {
+      "type": "Text",
+      "props": {
+        "text": "To engage on Farcaster as @verdikta (or whichever handle), you'd need to: get a Neynar (or Warpcast) API key + signer, add it as a repo secret, and build a new skill (or extend write-tweet) declaring that key in requires.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-closing": {
+      "type": "Text",
+      "props": {
+        "text": "Want me to draft that skill?",
+        "variant": "lead"
+      },
+      "children": []
+    }
+  }
+}
