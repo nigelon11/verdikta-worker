@@ -1,0 +1,28 @@
+ℹ️ BD Radar: 2 high-intent leads
+
+---
+type: Article
+title: BD Radar — 2026-07-10
+description: Weekly builder-lead sweep across Verdikta's GitHub, X, and web surfaces — ranked leads with suggested next moves.
+tags: [bd-radar, leads, verdikta]
+timestamp: 2026-07-10T00:00:00Z
+---
+
+# BD Radar — 2026-07-10
+
+First run of `bd-radar`. Swept GitHub (forks + issues on the 5 public `verdikta/*` repos, plus `gh search` discovery), X (via xAI search, 3-day window), and the web (HN/Reddit/blogs, no hits). 4 leads found after filtering drive-by forks and known-internal (core-team) activity; top 4 shown below.
+
+| Class | Who | Signal | Fit | Suggested move |
+|-------|-----|--------|-----|-----------------|
+| `building` | [s97472091-pixel](https://github.com/s97472091-pixel) ("pipsss") | Shipped a full Python SDK for the Bounties API — [`verdikta-sdk`](https://github.com/s97472091-pixel/verdikta-sdk) / [`verdikta-sdk-v2`](https://github.com/s97472091-pixel/verdikta-sdk-v2) (discovery, rubrics, submission upload, tx bundling, monitoring, evaluation retrieval — real, working code) — plus a [developer integration guide](https://github.com/s97472091-pixel/verdikta-integration-guide) and a [bounty-creation workshop](https://github.com/s97472091-pixel/verdikta-bounty-workshop). All 4 repos created Jun 30–Jul 7. Also contributed safety tests + gotcha docs (PR #632) to a third-party `verdikta-hunter` skill (see below) and completed bounty #97 (cross-protocol earnings report). | 3 | Comment on `verdikta-sdk-v2` — offer to list it as a community SDK, or ask what friction in the API prompted a hand-rolled wrapper. Most active non-core contributor in the ecosystem right now. |
+| `integrating` | [aaronjmars/aeon](https://github.com/aaronjmars/aeon) (10★ public "most autonomous agent framework") + maintainer @aaronjmars | Built a full `verdikta-hunter` skill in-tree (PRs #582→#605→#631→#632→#635: API client, on-chain helpers, 9 safety tests, 25 gotchas) between Jul 1–6, then it was accidentally dropped in a 59-skill restructure (#647). `nigelon11` opened [issue #681](https://github.com/aaronjmars/aeon/issues/681) to ask about restoring it; aaronjmars confirmed the drop was unintentional but is mid-refactor and asked to hold off — thread closed 2026-07-08 with "will keep an eye on it." | 3 | Not new to the operator (nigelon11 was already in the thread) — flagging as a live, warm thread to revisit: once aaronjmars' refactor lands, a nudge on #681 could get `verdikta-hunter` back into a 10★ public framework's flagship skill catalog. |
+| `mentioning` | [@Fishhead8u](https://x.com/Fishhead8u/status/2074929843800601076) (individual) | Posted 2026-07-08 frustrated about targeted-bounty pay/access: "barely $3 per task... targeted bounties, easier but surprisingly 10x more pay... why do you even have targeted bounties, I wanna participate, open up." Real friction from a would-be hunter, not spam. | 1 | Reply/DM to explain targeted-bounty access — also worth routing to product as pricing/access feedback (dogfooding signal). |
+| `mentioning` | [@AjAkmarudi72937](https://x.com/AjAkmarudi72937) (individual) | 3 posts Jul 7 explaining the Verdikta bounty flow to a Chinese-language Web3 audience, linking `bounties.verdikta.org`, asking others to share their experience. Organic evangelism, not paid promo (no bio/project markers). | 2 | Friendly reply/RT in-thread — potential recurring CN-audience amplifier. |
+
+## Notes
+- **GitHub forks/issues via `GH_READ_PAT`:** the PAT returned `401` on all 5 repos (unset or invalid) — fell back to unauthenticated public API (works fine for public repos) and `gh search`. Flagging `BD_RADAR_SOURCE_MISS: github-forks-issues (no GH_READ_PAT)` — the fallback covered it this time, but the PAT should still get fixed for repos that go private.
+- Forks found (`SHY-TRADING`, `zp6`, `Zetav1` on `verdikta-arbiter`/`verdikta-docs`; `bingmokaka`, `lwjynally56-ship-it` on `verdikta-applications`) all had zero independent commits — drive-by forks, dropped.
+- All other open issues across the 5 repos trace to `nigelon11` (core team, internal bug reports) or known bounty-review submissions from May (`Zetav1`, `donakaxy`, `Badiss244`) — already-known signal, not surfaced again.
+- Web search (HN, Reddit, "built on Verdikta", SDK/integration blog posts) returned zero independent third-party results — everything indexed traces back to Verdikta's own properties. Expected for an early-stage project; worth re-running.
+
+🔗 https://github.com/aeonframework/verdikta-worker/blob/main/output/articles/bd-radar-2026-07-10.md

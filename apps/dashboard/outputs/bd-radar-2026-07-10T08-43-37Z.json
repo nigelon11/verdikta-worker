@@ -1,0 +1,384 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "BD Radar — 2026-07-10",
+        "description": "Weekly builder-lead sweep across Verdikta's GitHub, X, and web surfaces"
+      },
+      "children": [
+        "intro-text",
+        "sep-1",
+        "leads-heading",
+        "lead-1",
+        "lead-2",
+        "lead-3",
+        "lead-4",
+        "sep-2",
+        "notes-heading",
+        "notes-github",
+        "notes-forks",
+        "notes-issues",
+        "notes-web",
+        "sep-3",
+        "article-link"
+      ]
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "First run of bd-radar. Swept GitHub (forks + issues on the 5 public verdikta/* repos, plus gh search discovery), X (via xAI search, 3-day window), and the web (HN/Reddit/blogs, no hits). 4 leads found after filtering drive-by forks and known-internal (core-team) activity; top 4 shown below.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "leads-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Leads",
+        "level": "h2"
+      }
+    },
+    "lead-1": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "lead-1-class",
+        "lead-1-who",
+        "lead-1-signal-group",
+        "lead-1-fit",
+        "lead-1-move"
+      ]
+    },
+    "lead-1-class": {
+      "type": "Badge",
+      "props": {
+        "text": "building",
+        "variant": "secondary"
+      }
+    },
+    "lead-1-who": {
+      "type": "Link",
+      "props": {
+        "label": "s97472091-pixel (pipsss)",
+        "href": "https://github.com/s97472091-pixel"
+      }
+    },
+    "lead-1-signal-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-1-signal-text",
+        "lead-1-repos-stack"
+      ]
+    },
+    "lead-1-signal-text": {
+      "type": "Text",
+      "props": {
+        "text": "Shipped a full Python SDK for the Bounties API (discovery, rubrics, submission upload, tx bundling, monitoring, evaluation retrieval — real, working code). All 4 repos created Jun 30–Jul 7. Also contributed safety tests + gotcha docs (PR #632) to a third-party verdikta-hunter skill and completed bounty #97 (cross-protocol earnings report).",
+        "variant": "body"
+      }
+    },
+    "lead-1-repos-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-1-sdk",
+        "lead-1-sdk-v2",
+        "lead-1-guide",
+        "lead-1-workshop"
+      ]
+    },
+    "lead-1-sdk": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-sdk",
+        "href": "https://github.com/s97472091-pixel/verdikta-sdk",
+        "source": "GitHub"
+      }
+    },
+    "lead-1-sdk-v2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-sdk-v2",
+        "href": "https://github.com/s97472091-pixel/verdikta-sdk-v2",
+        "source": "GitHub"
+      }
+    },
+    "lead-1-guide": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-integration-guide",
+        "href": "https://github.com/s97472091-pixel/verdikta-integration-guide",
+        "source": "GitHub"
+      }
+    },
+    "lead-1-workshop": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-bounty-workshop",
+        "href": "https://github.com/s97472091-pixel/verdikta-bounty-workshop",
+        "source": "GitHub"
+      }
+    },
+    "lead-1-fit": {
+      "type": "Stat",
+      "props": {
+        "label": "Fit",
+        "value": "3"
+      }
+    },
+    "lead-1-move": {
+      "type": "Text",
+      "props": {
+        "text": "Suggested move: Comment on verdikta-sdk-v2 — offer to list it as a community SDK, or ask what friction in the API prompted a hand-rolled wrapper. Most active non-core contributor in the ecosystem right now.",
+        "variant": "caption"
+      }
+    },
+    "lead-2": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "lead-2-class",
+        "lead-2-who",
+        "lead-2-signal-group",
+        "lead-2-fit",
+        "lead-2-move"
+      ]
+    },
+    "lead-2-class": {
+      "type": "Badge",
+      "props": {
+        "text": "integrating",
+        "variant": "secondary"
+      }
+    },
+    "lead-2-who": {
+      "type": "Link",
+      "props": {
+        "label": "aaronjmars/aeon (10★ public most autonomous agent framework)",
+        "href": "https://github.com/aaronjmars/aeon"
+      }
+    },
+    "lead-2-signal-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-2-signal-text",
+        "lead-2-issue-link"
+      ]
+    },
+    "lead-2-signal-text": {
+      "type": "Text",
+      "props": {
+        "text": "Built a full verdikta-hunter skill in-tree (PRs #582→#605→#631→#632→#635: API client, on-chain helpers, 9 safety tests, 25 gotchas) between Jul 1–6, then accidentally dropped in a 59-skill restructure (#647). nigelon11 opened an issue to ask about restoring it; aaronjmars confirmed the drop was unintentional but is mid-refactor and asked to hold off — thread closed 2026-07-08 with 'will keep an eye on it.'",
+        "variant": "body"
+      }
+    },
+    "lead-2-issue-link": {
+      "type": "Link",
+      "props": {
+        "label": "View issue #681",
+        "href": "https://github.com/aaronjmars/aeon/issues/681"
+      }
+    },
+    "lead-2-fit": {
+      "type": "Stat",
+      "props": {
+        "label": "Fit",
+        "value": "3"
+      }
+    },
+    "lead-2-move": {
+      "type": "Text",
+      "props": {
+        "text": "Suggested move: Not new to the operator (nigelon11 was already in the thread) — flagging as a live, warm thread to revisit: once aaronjmars' refactor lands, a nudge on #681 could get verdikta-hunter back into a 10★ public framework's flagship skill catalog.",
+        "variant": "caption"
+      }
+    },
+    "lead-3": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "lead-3-class",
+        "lead-3-who",
+        "lead-3-signal-group",
+        "lead-3-fit",
+        "lead-3-move"
+      ]
+    },
+    "lead-3-class": {
+      "type": "Badge",
+      "props": {
+        "text": "mentioning",
+        "variant": "secondary"
+      }
+    },
+    "lead-3-who": {
+      "type": "Link",
+      "props": {
+        "label": "@Fishhead8u (individual)",
+        "href": "https://x.com/Fishhead8u/status/2074929843800601076"
+      }
+    },
+    "lead-3-signal-text": {
+      "type": "Text",
+      "props": {
+        "text": "Posted 2026-07-08 frustrated about targeted-bounty pay/access: \"barely $3 per task... targeted bounties, easier but surprisingly 10x more pay... why do you even have targeted bounties, I wanna participate, open up.\" Real friction from a would-be hunter, not spam.",
+        "variant": "body"
+      }
+    },
+    "lead-3-signal-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-3-signal-text"
+      ]
+    },
+    "lead-3-fit": {
+      "type": "Stat",
+      "props": {
+        "label": "Fit",
+        "value": "1"
+      }
+    },
+    "lead-3-move": {
+      "type": "Text",
+      "props": {
+        "text": "Suggested move: Reply/DM to explain targeted-bounty access — also worth routing to product as pricing/access feedback (dogfooding signal).",
+        "variant": "caption"
+      }
+    },
+    "lead-4": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "lead-4-class",
+        "lead-4-who",
+        "lead-4-signal-group",
+        "lead-4-fit",
+        "lead-4-move"
+      ]
+    },
+    "lead-4-class": {
+      "type": "Badge",
+      "props": {
+        "text": "mentioning",
+        "variant": "secondary"
+      }
+    },
+    "lead-4-who": {
+      "type": "Link",
+      "props": {
+        "label": "@AjAkmarudi72937 (individual)",
+        "href": "https://x.com/AjAkmarudi72937"
+      }
+    },
+    "lead-4-signal-text": {
+      "type": "Text",
+      "props": {
+        "text": "3 posts Jul 7 explaining the Verdikta bounty flow to a Chinese-language Web3 audience, linking bounties.verdikta.org, asking others to share their experience. Organic evangelism, not paid promo (no bio/project markers).",
+        "variant": "body"
+      }
+    },
+    "lead-4-signal-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-4-signal-text"
+      ]
+    },
+    "lead-4-fit": {
+      "type": "Stat",
+      "props": {
+        "label": "Fit",
+        "value": "2"
+      }
+    },
+    "lead-4-move": {
+      "type": "Text",
+      "props": {
+        "text": "Suggested move: Friendly reply/RT in-thread — potential recurring CN-audience amplifier.",
+        "variant": "caption"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "notes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Notes",
+        "level": "h2"
+      }
+    },
+    "notes-github": {
+      "type": "Alert",
+      "props": {
+        "title": "GitHub PAT Issue",
+        "message": "PAT returned 401 on all 5 repos — fell back to unauthenticated public API and gh search. Flagging BD_RADAR_SOURCE_MISS: github-forks-issues (no GH_READ_PAT). Fallback covered it this run, but PAT should be fixed for any private repos.",
+        "type": "warning"
+      }
+    },
+    "notes-forks": {
+      "type": "Text",
+      "props": {
+        "text": "Forks found (SHY-TRADING, zp6, Zetav1 on verdikta-arbiter/verdikta-docs; bingmokaka, lwjynally56-ship-it on verdikta-applications) all had zero independent commits — drive-by forks, dropped.",
+        "variant": "caption"
+      }
+    },
+    "notes-issues": {
+      "type": "Text",
+      "props": {
+        "text": "All other open issues across the 5 repos trace to nigelon11 (core team, internal bug reports) or known bounty-review submissions from May (Zetav1, donakaxy, Badiss244) — already-known signal, not surfaced again.",
+        "variant": "caption"
+      }
+    },
+    "notes-web": {
+      "type": "Text",
+      "props": {
+        "text": "Web search (HN, Reddit, 'built on Verdikta', SDK/integration blog posts) returned zero independent third-party results — everything indexed traces back to Verdikta's own properties. Expected for an early-stage project; worth re-running.",
+        "variant": "caption"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full article: BD Radar — 2026-07-10",
+        "href": "https://github.com/aeonframework/verdikta-worker/blob/main/output/articles/bd-radar-2026-07-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
