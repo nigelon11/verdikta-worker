@@ -1,0 +1,23 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet",
+        "description": "Revision prompt"
+      },
+      "children": [
+        "text_prompt"
+      ]
+    },
+    "text_prompt": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "body"
+      }
+    }
+  }
+}
