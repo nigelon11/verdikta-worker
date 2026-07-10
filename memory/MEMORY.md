@@ -19,6 +19,7 @@ type: Index
 | Date | Type | Key Topics |
 |------|------|------------|
 | 2026-07-09 | AI agents that transact onchain | Ritual TEE bounty judge, AIsa funding, Moonbeam→Base |
+| 2026-07-10 | AI agents that transact onchain | GenLayer Internet Court (AI jury), Ethereum Foundation AI-agent CVE find |
 
 ## Skills Built
 | Skill | Date | Notes |
