@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-10T21:34:18Z",
-  "quality_score": 5,
-  "assessment": "Excellent execution — well-sourced research (GenLayer launch, live X sentiment check), multiple high-quality drafts across tiers, strategy-aligned topic (AI juries in agent economy), actionable deliverable with best pick identified, proper documentation.",
+  "last_analyzed": "2026-07-11T21:08:29Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-documented skill run with proper API verification, timely topic selection, and memory updates; truncated output limits full verification of draft quality",
   "flags": [],
-  "avg_score": 4.33,
+  "avg_score": 4.25,
   "history": [
     {
       "date": "2026-07-09",
@@ -17,6 +17,10 @@
     {
       "date": "2026-07-10",
       "score": 5
+    },
+    {
+      "date": "2026-07-11",
+      "score": 4
     }
   ]
 }
