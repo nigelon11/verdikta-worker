@@ -1,0 +1,90 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stats-container",
+        "divider-1",
+        "info-section"
+      ]
+    },
+    "stats-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-repos",
+        "stat-action"
+      ]
+    },
+    "stat-repos": {
+      "type": "Stat",
+      "props": {
+        "label": "Repos scanned",
+        "value": "5"
+      }
+    },
+    "stat-action": {
+      "type": "Stat",
+      "props": {
+        "label": "Need action",
+        "value": "0"
+      }
+    },
+    "divider-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "info-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "info-heading",
+        "pr-1",
+        "pr-2",
+        "pr-3"
+      ]
+    },
+    "info-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "INFO",
+        "level": "h3"
+      }
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — open 97d, idle since Apr 5, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — open 134d, idle since Feb 26, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — open 157d, idle since Feb 4, CI passing (Cursor Bugbot)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2"
+      }
+    }
+  }
+}
