@@ -3,7 +3,7 @@ type: Reference
 title: Builder Leads — bd-radar findings
 description: High-intent third-party builders found by bd-radar, ranked by intent per STRATEGY.md priority 2 (find the builders).
 tags: [bd-radar, leads, builders]
-timestamp: 2026-07-10T00:00:00Z
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Builder Leads
@@ -21,4 +21,5 @@ Tracked in full (with dedup state) at `memory/topics/bd-radar-leads.json`. Human
 - **@Fishhead8u** — friction complaint about targeted-bounty pay/access (2026-07-08) — a real usability signal, not a lead.
 
 ## Notes
-- bd-radar's `GH_READ_PAT` returned 401 (unset/invalid) on its first run (2026-07-10); fell back to unauthenticated public GitHub API, which worked fine for these public repos. No functional impact yet, but should be fixed to avoid rate-limit risk as watch scope grows.
+- bd-radar's `GH_READ_PAT` returned 401 (unset/invalid) on its first run (2026-07-10), still 401 as of its second run (2026-07-11) — fell back to unauthenticated public GitHub API both times, which worked fine for these public repos. No functional impact yet, but should be fixed to avoid rate-limit risk as watch scope grows.
+- 2026-07-11 (2nd bd-radar run): 0 new leads — all 4 leads above carried forward unchanged, no new activity from any of them. Two items noted for context, not scored as leads: (1) a bounty-farming spam pattern on `Zetav1`/`zp6` PRs against `verdikta-docs` (fake "Canonical Wallet"/star-verification boilerplate) — already filtered by bd-radar, isolated to those 2 accounts, watch for spread; (2) Verdikta's own `verdikta-bounties-onboarding` skill found mechanically mirrored across 5 OpenClaw skill marketplaces/aggregators — distribution-reach signal, not a new third-party build.

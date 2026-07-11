@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-07-10*
+*Last consolidated: 2026-07-11*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -40,4 +40,5 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset on first run 2026-07-10) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 as of 2026-07-11) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC) crossed the >24h stalled threshold as of 2026-07-11 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
