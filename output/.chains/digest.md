@@ -1,17 +1,12 @@
-ℹ️ Digest: AI agents that transact onchain
+ℹ️ Digest — AI agents onchain
 
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-10*
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-11*
 
-_TL;DR: GenLayer's "Internet Court" — a live, beta-stage AI jury for agent-to-agent disputes backed by 27 companies including OKX and MetaMask — is the clearest signal yet that multi-model AI arbitration for onchain commerce is becoming a category, not a novelty._
+_TL;DR: Quiet 24h for the beat — the one real development is Zscaler catching live (not simulated) prompt-injection attacks draining crypto directly from AI agents' wallets._
 
-1. *GenLayer launches "Internet Court," an AI jury for AI-agent disputes*
-   27 companies (OKX, MetaMask, Matter Labs, BNB Chain, and others) backed the launch of a protocol where 5 randomly-selected validators — each running a different model (Claude, GPT, Gemini) — vote blind, reveal, and escalate to 11 validators on disagreement, built on Condorcet's Jury Theorem. Already processing ~350K transactions/day (20-25K decisions) in beta; public launch with a validator token planned later this year.
-   Why it matters: A second live reference architecture for AI-judged onchain arbitration, at meaningfully larger scale than most single-project judges — useful comparison point for anyone evaluating trust layers for agent commerce, Verdikta included.
-   https://www.forbes.com/sites/ninabambysheva/2026/07/10/all-rise-internet-court-for-ai-agents-is-in-session/
+1. *Prompt injection is now draining real crypto from AI agents' wallets*
+   Zscaler ThreatLabz documented two active campaigns: a fake Python package ("requests-secure-v2") and a typosquatted debank[.]auction site, both using CSS hidden from humans but readable by agents to trick them into paying a hardcoded wallet (0x691bc...ad267). Across 26 LLMs tested, 4 executed the fraudulent payment and 2 misidentified the fake DeBank site as real — Gemini and Llama variants were most susceptible.
+   Why it matters: this is a documented in-the-wild case of an agent authorizing a real onchain payment because of manipulated input, not a bug in the escrow/settlement layer — the exact failure mode that judge/dispute systems (Verdikta, GenLayer's Internet Court) don't protect against, since they arbitrate outcomes after an agent has already signed.
+   https://cryptobriefing.com/zscaler-prompt-injection-ai-agents-crypto/
 
-2. *Ethereum Foundation's AI agents find a critical libp2p bug, CVE-2026-34219*
-   The Ethereum Foundation's Protocol Security team ran coordinated, role-specialized AI agents (recon, hunting, gap-filling, validation) against core protocol code and surfaced a remotely-triggerable panic in gossipsub, the p2p layer every consensus client depends on. Patched; each finding still required an independent human-reproduced exploit before disclosure.
-   Why it matters: Concrete evidence that AI-driven verification is now doing consequential work on live crypto infrastructure, not just demos — the same "let AI judge the work, but require independent verification" pattern Verdikta applies to bounty submissions.
-   https://www.coinspeaker.com/protocol-security-ai-agents-ethereum-triage/
-
-_Quiet day otherwise: the usual agent-payments headlines (OKX marketplace, Visa/Mastercard agent rails, x402 volume stats) were all 5+ days old with no new development today, so they were cut rather than repeated._
+*Quiet day note:* Nothing else cleared the bar — OKX's AI agent marketplace and GenLayer's Internet Court (both covered in prior digests) only generated recap chatter today, no material new development. Mastercard's Agent Pay, Cloudflare/AWS x402-at-the-edge, and several agent-payments funding rounds all surfaced but are 5+ days old with no fresh news today.

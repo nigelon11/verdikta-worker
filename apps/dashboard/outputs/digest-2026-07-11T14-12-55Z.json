@@ -1,0 +1,112 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest — AI agents onchain"
+      },
+      "children": [
+        "date-text",
+        "separator-1",
+        "tldr-heading",
+        "tldr-text",
+        "separator-2",
+        "story-heading",
+        "story-details",
+        "impact-heading",
+        "impact-text",
+        "story-link",
+        "separator-3",
+        "quiet-note-heading",
+        "quiet-note-text"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-11",
+        "variant": "caption"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tldr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      }
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet 24h for the beat — the one real development is Zscaler catching live (not simulated) prompt-injection attacks draining crypto directly from AI agents' wallets."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Prompt injection is now draining real crypto from AI agents' wallets",
+        "level": "h3"
+      }
+    },
+    "story-details": {
+      "type": "Text",
+      "props": {
+        "text": "Zscaler ThreatLabz documented two active campaigns: a fake Python package (\"requests-secure-v2\") and a typosquatted debank[.]auction site, both using CSS hidden from humans but readable by agents to trick them into paying a hardcoded wallet (0x691bc...ad267). Across 26 LLMs tested, 4 executed the fraudulent payment and 2 misidentified the fake DeBank site as real — Gemini and Llama variants were most susceptible."
+      }
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "This is a documented in-the-wild case of an agent authorizing a real onchain payment because of manipulated input, not a bug in the escrow/settlement layer — the exact failure mode that judge/dispute systems (Verdikta, GenLayer's Internet Court) don't protect against, since they arbitrate outcomes after an agent has already signed."
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Zscaler ThreatLabz: Prompt Injection Attacks on AI Agents",
+        "href": "https://cryptobriefing.com/zscaler-prompt-injection-ai-agents-crypto/",
+        "source": "Crypto Briefing"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "quiet-note-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Quiet day note",
+        "level": "h3"
+      }
+    },
+    "quiet-note-text": {
+      "type": "Text",
+      "props": {
+        "text": "Nothing else cleared the bar — OKX's AI agent marketplace and GenLayer's Internet Court (both covered in prior digests) only generated recap chatter today, no material new development. Mastercard's Agent Pay, Cloudflare/AWS x402-at-the-edge, and several agent-payments funding rounds all surfaced but are 5+ days old with no fresh news today."
+      }
+    }
+  }
+}
