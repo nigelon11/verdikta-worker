@@ -1,0 +1,128 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ Heartbeat"
+      },
+      "children": [
+        "alert-stalled",
+        "sep-1",
+        "text-health",
+        "stack-skills",
+        "sep-2",
+        "text-shiplog",
+        "sep-3",
+        "text-status-page"
+      ]
+    },
+    "alert-stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 STALLED",
+        "message": "PRs #1-#4 (Dependabot version bumps) now open >24h (opened 2026-07-09 ~19:23 UTC, ~37h ago) — no action needed unless review is wanted, just crossed the staleness threshold this run.",
+        "type": "warning"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-health": {
+      "type": "Text",
+      "props": {
+        "text": "No P0 failures — fleet healthy",
+        "variant": "lead"
+      }
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-heartbeat",
+        "badge-github-monitor",
+        "badge-digest",
+        "badge-mention-radar",
+        "badge-write-tweet",
+        "badge-bd-radar",
+        "badge-memory-flush"
+      ]
+    },
+    "badge-heartbeat": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-github-monitor": {
+      "type": "Badge",
+      "props": {
+        "text": "github-monitor ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-digest": {
+      "type": "Badge",
+      "props": {
+        "text": "digest ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-mention-radar": {
+      "type": "Badge",
+      "props": {
+        "text": "mention-radar ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-write-tweet": {
+      "type": "Badge",
+      "props": {
+        "text": "write-tweet ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-bd-radar": {
+      "type": "Badge",
+      "props": {
+        "text": "bd-radar ✅",
+        "variant": "secondary"
+      }
+    },
+    "badge-memory-flush": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush ✅",
+        "variant": "secondary"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-shiplog": {
+      "type": "Text",
+      "props": {
+        "text": "shiplog awaits its first Monday window (2026-07-13)",
+        "variant": "caption"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-status-page": {
+      "type": "Text",
+      "props": {
+        "text": "Status page: 🟡 WATCH",
+        "variant": "muted"
+      }
+    }
+  }
+}
