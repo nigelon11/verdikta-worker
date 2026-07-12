@@ -1,0 +1,153 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info-alert",
+        "prs-section",
+        "sep1",
+        "sources-section"
+      ]
+    },
+    "info-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "GitHub repository monitoring"
+      }
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — 52h idle, no CI/review signal (fix: align bounty submission scripts)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — 61h idle, CI passing via Vercel (forensic CID verification docs)",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      }
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — stale, no activity since Apr 5 (bundle submit flow)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — stale, no activity since Feb 26 (classMap jury models)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — stale, no activity since Feb 4, CI passing",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-label",
+        "sources-badges"
+      ]
+    },
+    "sources-label": {
+      "type": "Text",
+      "props": {
+        "text": "Repository Status",
+        "variant": "muted"
+      }
+    },
+    "sources-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1",
+        "badge2",
+        "badge3",
+        "badge4",
+        "badge5"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "secondary"
+      }
+    }
+  }
+}
