@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-07-11T08:18:01Z",
-    "last_status": "success",
+    "last_dispatch": "2026-07-12T09:12:06Z",
+    "last_status": "dispatched",
     "last_failed": "2026-07-09T19:55:05Z",
     "total_runs": 5,
     "total_successes": 4,
@@ -12,7 +12,7 @@
     "last_success": "2026-07-11T08:21:33Z"
   },
   "github-monitor": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-07-11T09:54:51Z",
     "total_runs": 4,
     "total_successes": 4,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4,
-    "last_dispatch": "2026-07-11T09:50:44Z"
+    "last_dispatch": "2026-07-12T09:12:06Z"
   },
   "verdikta-hunter": {
     "last_status": "success",
@@ -44,7 +44,7 @@
     "last_quality_score": 4
   },
   "mention-radar": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-07-10T08:38:10Z",
     "total_runs": 2,
     "total_successes": 2,
@@ -52,7 +52,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4,
-    "last_dispatch": "2026-07-10T08:34:06Z"
+    "last_dispatch": "2026-07-12T09:12:06Z"
   },
   "write-tweet": {
     "last_dispatch": "2026-07-11T21:02:53Z",
@@ -76,8 +76,8 @@
     "success_rate": 1
   },
   "bd-radar": {
-    "last_dispatch": "2026-07-11T08:18:01Z",
-    "last_status": "success",
+    "last_dispatch": "2026-07-12T09:12:06Z",
+    "last_status": "dispatched",
     "last_success": "2026-07-11T08:25:57Z",
     "total_runs": 2,
     "total_successes": 2,
