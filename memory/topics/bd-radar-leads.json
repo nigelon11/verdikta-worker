@@ -39,12 +39,23 @@
       "fit": 2,
       "score": 4,
       "date_found": "2026-07-10"
+    },
+    {
+      "key": "github:bingmokaka",
+      "class": "integrating",
+      "who": "bingmokaka",
+      "signal": "PR #18 to verdikta-applications ('fix: align bounty submission scripts with ETH prepay') — fixed real ABI/flow bugs in the onboarding scripts (ethMaxBudget, payable startPreparedSubmission, stuck-submission diagnostics), 796/797 lines across 2 files, node --check + validate_contract_config.js testing evidence, closes issue #17 (nigelon11). Account is a serial cross-ecosystem bounty hunter (17 forked repos spanning bug-bounty/grant platforms) rather than a dedicated Verdikta builder, but this is a real, tested code contribution to the bounty-submission flow.",
+      "links": ["https://github.com/verdikta/verdikta-applications/pull/18"],
+      "fit": 3,
+      "score": 9,
+      "date_found": "2026-07-12"
     }
   ],
   "surfaced": [
     "github:s97472091-pixel",
     "github:aaronjmars/aeon-verdikta-hunter",
     "x:Fishhead8u",
-    "x:AjAkmarudi72937"
+    "x:AjAkmarudi72937",
+    "github:bingmokaka"
   ]
 }

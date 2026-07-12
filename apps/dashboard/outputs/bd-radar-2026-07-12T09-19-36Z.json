@@ -1,0 +1,241 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "BD Radar: New Integrating Lead",
+        "description": "Serial bounty hunter opens production-ready fix to verdikta-applications onboarding flow"
+      },
+      "children": [
+        "lead-section",
+        "sep1",
+        "detail-grid",
+        "sep2",
+        "assessment-section",
+        "sep3",
+        "carried-section",
+        "sep4",
+        "resources-section"
+      ]
+    },
+    "lead-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lead-name-heading",
+        "pr-link-card",
+        "issue-closed-badge"
+      ]
+    },
+    "lead-name-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "bingmokaka",
+        "level": "h2"
+      }
+    },
+    "pr-link-card": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #18: ETH-prepay ABI bug fixes in bounty submission onboarding scripts",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      }
+    },
+    "issue-closed-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Closes issue #17",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "detail-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-lines",
+        "stat-files",
+        "testing-badge"
+      ]
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "796/797"
+      }
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Modified",
+        "value": "2"
+      }
+    },
+    "testing-badge": {
+      "type": "Text",
+      "props": {
+        "text": "✓ node --check\n✓ validate_contract_config.js",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "assessment-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "assessment-heading",
+        "background-stack",
+        "quality-alert",
+        "action-text"
+      ]
+    },
+    "assessment-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Profile & Assessment",
+        "level": "h2"
+      }
+    },
+    "background-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-count-text",
+        "bounty-background-badge"
+      ]
+    },
+    "repo-count-text": {
+      "type": "Text",
+      "props": {
+        "text": "17 forked repos across bug-bounty/grant platforms"
+      }
+    },
+    "bounty-background-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Serial cross-ecosystem bounty hunter",
+        "variant": "outline"
+      }
+    },
+    "quality-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Contribution Quality: Solid",
+        "message": "Real tested fix addressing core onboarding infrastructure. Not a dedicated Verdikta builder, but the work is production-ready.",
+        "type": "success"
+      }
+    },
+    "action-text": {
+      "type": "Text",
+      "props": {
+        "text": "→ Thank on the PR and prioritize review/merge. Real fixes to the onboarding flow other builders rely on.",
+        "variant": "lead"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "carried-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "carried-heading",
+        "carried-table"
+      ]
+    },
+    "carried-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Carried Forward (No New Activity)",
+        "level": "h2"
+      }
+    },
+    "carried-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Lead",
+          "Status"
+        ],
+        "rows": [
+          [
+            "s97472091-pixel",
+            "Building – top lead"
+          ],
+          [
+            "aaronjmars/aeon",
+            "Integrating"
+          ],
+          [
+            "2 lower-priority mentions",
+            "Tracked"
+          ]
+        ]
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "resources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "resources-heading",
+        "digest-link"
+      ]
+    },
+    "resources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Report",
+        "level": "h3"
+      }
+    },
+    "digest-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "BD Radar Digest – 2026-07-12",
+        "href": "output/articles/bd-radar-2026-07-12.md",
+        "source": "Internal"
+      }
+    }
+  }
+}
