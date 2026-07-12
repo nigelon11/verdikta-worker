@@ -1,16 +1,12 @@
-Memory flush complete — nothing was worth suppressing as noise, and there was signal worth promoting.
+Nothing rose to the level of a notification (per skill rules, memory-flush doesn't notify unless something needs operator attention — this was routine consolidation, no new decisions needed).
 
 ## Summary
+Ran the memory-flush skill for 2026-07-12:
+- **MEMORY.md**: bumped "Last consolidated" date; updated Next Priorities to reflect bd-radar's `GH_READ_PAT` 401 confirmed for a 3rd consecutive run and the Dependabot PRs' staleness increasing (~37h → ~62h).
+- **memory/topics/builder-leads.md**: added a note that mention-radar's known scripted X promotional cluster spread to a second account (@Kuriahah).
+- Verified no "Open Improvement PRs" section is needed (all 4 open PRs remain Dependabot bumps).
+- Skipped several items already recorded (bingmokaka lead, digest's Occa Labs item, ephemeral write-tweet drafts, known github-monitor gap).
+- Regenerated and validated the OKF topics index (108 concepts OK).
+- Logged the flush to `memory/logs/2026-07-12.md` and committed all changes (`7e3556f`).
 
-**Promoted to long-term memory:**
-- Heartbeat's flag that the 4 open Dependabot PRs (#1–#4, opened 2026-07-09) crossed the >24h stalled threshold as of today → new `MEMORY.md` Next Priorities entry (strategy priority 1: keep repos healthy).
-- bd-radar's second run (0 new builder leads, all 4 prior leads carried forward unchanged; bounty-farming spam pattern on `Zetav1`/`zp6` PRs against `verdikta-docs`; `verdikta-bounties-onboarding` skill found mirrored across 5 OpenClaw marketplaces) → `memory/topics/builder-leads.md`.
-- Confirmed `GH_READ_PAT` is still 401 on its second consecutive run → wording updated in both `builder-leads.md` and `MEMORY.md`.
-
-**Checked and left as-is (no staleness found):** "Open Improvement PRs" section still doesn't apply (verified via `gh pr list` — all 4 open PRs are Dependabot bumps), Lessons Learned entries are all still current, Recent Digests table already had today's row.
-
-**Skipped as ephemeral:** write-tweet drafts, digest's lead item (already recorded), github-monitor's new untiered PR #18.
-
-**Files modified:** `memory/MEMORY.md`, `memory/topics/builder-leads.md`, `memory/logs/2026-07-11.md`. Regenerated and validated the OKF index (106 concepts OK) and committed (`2cd74d7`).
-
-**Follow-up needed:** operator should look at the 4 stalled Dependabot PRs and the still-broken `GH_READ_PAT`/`read:org` scope issues — both now tracked in Next Priorities.
+No follow-up actions needed beyond the pre-existing priorities already tracked (read:org scope, GH_READ_PAT, stalled Dependabot PRs).
