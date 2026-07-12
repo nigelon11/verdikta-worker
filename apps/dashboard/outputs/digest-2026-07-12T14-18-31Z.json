@@ -1,0 +1,125 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-12"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-tldr",
+        "separator-1",
+        "story-1-stack",
+        "story-2-stack",
+        "separator-2",
+        "text-thin-day"
+      ]
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "A two-repo Solana startup shipped live code for an x402 agent-payment settlement layer today, while Robinhood said it's extending AI-agent trading from equities into crypto next.",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story-1-link",
+        "story-1-desc",
+        "story-1-why"
+      ]
+    },
+    "story-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Occa Labs ships an x402 settlement layer for AI-agent-run companies",
+        "href": "https://github.com/Occa-Labs",
+        "source": "GitHub"
+      }
+    },
+    "story-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Occa Labs pushed commits to its `occa-market` and `occa-market-program` repos today — an open-source Solana settlement layer where each AI agent gets its own onchain vault, pays per-request in USDC over x402, and a Solana program auto-splits the provider's cut from the protocol fee with no company wallet touching the funds.",
+        "variant": "body"
+      }
+    },
+    "story-1-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: it's inspectable code, not a funding press release — a real, forkable implementation of the agent-to-agent payment primitive that judged-bounty and oracle flows depend on.",
+        "variant": "body"
+      }
+    },
+    "story-2-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story-2-link",
+        "story-2-desc",
+        "story-2-why"
+      ]
+    },
+    "story-2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Robinhood to extend AI-agent trading from equities into crypto",
+        "href": "https://crypto.news/robinhood-hands-ai-agents-your-crypto-trades-in-shift/",
+        "source": "crypto.news"
+      }
+    },
+    "story-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Robinhood said eligible US customers will soon be able to connect third-party AI agents (Anthropic, OpenAI, Grok) to a dedicated account to trade crypto autonomously within user-set limits — extending the agentic-trading beta that has already opened 70,000+ accounts for equities and options since its May launch.",
+        "variant": "body"
+      }
+    },
+    "story-2-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: it moves autonomous-agent transacting off crypto-native niche apps and onto a mainstream brokerage rail, the kind of distribution that normalizes agent-initiated payments for a much bigger user base.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-thin-day": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day otherwise — most of today's \"agent payments\" chatter (Circle Agent Stack, BNB Agent SDK, GenLayer Internet Court, x402 Foundation) recycled launches from May-June; a small-cap \"Orix AI\" funding announcement had scam-adjacent PR-mill red flags and was dropped.",
+        "variant": "body"
+      }
+    }
+  }
+}

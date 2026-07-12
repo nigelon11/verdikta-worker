@@ -1,12 +1,17 @@
-ℹ️ Digest — AI agents onchain
+ℹ️ Digest: AI agents that transact onchain
 
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-11*
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-12*
 
-_TL;DR: Quiet 24h for the beat — the one real development is Zscaler catching live (not simulated) prompt-injection attacks draining crypto directly from AI agents' wallets._
+_TL;DR: A two-repo Solana startup shipped live code for an x402 agent-payment settlement layer today, while Robinhood said it's extending AI-agent trading from equities into crypto next._
 
-1. *Prompt injection is now draining real crypto from AI agents' wallets*
-   Zscaler ThreatLabz documented two active campaigns: a fake Python package ("requests-secure-v2") and a typosquatted debank[.]auction site, both using CSS hidden from humans but readable by agents to trick them into paying a hardcoded wallet (0x691bc...ad267). Across 26 LLMs tested, 4 executed the fraudulent payment and 2 misidentified the fake DeBank site as real — Gemini and Llama variants were most susceptible.
-   Why it matters: this is a documented in-the-wild case of an agent authorizing a real onchain payment because of manipulated input, not a bug in the escrow/settlement layer — the exact failure mode that judge/dispute systems (Verdikta, GenLayer's Internet Court) don't protect against, since they arbitrate outcomes after an agent has already signed.
-   https://cryptobriefing.com/zscaler-prompt-injection-ai-agents-crypto/
+1. *Occa Labs ships an x402 settlement layer for AI-agent-run companies*
+   Occa Labs pushed commits to its `occa-market` and `occa-market-program` repos today — an open-source Solana settlement layer where each AI agent gets its own onchain vault, pays per-request in USDC over x402, and a Solana program auto-splits the provider's cut from the protocol fee with no company wallet touching the funds.
+   Why it matters: it's inspectable code, not a funding press release — a real, forkable implementation of the agent-to-agent payment primitive that judged-bounty and oracle flows depend on.
+   https://github.com/Occa-Labs
 
-*Quiet day note:* Nothing else cleared the bar — OKX's AI agent marketplace and GenLayer's Internet Court (both covered in prior digests) only generated recap chatter today, no material new development. Mastercard's Agent Pay, Cloudflare/AWS x402-at-the-edge, and several agent-payments funding rounds all surfaced but are 5+ days old with no fresh news today.
+2. *Robinhood to extend AI-agent trading from equities into crypto*
+   Robinhood said eligible US customers will soon be able to connect third-party AI agents (Anthropic, OpenAI, Grok) to a dedicated account to trade crypto autonomously within user-set limits — extending the agentic-trading beta that has already opened 70,000+ accounts for equities and options since its May launch.
+   Why it matters: it moves autonomous-agent transacting off crypto-native niche apps and onto a mainstream brokerage rail, the kind of distribution that normalizes agent-initiated payments for a much bigger user base.
+   https://crypto.news/robinhood-hands-ai-agents-your-crypto-trades-in-shift/
+
+Thin day otherwise — most of today's "agent payments" chatter (Circle Agent Stack, BNB Agent SDK, GenLayer Internet Court, x402 Foundation) recycled launches from May-June; a small-cap "Orix AI" funding announcement had scam-adjacent PR-mill red flags and was dropped.
