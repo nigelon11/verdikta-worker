@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-11T21:08:29Z",
+  "last_analyzed": "2026-07-12T21:09:49Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-documented skill run with proper API verification, timely topic selection, and memory updates; truncated output limits full verification of draft quality",
+  "assessment": "Substantive skill run with real API integration, strategic framing, multiple output options, and proper workflow; limited to 4 (not 5) due to truncated output preventing full tweet-quality verification",
   "flags": [],
-  "avg_score": 4.25,
+  "avg_score": 4.2,
   "history": [
     {
       "date": "2026-07-09",
@@ -20,6 +20,10 @@
     },
     {
       "date": "2026-07-11",
+      "score": 4
+    },
+    {
+      "date": "2026-07-12",
       "score": 4
     }
   ]
