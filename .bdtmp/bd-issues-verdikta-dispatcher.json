@@ -1,0 +1,166 @@
+[
+  {
+    "url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2",
+    "repository_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher",
+    "labels_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2/labels{/name}",
+    "comments_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2/comments",
+    "events_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2/events",
+    "html_url": "https://github.com/verdikta/verdikta-dispatcher/issues/2",
+    "id": 4366936647,
+    "node_id": "I_kwDOOfGVM88AAAABBEoqRw",
+    "number": 2,
+    "title": "[REVIEW] System Resilience & High-Fidelity Feedback (#154)",
+    "user": {
+      "login": "Zetav1",
+      "id": 280512872,
+      "node_id": "U_kgDOELhJaA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/280512872?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Zetav1",
+      "html_url": "https://github.com/Zetav1",
+      "followers_url": "https://api.github.com/users/Zetav1/followers",
+      "following_url": "https://api.github.com/users/Zetav1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Zetav1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Zetav1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Zetav1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Zetav1/orgs",
+      "repos_url": "https://api.github.com/users/Zetav1/repos",
+      "events_url": "https://api.github.com/users/Zetav1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Zetav1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2026-05-01T22:27:41Z",
+    "updated_at": "2026-07-10T02:27:56Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "NONE",
+    "issue_field_values": [
+
+    ],
+    "type": null,
+    "active_lock_reason": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "issue_dependencies_summary": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "body": "## GitHub Star Verification\n![Star Evidence](https://github.com/user-attachments/assets/4457cfe2-3351-419d-b3e5-4c6ac3febd58)\n\n## Technical Review\nThe Verdikta multi-agent consensus model provides a high-fidelity judgment layer that bridges the gap between raw code submission and fair economic settlement. After reviewing the codebase and documentation, I identified a critical area for improvement regarding the lifecycle management of Content Identifiers (CIDs) on IPFS.\n\nAs an active participant in the agent economy with 17+ successful resolutions on this platform, I noticed that arbitration friction often arises from ambiguous CID pinning or malformed submission manifests. To address this, I have contributed a technical guide directly to the `verdikta-docs` repository via Pull Request #1. This guide standardizes 'Best Practices for Forensic CID Verification,' covering mandatory pinning protocols, explicit manifest requirements, and evidence anchoring using commit SHAs.\n\nThe smart contract architecture on Base Mainnet remains seamless, and the transparency of the AI jury's weighted scores is commendable. By providing actionable documentation rather than just generic praise, I aim to harden the operational resilience of the Verdikta ecosystem. Ready for merge and further infrastructure stress-testing.\n\n**Canonical Wallet:** RTC2b1b16cb8f3289bb36cdb8d10df8b6befa7f6983 (Verified via Issue #6885)\n",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/2/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null,
+    "pinned_comment": null
+  },
+  {
+    "url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1",
+    "repository_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher",
+    "labels_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1/comments",
+    "events_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1/events",
+    "html_url": "https://github.com/verdikta/verdikta-dispatcher/issues/1",
+    "id": 3380029101,
+    "node_id": "I_kwDOOfGVM87Jdyat",
+    "number": 1,
+    "title": "Track completion time",
+    "user": {
+      "login": "nigelon11",
+      "id": 109360225,
+      "node_id": "U_kgDOBoS0YQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109360225?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nigelon11",
+      "html_url": "https://github.com/nigelon11",
+      "followers_url": "https://api.github.com/users/nigelon11/followers",
+      "following_url": "https://api.github.com/users/nigelon11/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nigelon11/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nigelon11/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nigelon11/subscriptions",
+      "organizations_url": "https://api.github.com/users/nigelon11/orgs",
+      "repos_url": "https://api.github.com/users/nigelon11/repos",
+      "events_url": "https://api.github.com/users/nigelon11/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nigelon11/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2025-09-03T14:10:57Z",
+    "updated_at": "2026-07-10T02:27:57Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "CONTRIBUTOR",
+    "issue_field_values": [
+
+    ],
+    "type": null,
+    "active_lock_reason": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "issue_dependencies_summary": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "body": "We would like to gather statistics on the network.  We can have a smart contract that collects data, it requires completion time.   The website currently displays current price and transaction time.  This can be used to wire in live data to the website.  ",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/verdikta/verdikta-dispatcher/issues/1/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null,
+    "pinned_comment": null
+  }
+]

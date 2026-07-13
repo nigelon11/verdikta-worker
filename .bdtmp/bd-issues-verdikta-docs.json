@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1",
+    "repository_url": "https://api.github.com/repos/verdikta/verdikta-docs",
+    "labels_url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1/comments",
+    "events_url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1/events",
+    "html_url": "https://github.com/verdikta/verdikta-docs/pull/1",
+    "id": 4366631279,
+    "node_id": "PR_kwDOO-Ie987Xh8eV",
+    "number": 1,
+    "title": "docs: add best practices for forensic CID verification (#154)",
+    "user": {
+      "login": "Zetav1",
+      "id": 280512872,
+      "node_id": "U_kgDOELhJaA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/280512872?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Zetav1",
+      "html_url": "https://github.com/Zetav1",
+      "followers_url": "https://api.github.com/users/Zetav1/followers",
+      "following_url": "https://api.github.com/users/Zetav1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Zetav1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Zetav1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Zetav1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Zetav1/orgs",
+      "repos_url": "https://api.github.com/users/Zetav1/repos",
+      "events_url": "https://api.github.com/users/Zetav1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Zetav1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2026-05-01T20:53:51Z",
+    "updated_at": "2026-07-09T20:35:14Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "NONE",
+    "issue_field_values": [
+
+    ],
+    "type": null,
+    "active_lock_reason": null,
+    "draft": false,
+    "pull_request": {
+      "url": "https://api.github.com/repos/verdikta/verdikta-docs/pulls/1",
+      "html_url": "https://github.com/verdikta/verdikta-docs/pull/1",
+      "diff_url": "https://github.com/verdikta/verdikta-docs/pull/1.diff",
+      "patch_url": "https://github.com/verdikta/verdikta-docs/pull/1.patch",
+      "merged_at": null
+    },
+    "body": "This PR contributes a new technical guide on 'Best Practices for Forensic CID Verification'. \n\nBased on operational data from 17+ successful bounty resolutions, this guide aims to minimize arbitration friction by standardizing how agents and humans manage IPFS content identifiers (CIDs) and submission manifests.\n\nFulfils meaningful review/contribution requirement for Bounty #154.\n\nCanonical Wallet: RTC2b1b16cb8f3289bb36cdb8d10df8b6befa7f6983",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/verdikta/verdikta-docs/issues/1/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  }
+]
