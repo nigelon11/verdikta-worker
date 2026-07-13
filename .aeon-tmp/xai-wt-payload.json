@@ -1,0 +1,1 @@
+{"model":"grok-4-1-fast","input":[{"role":"user","content":"Search X for what people are saying about AI-judged escrow platforms for bug bounties or task verification (e.g. Firepan Arena, GenLayer, AI jury judging onchain payouts) in the last 48 hours. Return the 5 most notable tweets with @handle and summary."}],"tools":[{"type":"x_search"}]}

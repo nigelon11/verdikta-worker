@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-12T21:09:49Z",
+  "last_analyzed": "2026-07-13T21:21:38Z",
   "quality_score": 4,
-  "assessment": "Substantive skill run with real API integration, strategic framing, multiple output options, and proper workflow; limited to 4 (not 5) due to truncated output preventing full tweet-quality verification",
+  "assessment": "Substantive output with verified trending narrative, generated 10 tweet drafts across tiers, sourced real bounty data, well-structured summary with follow-up interaction pattern",
   "flags": [],
-  "avg_score": 4.2,
+  "avg_score": 4.17,
   "history": [
     {
       "date": "2026-07-09",
@@ -24,6 +24,10 @@
     },
     {
       "date": "2026-07-12",
+      "score": 4
+    },
+    {
+      "date": "2026-07-13",
       "score": 4
     }
   ]
