@@ -1,0 +1,239 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents transacting onchain",
+        "description": "2026-07-13"
+      },
+      "children": [
+        "meta",
+        "tldr",
+        "sep1",
+        "story1_section",
+        "sep2",
+        "story2_section",
+        "sep3",
+        "quiet",
+        "dropped"
+      ]
+    },
+    "meta": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles",
+        "variant": "muted"
+      }
+    },
+    "tldr": {
+      "type": "Alert",
+      "props": {
+        "title": "TL;DR",
+        "message": "Binance's Agentic Wallet now speaks x402 across BNB Chain, Base and Solana, and a new AI-judged bug-bounty escrow platform (Firepan Arena) surfaced building the same verdict-plus-escrow model Verdikta uses, scoped to security bounties on Base.",
+        "type": "info"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story1_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story1_title",
+        "story1_body",
+        "story1_why_label",
+        "story1_why_text",
+        "story1_link"
+      ]
+    },
+    "story1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Binance Agentic Wallet adds native x402 payments on BNB Chain, Base and Solana",
+        "level": "h3"
+      }
+    },
+    "story1_body": {
+      "type": "Text",
+      "props": {
+        "text": "Binance's keyless MPC wallet for AI agents now settles pay-per-use requests via the x402 HTTP-native protocol — BNB Chain through Binance's own B402 facilitator, Base and Solana through third-party facilitators. Private keys never fully reconstruct on any device; agents act within pre-set spend rules.",
+        "variant": "body"
+      }
+    },
+    "story1_why_label": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters:",
+        "variant": "lead"
+      }
+    },
+    "story1_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "a top-3 exchange now lets agents route stablecoin payments across three chains without a human touching a card, narrowing the on-ramp gap that's held back live agent-to-agent commerce.",
+        "variant": "body"
+      }
+    },
+    "story1_link": {
+      "type": "Link",
+      "props": {
+        "label": "developers.binance.com/docs/agentic-wallet/welcome",
+        "href": "https://developers.binance.com/docs/agentic-wallet/welcome"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story2_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story2_title",
+        "story2_body",
+        "story2_status",
+        "story2_why_label",
+        "story2_why_text",
+        "story2_link"
+      ]
+    },
+    "story2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Firepan Arena: an AI-judged bug-bounty escrow platform surfaces on Base",
+        "level": "h3"
+      }
+    },
+    "story2_body": {
+      "type": "Text",
+      "props": {
+        "text": "Firepan Arena funds security-bounty pools in a multisig Safe (USDC on Base, sponsor signers required for payout), lets agents compete to find vulnerabilities, and has its own AI judge score every submission against published criteria — issuing a signed, reproducible PoC verdict instead of a human reviewer.",
+        "variant": "body"
+      }
+    },
+    "story2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "Private beta",
+        "variant": "outline"
+      }
+    },
+    "story2_why_label": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters:",
+        "variant": "lead"
+      }
+    },
+    "story2_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "it's the closest public comparable to Verdikta's two-model-jury design — signed on-chain verdicts plus non-custodial escrow — just scoped to security bounties instead of general work. Worth tracking as competitive or partnership signal.",
+        "variant": "body"
+      }
+    },
+    "story2_link": {
+      "type": "Link",
+      "props": {
+        "label": "www.firepan.com/arena",
+        "href": "https://www.firepan.com/arena"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "quiet": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise — fourth in a row for this topic.",
+        "variant": "muted"
+      }
+    },
+    "dropped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dropped_title",
+        "stale_section",
+        "unverifiable_section"
+      ]
+    },
+    "dropped_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Dropped items",
+        "level": "h4"
+      }
+    },
+    "stale_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stale_label",
+        "stale_items"
+      ]
+    },
+    "stale_label": {
+      "type": "Text",
+      "props": {
+        "text": "Stale/recap (>36h, already covered, or no material new development):",
+        "variant": "caption"
+      }
+    },
+    "stale_items": {
+      "type": "Text",
+      "props": {
+        "text": "• GenLayer Internet Court chatter (launched 2026-07-10, already this digest's 2026-07-10 lead)\n• OKX AI Marketplace (launched 2026-06-30)\n• Cambrian oracle $6M seed (2026-06-24)\n• Coinbase/AWS Bedrock AgentCore Payments (2026-05-07)\n• Keyrock $73M-settled report (republished from 2026-05-25)",
+        "variant": "body"
+      }
+    },
+    "unverifiable_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "unverifiable_label",
+        "unverifiable_items"
+      ]
+    },
+    "unverifiable_label": {
+      "type": "Text",
+      "props": {
+        "text": "Unverifiable/promotional:",
+        "variant": "caption"
+      }
+    },
+    "unverifiable_items": {
+      "type": "Text",
+      "props": {
+        "text": "• single-account X posts on Sui \"6M TPS\" agent claims\n• IXS Agentic Vault deposit\n• AgenC Solana-mainnet GPU loop\n(all low/zero engagement, no independent corroboration)",
+        "variant": "body"
+      }
+    }
+  }
+}

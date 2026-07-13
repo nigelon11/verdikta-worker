@@ -1,5 +1,3 @@
-ℹ️ Digest: AI agents transacting onchain
-
 *AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-13*
 
 _TL;DR: Binance's own Agentic Wallet now speaks x402 across BNB Chain, Base and Solana, and a new AI-judged bug-bounty escrow platform (Firepan Arena) surfaced building the same verdict-plus-escrow model Verdikta uses, scoped to security bounties on Base._
