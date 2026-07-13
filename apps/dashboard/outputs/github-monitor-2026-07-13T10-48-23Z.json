@@ -1,0 +1,173 @@
+{
+  "root": "github-monitor-card",
+  "state": {},
+  "elements": {
+    "github-monitor-card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-section",
+        "sources-section"
+      ]
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-heading",
+        "pr-list"
+      ]
+    },
+    "pr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "pr-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-18",
+        "pr-1",
+        "pr-8",
+        "pr-4",
+        "pr-2"
+      ]
+    },
+    "pr-18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — open 78h, no CI/review signal",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — open 86h, Vercel CI passing (known bounty-farming spam pattern)",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      }
+    },
+    "pr-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — open ~99d, no CI/review signal",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — open ~137d, no CI/review signal",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — open ~159d, Cursor Bugbot passing",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "separator",
+        "sources-heading",
+        "sources-grid"
+      ]
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h4"
+      }
+    },
+    "sources-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "sm"
+      },
+      "children": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5"
+      ]
+    },
+    "source-1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      }
+    },
+    "source-2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      }
+    },
+    "source-3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      }
+    },
+    "source-4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      }
+    },
+    "source-5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      }
+    }
+  }
+}
