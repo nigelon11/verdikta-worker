@@ -1,0 +1,311 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Shiplog: Jul 6 → Jul 13"
+      },
+      "children": [
+        "heading-shipped",
+        "stat-commits",
+        "stack-features",
+        "sep-1",
+        "heading-repos",
+        "stats-repos",
+        "sep-2",
+        "heading-twitter",
+        "stack-twitter",
+        "sep-3",
+        "heading-thread",
+        "stack-thread",
+        "sep-4",
+        "heading-short",
+        "stack-short",
+        "sep-5",
+        "link-article"
+      ]
+    },
+    "heading-shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped This Window",
+        "level": "h2"
+      }
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "18",
+        "delta": "across 2 repos"
+      }
+    },
+    "stack-features": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-feature1",
+        "text-feature2",
+        "text-feature3",
+        "text-feature4"
+      ]
+    },
+    "text-feature1": {
+      "type": "Text",
+      "props": {
+        "text": "Watchdog alerting: live arbiter/status-page alerts with node telemetry, uptime, and coverage tracking, across verdikta-applications + verdikta-arbiter"
+      }
+    },
+    "text-feature2": {
+      "type": "Text",
+      "props": {
+        "text": "Signature auth: dropped the shared-token fallback — watchdog events now require operator-owner signature verification (both repos)"
+      }
+    },
+    "text-feature3": {
+      "type": "Text",
+      "props": {
+        "text": "Bounty env hardening + 3 bug fixes: cancelled-bounty display, arbiter restart reliability, RPC finality-tolerant liveness"
+      }
+    },
+    "text-feature4": {
+      "type": "Text",
+      "props": {
+        "text": "No external-repo security merges this window",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-repos": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Stars",
+        "level": "h2"
+      }
+    },
+    "stats-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat-applications",
+        "stat-arbiter",
+        "stat-dispatcher",
+        "stat-docs",
+        "stat-roadmap"
+      ]
+    },
+    "stat-applications": {
+      "type": "Stat",
+      "props": {
+        "label": "applications",
+        "value": "24"
+      }
+    },
+    "stat-arbiter": {
+      "type": "Stat",
+      "props": {
+        "label": "arbiter",
+        "value": "22"
+      }
+    },
+    "stat-dispatcher": {
+      "type": "Stat",
+      "props": {
+        "label": "dispatcher",
+        "value": "17"
+      }
+    },
+    "stat-docs": {
+      "type": "Stat",
+      "props": {
+        "label": "docs",
+        "value": "72"
+      }
+    },
+    "stat-roadmap": {
+      "type": "Stat",
+      "props": {
+        "label": "roadmap",
+        "value": "0",
+        "delta": "first snapshot — deltas start next run"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-twitter": {
+      "type": "Heading",
+      "props": {
+        "text": "X Updates (@verdikta19633)",
+        "level": "h2"
+      }
+    },
+    "stack-twitter": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-twitter1",
+        "text-twitter2",
+        "text-twitter3"
+      ]
+    },
+    "text-twitter1": {
+      "type": "Text",
+      "props": {
+        "text": "ClawHub-hardened onboarding skill — passes ClawHub's own security checks, fastest wallet→fund→submit path for an agent"
+      }
+    },
+    "text-twitter2": {
+      "type": "Text",
+      "props": {
+        "text": "Windowed bounty demo: growth-idea pitch, approved on-chain in <1hr, <2¢ gas — the agent-to-agent procurement template"
+      }
+    },
+    "text-twitter3": {
+      "type": "Text",
+      "props": {
+        "text": "8 unsolved math/logic problems posted as on-chain bounties (Ramsey R(5,5), Busy Beaver BB(6), Perfect Cuboid, Vaught's, Frankl's Union-Closed)"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-thread": {
+      "type": "Heading",
+      "props": {
+        "text": "Thread Version",
+        "level": "h2"
+      }
+    },
+    "stack-thread": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-thread1",
+        "text-thread2",
+        "text-thread3",
+        "text-thread4",
+        "text-thread5",
+        "text-thread6"
+      ]
+    },
+    "text-thread1": {
+      "type": "Text",
+      "props": {
+        "text": "1/ Verdikta shiplog, Jul 6 → Jul 13: watchdog alerting shipped, auth got signature-hardened, and 8 genuinely unsolved math problems are now on-chain bounties."
+      }
+    },
+    "text-thread2": {
+      "type": "Text",
+      "props": {
+        "text": "2/ Live arbiter/status-page alerts with per-node telemetry + uptime, across verdikta-applications and verdikta-arbiter."
+      }
+    },
+    "text-thread3": {
+      "type": "Text",
+      "props": {
+        "text": "3/ Shared-token fallback is gone — watchdog events now require operator-owner signature verification in both repos."
+      }
+    },
+    "text-thread4": {
+      "type": "Text",
+      "props": {
+        "text": "4/ Plus: cancelled-bounty display fix, arbiter restart reliability, finality-tolerant RPC liveness."
+      }
+    },
+    "text-thread5": {
+      "type": "Text",
+      "props": {
+        "text": "5/ On X: a windowed bounty settled agent-to-agent in under an hour for <2¢ gas — a template for pre-committed rubric + escrow + instant settlement, no oracle."
+      }
+    },
+    "text-thread6": {
+      "type": "Text",
+      "props": {
+        "text": "6/ And: Perfect Cuboid, Ramsey R(5,5), Busy Beaver BB(6), Vaught's Conjecture, Frankl's Union-Closed — 8 open math problems, now on-chain bounties settled by multi-model AI consensus."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-short": {
+      "type": "Heading",
+      "props": {
+        "text": "Short Version",
+        "level": "h2"
+      }
+    },
+    "stack-short": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-short1",
+        "text-short2",
+        "text-short3"
+      ]
+    },
+    "text-short1": {
+      "type": "Text",
+      "props": {
+        "text": "Watchdog alerting + signature-based auth hardening shipped across verdikta-applications/verdikta-arbiter"
+      }
+    },
+    "text-short2": {
+      "type": "Text",
+      "props": {
+        "text": "A windowed bounty settled on-chain in <1hr for <2¢ gas — agent-to-agent procurement, live"
+      }
+    },
+    "text-short3": {
+      "type": "Text",
+      "props": {
+        "text": "8 unsolved math/logic problems posted as on-chain bounties (Ramsey, Busy Beaver, Perfect Cuboid, and more)"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Shiplog Article",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-07-13.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
