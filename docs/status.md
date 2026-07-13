@@ -8,7 +8,7 @@ permalink: /status/
 # Agent Status
 
 **Overall:** 🟡 WATCH
-**Updated:** 2026-07-12 09:13 UTC
+**Updated:** 2026-07-13 10:47 UTC
 **Open issues:** 0
 **Next scheduled run:** digest at 14:00 UTC
 
@@ -22,13 +22,13 @@ Regressions also surface as **votable** per-skill GitHub Issues (`health: <skill
 
 | Skill | Last run | Status | Success rate | Consecutive failures |
 |-------|----------|--------|-------------:|---------------------:|
-| memory-flush | 2026-07-11 23:35 UTC | ✅ success | 100% | 0 |
-| write-tweet | 2026-07-11 21:02 UTC | ✅ success | 100% | 0 |
-| digest | 2026-07-11 14:05 UTC | ✅ success | 100% | 0 |
-| github-monitor | 2026-07-11 09:50 UTC | ✅ success | 100% | 0 |
-| bd-radar | 2026-07-11 08:18 UTC | ✅ success | 100% | 0 |
-| heartbeat | 2026-07-11 08:18 UTC | ✅ success | 80% | 0 |
-| mention-radar | 2026-07-10 08:34 UTC | ✅ success | 100% | 0 |
+| bd-radar | 2026-07-13 07:59 UTC | ✅ success | 100% | 0 |
+| memory-flush | 2026-07-12 23:40 UTC | ✅ success | 100% | 0 |
+| write-tweet | 2026-07-12 21:10 UTC | ✅ success | 100% | 0 |
+| digest | 2026-07-12 14:19 UTC | ✅ success | 100% | 0 |
+| mention-radar | 2026-07-12 09:17 UTC | ✅ success | 100% | 0 |
+| github-monitor | 2026-07-12 09:16 UTC | ✅ success | 100% | 0 |
+| heartbeat | 2026-07-12 09:15 UTC | ✅ success | 83% | 0 |
 | shiplog | — | not yet run | — | — |
 
 ## Open issues
