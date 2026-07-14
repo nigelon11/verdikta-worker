@@ -43,5 +43,5 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 as of 2026-07-11 through 2026-07-13 — 4 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 through 2026-07-14 — 5 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
 - 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~101h) as of 2026-07-14 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
