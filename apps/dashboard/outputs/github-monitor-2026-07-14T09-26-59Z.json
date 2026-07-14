@@ -1,0 +1,150 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "status-alert",
+        "sep1",
+        "findings-heading",
+        "pr-stack",
+        "sep2",
+        "sources-section"
+      ]
+    },
+    "status-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "No action required"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "findings-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h4"
+      }
+    },
+    "pr-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-1",
+        "pr-2",
+        "pr-3",
+        "pr-4",
+        "pr-5"
+      ]
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — no CI configured, idle ~100h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — Vercel check passing, idle ~109h",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — no CI, idle ~99d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — no CI, idle ~138d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — Cursor Bugbot check passing, idle ~159d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-heading",
+        "sources-table"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h4"
+      }
+    },
+    "sources-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
