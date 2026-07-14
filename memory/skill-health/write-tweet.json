@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-13T21:21:38Z",
+  "last_analyzed": "2026-07-14T21:20:28Z",
   "quality_score": 4,
-  "assessment": "Substantive output with verified trending narrative, generated 10 tweet drafts across tiers, sourced real bounty data, well-structured summary with follow-up interaction pattern",
+  "assessment": "End-to-end completion with original angle, live API verification (http=200), and proper Aeon workflow integration; draft quality unverified due to truncation.",
   "flags": [],
-  "avg_score": 4.17,
+  "avg_score": 4.14,
   "history": [
     {
       "date": "2026-07-09",
@@ -28,6 +28,10 @@
     },
     {
       "date": "2026-07-13",
+      "score": 4
+    },
+    {
+      "date": "2026-07-14",
       "score": 4
     }
   ]
