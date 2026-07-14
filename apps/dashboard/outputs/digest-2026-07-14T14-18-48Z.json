@@ -1,0 +1,289 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "2026-07-14"
+      },
+      "children": [
+        "tldr-section",
+        "sep-1",
+        "story-1",
+        "sep-2",
+        "story-2",
+        "sep-3",
+        "story-3",
+        "sep-4",
+        "also-section"
+      ]
+    },
+    "tldr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr-label",
+        "tldr-text"
+      ]
+    },
+    "tldr-label": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR",
+        "variant": "lead"
+      }
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase re-prioritizes Base around agent payments as SBI/Solana and XRPL post concrete institutional and usage numbers for AI-agent transacting the same day."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story1-title",
+        "story1-quote",
+        "story1-roadmap",
+        "story1-why"
+      ]
+    },
+    "story1-title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Coinbase admits Base's content-coin bet failed, refocuses on trading, payments, agents",
+        "href": "https://crypto.news/coinbase-ceo-admits-base-messed-up-on-content-coins/",
+        "source": "Crypto News"
+      }
+    },
+    "story1-quote": {
+      "type": "Text",
+      "props": {
+        "text": "Brian Armstrong: \"They didn't work and we pivoted early this year. We messed up.\"",
+        "variant": "body"
+      }
+    },
+    "story1-roadmap": {
+      "type": "Text",
+      "props": {
+        "text": "Base's roadmap now explicitly ranks trading, payments, and agents — in that order — as \"inextricably intertwined,\" building on x402 and June's \"Coinbase for Agents\" account-linking platform.",
+        "variant": "body"
+      }
+    },
+    "story1-why": {
+      "type": "Alert",
+      "props": {
+        "title": "Why it matters",
+        "message": "The chain hosting Verdikta's BountyEscrow contract just named agent payments a top-3 strategic priority, not a side experiment.",
+        "type": "info"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story2-title",
+        "story2-jv-details",
+        "story2-why"
+      ]
+    },
+    "story2-title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "SBI Holdings and Solana Foundation form SBI Solana Global joint venture",
+        "href": "https://www.coindesk.com/business/2026/07/13/sbi-holdings-blockchain-initiative-pivots-to-solana-for-tokenization-stablecoin-issuance",
+        "source": "CoinDesk"
+      }
+    },
+    "story2-jv-details": {
+      "type": "Text",
+      "props": {
+        "text": "The JV (with SMFG as a shareholder) will issue Japan's yen stablecoin JPYSC, tokenize RWAs, and build \"next-generation payment systems tailored for the AI agent era\" — explicitly naming machine-to-machine payment infrastructure as a core mandate.",
+        "variant": "body"
+      }
+    },
+    "story2-why": {
+      "type": "Alert",
+      "props": {
+        "title": "Why it matters",
+        "message": "A regulated Japanese financial conglomerate is now building AI-agent payment rails, not just a crypto-native startup.",
+        "type": "info"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story3-title",
+        "story3-mechanism",
+        "story3-stats",
+        "story3-why"
+      ]
+    },
+    "story3-title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "XRP Ledger crosses 1M AI-agent transactions as t54.ai's XRPL AI Hub goes live",
+        "href": "https://thecryptobasic.com/2026/07/14/xrp-ledger-records-over-1-million-ai-agent-transactions-as-autonomous-payments-grow/",
+        "source": "The Crypto Basic"
+      }
+    },
+    "story3-mechanism": {
+      "type": "Text",
+      "props": {
+        "text": "Agents request services, get priced, and settle in XRP or RLUSD without human intervention.",
+        "variant": "body"
+      }
+    },
+    "story3-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-txns",
+        "stat-merchants",
+        "stat-concentration"
+      ]
+    },
+    "stat-txns": {
+      "type": "Stat",
+      "props": {
+        "label": "AI-agent transactions",
+        "value": "1M+"
+      }
+    },
+    "stat-merchants": {
+      "type": "Stat",
+      "props": {
+        "label": "Active merchants",
+        "value": "121"
+      }
+    },
+    "stat-concentration": {
+      "type": "Progress",
+      "props": {
+        "value": 77,
+        "max": 100,
+        "label": "Volume in top 3 players"
+      }
+    },
+    "story3-why": {
+      "type": "Alert",
+      "props": {
+        "title": "Why it matters",
+        "message": "First hard usage number (not a launch announcement) for agent-to-agent payments at this scale on a major public ledger.",
+        "type": "info"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "also-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "also-heading",
+        "also-item-1",
+        "also-item-2"
+      ]
+    },
+    "also-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      }
+    },
+    "also-item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "also-1-title",
+        "also-1-detail"
+      ]
+    },
+    "also-1-title": {
+      "type": "Text",
+      "props": {
+        "text": "NEC and Ava Labs' biometric-verified stablecoin framework for AI-agent authentication",
+        "variant": "body"
+      }
+    },
+    "also-1-detail": {
+      "type": "Badge",
+      "props": {
+        "text": "MoU signed 07-10, no PoC timeline",
+        "variant": "outline"
+      }
+    },
+    "also-item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "also-2-title",
+        "also-2-detail"
+      ]
+    },
+    "also-2-title": {
+      "type": "Text",
+      "props": {
+        "text": "GenLayer's Internet Court",
+        "variant": "body"
+      }
+    },
+    "also-2-detail": {
+      "type": "Badge",
+      "props": {
+        "text": "Previous digest lead — X commentary, no new development",
+        "variant": "outline"
+      }
+    }
+  }
+}

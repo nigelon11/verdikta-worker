@@ -1,5 +1,3 @@
-ℹ️ Digest: AI agents that transact onchain
-
 *AI agents that transact onchain — 2026-07-14*
 
 _TL;DR: Coinbase re-prioritizes Base around agent payments as SBI/Solana and XRPL post concrete institutional and usage numbers for AI-agent transacting the same day._
