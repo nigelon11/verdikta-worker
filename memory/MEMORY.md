@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-07-12*
+*Last consolidated: 2026-07-14*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -27,6 +27,7 @@ type: Index
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
+| shiplog | 2026-07-13 | Weekly PR/commit/star digest across public `verdikta/*` repos; first run established star baseline (verdikta-docs 72, verdikta-applications 24, verdikta-arbiter 22, verdikta-dispatcher 17, verdikta-roadmap 0). Correctly excluded 19 PRs to private `verdikta-agents` per STRATEGY.md public-repos-only constraint. |
 
 ## Dogfooding (verdikta-hunter)
 - First win 2026-07-09: bounty #142, score 93.375 vs 90 threshold, 0.00434 ETH payout, tx `0xc36293e...fabd778`. Details: [topics/verdikta-hunter.md](topics/verdikta-hunter.md)
@@ -42,5 +43,5 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 as of 2026-07-11 and 2026-07-12 — 3 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
-- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~62h) as of 2026-07-12 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 as of 2026-07-11 through 2026-07-13 — 4 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~101h) as of 2026-07-14 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
