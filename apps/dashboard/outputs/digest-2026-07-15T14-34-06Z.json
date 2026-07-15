@@ -1,0 +1,207 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-15"
+      },
+      "children": [
+        "tldr_heading",
+        "tldr_text",
+        "separator_1",
+        "stories_heading",
+        "story_1_stack",
+        "story_2_stack",
+        "story_3_stack",
+        "separator_2",
+        "worthaglance_heading",
+        "worthaglance_stack"
+      ]
+    },
+    "tldr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Circle, Visa, Mastercard and Google just gave the AI-agent payment rail (x402) formal governance under the Linux Foundation, while Injective shipped a packaged SDK for building onchain trading agents and GenLayer's AI-jury system published its first real cost/throughput numbers."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stories_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stories",
+        "level": "h2"
+      }
+    },
+    "story_1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_1_title",
+        "story_1_description",
+        "story_1_why",
+        "story_1_link"
+      ]
+    },
+    "story_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Circle, Visa, Mastercard join x402 Foundation as Linux Foundation formalizes AI-agent payments",
+        "level": "h3"
+      }
+    },
+    "story_1_description": {
+      "type": "Text",
+      "props": {
+        "text": "The Linux Foundation operationally launched the x402 Foundation on July 14 — open governance for the HTTP-402 payment protocol AI agents use for micropayments. Circle joined as a premier member alongside Visa, Mastercard, AWS, Google, Stripe, Coinbase, Ripple, and 30+ others. The protocol already clears ~75M transactions / $24M value monthly (30-day rolling, ~32¢ avg)."
+      }
+    },
+    "story_1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: the rail agents already move money through just gained vendor-neutral governance and mainstream financial backing — lower platform risk for anyone building agent-payment flows on it.",
+        "variant": "muted"
+      }
+    },
+    "story_1_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read more",
+        "href": "https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications"
+      }
+    },
+    "story_2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_2_title",
+        "story_2_description",
+        "story_2_why",
+        "story_2_link"
+      ]
+    },
+    "story_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Injective ships installable SDK for autonomous onchain trading agents",
+        "level": "h3"
+      }
+    },
+    "story_2_description": {
+      "type": "Text",
+      "props": {
+        "text": "Injective launched its iAgent SDK (npm install -g @injectivelabs/ainj) on July 14 — market data, wallet queries, order execution, and cross-chain bridging bundled for Claude Code/Cursor-style MCP agents, on a chain with 650ms finality and ~$0.0003/tx fees."
+      }
+    },
+    "story_2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: agent tooling is moving from bespoke integration to packaged SDKs — the same maturation curve bounty-hunter agents are on.",
+        "variant": "muted"
+      }
+    },
+    "story_2_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read more",
+        "href": "https://www.theblock.co/post/327262/injective-launches-sdk-that-lets-users-create-their-own-onchain-ai-agent"
+      }
+    },
+    "story_3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_3_title",
+        "story_3_description",
+        "story_3_why",
+        "story_3_link"
+      ]
+    },
+    "story_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "GenLayer's AI-jury \"Internet Court\" reveals real numbers: 350k cases/day, $0.85–1.45 each",
+        "level": "h3"
+      }
+    },
+    "story_3_description": {
+      "type": "Text",
+      "props": {
+        "text": "Mainstream coverage this week quantified GenLayer's multi-LLM jury system (first reported 07-10): a 27-company consortium (OKX, MetaMask, BNB Chain, ZKsync) is running it in beta at ~350k transactions/day, with 5-validator juries — each a different LLM — resolving disputes in 30–60 minutes for $0.85–1.45/case."
+      }
+    },
+    "story_3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: first hard cost/latency benchmark from the closest AI-jury comparable to Verdikta's two-model design.",
+        "variant": "muted"
+      }
+    },
+    "story_3_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read more",
+        "href": "https://www.forbes.com/sites/ninabambysheva/2026/07/10/all-rise-internet-court-for-ai-agents-is-in-session/"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "worthaglance_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h2"
+      }
+    },
+    "worthaglance_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "worthaglance_item_1",
+        "worthaglance_item_2"
+      ]
+    },
+    "worthaglance_item_1": {
+      "type": "Text",
+      "props": {
+        "text": "TermiX launched an escrow-based agent marketplace on BNB Chain (announced 07-07; mainnet timing/metrics still unverified)"
+      }
+    },
+    "worthaglance_item_2": {
+      "type": "Text",
+      "props": {
+        "text": "OttoAI's claimed \"20k+ x402 payments in 5 days\" remains a single-source, unconfirmed number."
+      }
+    }
+  }
+}
