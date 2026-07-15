@@ -1,0 +1,176 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-summary",
+        "sep1",
+        "heading-info",
+        "stack-issues",
+        "sep2",
+        "heading-sources",
+        "grid-sources"
+      ]
+    },
+    "stat-summary": {
+      "type": "Stat",
+      "props": {
+        "label": "Repos Scanned",
+        "value": "5"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-info": {
+      "type": "Heading",
+      "props": {
+        "text": "INFO",
+        "level": "h3"
+      }
+    },
+    "stack-issues": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-1",
+        "issue-2",
+        "issue-3",
+        "issue-4",
+        "issue-5",
+        "text-more"
+      ]
+    },
+    "issue-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#24 opened, no priority label",
+        "href": "https://github.com/verdikta/verdikta-applications/issues/24",
+        "source": "verdikta-applications"
+      }
+    },
+    "issue-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#8 opened, no priority label",
+        "href": "https://github.com/verdikta/verdikta-arbiter/issues/8",
+        "source": "verdikta-arbiter"
+      }
+    },
+    "issue-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#23 opened, no priority label",
+        "href": "https://github.com/verdikta/verdikta-applications/issues/23",
+        "source": "verdikta-applications"
+      }
+    },
+    "issue-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#22 opened, no priority label",
+        "href": "https://github.com/verdikta/verdikta-applications/issues/22",
+        "source": "verdikta-applications"
+      }
+    },
+    "issue-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#21 opened, no priority label",
+        "href": "https://github.com/verdikta/verdikta-applications/issues/21",
+        "source": "verdikta-applications"
+      }
+    },
+    "text-more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 14 more (bulk backlog issues + long-idle PRs — see log)",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Health",
+        "level": "h3"
+      }
+    },
+    "grid-sources": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "sm"
+      },
+      "children": [
+        "badge-app",
+        "badge-arb",
+        "badge-disp",
+        "badge-docs",
+        "badge-road"
+      ]
+    },
+    "badge-app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      }
+    },
+    "badge-arb": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      }
+    },
+    "badge-disp": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      }
+    },
+    "badge-docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      }
+    },
+    "badge-road": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      }
+    }
+  }
+}

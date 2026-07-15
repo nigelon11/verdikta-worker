@@ -1,12 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-07-14T09:26:59Z",
-  "quality_score": 3,
-  "assessment": "Skill executed correctly with clear output, but minimal new signal—confirmed repo stability with no action items or changes from previous run.",
-  "flags": [
-    "stale_data"
-  ],
-  "avg_score": 3.86,
+  "last_analyzed": "2026-07-15T09:34:35Z",
+  "quality_score": 4,
+  "assessment": "Ran successfully with substantive, specific analysis across 5 repos; properly triaged activity, distinguished operator self-activity from external signals, tracked idle PRs, and documented known limitations.",
+  "flags": [],
+  "avg_score": 3.88,
   "history": [
     {
       "date": "2026-07-09",
@@ -35,6 +33,10 @@
     {
       "date": "2026-07-14",
       "score": 3
+    },
+    {
+      "date": "2026-07-15",
+      "score": 4
     }
   ]
 }

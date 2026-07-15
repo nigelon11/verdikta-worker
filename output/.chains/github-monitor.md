@@ -1,10 +1,9 @@
-ℹ️ GitHub Monitor
-
 *GitHub Monitor* — 5 repos scanned, 0 need action
 ▶ INFO
-  • Note verdikta-applications#18 — no CI configured, idle ~100h — https://github.com/verdikta/verdikta-applications/pull/18
-  • Note verdikta-docs#1 — Vercel check passing, idle ~109h — https://github.com/verdikta/verdikta-docs/pull/1
-  • Note verdikta-applications#8 — no CI, idle ~99d — https://github.com/verdikta/verdikta-applications/pull/8
-  • Note verdikta-applications#4 — no CI, idle ~138d — https://github.com/verdikta/verdikta-applications/pull/4
-  • Note verdikta-applications#2 — Cursor Bugbot check passing, idle ~159d — https://github.com/verdikta/verdikta-applications/pull/2
+  • Note verdikta-applications#24 opened, no priority label — https://github.com/verdikta/verdikta-applications/issues/24
+  • Note verdikta-arbiter#8 opened, no priority label — https://github.com/verdikta/verdikta-arbiter/issues/8
+  • Note verdikta-applications#23 opened, no priority label — https://github.com/verdikta/verdikta-applications/issues/23
+  • Note verdikta-applications#22 opened, no priority label — https://github.com/verdikta/verdikta-applications/issues/22
+  • Note verdikta-applications#21 opened, no priority label — https://github.com/verdikta/verdikta-applications/issues/21
+  • …and 14 more (bulk backlog issues + long-idle PRs — see log)
 sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok
