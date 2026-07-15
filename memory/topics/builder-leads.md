@@ -3,7 +3,7 @@ type: Reference
 title: Builder Leads — bd-radar findings
 description: High-intent third-party builders found by bd-radar, ranked by intent per STRATEGY.md priority 2 (find the builders).
 tags: [bd-radar, leads, builders]
-timestamp: 2026-07-14T12:00:00Z
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Builder Leads
@@ -11,14 +11,14 @@ timestamp: 2026-07-14T12:00:00Z
 Tracked in full (with dedup state) at `memory/topics/bd-radar-leads.json`. Human-readable summary of the highest-intent finds below.
 
 ## Building
-- **s97472091-pixel ("pipsss")** — shipped a Python SDK (`verdikta-sdk`, `verdikta-sdk-v2`) + integration guide + bounty workshop for the Bounties API, all unprompted Jun30–Jul7 2026. Also opened PR #632 to `aaronjmars/aeon`'s verdikta-hunter skill and completed bounty #97. Highest-intent lead found so far.
+- **s97472091-pixel ("pipsss")** — shipped a Python SDK (`verdikta-sdk`, `verdikta-sdk-v2`) + integration guide + bounty workshop for the Bounties API, all unprompted Jun30–Jul7 2026. Also opened PR #632 to `aaronjmars/aeon`'s verdikta-hunter skill and completed bounty #97. Kept shipping Jul7–14: 3 case-study repos + a hosted `verdikta-playbook` site (scoring criteria/failure patterns from 170+ submissions) + a Medium deep-dive on a 99/100-scored bounty. Highest-intent lead found so far.
 
 ## Integrating
 - **aaronjmars/aeon-agent** (renamed from `aeon` by 2026-07-14, 10★ public Aeon framework fork) — built an in-tree verdikta-hunter skill Jul1–6 2026, accidentally dropped it in a restructure (PR #647). Maintainer replied to issue #681 ("will keep an eye on it once refactor lands", closed 2026-07-08). Rename confirmed via 301 redirect (same maintainer/star count); skill still not restored as of 2026-07-14. Worth a future nudge once their refactor lands.
 - **bingmokaka** — [PR #18](https://github.com/verdikta/verdikta-applications/pull/18) to `verdikta-applications` (2026-07-10): fixed real ABI/flow bugs in the bounty-submission onboarding scripts (ETH-prepay alignment, stuck-submission diagnostics), tested, closes issue #17. Profile is a serial cross-ecosystem bounty hunter (17 forked repos across many bug-bounty/grant platforms), not a dedicated Verdikta builder — but a real, useful contribution to the flow other builders rely on. Found 2026-07-12.
 
 ## Mentioning (lower priority)
-- **@AjAkmarudi72937** — organic-reading CN-language explainer posts about Verdikta's bounty flow (2026-07-07), also flagged by mention-radar as possibly scripted (low engagement, 6 near-identical posts in 2 min).
+- **@AjAkmarudi72937** — organic-reading CN-language explainer posts about Verdikta's bounty flow (2026-07-07), also flagged by mention-radar as possibly scripted (low engagement, 6 near-identical posts in 2 min). 2026-07-14: shifted to genuine amplification — quoted s97472091-pixel's Medium post and shared their playbook site.
 - **@Fishhead8u** — friction complaint about targeted-bounty pay/access (2026-07-08) — a real usability signal, not a lead.
 
 ## Notes
@@ -28,3 +28,4 @@ Tracked in full (with dedup state) at `memory/topics/bd-radar-leads.json`. Human
 - 2026-07-12 (mention-radar): the scripted/promotional X cluster (originally @AjAkmarudi72937, flagged 2026-07-09) has a second account — **@Kuriahah** (32 followers) — posting the same near-identical talking points in a tight cluster (2026-07-06), 0-1 likes each. Same bounty-farming/incentivized-post pattern, not organic; watch for further spread.
 - 2026-07-13 (4th bd-radar run): 0 new leads — all 5 leads carried forward unchanged, no new activity from any. `GH_READ_PAT` still 401 (4th consecutive run, unchanged since 2026-07-10). Two GenLayer-based "AI-judged bounty" repos (`kmgdz/bounty-hunter-genlayer`, `tochukwuada/genlayer-bounty-escrow`) surfaced via term search but have zero Verdikta references — convergent naming only, dropped. X: zero third-party mentions, 3rd consecutive quiet window. Web: zero independent mentions.
 - 2026-07-14 (5th bd-radar run): 0 new leads — all 5 leads carried forward unchanged. `GH_READ_PAT` still 401 (5th consecutive run, unchanged since 2026-07-10) — flagged again for the operator to fix. Confirmed `aaronjmars/aeon` renamed to `aaronjmars/aeon-agent` (301 redirect, same maintainer/10★) — updated tracked-lead link, skill still not restored. The `Zetav1` "Canonical Wallet" bounty-farming boilerplate (previously only against `verdikta-docs`) reappeared as issue #2 on `verdikta-dispatcher` — same cluster, now spread to a second repo, still not a lead but watch for further spread. A "Verdikta-aligned agent" Moltbook persona (`DrossAgent_zzgual`) traced to the project's own `@verdikta19633` account — first-party, dropped. X: zero third-party mentions, 4th consecutive quiet window. Web: zero independent mentions.
+- 2026-07-15 (6th bd-radar run): 0 new leads — all 5 carried forward, but the top building lead escalated: **s97472091-pixel** shipped 3 more "case study" repos plus a hosted `verdikta-playbook` site (scoring criteria/failure patterns/checklist mined from 170+ submissions) and a Medium deep-dive on a 99/100-scored bounty, all Jul7–14, still unprompted. **@AjAkmarudi72937** (previously flagged as possibly-scripted) shifted from templated posts to genuine amplification — quoting that Medium post and sharing the playbook link, Jul14. GitHub forks/issues: no new independent activity; `Zetav1` cluster unchanged. X: only the two already-tracked handles, no new third-party mentions, 5th consecutive quiet window for anyone else. Web: zero independent mentions, 6th consecutive quiet window. `GH_READ_PAT` still 401 (6th consecutive run, unchanged since 2026-07-10) — public API fallback continues to work fine.

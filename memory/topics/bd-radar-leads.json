@@ -4,8 +4,8 @@
       "key": "github:s97472091-pixel",
       "class": "building",
       "who": "s97472091-pixel (\"pipsss\")",
-      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97",
-      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop"],
+      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97. Continued Jul7-14: 3 'evidence screenshot' case-study repos (bounty #144 math/logic analysis) + a hosted verdikta-playbook site (scoring criteria/failure patterns/checklist from 170+ submissions) + a Medium deep-dive on bounty #40 (99/100 score) — sustained, escalating output, still unprompted.",
+      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop", "https://s97472091-pixel.github.io/verdikta-playbook/"],
       "fit": 3,
       "score": 15,
       "date_found": "2026-07-10"
@@ -34,8 +34,8 @@
       "key": "x:AjAkmarudi72937",
       "class": "mentioning",
       "who": "@AjAkmarudi72937",
-      "signal": "3 posts 2026-07-07 explaining Verdikta bounty flow to CN Web3 audience, organic evangelism",
-      "links": ["https://x.com/AjAkmarudi72937/status/2074605184676958704"],
+      "signal": "3 posts 2026-07-07 explaining Verdikta bounty flow to CN Web3 audience, organic evangelism (previously flagged as possibly scripted by mention-radar). 2026-07-14: 3 more posts, now substantive not templated — quotes/links a Medium deep-dive (by s97472091, the tracked builder) analyzing bounty #40's 99/100 score, and shares s97472091-pixel's new verdikta-playbook site — amplifying the top building lead, not just self-narrating.",
+      "links": ["https://x.com/AjAkmarudi72937/status/2074605184676958704", "https://x.com/AjAkmarudi72937/status/2077103364916273584"],
       "fit": 2,
       "score": 4,
       "date_found": "2026-07-10"
