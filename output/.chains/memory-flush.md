@@ -1,16 +1,12 @@
-Committed directly to `main` (`150f4da`), consistent with the repo's existing pattern of cron-committed memory updates.
+No signal worth notifying on (routine memory consolidation, no urgent findings) — per skill/CLAUDE.md conventions, notify is skipped.
 
 ## Summary
+Ran the memory-flush skill for its second same-day pass, covering 2026-07-15 activity that landed after the morning's flush (bd-radar 6th run, heartbeat, github-monitor, digest, write-tweet).
 
-Ran the `memory-flush` skill (no `var`, so flushed all recent activity):
+**Changes:**
+- `memory/MEMORY.md`: updated the Builder Leads summary (s97472091-pixel's continued escalation — 3 case-study repos, hosted playbook site, Medium deep-dive; @AjAkmarudi72937's shift to genuine amplification), bumped the `GH_READ_PAT` 401 counter to 6 consecutive runs, bumped Dependabot PR age to ~134h, and added a new watch item for `verdikta-arbiter#9`'s failing Gitleaks scan (currently hidden from github-monitor as a draft PR).
+- `memory/logs/2026-07-15.md`: appended a `memory-flush (2nd run)` log entry documenting what was promoted, checked, and skipped.
 
-- Reviewed `memory/MEMORY.md` plus the 2026-07-13 and 2026-07-14 logs (07-13 was already flushed on 07-14; the later 07-14 activity — bd-radar's 5th run, heartbeat, github-monitor, digest, mention-radar, write-tweet — hadn't been reviewed yet).
-- **Updated MEMORY.md:**
-  - Bumped "Last consolidated" to 2026-07-15.
-  - Builder Leads: reflected `aaronjmars/aeon` → `aaronjmars/aeon-agent` rename, and flagged the `Zetav1` bounty-farming boilerplate spreading from `verdikta-docs` to `verdikta-dispatcher`.
-  - Next Priorities: refreshed Dependabot PR staleness to ~125h (confirmed via `gh pr list` all 4 still open in `nigelon11/verdikta-worker`, unchanged since 07-09) and clarified they're in this repo, not `verdikta/*`.
-- Confirmed no stale sections to prune: "Open Improvement PRs" search still only returns the known false positive; `memory/issues/INDEX.md` still empty; Lessons Learned all still current.
-- `topics/builder-leads.md` needed no backfill — bd-radar already writes its own detailed entries there.
-- Logged the flush to new `memory/logs/2026-07-15.md`.
+Verified `gh pr list --search "improve:"` and Dependabot state directly rather than trusting stale log numbers. Skipped promoting github-monitor's 15 new issues (operator's own bulk backlog-planning burst, not external signal) and the ephemeral write-tweet draft. Committed both files to `main` (`6c77926`).
 
-No follow-up actions beyond what's already tracked in MEMORY.md's Next Priorities (read:org scope, bd-radar's `GH_READ_PAT`, and the stalled Dependabot PRs).
+No follow-up actions needed beyond the existing Next Priorities list.
