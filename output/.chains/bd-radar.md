@@ -1,23 +1,14 @@
-Good — `.tmp-*` is already gitignored, so the scratch files won't be committed. Everything is in order.
-
 ## Summary
 
-Ran the 5th `bd-radar` sweep for 2026-07-14 (Verdikta, per `memory/products.md`). **0 new leads** — all 5 tracked leads carry forward unchanged (1 `building`, 2 `integrating`, 2 `mentioning`).
+Ran `bd-radar` (6th run). Swept GitHub forks/issues (5 watched Verdikta repos), `gh search`, xAI X-search, and web/HN/Reddit — **0 new leads**. Findings:
 
-Notable findings this run (none rose to lead-worthy, all logged for context):
-- `GH_READ_PAT` still 401 — **5th consecutive run**, public API fallback worked fine.
-- Confirmed `aaronjmars/aeon` → `aaronjmars/aeon-agent` rename (301 redirect, same maintainer/10★); verdikta-hunter skill still not restored.
-- The known `Zetav1` bounty-farming spam pattern ("Canonical Wallet" boilerplate) spread from `verdikta-docs` to a new issue on `verdikta-dispatcher` — worth continued watch.
-- A Moltbook "Verdikta-aligned agent" persona traced back to Verdikta's own `@verdikta19633` account — first-party, dropped.
-- X: 4th consecutive quiet window (only the official account posted). Web: zero independent mentions.
+- **s97472091-pixel** (top `building` lead) kept shipping unprompted: 3 case-study repos + a hosted `verdikta-playbook` site + a Medium deep-dive, all Jul7–14.
+- **@AjAkmarudi72937** (previously flagged as possibly-scripted `mentioning` lead) shifted to genuine amplification — quoting that Medium post and sharing the playbook.
+- No new forks with independent activity, no new integration-ask issues, no new third-party X/web mentions.
+- `GH_READ_PAT` still 401 (6th consecutive run since 2026-07-10) — public API fallback continues to work fine for these public repos.
 
-**Files written:**
-- `output/articles/bd-radar-2026-07-14.md` — ranked digest
-- `memory/topics/bd-radar-leads.json` — updated aeon-agent rename
-- `memory/topics/builder-leads.md` — appended 2026-07-14 run notes, bumped timestamp
-- `memory/logs/2026-07-14.md` — appended `### bd-radar` block
-- `memory/MEMORY.md` — bumped `GH_READ_PAT` 401 streak to 5 runs
+**Files changed:** `output/articles/bd-radar-2026-07-15.md` (new digest), `memory/topics/bd-radar-leads.json` + `memory/topics/builder-leads.md` (updated existing lead signals), `memory/logs/2026-07-15.md` (log entry). Committed to `main` (9f89990) — memory-only, no code changes.
 
-No notify sent (gated: quiet by default, only fires on a new `building`/`integrating` lead — none this run). Git commit/push is handled automatically by the workflow harness, not done manually here.
+**No notification sent** (gated: quiet by default, only fires on a new high-intent lead — none this run).
 
-**Follow-up needed:** operator should still fix/set `GH_READ_PAT` (401 for 5 consecutive runs) before GitHub rate limits become a problem.
+Noted but out of scope to fix: stray `.bdtmp`/`.aeon-tmp` scratch files got accidentally committed by a prior run (`80cf01e`); I restored one I'd touched but left the rest — worth adding a `.gitignore` entry at some point.

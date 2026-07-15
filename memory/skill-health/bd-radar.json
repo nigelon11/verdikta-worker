@@ -1,8 +1,8 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-14T07:37:10Z",
+  "last_analyzed": "2026-07-15T07:51:53Z",
   "quality_score": 4,
-  "assessment": "Good — competent monitoring run with proper fallback handling, thorough documentation of findings, correct notification gating, and early flagging of persistent auth issue; limited by recurring GH_READ_PAT 401 (5 runs) affecting data quality.",
+  "assessment": "Thorough multi-source sweep with clear findings and proper state management; 0 new leads and persistent auth issues limit forward impact this run",
   "flags": [
     "api_error"
   ],
@@ -26,6 +26,10 @@
     },
     {
       "date": "2026-07-14",
+      "score": 4
+    },
+    {
+      "date": "2026-07-15",
       "score": 4
     }
   ]
