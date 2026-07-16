@@ -1,13 +1,10 @@
-Nothing crossed the notification bar this run — the fleet is healthy and the only open item (Dependabot PRs #1-#4, ~134h stalled) is already reported within the 48h dedup window. Per the skill's instruction, I log `HEARTBEAT_OK` and end without sending a notification.
-
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+Everything is green — no failed/stuck skills, no urgent issues, and the only open item (the 4 stalled Dependabot PRs, now ~157h) was already reported within the dedup window, so no notification was sent. Status page regenerated with current run data.
 
 ## Summary
-- Ran the heartbeat ambient check (default `${var}`, live scheduled path).
-- **P0:** all 8 enabled skills healthy (success_rate ≥88%, 0 consecutive failures, no stuck/failed entries).
-- **P1:** Dependabot PRs #1-#4 still stalled (~134h) — already reported in the 48h dedup window, no urgent-labeled issues.
-- **P2/P3:** MEMORY.md priorities are pre-existing/known; no missing or overdue scheduled skills.
-- Regenerated `docs/status.md` (🟡 WATCH, driven by the ongoing PR stall — same as prior days).
-- Appended a `### heartbeat` entry to `memory/logs/2026-07-15.md`.
-- No notification sent (nothing new met the bar).
-- Follow-up (unchanged, already tracked in MEMORY.md): add `read:org` scope to the GitHub token; fix bd-radar's `GH_READ_PAT` (401, 6 consecutive runs); review/merge the 4 stalled Dependabot PRs.
+- Ran heartbeat's ambient check (`${var}` empty, live scheduled path).
+- P0: all 8 enabled skills succeeding, no stuck/failed entries, heartbeat self-check clean.
+- P1: same 4 stalled Dependabot PRs (#1-#4, ~157h) — already deduped, no new notification.
+- P2/P3: nothing new; no skill overdue past 2x its schedule interval.
+- Updated `docs/status.md` (🟡 WATCH, driven by the stalled PRs) with fresh skill-health table and next-run pointer (github-monitor @ 09:00 UTC).
+- Logged findings to new `memory/logs/2026-07-16.md` under `### heartbeat`.
+- No notification sent (nothing new crossed the bar).
