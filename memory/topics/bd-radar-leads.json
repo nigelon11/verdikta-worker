@@ -4,8 +4,8 @@
       "key": "github:s97472091-pixel",
       "class": "building",
       "who": "s97472091-pixel (\"pipsss\")",
-      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97. Continued Jul7-14: 3 'evidence screenshot' case-study repos (bounty #144 math/logic analysis) + a hosted verdikta-playbook site (scoring criteria/failure patterns/checklist from 170+ submissions) + a Medium deep-dive on bounty #40 (99/100 score) — sustained, escalating output, still unprompted.",
-      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop", "https://s97472091-pixel.github.io/verdikta-playbook/"],
+      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97. Continued Jul7-14: 3 'evidence screenshot' case-study repos (bounty #144 math/logic analysis) + a hosted verdikta-playbook site (scoring criteria/failure patterns/checklist from 170+ submissions) + a Medium deep-dive on bounty #40 (99/100 score). Jul16: new evidence-screenshot repo for bounty #147 — 7th consecutive run with fresh output, sustained escalating pace, still unprompted.",
+      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop", "https://s97472091-pixel.github.io/verdikta-playbook/", "https://github.com/s97472091-pixel/verdikta-bounty-147"],
       "fit": 3,
       "score": 15,
       "date_found": "2026-07-10"
@@ -49,6 +49,16 @@
       "fit": 3,
       "score": 9,
       "date_found": "2026-07-12"
+    },
+    {
+      "key": "github:NSPG13/agent-bounties",
+      "class": "adjacent",
+      "who": "NSPG13/agent-bounties — \"Agent Bounties\" (competitor, not a builder-on-Verdikta lead)",
+      "signal": "Open-source AI-agent bounty protocol on Base (post/fund/claim/solve/verify/pay flow, MCP tools, x402, agent wallets) — same wedge as Verdikta. Repo created 2026-07-08, shipping fast (288 merged PRs by 2026-07-16, several/day). docs/competitor-learning-plan.md contains a detailed writeup of Verdikta's design pulled from the agents API, bounty app, and whitepaper (bounties.verdikta.org/agents, verdikta.org/whitepaper) with explicit \"avoid\" lessons (mandatory API keys, solver-paid evaluation, unbounded AI authority, consensus-without-appeal). This is competitive intelligence, not a partnership candidate — flagging for operator awareness, not outreach.",
+      "links": ["https://github.com/NSPG13/agent-bounties", "https://github.com/NSPG13/agent-bounties/blob/main/docs/competitor-learning-plan.md"],
+      "fit": 3,
+      "score": 3,
+      "date_found": "2026-07-16"
     }
   ],
   "surfaced": [
@@ -56,6 +66,7 @@
     "github:aaronjmars/aeon-verdikta-hunter",
     "x:Fishhead8u",
     "x:AjAkmarudi72937",
-    "github:bingmokaka"
+    "github:bingmokaka",
+    "github:NSPG13/agent-bounties"
   ]
 }
