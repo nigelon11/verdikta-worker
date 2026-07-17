@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-16T21:19:32Z",
+  "last_analyzed": "2026-07-17T21:30:52Z",
   "quality_score": 4,
-  "assessment": "Excellent process—verified API credentials, checked memory for duplication, generated multiple drafts, made a strategic pivot based on signal analysis, aligned with builder-discovery priorities. Output truncated prevents full content verification.",
+  "assessment": "Substantive output — generated 10 tweet drafts with live topic verification, proper memory/log integration, and transparent flagging of pre-existing stray files.",
   "flags": [],
-  "avg_score": 4.11,
+  "avg_score": 4.1,
   "history": [
     {
       "date": "2026-07-09",
@@ -40,6 +40,10 @@
     },
     {
       "date": "2026-07-16",
+      "score": 4
+    },
+    {
+      "date": "2026-07-17",
       "score": 4
     }
   ]

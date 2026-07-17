@@ -1,0 +1,30 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "badge_revise",
+        "text_message"
+      ]
+    },
+    "badge_revise": {
+      "type": "Badge",
+      "props": {
+        "text": "revise",
+        "variant": "secondary"
+      }
+    },
+    "text_message": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "body"
+      }
+    }
+  }
+}

@@ -2,54 +2,54 @@
 type: Reference
 ---
 
-## Tweet Drafts: an unprompted builder's 7-day shipping streak on a bounty protocol
+## Tweet Drafts: agent custody vs. agent adjudication (Ledger Agent Stack + Visa/Artemis dispute-layer gap)
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> Nobody asked this builder to integrate the protocol. Seven days straight, he kept shipping anyway.
+> Ledger secured who can sign. Nobody secured who's right.
 
 **1b. Observation**
-> Real adoption doesn't announce itself. It just keeps shipping, unprompted, day after day.
+> Custody got solved this week. Adjudication didn't. That's the real gap in agent commerce.
 
 ### Tier 2 — Two-punch
-**2a. Observation**
-> The strongest adoption signal isn't a partnership announcement. It's a builder who won't stop shipping for a protocol nobody's paying him to touch.
+**2a. Data drop**
+> Visa and Artemis just said it out loud: no dispute layer exists for agent-initiated payments. Ledger secured the button. Nobody secured the outcome.
 
-**2b. Data drop**
-> One dev built a Python SDK, an integration guide, three case-study repos, and a hosted playbook site for a bounty protocol. Unpaid. Unprompted. Day seven straight.
+**2b. Reframe**
+> Every headline this week is about who's allowed to press send. The actual question — who was right when the agent sent it — still has no answer.
 
 ### Tier 3 — Paragraph
-**3a. Narrative**
-> A builder scored 99/100 on a bounty, wrote a deep-dive on how, then kept going: a hosted playbook site, three case-study repos, a fresh evidence repo for the next bounty. Nobody asked. That's what real protocol adoption looks like before anyone writes a case study about it.
+**3a. Structural critique**
+> Ledger just shipped hardware sign-off so a hacked agent can't drain a wallet. Good. But Visa and Artemis flagged the bigger hole: nobody's built the layer that says an agent's output was wrong after a human already approved it.
 
-**3b. Reframe**
-> Most "ecosystem growth" is a grant check or a co-marketing tweet. The version that actually predicts adoption looks boring: one builder, no funding, shipping SDK code and integration docs for seven straight days because the protocol was worth the time.
+**3b. Sardonic**
+> Agent commerce security in one sentence: we solved "can a stranger steal your money" and left "was your own agent right" completely open. Guess which one actually happens thousands of times an hour.
 
 ### Tier 4 — Long tweet
-**4a. Narrative**
-> Watched a single outside developer spend a week building on a bounty protocol nobody paid him to touch: a Python SDK, an integration guide, a workshop, three case-study repos, a hosted playbook site, a Medium deep-dive dissecting a 99/100-scored submission, and — today — a fresh evidence repo for the next bounty. Seven straight days of output, all unprompted. This is the signal every growth dashboard is trying to approximate with vanity metrics: not stars, not mentions, but a builder who keeps coming back because the thing works well enough to be worth his time.
+**4a. Data-driven**
+> Three stories, one week, same blind spot. Ledger ships hardware-gated signing so a compromised agent can't move funds. Visa and Artemis flag that nobody's built reconciliation for agent-initiated transactions. Forbes ties $1.3B in H1 hacks to agent-wallet compromise — including a bot that lost $7.5M to a fake arbitrage pool a human never would've approved by hand. Custody is getting solved. Adjudication — was the agent's decision actually correct — isn't even being attempted.
 
-**4b. Structural critique**
-> Every protocol wants "organic builders." Most get bots forking a repo for a star, or a low-follower account posting the same promo line four times. The real thing is rarer and looks different: someone who ships a working SDK, writes the docs you didn't have time to write, scores near-perfect on your own bounty rubric, then publishes the writeup explaining exactly how — unprompted, unpaid, and still going a week later. That's not a marketing win. That's a product signal, and it's a much better predictor of adoption than any partnership announcement.
+**4b. Narrative**
+> A bot lost $7.5M this year draining into a fake arbitrage pool. Not because someone stole its keys — because it decided, on its own authority, that the trade was good. Ledger's new hardware sign-off would've stopped a thief. It wouldn't have stopped this. The industry keeps building better locks for a door nobody's actually walking through wrong. The real losses are coming from agents making bad calls inside their own permissions, and there's still no mechanism to catch that before the money moves.
 
 ### Tier 5 — Thread opener
-**5a. Narrative**
-> A builder just spent seven straight days shipping unpaid integration work for a bounty protocol. SDK, docs, case studies, a hosted site, a deep-dive on a 99/100 score. Nobody asked him to. Here's why that matters more than any partnership announcement.
+**5a. Thesis-first**
+> Ledger just solved agent wallet security. It didn't solve agent trust — and that gap is where the real money is about to leak.
 ---
-- Day-by-day: SDK, integration guide, workshop, 3 case-study repos, hosted playbook site, Medium deep-dive on a 99/100 bounty score, a fresh evidence repo — 7 straight days
-- Contrast with fake adoption signals: drive-by forks, promo accounts repeating the same line
-- Why unprompted + unpaid + sustained is the actual test for "does this protocol work"
-- What most growth dashboards measure instead (stars, mentions) and why those are noisy proxies
-- The takeaway: watch for builders who keep coming back on their own time, not launch-day metrics
+- Ledger Agent Stack: propose/approve/execute, hardware-enforced human sign-off
+- Visa + Artemis report: names the missing reconciliation/dispute layer for agent-initiated transactions
+- Forbes: $1.3B H1 hack losses tied to agent-wallet compromise, incl. $7.5M lost to a fake arbitrage pool
+- Signing ≠ judging: a human tapping approve doesn't know if the agent's decision was correct
+- Where this actually gets solved: verifiable adjudication of agent outputs, not just custody of agent keys
 
-**5b. Reframe**
-> Most adoption metrics are noise: stars, forks, a promo account posting the same line four times. Here's what the signal actually looks like when it's real — one builder, seven days, zero prompting.
+**5b. Question**
+> Ledger just answered "who's allowed to move this money." Nobody's answering the harder question: when an autonomous agent moves it wrong, who decides — and how fast?
 ---
-- What the noise looks like: drive-by forks with no commits, a single low-follower account posting near-identical promo tweets
-- What the signal looks like: SDK, docs, workshop, case studies, a hosted site, a deep-dive on a near-perfect score, then a new evidence repo the next day
-- Why sustained, unpaid, unprompted output is harder to fake than a star count
-- What this predicts that a partnership press release doesn't
-- The takeaway: track the builders who keep shipping after week one, not the ones who show up once
+- The custody story: hardware-enforced propose/approve/execute, MoonPay and Shisa already integrated
+- The gap story: Visa + Artemis say there's no reconciliation layer for agent-initiated transactions at scale
+- The cost of the gap: $1.3B in H1 hacks tied to agent-wallet compromise per Forbes
+- Signing solves theft. It doesn't solve bad judgment inside a legitimate agent
+- Agent commerce won't scale past pilots until disputes resolve as fast as the transactions do
 
-Best overall: 4b — the "real signal vs. noise" structural critique lands the thesis with the sharpest contrast and no hype.
-Best per tier: 1a (tier 1), 2b (tier 2), 3a (tier 3), 4b (tier 4), 5a (tier 5)
+Best overall: 4a — ties all three stories (Ledger, Visa/Artemis, Forbes) into one throughline without pitching a solution.
+Best per tier: 1a (tier 1), 2a (tier 2), 3a (tier 3), 4a (tier 4), 5a (tier 5)
