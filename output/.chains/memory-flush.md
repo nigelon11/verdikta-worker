@@ -1,12 +1,16 @@
-No signal worth notifying on (routine memory consolidation, no urgent findings) — per skill/CLAUDE.md conventions, notify is skipped.
+Memory-flush complete for 2026-07-17.
 
 ## Summary
-Ran the memory-flush skill for its second same-day pass, covering 2026-07-15 activity that landed after the morning's flush (bd-radar 6th run, heartbeat, github-monitor, digest, write-tweet).
 
-**Changes:**
-- `memory/MEMORY.md`: updated the Builder Leads summary (s97472091-pixel's continued escalation — 3 case-study repos, hosted playbook site, Medium deep-dive; @AjAkmarudi72937's shift to genuine amplification), bumped the `GH_READ_PAT` 401 counter to 6 consecutive runs, bumped Dependabot PR age to ~134h, and added a new watch item for `verdikta-arbiter#9`'s failing Gitleaks scan (currently hidden from github-monitor as a draft PR).
-- `memory/logs/2026-07-15.md`: appended a `memory-flush (2nd run)` log entry documenting what was promoted, checked, and skipped.
+Ran the `memory-flush` skill (no `var` scoping — flushed all recent activity):
 
-Verified `gh pr list --search "improve:"` and Dependabot state directly rather than trusting stale log numbers. Skipped promoting github-monitor's 15 new issues (operator's own bulk backlog-planning burst, not external signal) and the ephemeral write-tweet draft. Committed both files to `main` (`6c77926`).
+- Reviewed the last 3 days of logs (07-14 through 07-16); confirmed 07-14/07-15 were already flushed by prior runs, so focus was on 07-16's activity.
+- Found `MEMORY.md`'s Builder Leads and `GH_READ_PAT` items already matched 07-16's bd-radar findings (NSPG13/agent-bounties competitive intel, s97472091-pixel's bounty-#147 evidence repo, 7 consecutive 401s) — no edit needed there.
+- Updated: Dependabot PRs #1-#4 stall duration (~134h→~157h, dated to 07-16) in Next Priorities.
+- Bumped "Last consolidated" to 2026-07-17.
+- Checked and confirmed no changes needed: Open Improvement PRs section (still just the false-positive PR #2), `memory/issues/INDEX.md` (still empty).
+- 07-16's digest was the first fully empty day in its run history and write-tweet's draft was ephemeral — neither promoted.
 
-No follow-up actions needed beyond the existing Next Priorities list.
+**Files modified:** `memory/MEMORY.md`, `memory/logs/2026-07-17.md` (new). Committed as `9b3d4e7`.
+
+No follow-up actions needed beyond the pre-existing open items already tracked in Next Priorities (read:org scope, `GH_READ_PAT`, stalled Dependabot PRs, `verdikta-arbiter#9` draft PR).
