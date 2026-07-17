@@ -1,0 +1,101 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content"
+      ]
+    },
+    "content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "type-badge",
+        "separator1",
+        "prs-section",
+        "separator2",
+        "sources"
+      ]
+    },
+    "type-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "INFO",
+        "variant": "outline"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Note verdikta-applications#8 idle since 2026-04-05 (~103d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Note verdikta-applications#4 idle since 2026-02-26 (~141d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Note verdikta-applications#2 idle since 2026-02-04 (~163d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Note verdikta-docs#1 (Zetav1) idle since 2026-07-09 (~182h)",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
