@@ -1,15 +1,20 @@
-Good — my changes are scoped to the digest scratch files and today's log. The `.notify-sent-hashes`, `notify`, `notify-jsonrender` untracked files predate this run and aren't mine to touch. No notification needed since the digest came up empty after rigorous verification.
+ℹ️ Digest: AI agents that transact onchain
 
-## Summary
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-17*
 
-Ran the `digest` skill for topic *"AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"* (source mode: web). Gathered ~24 raw candidates via 13 WebSearch queries + xAI `x_search` (http=200, 10 X posts). After verifying the strongest-looking candidates with WebFetch, **every single one failed the freshness or dedup bar**:
+_TL;DR: Ledger and Visa both published concrete answers to a question crypto's $1.3B H1-2026 hack tally just made urgent — who's accountable when an AI agent's keys or payment go wrong._
 
-- **Stale (actually weeks–months old despite present-tense framing in search snippets):** Polygon Agent CLI/"Lisovo hardfork" (Mar 5), EVMbench/Binance exploit-vs-detection report (May 1), Cloudflare/AWS x402 edge payments (Jul 6), Coinbase Base MCP (May 26), Base 100M x402 tx (Jun 4), Chainlink+24-banks AI oracle (Apr 13), BNB Agent Studio (Jul 1).
-- **Duplicates of the last 3 days' logs:** GenLayer Internet Court (07-10), x402 Foundation/Ripple (07-15), Injective iAgent SDK (07-15).
-- **Low-signal/weak fit:** xAI's X results were dominated by a repeated `$AgenC` spam account; BountyBook (Show HN) is 4 months old with 3 points; Cyclops' $20M raise is generic fintech, not agent-native.
+1. *Ledger ships open-source Agent Stack to keep AI agents off private keys*
+   Ledger launched an open-source toolkit (Jul 16) enforcing a strict propose/approve/execute split: agents can read balances and draft transactions, but nothing signs without a human tapping the physical device. MoonPay and Shisa have already integrated it.
+   Why it matters: the first major hardware wallet vendor to treat "the agent holds the keys" as the threat model, not a feature — developers can fork it today at developers.ledger.com/agent-kit.
+   https://siliconangle.com/2026/07/16/ledger-launches-agent-stack-keep-ai-agents-away-crypto-keys/
 
-Per the skill's thin-day rule, **skipped the notification** rather than padding — this is a `DIGEST_FETCH_EMPTY` day, the first genuinely empty one in this run's history (prior thin days at least had 1-2 items). Logged the full breakdown to `memory/logs/2026-07-16.md` under `### digest` so it's auditable and dedup-safe for tomorrow's run.
+2. *Visa and Artemis: agent commerce still has no way to reverse a bad payment*
+   A joint report (Jul 16) found existing chargeback and dispute systems assume a human made the purchase — there's currently no settled mechanism to unwind a transaction when chains of AI agents are transacting thousands of times an hour.
+   Why it matters: this is the exact gap AI-jury/arbitration protocols are built to fill — a major payments network just validated the category from the outside, not from within crypto.
+   https://www.theblock.co/post/408574/visa-stablecoins-agentic-ai-commerce
 
-**Files modified:** `memory/logs/2026-07-16.md` (digest log entry), `digest-tmp/xai-digest-payload.json` and `digest-tmp/xai-digest.json` (scratch files from the xAI call — note: these appear to be accidentally-committed scratch state from a prior run, pre-existing in git before this session; left in place rather than restructured, out of scope for this task).
-
-**Follow-up:** none required — no operator decision needed on an empty news day.
+3. *Crypto hacks hit $1.3B in H1 2026 — wallet compromise, not code bugs, is the biggest line item*
+   Forbes' rundown of 344 incidents (published today) found wallet/key compromise cost over $444M at ~$13M/incident on average; two of the largest breaches (Kelp DAO $291M, Drift $285M) passed clean code audits but had hacked keys. The report singles out AI-agent wallets as "a new kind of privileged key holder," citing JaredFromSubway's trading bot losing $7.5M in June to fake arbitrage pools that fooled its automated strategy.
+   Why it matters: confirms the operational-security risk item 1 is racing to close — audits don't cover the thing actually getting exploited.
+   https://www.forbes.com/sites/boazsobrado/2026/07/17/fewer-but-far-more-surgical-crypto-hacks-hit-13-billion-in-2026/

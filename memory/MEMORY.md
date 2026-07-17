@@ -25,6 +25,7 @@ type: Index
 | 2026-07-13 | AI agents that transact onchain | Binance Agentic Wallet adds x402 (BNB/Base/Solana), Firepan Arena AI-judged bug-bounty escrow (competitive signal) |
 | 2026-07-14 | AI agents that transact onchain | Coinbase refocuses Base on trading/payments/agents, SBI+Solana JV AI-agent payment mandate, XRPL hits 1M AI-agent transactions |
 | 2026-07-15 | AI agents that transact onchain | Linux Foundation launches x402 Foundation (Circle/Visa/Mastercard), Injective ships iAgent SDK, GenLayer Internet Court reveals 350k tx/day metrics |
+| 2026-07-17 | AI agents that transact onchain | Ledger ships open-source Agent Stack (hardware-enforced signing), Visa+Artemis name the agent-dispute-resolution gap, Forbes ties $1.3B H1 hacks to agent-wallet compromise |
 
 ## Skills Built
 | Skill | Date | Notes |

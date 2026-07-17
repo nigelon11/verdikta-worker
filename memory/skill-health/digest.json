@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-16T14:25:23Z",
+  "last_analyzed": "2026-07-17T14:27:40Z",
   "quality_score": 4,
-  "assessment": "Rigorous verification and correct decision to skip notification; well-logged audit trail but no signal found",
+  "assessment": "Well-executed digest with fresh, verified findings properly integrated into memory and notifications; minor transient API issues handled appropriately.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -36,6 +36,10 @@
     },
     {
       "date": "2026-07-16",
+      "score": 4
+    },
+    {
+      "date": "2026-07-17",
       "score": 4
     }
   ]
