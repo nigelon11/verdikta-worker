@@ -1,16 +1,18 @@
 ## Summary
 
-Ran the **bd-radar** skill (7th run) — swept GitHub (forks/issues across the 5 public `verdikta/*` repos + `gh search`), X (xAI search since 2026-07-13), and web (HN/Reddit/blog) for BD signal.
+Ran the 8th `bd-radar` cycle for 2026-07-17:
 
-**Key finding:** a new competitive-intelligence signal — **`NSPG13/agent-bounties`**, a fast-shipping open-source AI-agent bounty protocol on Base (288 merged PRs since 2026-07-08) whose `docs/competitor-learning-plan.md` contains a detailed writeup of Verdikta's own design, pulled directly from our agent API and whitepaper. Not a partnership lead — flagged for the operator's own read.
+- **1 new lead**: `@Project0_Z` (class `mentioning`) — unprompted, organic pitch recommending Verdikta's AI-jury API as a scoring backend to a *third party's* bounty/DAO Discord bot. Checked their bio's "Zeta_v1" reference against the known `Zetav1` GitHub bounty-farming spam cluster — different platform/behavior, treated as coincidental naming, not the same actor.
+- **No new `building`/`integrating` signal** — top lead `s97472091-pixel` had its first quiet day after 7 straight days of shipping.
+- **GitHub**: `GH_READ_PAT` still 401 (8th consecutive run, unfixed since 2026-07-10); `gh search` fallback found nothing new beyond already-tracked accounts. Investigated and dropped a `moltbook_data` scraper repo containing an already-known first-party post.
+- **Web** (HN/Reddit/blogs): zero independent mentions, 8th consecutive quiet window.
 
-No new `building`/`integrating` leads this run (so no self-notify, per the skill's quiet-by-default gating). **s97472091-pixel** (top tracked builder) shipped again — a new evidence repo for bounty #147, 7th consecutive run with fresh output. All other tracked leads (aaronjmars/aeon-agent, bingmokaka, @AjAkmarudi72937, @Fishhead8u) carried forward unchanged. `GH_READ_PAT` is still 401 — 7th consecutive run — falling back to the public GitHub API works fine, no functional gap yet.
+**Files updated:**
+- `output/articles/bd-radar-2026-07-17.md` — ranked lead digest
+- `memory/topics/bd-radar-leads.json` — added `x:Project0_Z`, now 7 leads / 7 surfaced
+- `memory/topics/builder-leads.md` — added mentioning entry + run notes
+- `memory/logs/2026-07-17.md` — appended `### bd-radar` block
 
-**Files changed (committed as `3cc8a43`):**
-- `output/articles/bd-radar-2026-07-16.md` — new ranked digest
-- `memory/topics/bd-radar-leads.json` — added NSPG13 lead + updated s97472091-pixel signal
-- `memory/topics/builder-leads.md` — added Competitive Intel section, appended run notes
-- `memory/MEMORY.md` — updated Builder Leads summary + Next Priorities (flagged the competitor for operator review, bumped GH_READ_PAT count to 7)
-- `memory/logs/2026-07-16.md` — `### bd-radar` log block
+**Notify**: skipped — no new high-intent (`building`/`integrating`) lead this run, per the skill's notify gate.
 
-**Follow-up needed:** operator should read `NSPG13/agent-bounties`'s competitor-analysis doc, and `GH_READ_PAT` still needs fixing (7 straight failed runs).
+**Follow-up needed:** `GH_READ_PAT` remains 401 across 8 consecutive runs — still worth fixing before rate limits become an issue (no functional impact yet).

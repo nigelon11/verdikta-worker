@@ -1,8 +1,8 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-16T08:50:33Z",
+  "last_analyzed": "2026-07-17T08:22:52Z",
   "quality_score": 4,
-  "assessment": "Substantive competitive-intelligence finding (NSPG13 competitor analysis); systematic lead tracking; well-documented; persistent GH_READ_PAT auth issue (7 runs) needs fixing.",
+  "assessment": "Good — substantive lead verification with honest quiet-period reporting; persistent GitHub auth 401 across 8 runs unresolved",
   "flags": [
     "api_error"
   ],
@@ -34,6 +34,10 @@
     },
     {
       "date": "2026-07-16",
+      "score": 4
+    },
+    {
+      "date": "2026-07-17",
       "score": 4
     }
   ]
