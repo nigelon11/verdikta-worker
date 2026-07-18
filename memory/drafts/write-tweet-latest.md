@@ -2,54 +2,54 @@
 type: Reference
 ---
 
-## Tweet Drafts: agent custody vs. agent adjudication (Ledger Agent Stack + Visa/Artemis dispute-layer gap)
+## Tweet Drafts: vanity metrics vs. real adoption signal (verification bottleneck)
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> Ledger secured who can sign. Nobody secured who's right.
+> AI agents don't have a submission problem. They have a verification problem.
 
-**1b. Observation**
-> Custody got solved this week. Adjudication didn't. That's the real gap in agent commerce.
+**1b. Data drop**
+> Star count: flat for days. Real signal: a stranger recommending you, unprompted, twice in 48 hours.
 
 ### Tier 2 — Two-punch
-**2a. Data drop**
-> Visa and Artemis just said it out loud: no dispute layer exists for agent-initiated payments. Ledger secured the button. Nobody secured the outcome.
+**2a. Observation**
+> Autonomous agents can flood a bounty board in minutes. Reading what they submitted takes longer than writing it did — that's the bottleneck now.
 
-**2b. Reframe**
-> Every headline this week is about who's allowed to press send. The actual question — who was right when the agent sent it — still has no answer.
+**2b. Data drop**
+> Our GitHub stars haven't moved in days. Someone pitched our AI jury to a project they're building, unprompted, twice. One of those is signal.
 
 ### Tier 3 — Paragraph
-**3a. Structural critique**
-> Ledger just shipped hardware sign-off so a hacked agent can't drain a wallet. Good. But Visa and Artemis flagged the bigger hole: nobody's built the layer that says an agent's output was wrong after a human already approved it.
+**3a. Reframe**
+> Everyone's optimizing for agents that submit work faster. Nobody's asking who checks it. When an agent can generate ten submissions before a human reads one, the judge — not the worker — becomes the scarce resource.
 
-**3b. Sardonic**
-> Agent commerce security in one sentence: we solved "can a stranger steal your money" and left "was your own agent right" completely open. Guess which one actually happens thousands of times an hour.
+**3b. Narrative**
+> This week a builder we've never talked to found our AI-jury API and recommended it to someone else's bounty bot, unasked, twice, for free. No campaign, no ask. Worth more than a star count that hasn't budged.
 
 ### Tier 4 — Long tweet
-**4a. Data-driven**
-> Three stories, one week, same blind spot. Ledger ships hardware-gated signing so a compromised agent can't move funds. Visa and Artemis flag that nobody's built reconciliation for agent-initiated transactions. Forbes ties $1.3B in H1 hacks to agent-wallet compromise — including a bot that lost $7.5M to a fake arbitrage pool a human never would've approved by hand. Custody is getting solved. Adjudication — was the agent's decision actually correct — isn't even being attempted.
+**4a. Data drop**
+> Security accounts are already saying it out loud: AI in bug bounties went from novelty to default, and it's producing enough "AI slop" that reading submissions is now the actual job. The same shape is coming for every bounty market — agents can write submissions faster than anyone can grade them. A two-model jury scoring against a public rubric isn't a nice-to-have here, it's the only way the volume stays honest. That's the bet a bounty protocol makes now.
 
-**4b. Narrative**
-> A bot lost $7.5M this year draining into a fake arbitrage pool. Not because someone stole its keys — because it decided, on its own authority, that the trade was good. Ledger's new hardware sign-off would've stopped a thief. It wouldn't have stopped this. The industry keeps building better locks for a door nobody's actually walking through wrong. The real losses are coming from agents making bad calls inside their own permissions, and there's still no mechanism to catch that before the money moves.
+**4b. Reframe**
+> Vanity metrics don't move because they're not built to. Our star count sat exactly flat across three separate checks this week. What did move: a builder we've never spoken to recommended our verification API to someone else's project, unprompted, twice in two days, for nothing in return. If you want to know whether a protocol is actually being adopted, stop watching the counter and start watching who's willing to vouch for it to a stranger.
 
 ### Tier 5 — Thread opener
 **5a. Thesis-first**
-> Ledger just solved agent wallet security. It didn't solve agent trust — and that gap is where the real money is about to leak.
+> AI agents can write a bounty submission in seconds. Verifying it honestly still takes a human — or a system built to replace one.
 ---
-- Ledger Agent Stack: propose/approve/execute, hardware-enforced human sign-off
-- Visa + Artemis report: names the missing reconciliation/dispute layer for agent-initiated transactions
-- Forbes: $1.3B H1 hack losses tied to agent-wallet compromise, incl. $7.5M lost to a fake arbitrage pool
-- Signing ≠ judging: a human tapping approve doesn't know if the agent's decision was correct
-- Where this actually gets solved: verifiable adjudication of agent outputs, not just custody of agent keys
+- Security accounts are already naming "AI slop" as the new failure mode in bug bounties
+- Submission volume scales with agent compute; review capacity doesn't
+- A two-model AI jury scoring against a public rubric is a bet that verification can scale the same way generation did
+- Real test: 90%+ threshold, on-chain escrow, no human in the loop
+- What we're watching next: does judgment quality hold as volume climbs
 
-**5b. Question**
-> Ledger just answered "who's allowed to move this money." Nobody's answering the harder question: when an autonomous agent moves it wrong, who decides — and how fast?
+**5b. Observation**
+> Our star count hasn't moved in days. That was never the metric that mattered.
 ---
-- The custody story: hardware-enforced propose/approve/execute, MoonPay and Shisa already integrated
-- The gap story: Visa + Artemis say there's no reconciliation layer for agent-initiated transactions at scale
-- The cost of the gap: $1.3B in H1 hacks tied to agent-wallet compromise per Forbes
-- Signing solves theft. It doesn't solve bad judgment inside a legitimate agent
-- Agent commerce won't scale past pilots until disputes resolve as fast as the transactions do
+- Stars are a vanity signal: easy to check, easy to ignore, easy to game
+- The signal we actually watch: someone recommending your API to a stranger's project, unprompted, expecting nothing back
+- That happened twice in 48 hours this week — no campaign behind it
+- Bounty protocols live or die on whether builders vouch for them, not whether they star the repo
+- Adoption looks like word of mouth long before it looks like a chart
 
-Best overall: 4a — ties all three stories (Ledger, Visa/Artemis, Forbes) into one throughline without pitching a solution.
-Best per tier: 1a (tier 1), 2a (tier 2), 3a (tier 3), 4a (tier 4), 5a (tier 5)
+Best overall: 4b — ties today's two flattest/liveliest data points (static stars, unprompted advocacy) into one thesis about what adoption actually looks like.
+Best per tier: 1a (tier 1), 2a (tier 2), 3a (tier 3), 4b (tier 4), 5a (tier 5)
