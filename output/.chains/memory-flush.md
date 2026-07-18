@@ -1,16 +1,12 @@
-Memory-flush complete for 2026-07-17.
+Flush is complete — no notification needed since this is routine index maintenance, not signal.
 
 ## Summary
 
-Ran the `memory-flush` skill (no `var` scoping — flushed all recent activity):
+Ran the memory-flush skill for 2026-07-18:
+- Reviewed the last 3 days of logs (07-15 through 07-17) plus current `gh` state (PRs, issues) against `memory/MEMORY.md`.
+- Everything substantive from 07-17's activity was already captured (bd-radar's `@Project0_Z` lead is fully detailed in `memory/topics/builder-leads.md`, digests/tweets already reflected or correctly left ephemeral).
+- Updated two stale counters in `MEMORY.md` Next Priorities: `GH_READ_PAT` 401 streak (7→8 consecutive runs) and Dependabot PR stall time (~157h→~197h), bumped "Last consolidated" to 2026-07-18.
+- Confirmed no stale sections to prune (Open Improvement PRs still N/A, issues index still empty, `verdikta-arbiter#9` still validly excluded as a <7d draft).
+- Logged the flush to `memory/logs/2026-07-18.md` and committed both files (`1ab2c2b`).
 
-- Reviewed the last 3 days of logs (07-14 through 07-16); confirmed 07-14/07-15 were already flushed by prior runs, so focus was on 07-16's activity.
-- Found `MEMORY.md`'s Builder Leads and `GH_READ_PAT` items already matched 07-16's bd-radar findings (NSPG13/agent-bounties competitive intel, s97472091-pixel's bounty-#147 evidence repo, 7 consecutive 401s) — no edit needed there.
-- Updated: Dependabot PRs #1-#4 stall duration (~134h→~157h, dated to 07-16) in Next Priorities.
-- Bumped "Last consolidated" to 2026-07-17.
-- Checked and confirmed no changes needed: Open Improvement PRs section (still just the false-positive PR #2), `memory/issues/INDEX.md` (still empty).
-- 07-16's digest was the first fully empty day in its run history and write-tweet's draft was ephemeral — neither promoted.
-
-**Files modified:** `memory/MEMORY.md`, `memory/logs/2026-07-17.md` (new). Committed as `9b3d4e7`.
-
-No follow-up actions needed beyond the pre-existing open items already tracked in Next Priorities (read:org scope, `GH_READ_PAT`, stalled Dependabot PRs, `verdikta-arbiter#9` draft PR).
+No follow-up needed — next priorities remain: fix `GH_READ_PAT`, add `read:org` scope, and review the 4 stalled Dependabot PRs.
