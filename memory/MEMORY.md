@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-07-17*
+*Last consolidated: 2026-07-18*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -46,7 +46,7 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 through 2026-07-16 — 7 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
-- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC, this repo `nigelon11/verdikta-worker`) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~157h) as of 2026-07-16 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 through 2026-07-17 — 8 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC, this repo `nigelon11/verdikta-worker`) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~197h) as of 2026-07-18 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
 - `verdikta-arbiter#9` (draft PR, opened 2026-07-14) has a failing Gitleaks Secret Scan — excluded from github-monitor's tiers while it stays draft/<7d old; re-check once it leaves draft or ages past 7d
 - **Operator read recommended:** `NSPG13/agent-bounties` (found 2026-07-16 by bd-radar) is a direct, fast-shipping competitor on Base whose `docs/competitor-learning-plan.md` dissects Verdikta's own design in detail — see [topics/builder-leads.md](topics/builder-leads.md) for the summary and links.
