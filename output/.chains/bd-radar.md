@@ -1,18 +1,18 @@
+All done. Summary below.
+
 ## Summary
 
-Ran the 8th `bd-radar` cycle for 2026-07-17:
+Ran `bd-radar` (9th run) for Verdikta BD lead discovery across GitHub, X, and web.
 
-- **1 new lead**: `@Project0_Z` (class `mentioning`) — unprompted, organic pitch recommending Verdikta's AI-jury API as a scoring backend to a *third party's* bounty/DAO Discord bot. Checked their bio's "Zeta_v1" reference against the known `Zetav1` GitHub bounty-farming spam cluster — different platform/behavior, treated as coincidental naming, not the same actor.
-- **No new `building`/`integrating` signal** — top lead `s97472091-pixel` had its first quiet day after 7 straight days of shipping.
-- **GitHub**: `GH_READ_PAT` still 401 (8th consecutive run, unfixed since 2026-07-10); `gh search` fallback found nothing new beyond already-tracked accounts. Investigated and dropped a `moltbook_data` scraper repo containing an already-known first-party post.
-- **Web** (HN/Reddit/blogs): zero independent mentions, 8th consecutive quiet window.
+**Findings:** 0 new leads this run — all 7 previously tracked leads carried forward. Two already-surfaced `mentioning` leads escalated: **@Project0_Z** posted a second, distinct organic pitch (to a different third-party adapter-catalog repo, "agoragentic-integrations") recommending Verdikta's AI-jury — now a 2-for-2 pattern of unprompted advocacy in 2 days; **@Fishhead8u** repeated their targeted-bounty/solvability friction complaint. Top building lead **s97472091-pixel** had a 2nd consecutive quiet day. No new fork/issue activity across the 5 watched repos beyond already-known accounts. `GH_READ_PAT` is still 401 (9th consecutive run since 2026-07-10) — confirmed again via direct API calls; fell back to unauthenticated `gh search`/`gh api`, which works fine for these public repos.
 
-**Files updated:**
-- `output/articles/bd-radar-2026-07-17.md` — ranked lead digest
-- `memory/topics/bd-radar-leads.json` — added `x:Project0_Z`, now 7 leads / 7 surfaced
-- `memory/topics/builder-leads.md` — added mentioning entry + run notes
-- `memory/logs/2026-07-17.md` — appended `### bd-radar` block
+**Files modified:**
+- `output/articles/bd-radar-2026-07-18.md` (new) — ranked digest
+- `memory/topics/bd-radar-leads.json` — updated Project0_Z and Fishhead8u entries with new signal
+- `memory/topics/builder-leads.md` — added 9th-run notes, bumped timestamp
+- `memory/logs/2026-07-18.md` — appended `### bd-radar` block
+- `xai-bd-payload.json` — updated with today's search window (pre-existing tracked scratch file)
 
-**Notify**: skipped — no new high-intent (`building`/`integrating`) lead this run, per the skill's notify gate.
+**No notify sent** — gate requires ≥1 new `building`/`integrating` lead; none this run.
 
-**Follow-up needed:** `GH_READ_PAT` remains 401 across 8 consecutive runs — still worth fixing before rate limits become an issue (no functional impact yet).
+**Follow-up needed:** `GH_READ_PAT` has been 401 for 9 consecutive runs — should be fixed before GitHub rate limits bite (already flagged in `memory/MEMORY.md` Next Priorities). Changes are **not committed** — let me know if you'd like me to commit them.

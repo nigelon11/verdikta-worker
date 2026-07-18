@@ -24,8 +24,8 @@
       "key": "x:Fishhead8u",
       "class": "mentioning",
       "who": "@Fishhead8u",
-      "signal": "Friction complaint about targeted-bounty pay/access, 2026-07-08",
-      "links": ["https://x.com/Fishhead8u/status/2074929843800601076"],
+      "signal": "Friction complaint about targeted-bounty pay/access, 2026-07-08. 2026-07-17: follow-up post, same theme — asking to be made eligible for targeted bounties and for solvable (not decades-unsolved) problems to be posted. Recurring, unresolved usability friction, not a new signal class.",
+      "links": ["https://x.com/Fishhead8u/status/2074929843800601076", "https://x.com/Fishhead8u/status/2078206590977524179"],
       "fit": 1,
       "score": 2,
       "date_found": "2026-07-10"
@@ -64,8 +64,8 @@
       "key": "x:Project0_Z",
       "class": "mentioning",
       "who": "@Project0_Z (\"Sintoide\" — bio: co-founder DePINLA, AI/agent-economy builder)",
-      "signal": "2026-07-16: unprompted reply pitching Verdikta's AI-jury evaluation layer as a drop-in scoring backend for a third party's bounty/DAO Discord bot governance repo — \"that part's already solved... could plug into the bot via API instead of building scoring logic from scratch,\" offered to share docs. Organic third-party advocacy, not self-promotion of their own bounty activity. Note: bio references \"Zeta_v1\" which is superficially similar to the unrelated `Zetav1` GitHub bounty-farming spam cluster (fake Canonical-Wallet PRs against verdikta-docs/verdikta-dispatcher) — checked, no other overlap (different platform, different behavior pattern, tweet content is substantive not templated); treating as coincidental naming, not the same actor. Low engagement (0 likes, 53 views).",
-      "links": ["https://x.com/Project0_Z/status/2077905210949652681"],
+      "signal": "2026-07-16: unprompted reply pitching Verdikta's AI-jury evaluation layer as a drop-in scoring backend for a third party's bounty/DAO Discord bot governance repo — \"that part's already solved... could plug into the bot via API instead of building scoring logic from scratch,\" offered to share docs. Organic third-party advocacy, not self-promotion of their own bounty activity. Note: bio references \"Zeta_v1\" which is superficially similar to the unrelated `Zetav1` GitHub bounty-farming spam cluster (fake Canonical-Wallet PRs against verdikta-docs/verdikta-dispatcher) — checked, no other overlap (different platform, different behavior pattern, tweet content is substantive not templated); treating as coincidental naming, not the same actor. Low engagement (0 likes, 53 views). 2026-07-17: second, distinct unprompted pitch — commented on an \"agoragentic-integrations\" adapter-catalog repo (11 free wrappers, scaling past 50) suggesting Verdikta's AI-jury to keep the catalog verified as it grows. Two organic pitches to two different third-party repos within 2 days — a repeat pattern, not a one-off.",
+      "links": ["https://x.com/Project0_Z/status/2077905210949652681", "https://x.com/Project0_Z/status/2078102241005773112"],
       "fit": 1,
       "score": 2,
       "date_found": "2026-07-17"
