@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info_heading",
+        "prs_stack",
+        "sep1",
+        "status_heading",
+        "repos_badges"
+      ]
+    },
+    "info_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Idle PRs",
+        "level": "h3"
+      }
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_1",
+        "pr_2",
+        "pr_3",
+        "pr_4",
+        "pr_5"
+      ]
+    },
+    "pr_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — ETH-prepay fix (bingmokaka)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications",
+        "score": "Idle ~63h, no CI failures"
+      }
+    },
+    "pr_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — Zetav1 doc PR",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs",
+        "score": "Idle since 2026-07-09 (~206h)"
+      }
+    },
+    "pr_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — bundle-submit-flow PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications",
+        "score": "Idle since 2026-04-05 (~104d)"
+      }
+    },
+    "pr_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — classMap jury-models PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications",
+        "score": "Idle since 2026-02-26 (~142d)"
+      }
+    },
+    "pr_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — Vite/nginx PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications",
+        "score": "Idle since 2026-02-04 (~164d)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "repos_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_applications",
+        "badge_arbiter",
+        "badge_dispatcher",
+        "badge_docs",
+        "badge_roadmap"
+      ]
+    },
+    "badge_applications": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge_arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge_dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "secondary"
+      }
+    },
+    "badge_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "secondary"
+      }
+    }
+  }
+}
