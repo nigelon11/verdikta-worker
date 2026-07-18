@@ -1,10 +1,17 @@
-Ambient heartbeat check complete. All 8 enabled skills are healthy (no failures, no stuck dispatches), so no notification was needed — the only ongoing item (Dependabot PRs #1-4, now ~181h stalled) has been flagged daily since 2026-07-11 and falls inside the 48h dedup window.
-
 ## Summary
-- Ran the ambient heartbeat check (default `${var}`, live scheduled path).
-- P0: fleet healthy — no failed/stuck skills, no `consecutive_failures ≥ 3`, no chronic failures; heartbeat's own self-check clean (90% success rate, last success ~23.5h ago).
-- P1: Dependabot PRs #1-4 still stalled (~181h now), no urgent-labeled issues. Already reported within the 48h dedup window, so no new notification.
-- P2/P3: no new flagged memory items; all 8 enabled skills current vs. their schedules.
-- Regenerated `docs/status.md` (🟡 WATCH, same driver as the past week — stalled Dependabot PRs), updating timestamps and the skill-health table.
-- Appended `### heartbeat` findings to `memory/logs/2026-07-17.md`.
-- No notification sent (nothing new met the bar). No follow-up actions needed beyond the existing known items (read:org scope, Dependabot PR review, bd-radar `GH_READ_PAT`).
+
+Ran the **heartbeat** ambient fleet-health check (default `${var}`, the daily 08:00 UTC scheduled path).
+
+**Findings:**
+- **P0** — All 8 enabled skills (github-monitor, digest, shiplog, mention-radar, write-tweet, bd-radar, memory-flush, heartbeat) show `last_status: success`, 0 consecutive failures, success rates ≥91%. No failed/stuck skills, no API degradation, no chronic failures. Heartbeat self-check clean (~24.7h since last success, under the 36h bar).
+- **P1** — Dependabot PRs #1–#4 remain stalled (~205h now, opened 2026-07-09) — already flagged in logs within the 48h dedup window, so **no new notification**. No urgent-labeled issues.
+- **P2** — MEMORY.md's flagged items are all pre-existing/already-known, not re-flagged.
+- **P3** — All 8 skills current vs. their schedule intervals, nothing overdue.
+
+**Result:** nothing new crossed the notification bar → **no notification sent** (same as the prior 7 days, driven by the still-open Dependabot PRs).
+
+**Files modified:**
+- `docs/status.md` — regenerated (Overall: 🟡 WATCH, same driver; Updated timestamp, skill-health table refreshed from `cron-state.json`)
+- `memory/logs/2026-07-18.md` — appended `### heartbeat` entry (`mode: ambient`) with findings and `STATUS_PAGE=WATCH`
+
+No follow-up actions needed beyond the already-tracked priorities in MEMORY.md (Dependabot PR review, `GH_READ_PAT` fix, `read:org` scope).
