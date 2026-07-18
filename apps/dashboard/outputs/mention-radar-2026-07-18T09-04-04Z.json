@@ -1,0 +1,225 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "ℹ️ Mention Radar — Verdikta",
+        "description": "2026-07-18"
+      },
+      "children": [
+        "heading_verdikta",
+        "sep1",
+        "mention1_stack",
+        "mention2_stack",
+        "mention3_stack",
+        "mention4_stack",
+        "sep2",
+        "heading_engagement",
+        "opportunity1",
+        "sep3",
+        "heading_quiet",
+        "quiet_text"
+      ]
+    },
+    "heading_verdikta": {
+      "type": "Heading",
+      "props": {
+        "text": "VERDIKTA",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "mention1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mention1_badge",
+        "mention1_context",
+        "mention1_tweet",
+        "mention1_link"
+      ]
+    },
+    "mention1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-07-17 • Discovery/advocacy",
+        "variant": "default"
+      }
+    },
+    "mention1_context": {
+      "type": "Text",
+      "props": {
+        "text": "Replied on someone's agoragentic-integrations repo thread, unprompted",
+        "variant": "caption"
+      }
+    },
+    "mention1_tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "Project0_Z",
+        "handle": "@Project0_Z",
+        "text": "Verdikta is an open-source AI-jury QA layer on Base: post bounties per adapter with a rubric, GPT+Claude jury grades submissions, escrow releases automatically (~$0.45/eval). Could help keep the catalog verified as it scales past 50 adapters.",
+        "likes": 0
+      }
+    },
+    "mention1_link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/Project0_Z/status/2078102241005773112"
+      }
+    },
+    "mention2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mention2_badge",
+        "mention2_context",
+        "mention2_tweet",
+        "mention2_link"
+      ]
+    },
+    "mention2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-07-16 • Integration pitch",
+        "variant": "default"
+      }
+    },
+    "mention2_context": {
+      "type": "Text",
+      "props": {
+        "text": "Second pitch (already logged by bd-radar 07-17)",
+        "variant": "caption"
+      }
+    },
+    "mention2_tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "Project0_Z",
+        "handle": "@Project0_Z",
+        "text": "Recommended Verdikta as scoring backend for a bounty/DAO Discord bot on someone else's governance repo, offered to share docs.",
+        "likes": 1
+      }
+    },
+    "mention2_link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/Project0_Z/status/2077905210949652681"
+      }
+    },
+    "mention3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mention3_badge",
+        "mention3_author",
+        "mention3_text"
+      ]
+    },
+    "mention3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-07-14 • Press/newsletter-adjacent",
+        "variant": "secondary"
+      }
+    },
+    "mention3_author": {
+      "type": "Text",
+      "props": {
+        "text": "X post by @AjAkmarudi72937 — Continuation of already-tracked account (Not new)",
+        "variant": "caption"
+      }
+    },
+    "mention3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Bounty marketing-task post + reshare of the verdikta-playbook link. Both already logged 2026-07-14/16.",
+        "variant": "body"
+      }
+    },
+    "mention4_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mention4_web",
+        "mention4_github"
+      ]
+    },
+    "mention4_web": {
+      "type": "Text",
+      "props": {
+        "text": "[Web] No new mentions on Reddit, HN, Farcaster, Product Hunt, or blogs — only Verdikta's own site/blog/directory listings surfaced.",
+        "variant": "body"
+      }
+    },
+    "mention4_github": {
+      "type": "Text",
+      "props": {
+        "text": "[GitHub] No star deltas vs 2026-07-14/16 baseline — verdikta-docs=72, verdikta-applications=24, verdikta-arbiter=22, verdikta-dispatcher=17, verdikta-roadmap=0 (all Δ=0).",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_engagement": {
+      "type": "Heading",
+      "props": {
+        "text": "ENGAGEMENT OPPORTUNITIES",
+        "level": "h2"
+      }
+    },
+    "opportunity1": {
+      "type": "Alert",
+      "props": {
+        "title": "@Project0_Z — Organic third-party advocacy",
+        "message": "Now confirmed doing genuine, unprompted third-party advocacy in two separate contexts (a wrapper-catalog repo 07-17, a DAO-bot governance repo 07-16) — recommending Verdikta as an off-the-shelf AI-jury scoring backend to other builders. This is the highest-quality organic signal this radar has caught: someone doing our BD for free, twice, in relevant technical threads. Worth a direct reply/DM thanking them and offering integration support — low effort, this account is already primed.",
+        "type": "success"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_quiet": {
+      "type": "Heading",
+      "props": {
+        "text": "QUIET",
+        "level": "h2"
+      }
+    },
+    "quiet_text": {
+      "type": "Text",
+      "props": {
+        "text": "None — Verdikta had activity this cycle, just low-engagement.",
+        "variant": "body"
+      }
+    }
+  }
+}

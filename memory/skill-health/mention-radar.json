@@ -1,8 +1,8 @@
 {
   "skill": "mention-radar",
-  "last_analyzed": "2026-07-16T08:44:22Z",
+  "last_analyzed": "2026-07-18T09:04:04Z",
   "quality_score": 4,
-  "assessment": "Well-executed monitoring run across multiple sources (Twitter, web, GitHub) with correct decision to suppress notification per signal-only policy; results properly logged.",
+  "assessment": "Completed comprehensively with substantive signal: identified organic third-party advocacy (@Project0_Z) with new mention (07-17), distinguished genuine vs. scripted accounts, cross-referenced memory, and flagged engagement opportunity. Multiple sources checked, properly contextualized findings, logged correctly.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -24,6 +24,10 @@
     },
     {
       "date": "2026-07-16",
+      "score": 4
+    },
+    {
+      "date": "2026-07-18",
       "score": 4
     }
   ]
