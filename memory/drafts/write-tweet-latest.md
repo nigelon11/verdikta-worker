@@ -2,54 +2,62 @@
 type: Reference
 ---
 
-## Tweet Drafts: vanity metrics vs. real adoption signal (verification bottleneck)
+## Tweet Drafts: verification kills almost everything — and that's the point
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> AI agents don't have a submission problem. They have a verification problem.
+> Killing 20 stories to publish zero is the job. Publishing 20 unverified ones is the industry.
 
-**1b. Data drop**
-> Star count: flat for days. Real signal: a stranger recommending you, unprompted, twice in 48 hours.
+**1b. Observation**
+> Most 'AI x crypto news' is the same three stories wearing a new publish date.
 
 ### Tier 2 — Two-punch
-**2a. Observation**
-> Autonomous agents can flood a bounty board in minutes. Reading what they submitted takes longer than writing it did — that's the bottleneck now.
+**2a. Data drop**
+> Today's raw pull: about 20 candidate stories. Survivors after verification: zero. Third empty day this run — and every kill has a documented, checkable reason.
 
-**2b. Data drop**
-> Our GitHub stars haven't moved in days. Someone pitched our AI jury to a project they're building, unprompted, twice. One of those is signal.
+**2b. Sardonic**
+> A hack from January reheated as breaking news. A December paper relaunched as fresh research. Same spam account, same claim, fourth day running. Tuesday.
 
 ### Tier 3 — Paragraph
 **3a. Reframe**
-> Everyone's optimizing for agents that submit work faster. Nobody's asking who checks it. When an agent can generate ten submissions before a human reads one, the judge — not the worker — becomes the scarce resource.
+> A zero-story day reads as failure. It isn't. Every pitch killed today had a specific reason: already reported, verified stale by months, or sourced to one promotional post and nothing else. The real failure would've been publishing the twenty that didn't survive that check.
 
 **3b. Narrative**
-> This week a builder we've never talked to found our AI-jury API and recommended it to someone else's bounty bot, unasked, twice, for free. No campaign, no ask. Worth more than a star count that hasn't budged.
+> Pulled 20 candidate stories today. One 'hack' was actually from January. One 'new research' was a December paper wearing a fresh headline. One account ran the identical unverifiable claim for a fourth straight day. Checked all twenty, killed all twenty, published zero.
 
 ### Tier 4 — Long tweet
-**4a. Data drop**
-> Security accounts are already saying it out loud: AI in bug bounties went from novelty to default, and it's producing enough "AI slop" that reading submissions is now the actual job. The same shape is coming for every bounty market — agents can write submissions faster than anyone can grade them. A two-model jury scoring against a public rubric isn't a nice-to-have here, it's the only way the volume stays honest. That's the bet a bounty protocol makes now.
+**4a. Data drop / builder's breakdown**
+> Here's what a zero-story day actually involves: about 20 raw candidates in, each checked against a publish date, a primary source, and whether it's already been reported in the last 72 hours. Today that killed a $27M 'AI-agent hack' that actually happened in January, a research paper republished with a new headline months late, an oracle exploit with no AI angle padded in to look on-topic, and a spam account running the same unverified claim for a fourth straight day. Zero of the twenty survived. Publishing any of them would have been the failure — not zero output.
 
-**4b. Reframe**
-> Vanity metrics don't move because they're not built to. Our star count sat exactly flat across three separate checks this week. What did move: a builder we've never spoken to recommended our verification API to someone else's project, unprompted, twice in two days, for nothing in return. If you want to know whether a protocol is actually being adopted, stop watching the counter and start watching who's willing to vouch for it to a stranger.
+**4b. Question**
+> Why do so few outlets kill a story once they've started writing it? We pulled about 20 AI-agent-x-crypto candidates today. Half were duplicates already reported this week. A third turned out to be months old once we checked the real publish date. The rest were single promotional posts with no verifiable claim behind them. Verifying and killing all twenty took longer than writing any one would have. Zero published. That's the tradeoff nobody wants to make: speed, or being right.
 
 ### Tier 5 — Thread opener
-**5a. Thesis-first**
-> AI agents can write a bounty submission in seconds. Verifying it honestly still takes a human — or a system built to replace one.
+**5a. Hot take**
+> The hardest part of covering AI-agent crypto isn't finding stories. It's killing the twenty that looked real for about five minutes.
 ---
-- Security accounts are already naming "AI slop" as the new failure mode in bug bounties
-- Submission volume scales with agent compute; review capacity doesn't
-- A two-model AI jury scoring against a public rubric is a bet that verification can scale the same way generation did
-- Real test: 90%+ threshold, on-chain escrow, no human in the loop
-- What we're watching next: does judgment quality hold as volume climbs
+- What a "raw pull" actually looks like before verification starts
+- The four kill categories from today: recycled, stale-dated, unsourced, off-topic
+- The real time cost: verification takes longer than writing would have
+- Why a zero-output day is the system working, not failing
+- The tell for any "AI news" account worth following: do they ever kill anything
 
 **5b. Observation**
-> Our star count hasn't moved in days. That was never the metric that mattered.
+> Three empty news days this month, and each one took more verification work than a normal day did. That's not a coincidence.
 ---
-- Stars are a vanity signal: easy to check, easy to ignore, easy to game
-- The signal we actually watch: someone recommending your API to a stranger's project, unprompted, expecting nothing back
-- That happened twice in 48 hours this week — no campaign behind it
-- Bounty protocols live or die on whether builders vouch for them, not whether they star the repo
-- Adoption looks like word of mouth long before it looks like a chart
+- The pattern: three zero-output days, all more labor-intensive than average
+- Specific catches: a January hack re-dated as breaking, a Dec 2025 paper re-launched as new
+- The recurring spam account still running the identical claim, day four
+- What "quiet" actually measures: supply of hype, not lack of effort
+- The real question worth asking about any feed: how much of it is unverified reheats
 
-Best overall: 4b — ties today's two flattest/liveliest data points (static stars, unprompted advocacy) into one thesis about what adoption actually looks like.
-Best per tier: 1a (tier 1), 2a (tier 2), 3a (tier 3), 4b (tier 4), 5a (tier 5)
+---
+
+**Best overall:** #4a — the concrete kill-list (mis-dated hack, stale paper, padded oracle story, spam account) makes the abstract claim checkable, and the closing line reframes the day correctly.
+
+**Best per tier:**
+- Tier 1: 1a — sharpest compression of the whole thesis
+- Tier 2: 2b — the specificity does the work, no editorializing needed
+- Tier 3: 3a — the reframe lands cleanly in one paragraph
+- Tier 4: 4a — most concrete, most citable
+- Tier 5: 5b — quieter hook, better thread bait than the more declarative 5a
