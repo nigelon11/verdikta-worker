@@ -1,12 +1,12 @@
-Flush is complete — no notification needed since this is routine index maintenance, not signal.
-
 ## Summary
 
-Ran the memory-flush skill for 2026-07-18:
-- Reviewed the last 3 days of logs (07-15 through 07-17) plus current `gh` state (PRs, issues) against `memory/MEMORY.md`.
-- Everything substantive from 07-17's activity was already captured (bd-radar's `@Project0_Z` lead is fully detailed in `memory/topics/builder-leads.md`, digests/tweets already reflected or correctly left ephemeral).
-- Updated two stale counters in `MEMORY.md` Next Priorities: `GH_READ_PAT` 401 streak (7→8 consecutive runs) and Dependabot PR stall time (~157h→~197h), bumped "Last consolidated" to 2026-07-18.
-- Confirmed no stale sections to prune (Open Improvement PRs still N/A, issues index still empty, `verdikta-arbiter#9` still validly excluded as a <7d draft).
-- Logged the flush to `memory/logs/2026-07-18.md` and committed both files (`1ab2c2b`).
+Ran the `memory-flush` skill (no topic filter — flushed all recent activity) covering the last 3 days of logs (2026-07-16 through 2026-07-18).
 
-No follow-up needed — next priorities remain: fix `GH_READ_PAT`, add `read:org` scope, and review the 4 stalled Dependabot PRs.
+**Updated `memory/MEMORY.md`:**
+- Refreshed stale counters: Dependabot PRs #1-#4 now ~206h stalled, `bd-radar`'s `GH_READ_PAT` 401 now 9 consecutive runs
+- Added new priority: `verdikta-applications#18` (bingmokaka's tested ETH-prepay fix) crossed github-monitor's 48h-idle threshold today — a real contribution now stalled on review
+- Folded `@Project0_Z`'s escalated signal (2-for-2 unprompted third-party advocacy, flagged by mention-radar as a cheap engagement opp) into the existing "Builder Leads" section — avoided creating a duplicate heading
+
+**Verified nothing needed pruning:** no "Open Improvement PRs" section warranted (still only a false-positive Dependabot match), `memory/issues/INDEX.md` still empty, Lessons Learned/Dogfooding sections all still current, and no new digest row (07-18 was a second consecutive empty digest day).
+
+**Logged** the flush to `memory/logs/2026-07-18.md` and committed both files (`f450e3d`).
