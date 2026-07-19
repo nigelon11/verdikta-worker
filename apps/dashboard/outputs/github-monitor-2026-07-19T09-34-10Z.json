@@ -1,0 +1,103 @@
+{
+  "root": "github-monitor-card",
+  "state": {},
+  "elements": {
+    "github-monitor-card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "info-alert",
+        "pr-list",
+        "separator",
+        "sources-text"
+      ]
+    },
+    "info-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "5 pull requests awaiting review"
+      }
+    },
+    "pr-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-18",
+        "pr-1",
+        "pr-8",
+        "pr-4",
+        "pr-2"
+      ]
+    },
+    "pr-18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#18 — bingmokaka's ETH-prepay fix, idle 86h since 2026-07-15 (crossed 48h threshold 07-18, still unreviewed)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-docs#1 — Zetav1 forensic-CID-verification docs PR, idle ~228h (~9.5d)",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs"
+      }
+    },
+    "pr-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#8 — bundle-submit-flow PR, idle ~104d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#4 — classMap jury-models PR, idle ~142d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "verdikta-applications"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#2 — nginx Vite-build PR, idle ~164d",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "verdikta-applications"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
