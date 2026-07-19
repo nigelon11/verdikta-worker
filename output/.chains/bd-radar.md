@@ -1,18 +1,18 @@
-All done. Summary below.
+All done. Per the skill's notify gate, staying quiet — no new `building`/`integrating` leads today, so no self-notify (per Priorities 2/5, the operator still gets the full picture via memory).
 
 ## Summary
 
-Ran `bd-radar` (9th run) for Verdikta BD lead discovery across GitHub, X, and web.
+Ran `bd-radar` (10th run) for Verdikta's builder-lead sweep. **0 new leads** — all 7 previously tracked leads carry forward unchanged. Key checks:
+- **GitHub forks/issues** (5 watched repos): `GH_READ_PAT` still 401 (10th consecutive run since 2026-07-10) — fell back to public API successfully, no new activity beyond the already-tracked bingmokaka/Zetav1/zp6 cluster.
+- **`gh search` discovery**: no new third-party repos; same known skill-marketplace mirrors resurfaced (mechanical, not new engagement). One private `verdikta/verdikta-agents` result appeared in a code search — disregarded per STRATEGY.md's public-repos-only constraint.
+- **X (xAI search)**: 0 new third-party mentions, only first-party or already-tracked posts.
+- **Web**: 0 independent mentions, 10th consecutive quiet window.
+- Notable: `aaronjmars/aeon-agent` pushed a commit today but the verdikta-hunter skill is still not restored; `NSPG13/agent-bounties` (competitor) is still shipping fast.
 
-**Findings:** 0 new leads this run — all 7 previously tracked leads carried forward. Two already-surfaced `mentioning` leads escalated: **@Project0_Z** posted a second, distinct organic pitch (to a different third-party adapter-catalog repo, "agoragentic-integrations") recommending Verdikta's AI-jury — now a 2-for-2 pattern of unprompted advocacy in 2 days; **@Fishhead8u** repeated their targeted-bounty/solvability friction complaint. Top building lead **s97472091-pixel** had a 2nd consecutive quiet day. No new fork/issue activity across the 5 watched repos beyond already-known accounts. `GH_READ_PAT` is still 401 (9th consecutive run since 2026-07-10) — confirmed again via direct API calls; fell back to unauthenticated `gh search`/`gh api`, which works fine for these public repos.
+**Files created/modified:**
+- `output/articles/bd-radar-2026-07-19.md` (new digest)
+- `memory/logs/2026-07-19.md` (appended `### bd-radar` block)
+- `memory/topics/builder-leads.md` (added 2026-07-19 run notes, bumped timestamp)
+- `.gitignore` (added `.bd-scratch/` and `bdtmp/` — sandboxed scratch dirs for API responses, since raw writes are confined to the working directory)
 
-**Files modified:**
-- `output/articles/bd-radar-2026-07-18.md` (new) — ranked digest
-- `memory/topics/bd-radar-leads.json` — updated Project0_Z and Fishhead8u entries with new signal
-- `memory/topics/builder-leads.md` — added 9th-run notes, bumped timestamp
-- `memory/logs/2026-07-18.md` — appended `### bd-radar` block
-- `xai-bd-payload.json` — updated with today's search window (pre-existing tracked scratch file)
-
-**No notify sent** — gate requires ≥1 new `building`/`integrating` lead; none this run.
-
-**Follow-up needed:** `GH_READ_PAT` has been 401 for 9 consecutive runs — should be fixed before GitHub rate limits bite (already flagged in `memory/MEMORY.md` Next Priorities). Changes are **not committed** — let me know if you'd like me to commit them.
+**Follow-up for the operator:** `GH_READ_PAT` remains unset/invalid (401) for 10 straight runs — no functional impact yet but should be fixed before GitHub rate limits bite. No new high-intent leads to act on this run.

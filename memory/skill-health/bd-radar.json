@@ -1,12 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-18T09:07:02Z",
+  "last_analyzed": "2026-07-19T07:53:59Z",
   "quality_score": 3,
-  "assessment": "Task completed adequately with proper data management and escalation of existing leads, but persistent auth issue (9 consecutive 401s) and zero new discoveries limit actionability.",
+  "assessment": "Acceptable execution: thorough methodology, proper constraint adherence, clear issue tracking, but 10 consecutive 0-lead runs with unresolved auth token suggest skill needs operator intervention.",
   "flags": [
-    "api_error"
+    "recurring_issue"
   ],
-  "avg_score": 3.89,
+  "avg_score": 3.8,
   "history": [
     {
       "date": "2026-07-10",
@@ -42,6 +42,10 @@
     },
     {
       "date": "2026-07-18",
+      "score": 3
+    },
+    {
+      "date": "2026-07-19",
       "score": 3
     }
   ]

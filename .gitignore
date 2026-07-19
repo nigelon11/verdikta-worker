@@ -48,3 +48,8 @@ node_modules/
 # Stale artifacts
 .external-work
 .vuln-scan/
+
+# bd-radar API-response scratch (written inside the repo since sandboxed
+# writes are confined to the working directory; never committed)
+.bd-scratch/
+bdtmp/
