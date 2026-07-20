@@ -1,12 +1,13 @@
+Memory flush complete for 2026-07-20.
+
 ## Summary
 
-Ran the `memory-flush` skill (no topic filter — flushed all recent activity) covering the last 3 days of logs (2026-07-16 through 2026-07-18).
+Reviewed the last 3 days of logs (07-17 to 07-19) against `memory/MEMORY.md` and:
 
-**Updated `memory/MEMORY.md`:**
-- Refreshed stale counters: Dependabot PRs #1-#4 now ~206h stalled, `bd-radar`'s `GH_READ_PAT` 401 now 9 consecutive runs
-- Added new priority: `verdikta-applications#18` (bingmokaka's tested ETH-prepay fix) crossed github-monitor's 48h-idle threshold today — a real contribution now stalled on review
-- Folded `@Project0_Z`'s escalated signal (2-for-2 unprompted third-party advocacy, flagged by mention-radar as a cheap engagement opp) into the existing "Builder Leads" section — avoided creating a duplicate heading
+- **Bumped staleness counters:** `GH_READ_PAT` 401 (now 10 consecutive bd-radar runs), Dependabot PRs #1-#4 (~230h stalled), `verdikta-applications#18` (~86h idle since last update).
+- **Updated Builder Leads pointer:** top lead s97472091-pixel now on a 3rd consecutive quiet day; noted aaronjmars/aeon-agent pushed again 07-19 but the verdikta-hunter skill is still not restored; NSPG13/agent-bounties still shipping. Full detail remains in `topics/builder-leads.md` (bd-radar owns that file directly).
+- **New lesson logged:** digest and write-tweet runs on 07-18/07-19 both hit sandbox-blocked `/tmp`+`rm`, leaving non-sensitive stray temp files in the repo root/`.runtmp/` (confirmed still present on disk). Flagged as a Next Priority for a skill-side fix rather than attempting cleanup myself, since `rm` is outside memory-flush's granted tools.
+- Confirmed no action needed on "Open Improvement PRs" (still just the false-positive Dependabot PR #2) or `memory/issues/INDEX.md` (still empty).
+- Nothing found stale enough to remove from Dogfooding/Lessons Learned; no new Recent Digests row (3rd empty digest day in a row, nothing to promote).
 
-**Verified nothing needed pruning:** no "Open Improvement PRs" section warranted (still only a false-positive Dependabot match), `memory/issues/INDEX.md` still empty, Lessons Learned/Dogfooding sections all still current, and no new digest row (07-18 was a second consecutive empty digest day).
-
-**Logged** the flush to `memory/logs/2026-07-18.md` and committed both files (`f450e3d`).
+Files changed: `memory/MEMORY.md`, new `memory/logs/2026-07-20.md`. Committed directly to `main` as `2a6cef8` (matches this repo's existing convention of direct commits for routine memory/log data, not code changes). No follow-up actions needed beyond the items already tracked in Next Priorities.
