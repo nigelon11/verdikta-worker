@@ -1,8 +1,8 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-07-19T09:34:10Z",
+  "last_analyzed": "2026-07-20T09:46:25Z",
   "quality_score": 4,
-  "assessment": "Good run: complete monitoring across 5 repos, specific quantified findings (5 stale PRs with idle hours/days), documented known GraphQL limitation with workaround, properly updated memory. Identical to yesterday by design (persistent staleness signal).",
+  "assessment": "Functional monitoring run with proper metrics, timestamps, and actionable thresholds identified; limited by persistent token scope blocker and routine/no-change results.",
   "flags": [],
   "avg_score": 3.92,
   "history": [
@@ -52,6 +52,10 @@
     },
     {
       "date": "2026-07-19",
+      "score": 4
+    },
+    {
+      "date": "2026-07-20",
       "score": 4
     }
   ]

@@ -1,0 +1,96 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert_summary",
+        "sep1",
+        "pr_stack",
+        "sep2",
+        "text_sources"
+      ]
+    },
+    "alert_summary": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "5 repos scanned, 0 need action"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "pr_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_1",
+        "pr_2",
+        "pr_3",
+        "pr_4",
+        "pr_5"
+      ]
+    },
+    "pr_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "bingmokaka's ETH-prepay fix",
+        "score": "idle 110h"
+      }
+    },
+    "pr_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "score": "idle 105d"
+      }
+    },
+    "pr_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "score": "idle 144d"
+      }
+    },
+    "pr_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "score": "idle 166d"
+      }
+    },
+    "pr_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "Zetav1 PR",
+        "score": "idle 253h (~10.5d)"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "text_sources": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: verdikta-applications=ok, verdikta-arbiter=ok, verdikta-dispatcher=ok, verdikta-docs=ok, verdikta-roadmap=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
