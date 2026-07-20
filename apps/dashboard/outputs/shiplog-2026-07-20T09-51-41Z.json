@@ -1,0 +1,434 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Shiplog: Jul 13–20",
+        "description": "Verdikta weekly activity recap"
+      },
+      "children": [
+        "section-main",
+        "sep-variants",
+        "section-thread",
+        "sep-short",
+        "section-short",
+        "sep-link",
+        "link-full"
+      ]
+    },
+    "section-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "heading-main",
+        "summary-line",
+        "sep-main-1",
+        "heading-key-metrics",
+        "metrics-stack",
+        "sep-main-2",
+        "heading-docs",
+        "docs-content",
+        "sep-main-3",
+        "heading-apps",
+        "apps-content",
+        "sep-main-4",
+        "heading-dogfood",
+        "dogfood-content",
+        "sep-main-5",
+        "heading-backlog",
+        "backlog-content",
+        "sep-main-6",
+        "heading-scope",
+        "scope-content"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Main Recap",
+        "level": "h2"
+      }
+    },
+    "summary-line": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet window on the public repos: 0 merged PRs, 0 star movement across all 5 repos. What actually moved:",
+        "variant": "lead"
+      }
+    },
+    "sep-main-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-key-metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Metrics",
+        "level": "h3"
+      }
+    },
+    "metrics-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-prs",
+        "stat-stars",
+        "stat-bounties"
+      ]
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Merged PRs",
+        "value": "0"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Star movement",
+        "value": "0"
+      }
+    },
+    "stat-bounties": {
+      "type": "Stat",
+      "props": {
+        "label": "Math bounties expired",
+        "value": "8",
+        "delta": "0 submissions"
+      }
+    },
+    "sep-main-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-docs": {
+      "type": "Heading",
+      "props": {
+        "text": "Docs live update",
+        "level": "h3"
+      }
+    },
+    "docs-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "docs-line-1",
+        "docs-line-2"
+      ]
+    },
+    "docs-line-1": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-docs and verdikta-dispatcher now document arbiter nodes, dispatcher contracts, and bounties app as live on Base Mainnet (not \"planned\")."
+      }
+    },
+    "docs-line-2": {
+      "type": "Text",
+      "props": {
+        "text": "New ReputationAggregator contract address added on both mainnet and testnet."
+      }
+    },
+    "sep-main-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-apps": {
+      "type": "Heading",
+      "props": {
+        "text": "verdikta-applications updates",
+        "level": "h3"
+      }
+    },
+    "apps-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "apps-line-1",
+        "apps-line-2"
+      ]
+    },
+    "apps-line-1": {
+      "type": "Text",
+      "props": {
+        "text": "User guide bumped Alpha-1 → Beta-1."
+      }
+    },
+    "apps-line-2": {
+      "type": "Text",
+      "props": {
+        "text": "External contributor (yenachar) shipped a real fix: bounty work-product preview no longer requires wallet connection."
+      }
+    },
+    "sep-main-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-dogfood": {
+      "type": "Heading",
+      "props": {
+        "text": "Honest dogfooding",
+        "level": "h3"
+      }
+    },
+    "dogfood-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dogfood-line-1",
+        "dogfood-list"
+      ]
+    },
+    "dogfood-line-1": {
+      "type": "Text",
+      "props": {
+        "text": "8 open math-problem bounties expired this week with zero valid submissions:"
+      }
+    },
+    "dogfood-list": {
+      "type": "Text",
+      "props": {
+        "text": "Vaught's Conjecture, Busy Beaver BB(6), Frankl's Union-Closed Conjecture, and 5 more."
+      }
+    },
+    "sep-main-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-backlog": {
+      "type": "Heading",
+      "props": {
+        "text": "Backlog housekeeping stalled",
+        "level": "h3"
+      }
+    },
+    "backlog-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "backlog-line",
+        "backlog-repos"
+      ]
+    },
+    "backlog-line": {
+      "type": "Text",
+      "props": {
+        "text": "Draft PR \"add Verdikta backlog guidance\" unchanged for ~135 hours across:"
+      }
+    },
+    "backlog-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-app",
+        "badge-arbiter",
+        "badge-dispatcher",
+        "badge-docs"
+      ]
+    },
+    "badge-app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications #25"
+      }
+    },
+    "badge-arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter #9"
+      }
+    },
+    "badge-dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher #5"
+      }
+    },
+    "badge-docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs #7"
+      }
+    },
+    "sep-main-6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-scope": {
+      "type": "Heading",
+      "props": {
+        "text": "Out of scope",
+        "level": "h3"
+      }
+    },
+    "scope-content": {
+      "type": "Text",
+      "props": {
+        "text": "This window's real PR volume — 24 PRs including a full security-audit remediation batch — landed in a private repo, out of scope for this recap."
+      }
+    },
+    "sep-variants": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-thread": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-thread",
+        "tweet-1",
+        "tweet-2",
+        "tweet-3",
+        "tweet-4",
+        "tweet-5",
+        "tweet-6"
+      ]
+    },
+    "heading-thread": {
+      "type": "Heading",
+      "props": {
+        "text": "Thread variant",
+        "level": "h2"
+      }
+    },
+    "tweet-1": {
+      "type": "TweetCard",
+      "props": {
+        "text": "Verdikta shiplog, Jul 13-20. Quiet week by the numbers — 0 merged PRs, 0 new stars across 5 public repos. But there's one real story."
+      }
+    },
+    "tweet-2": {
+      "type": "TweetCard",
+      "props": {
+        "text": "The docs stopped saying \"planned\" and started saying \"live.\" verdikta-docs and verdikta-dispatcher now document arbiter nodes, dispatcher contracts, and the bounties app as running on Base Mainnet — plus a new ReputationAggregator contract address on both mainnet and testnet."
+      }
+    },
+    "tweet-3": {
+      "type": "TweetCard",
+      "props": {
+        "text": "verdikta-applications bumped its user guide from Alpha-1 to Beta-1. An external contributor fixed a real UX papercut: the bounty work-product preview no longer forces a wallet connection first."
+      }
+    },
+    "tweet-4": {
+      "type": "TweetCard",
+      "props": {
+        "text": "The honest dogfooding data point: 8 open math bounties (Vaught's Conjecture, Busy Beaver BB(6), Frankl's Union-Closed Conjecture, and 5 more) expired this week. Zero valid submissions. Real bounties, real deadlines, no shortcuts on reporting the miss."
+      }
+    },
+    "tweet-5": {
+      "type": "TweetCard",
+      "props": {
+        "text": "Meanwhile a housekeeping PR — \"add backlog workflow guidance\" — sits open as a draft across 4 repos, unchanged for ~135 hours. Noted, not hidden."
+      }
+    },
+    "tweet-6": {
+      "type": "TweetCard",
+      "props": {
+        "text": "The real engineering volume this window (24 PRs, a full security-audit remediation batch) landed in a private repo, so it's out of scope here. That's next window's story to tell once it's public."
+      }
+    },
+    "sep-short": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-short": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-short",
+        "short-intro",
+        "short-bullets"
+      ]
+    },
+    "heading-short": {
+      "type": "Heading",
+      "props": {
+        "text": "Short variant (3-bullet)",
+        "level": "h2"
+      }
+    },
+    "short-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Verdikta shiplog, Jul 13-20 — quiet on public metrics (0 merged PRs, 0 star movement):"
+      }
+    },
+    "short-bullets": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "bullet-1",
+        "bullet-2",
+        "bullet-3"
+      ]
+    },
+    "bullet-1": {
+      "type": "Text",
+      "props": {
+        "text": "• Docs now correctly say Verdikta is live on Base Mainnet, not \"planned\" (verdikta-docs, verdikta-dispatcher + new contract address)"
+      }
+    },
+    "bullet-2": {
+      "type": "Text",
+      "props": {
+        "text": "• verdikta-applications: Beta-1 bump + an external contributor's wallet-connect UX fix"
+      }
+    },
+    "bullet-3": {
+      "type": "Text",
+      "props": {
+        "text": "• 8 open math bounties expired unsolved this week — real usage, no valid submissions"
+      }
+    },
+    "sep-link": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full shiplog article",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-07-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

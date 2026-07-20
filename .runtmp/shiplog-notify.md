@@ -1,5 +1,3 @@
-ℹ️ Shiplog: 2026-07-13 → 2026-07-20
-
 Verdikta shiplog — Jul 13 → Jul 20
 
 Quiet window on the public repos: 0 merged PRs, 0 star movement across all 5 repos. What actually moved:
