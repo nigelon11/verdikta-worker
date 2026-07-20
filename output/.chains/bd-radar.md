@@ -1,18 +1,19 @@
-All done. Per the skill's notify gate, staying quiet — no new `building`/`integrating` leads today, so no self-notify (per Priorities 2/5, the operator still gets the full picture via memory).
+State unchanged (7 leads, 7 surfaced) — no new `building`/`integrating` lead, so per the gate, no self-notify. Run complete.
 
 ## Summary
 
-Ran `bd-radar` (10th run) for Verdikta's builder-lead sweep. **0 new leads** — all 7 previously tracked leads carry forward unchanged. Key checks:
-- **GitHub forks/issues** (5 watched repos): `GH_READ_PAT` still 401 (10th consecutive run since 2026-07-10) — fell back to public API successfully, no new activity beyond the already-tracked bingmokaka/Zetav1/zp6 cluster.
-- **`gh search` discovery**: no new third-party repos; same known skill-marketplace mirrors resurfaced (mechanical, not new engagement). One private `verdikta/verdikta-agents` result appeared in a code search — disregarded per STRATEGY.md's public-repos-only constraint.
-- **X (xAI search)**: 0 new third-party mentions, only first-party or already-tracked posts.
-- **Web**: 0 independent mentions, 10th consecutive quiet window.
-- Notable: `aaronjmars/aeon-agent` pushed a commit today but the verdikta-hunter skill is still not restored; `NSPG13/agent-bounties` (competitor) is still shipping fast.
+Ran bd-radar's 11th sweep for 2026-07-20. **Zero new leads** — all 7 previously tracked leads carried forward unchanged:
+- GitHub forks/issues (5 watched repos, public-API fallback since `GH_READ_PAT` is still 401 for the 11th consecutive run): only known forks (bingmokaka, PRESSPAGE-ENTERTAINMENT-INC, SHY-TRADING, zp6, Zetav1) plus one dormant drive-by; issues all internal or the known Zetav1 spam cluster.
+- `gh search` discovery: no new third-party repos.
+- X (xAI search, since 07-17): no new handles — same first-party account plus repeats of already-tracked @Fishhead8u and @Project0_Z posts.
+- Web (HN/Reddit): 11th consecutive quiet window.
+- Top lead **s97472091-pixel** hit its 4th consecutive quiet day.
 
-**Files created/modified:**
-- `output/articles/bd-radar-2026-07-19.md` (new digest)
-- `memory/logs/2026-07-19.md` (appended `### bd-radar` block)
-- `memory/topics/builder-leads.md` (added 2026-07-19 run notes, bumped timestamp)
-- `.gitignore` (added `.bd-scratch/` and `bdtmp/` — sandboxed scratch dirs for API responses, since raw writes are confined to the working directory)
+**Files changed** (committed as `831a0c9`):
+- `output/articles/bd-radar-2026-07-20.md` — new ranked digest
+- `memory/logs/2026-07-20.md` — appended `### bd-radar` block
+- `memory/topics/builder-leads.md` — appended day-11 summary, bumped timestamp
 
-**Follow-up for the operator:** `GH_READ_PAT` remains unset/invalid (401) for 10 straight runs — no functional impact yet but should be fixed before GitHub rate limits bite. No new high-intent leads to act on this run.
+No notify sent (gate requires ≥1 new `building`/`integrating` lead; none found).
+
+**Follow-up needed:** `GH_READ_PAT` remains 401/unset — 11th consecutive run, no functional impact yet but flagged again for the operator. Also confirmed `.runtmp/` isn't the right scratch location for bd-radar (there's a dedicated gitignored `.bd-scratch/` dir) — sandbox blocked both `mv` and pre-emptive `$VAR` checks this run, so stray non-sensitive temp files remain in `.runtmp/` (consistent with the already-logged cross-skill sandbox-cleanup issue in `memory/MEMORY.md`).
