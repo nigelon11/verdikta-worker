@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-19T14:15:43Z",
+  "last_analyzed": "2026-07-20T14:34:01Z",
   "quality_score": 4,
-  "assessment": "Substantive digest run with systematic filtering, correct judgment to skip empty notification, and transparent reporting of methodology and environmental issues.",
+  "assessment": "Thorough execution: systematic multi-source search (xAI + WebSearch), rigorous candidate evaluation with categorized rejections, correct application of no-padding rule on empty day, proper logging with kill reasons per item.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -48,6 +48,10 @@
     },
     {
       "date": "2026-07-19",
+      "score": 4
+    },
+    {
+      "date": "2026-07-20",
       "score": 4
     }
   ]
