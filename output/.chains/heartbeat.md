@@ -1,16 +1,15 @@
-Log entry appended and status page regenerated. No new notification needed — the two open flags (stalled Dependabot PRs #1-#4, `verdikta-applications#18`) were already reported within the 48h dedup window.
+The status page and log are updated; the workflow's auto-commit step will land these on `main`.
 
 ## Summary
 
-Ran the heartbeat skill's **ambient check** branch (default `${var}`, the daily 08:00 UTC scheduled path).
-
-- **P0 (fleet health):** All 8 enabled skills healthy — `last_status: success`, `consecutive_failures: 0`, success rates 92-100%. Fleet fully warmed, no stuck/failed skills, heartbeat's own self-check well under the 36h staleness bar.
-- **P1 (stalled PRs/issues):** Dependabot PRs #1-#4 (this repo, ~230h stalled) and `verdikta-applications#18` (~230h idle) confirmed still open/unchanged — both already reported within the last 48h, so dedup suppressed a repeat notification. New GitHub issue #8 (`health: digest`) confirmed as the same non-actionable machine-managed template as #5-#7.
-- **P2/P3:** No new memory-flagged items; no skill overdue vs. its schedule interval.
-- **Overall verdict:** 🟡 WATCH (same driver as prior days — stalled PRs).
+Ran the heartbeat skill's ambient check (default, `${var}` empty):
+- **P0:** Fleet fully healthy — all 8 enabled skills (github-monitor, digest, mention-radar, write-tweet, memory-flush, bd-radar, shiplog, heartbeat) show `success`, 0 consecutive failures, success rates ≥92%. Heartbeat's own self-check is well under the 36h staleness bar.
+- **P1/P2:** Only pre-existing, already-flagged items remain (Dependabot PRs #1-#4 ~254h stalled, `verdikta-applications#18` ~110h idle, GH_READ_PAT 401, missing `read:org` scope) — all deduped since they were reported within the last 48h.
+- **P3:** No skills overdue vs. their schedule interval.
+- No token-report article exists, so Token Pulse is omitted from the status page.
 
 **Files modified:**
-- `docs/status.md` — regenerated with current timestamps, success rates, and next-scheduled-run (digest at 14:00 UTC).
-- `memory/logs/2026-07-19.md` — appended `### heartbeat` entry (`mode: ambient`) plus tool-count line.
+- `docs/status.md` — regenerated (🟡 WATCH, same driver as prior days: stalled PRs; updated timestamp, skill table, next run = digest at 14:00 UTC)
+- `memory/logs/2026-07-20.md` — appended `### heartbeat` entry
 
-**No notification sent** — nothing new crossed the reporting bar. **Follow-up:** none new; existing Next Priorities in `memory/MEMORY.md` (Dependabot PRs, `verdikta-applications#18` review, `GH_READ_PAT` 401, `read:org` scope) remain outstanding for the operator.
+No notification sent (nothing new crossed the dedup bar) — consistent with the skill's "notify only on signal" rule. Follow-up items remain as already tracked in `memory/MEMORY.md` Next Priorities; no new action needed from this run.
