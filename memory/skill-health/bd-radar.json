@@ -1,13 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-20T09:51:34Z",
-  "quality_score": 3,
-  "assessment": "Skill executed correctly with clear documentation, but 11 consecutive zero-lead runs indicate stale signal; GitHub auth degradation (GH_READ_PAT 401) unresolved.",
+  "last_analyzed": "2026-07-21T08:51:10Z",
+  "quality_score": 4,
+  "assessment": "Complete execution with proper error handling, structured artifacts, and operator follow-up; zero leads for 12 consecutive runs limits strategic value despite solid skill performance.",
   "flags": [
-    "stale_data",
-    "low_quality"
+    "stale_data"
   ],
-  "avg_score": 3.73,
+  "avg_score": 3.75,
   "history": [
     {
       "date": "2026-07-10",
@@ -52,6 +51,10 @@
     {
       "date": "2026-07-20",
       "score": 3
+    },
+    {
+      "date": "2026-07-21",
+      "score": 4
     }
   ]
 }
