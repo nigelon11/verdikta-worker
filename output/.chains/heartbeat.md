@@ -1,15 +1,9 @@
-The status page and log are updated; the workflow's auto-commit step will land these on `main`.
+No new signal today — same drivers as the last two days, so no notification. `docs/status.md` and the log entry are updated.
 
 ## Summary
-
-Ran the heartbeat skill's ambient check (default, `${var}` empty):
-- **P0:** Fleet fully healthy — all 8 enabled skills (github-monitor, digest, mention-radar, write-tweet, memory-flush, bd-radar, shiplog, heartbeat) show `success`, 0 consecutive failures, success rates ≥92%. Heartbeat's own self-check is well under the 36h staleness bar.
-- **P1/P2:** Only pre-existing, already-flagged items remain (Dependabot PRs #1-#4 ~254h stalled, `verdikta-applications#18` ~110h idle, GH_READ_PAT 401, missing `read:org` scope) — all deduped since they were reported within the last 48h.
-- **P3:** No skills overdue vs. their schedule interval.
-- No token-report article exists, so Token Pulse is omitted from the status page.
-
-**Files modified:**
-- `docs/status.md` — regenerated (🟡 WATCH, same driver as prior days: stalled PRs; updated timestamp, skill table, next run = digest at 14:00 UTC)
-- `memory/logs/2026-07-20.md` — appended `### heartbeat` entry
-
-No notification sent (nothing new crossed the dedup bar) — consistent with the skill's "notify only on signal" rule. Follow-up items remain as already tracked in `memory/MEMORY.md` Next Priorities; no new action needed from this run.
+- Ran heartbeat's ambient check (empty `${var}`, the live scheduled path). P0: all 8 enabled skills healthy, no stuck/failed/chronic-failure skills, heartbeat's own self-check well under the 36h bar.
+- P1: confirmed the known Dependabot PRs #1-#4 (this repo, ~254h stalled) and `verdikta-applications#18` (~157h idle) are unchanged, plus checked the 4-draft-PR cluster (`applications#25`/`arbiter#9`/`dispatcher#5`/`docs#7`) flagged in memory as due to cross the 7-day mark today — still ~166h, not yet past 168h, so no escalation to report yet.
+- P2/P3: no new flagged memory items or missing scheduled skills.
+- Everything findable was already reported within the 48h dedup window, so **no notification sent** (matches the pattern from 07-19 and 07-20).
+- Updated `docs/status.md` (verdict 🟡 WATCH, driven by the long-stalled Dependabot PRs) and appended a `### heartbeat` entry to `memory/logs/2026-07-21.md`.
+- Follow-up: the draft-PR cluster crosses the 7-day threshold ~18:48 UTC this evening — worth a check on tomorrow's heartbeat/github-monitor run for an ACT_NOW escalation.
