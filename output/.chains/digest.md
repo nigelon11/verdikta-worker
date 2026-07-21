@@ -1,13 +1,12 @@
-Digest run complete. Today was a thin news day for this specific topic — no notification sent, per skill rule (never pad).
+ℹ️ Digest: AI agents that transact onchain
 
-## Summary
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-21*
 
-Ran the `digest` skill for topic *"AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"* (default web sources: WebSearch + xAI/Grok X-search).
+_TL;DR: A well-funded Stripe challenger for AI-agent payments emerged overnight, betting on a stablecoin-plus-bank hybrid instead of pure onchain rails — otherwise a quiet day, with the loudest X/web chatter just recycling 2-4-week-old launches._
 
-- Pulled 10 X posts via xAI `x_search` (http=200) and ran 12 WebSearch queries covering agent payments, AI-judged bounties, decentralized AI oracles, and agent-wallet security.
-- Every candidate was either: a stale story already covered in a prior digest (Ledger Agent Stack, GenLayer Internet Court, Ostium exploit, OKX marketplace, Injective SDK), an old launch being recycled by a fresh tweet (Solana Subscriptions & Allowances shipped June 2, Base MCP shipped May 26), a misdated "recent" claim (curl/Cosmos AI-bug-bounty-slop stories from Jan/Apr), an unverifiable promotional post (AlgoVoi, trycustos, dero_bro, RipBullWinkle), or genuinely fresh but off-topic (Hugging Face's autonomous-AI-agent breach — no onchain/payment/oracle angle).
-- Result: 0 items cleared the bar → logged `DIGEST_FETCH_EMPTY` and skipped the notification (4th empty/thin digest day out of the last 5 runs).
+1. *Natural raises $30M Series A to build agent-payment rails, chasing Stripe*
+   Natural — an agent-orchestration startup letting AI agents autonomously move, hold, and collect funds — closed a $30M round led by Forerunner's Kirsten Green (total funding now $40M) and came out of beta positioning itself as a direct Stripe competitor. It's building support for both USD-backed stablecoins and traditional bank rails, not committing to onchain-only settlement.
+   Why it matters: a well-capitalized entrant validating the "agents need native payment rails" thesis just picked a hybrid path over pure onchain — a data point on how much of this market actually converges on crypto rails versus treating them as one option among several.
+   https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/
 
-**Files modified:** `memory/logs/2026-07-20.md` (appended `### digest` section with full source list and per-candidate kill reasons), committed as `17eed22`.
-
-**Follow-up:** one non-sensitive stray temp file (`.runtmp/xai-digest.json`) couldn't be removed — `rm` is blocked mid-run by the sandbox's destructive-op gate, same known issue already tracked in `MEMORY.md` Next Priorities.
+_Quiet day otherwise: swept 12+ WebSearch queries plus xAI X search (10 posts). The loudest signal was OKX's agent-hire-agent marketplace and GenLayer's "Internet Court" AI-jury — both real, but 3+ weeks old and already covered here. Nothing else cleared the verifiable-and-fresh bar._

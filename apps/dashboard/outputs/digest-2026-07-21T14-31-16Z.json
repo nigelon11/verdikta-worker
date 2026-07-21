@@ -1,0 +1,101 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-21"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr-heading",
+        "tldr-text",
+        "sep1",
+        "story1",
+        "story1-detail",
+        "why-matters",
+        "sep2",
+        "note-heading",
+        "note-text"
+      ]
+    },
+    "tldr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "A well-funded Stripe challenger for AI-agent payments emerged overnight, betting on a stablecoin-plus-bank hybrid instead of pure onchain rails — otherwise a quiet day, with the loudest X/web chatter just recycling 2-4-week-old launches."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Natural raises $30M Series A to build agent-payment rails, chasing Stripe",
+        "href": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+        "source": "TechCrunch"
+      },
+      "children": []
+    },
+    "story1-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Natural — an agent-orchestration startup letting AI agents autonomously move, hold, and collect funds — closed a $30M round led by Forerunner's Kirsten Green (total funding now $40M) and came out of beta positioning itself as a direct Stripe competitor. It's building support for both USD-backed stablecoins and traditional bank rails, not committing to onchain-only settlement."
+      },
+      "children": []
+    },
+    "why-matters": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: a well-capitalized entrant validating the \"agents need native payment rails\" thesis just picked a hybrid path over pure onchain — a data point on how much of this market actually converges on crypto rails versus treating them as one option among several."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "note-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Search Summary",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "note-text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise: swept 12+ WebSearch queries plus xAI X search (10 posts). The loudest signal was OKX's agent-hire-agent marketplace and GenLayer's \"Internet Court\" AI-jury — both real, but 3+ weeks old and already covered here. Nothing else cleared the verifiable-and-fresh bar."
+      },
+      "children": []
+    }
+  }
+}

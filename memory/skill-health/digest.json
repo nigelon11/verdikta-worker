@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-20T14:34:01Z",
+  "last_analyzed": "2026-07-21T14:31:16Z",
   "quality_score": 4,
-  "assessment": "Thorough execution: systematic multi-source search (xAI + WebSearch), rigorous candidate evaluation with categorized rejections, correct application of no-padding rule on empty day, proper logging with kill reasons per item.",
+  "assessment": "Substantive, methodical work: pulled 15+ candidates, rigorously filtered 4 stale signals, surfaced 1 verified lead (Natural Series A, 2026-07-20), sent digest, updated memory, and documented sandbox friction for future runs. Honest thin-day reporting instead of filler.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -52,6 +52,10 @@
     },
     {
       "date": "2026-07-20",
+      "score": 4
+    },
+    {
+      "date": "2026-07-21",
       "score": 4
     }
   ]
