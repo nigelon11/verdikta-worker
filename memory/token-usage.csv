@@ -62,3 +62,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-20,shiplog,claude-sonnet-5,3347,31048,5837040,107226
 2026-07-20,digest,claude-sonnet-5,7508,13602,2881973,180167
 2026-07-20,write-tweet,claude-sonnet-5,2535,22253,2693112,97956
+2026-07-21,memory-flush,claude-sonnet-5,2114,11006,964159,69291

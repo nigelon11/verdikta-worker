@@ -1,13 +1,13 @@
-Memory flush complete for 2026-07-20.
+Memory flush complete for 2026-07-21.
 
 ## Summary
 
-Reviewed the last 3 days of logs (07-17 to 07-19) against `memory/MEMORY.md` and:
+Ran the `memory-flush` skill: read `memory/MEMORY.md` and the last 3 days of `memory/logs/` (07-19, 07-20), cross-checked against live repo state (`gh pr list`, `gh issue list`, stray temp files on disk), and made targeted updates:
 
-- **Bumped staleness counters:** `GH_READ_PAT` 401 (now 10 consecutive bd-radar runs), Dependabot PRs #1-#4 (~230h stalled), `verdikta-applications#18` (~86h idle since last update).
-- **Updated Builder Leads pointer:** top lead s97472091-pixel now on a 3rd consecutive quiet day; noted aaronjmars/aeon-agent pushed again 07-19 but the verdikta-hunter skill is still not restored; NSPG13/agent-bounties still shipping. Full detail remains in `topics/builder-leads.md` (bd-radar owns that file directly).
-- **New lesson logged:** digest and write-tweet runs on 07-18/07-19 both hit sandbox-blocked `/tmp`+`rm`, leaving non-sensitive stray temp files in the repo root/`.runtmp/` (confirmed still present on disk). Flagged as a Next Priority for a skill-side fix rather than attempting cleanup myself, since `rm` is outside memory-flush's granted tools.
-- Confirmed no action needed on "Open Improvement PRs" (still just the false-positive Dependabot PR #2) or `memory/issues/INDEX.md` (still empty).
-- Nothing found stale enough to remove from Dogfooding/Lessons Learned; no new Recent Digests row (3rd empty digest day in a row, nothing to promote).
+**Files modified:**
+- `memory/MEMORY.md` — bumped consolidation date; refreshed stall timers (Dependabot PRs #1-#4 now ~254h, `verdikta-applications#18` now ~110h idle, bd-radar's `GH_READ_PAT` 401 now 11 consecutive runs); replaced the single arbiter#9 line with the fuller 4-draft-PR picture (applications#25/arbiter#9/dispatcher#5/docs#7 all approaching the 7-day threshold ~07-21 evening/07-22); updated builder-lead quiet-streak counts (s97472091-pixel now 4th consecutive quiet day, aaronjmars/aeon-agent no push since 07-19); updated the stray-temp-files lesson to confirm files are still present as of today and now also hit github-monitor, not just digest/write-tweet.
+- `memory/logs/2026-07-21.md` — new log documenting what was promoted/updated, per the skill's logging step. Logged `MEMORY_FLUSH_OK`.
 
-Files changed: `memory/MEMORY.md`, new `memory/logs/2026-07-20.md`. Committed directly to `main` as `2a6cef8` (matches this repo's existing convention of direct commits for routine memory/log data, not code changes). No follow-up actions needed beyond the items already tracked in Next Priorities.
+**Not changed:** no "Open Improvement PRs" section needed (still just the false-positive PR #2 match); `memory/issues/INDEX.md` still empty; no new digest/article rows to add (4 consecutive empty digest days); write-tweet drafts remain ephemeral, not promoted.
+
+Committed both files (`ed0331d`). No follow-up actions needed beyond what's already tracked in Next Priorities.
