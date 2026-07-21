@@ -1,0 +1,40 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Write Tweet — Revise"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tag-reference",
+        "prompt-message"
+      ]
+    },
+    "tag-reference": {
+      "type": "Badge",
+      "props": {
+        "text": "write-tweet::revise",
+        "variant": "outline"
+      }
+    },
+    "prompt-message": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "lead"
+      }
+    }
+  }
+}
