@@ -1,0 +1,122 @@
+{
+  "root": "card-monitor",
+  "state": {},
+  "elements": {
+    "card-monitor": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "heading-idle",
+        "stack-prs",
+        "separator-1",
+        "table-repos"
+      ]
+    },
+    "heading-idle": {
+      "type": "Heading",
+      "props": {
+        "text": "Idle Pull Requests",
+        "level": "h3"
+      }
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-1",
+        "pr-2",
+        "pr-3",
+        "pr-4",
+        "pr-5"
+      ]
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka ETH-prepay fix, idle ~135h since last update",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — Zetav1 PR, idle ~278h (~11.6d) since last update",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8 — idle since 2026-04-05 (~107d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4 — idle since 2026-02-26 (~145d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4"
+      }
+    },
+    "pr-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2 — idle since 2026-02-04 (~167d)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "table-repos": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
