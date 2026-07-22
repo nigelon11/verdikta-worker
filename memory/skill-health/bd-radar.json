@@ -1,12 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-21T08:51:10Z",
+  "last_analyzed": "2026-07-22T08:49:14Z",
   "quality_score": 4,
-  "assessment": "Complete execution with proper error handling, structured artifacts, and operator follow-up; zero leads for 12 consecutive runs limits strategic value despite solid skill performance.",
+  "assessment": "Well-executed skill with clear findings and proper gate logic; persistent auth issue flagged for operator but doesn't prevent operation",
   "flags": [
-    "stale_data"
+    "api_error"
   ],
-  "avg_score": 3.75,
+  "avg_score": 3.77,
   "history": [
     {
       "date": "2026-07-10",
@@ -54,6 +54,10 @@
     },
     {
       "date": "2026-07-21",
+      "score": 4
+    },
+    {
+      "date": "2026-07-22",
       "score": 4
     }
   ]
