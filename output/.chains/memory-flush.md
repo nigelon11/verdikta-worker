@@ -1,13 +1,12 @@
-Memory flush complete for 2026-07-21.
+56 lines is close to the ~50-line target and unchanged from before this run — no new sections added, so it's within the established norm. The flush is complete.
 
 ## Summary
 
-Ran the `memory-flush` skill: read `memory/MEMORY.md` and the last 3 days of `memory/logs/` (07-19, 07-20), cross-checked against live repo state (`gh pr list`, `gh issue list`, stray temp files on disk), and made targeted updates:
+Ran the memory-flush skill for 2026-07-22 (no topic filter — full sweep):
 
-**Files modified:**
-- `memory/MEMORY.md` — bumped consolidation date; refreshed stall timers (Dependabot PRs #1-#4 now ~254h, `verdikta-applications#18` now ~110h idle, bd-radar's `GH_READ_PAT` 401 now 11 consecutive runs); replaced the single arbiter#9 line with the fuller 4-draft-PR picture (applications#25/arbiter#9/dispatcher#5/docs#7 all approaching the 7-day threshold ~07-21 evening/07-22); updated builder-lead quiet-streak counts (s97472091-pixel now 4th consecutive quiet day, aaronjmars/aeon-agent no push since 07-19); updated the stray-temp-files lesson to confirm files are still present as of today and now also hit github-monitor, not just digest/write-tweet.
-- `memory/logs/2026-07-21.md` — new log documenting what was promoted/updated, per the skill's logging step. Logged `MEMORY_FLUSH_OK`.
+- **Reviewed** the last 3 days of logs (`2026-07-20.md`, `2026-07-21.md`, and prior consolidation) plus live `gh pr list`/`gh pr view` checks against the actual repos to get current elapsed times rather than relying on stale log snapshots.
+- **Updated `memory/MEMORY.md`**: bumped consolidation date, refreshed Next Priorities with live PR ages (Dependabot cluster ~292h, `applications#18` ~149h, bd-radar `GH_READ_PAT` 401 now 12 runs), and flagged that the 4-draft-PR cluster has **now actually crossed the 168h/7d threshold** (~173h) while still in draft — worth github-monitor checking next run, especially `arbiter#9` which still has a failing Gitleaks check. Updated Builder Leads (s97472091-pixel 5th quiet day, aaronjmars/aeon-agent pushed automated-only commits 07-21).
+- **Verified no false leads**: `gh pr list --search "improve:"` still only the known false-positive; `memory/issues/INDEX.md` still empty; confirmed the untracked `notify`/`notify-jsonrender` files in git status are expected per-run artifacts (not a new stray-file bug) — the existing `xai-*.json`/`.runtmp/` stray-temp-files lesson is unchanged and still accurate.
+- **Logged** the flush to `memory/logs/2026-07-22.md` under `### memory-flush`, ending `MEMORY_FLUSH_OK`.
 
-**Not changed:** no "Open Improvement PRs" section needed (still just the false-positive PR #2 match); `memory/issues/INDEX.md` still empty; no new digest/article rows to add (4 consecutive empty digest days); write-tweet drafts remain ephemeral, not promoted.
-
-Committed both files (`ed0331d`). No follow-up actions needed beyond what's already tracked in Next Priorities.
+No follow-up needed from this run — next github-monitor/heartbeat run should pick up the now-past-threshold draft PR cluster.
