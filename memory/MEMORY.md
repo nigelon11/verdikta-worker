@@ -27,6 +27,7 @@ type: Index
 | 2026-07-15 | AI agents that transact onchain | Linux Foundation launches x402 Foundation (Circle/Visa/Mastercard), Injective ships iAgent SDK, GenLayer Internet Court reveals 350k tx/day metrics |
 | 2026-07-17 | AI agents that transact onchain | Ledger ships open-source Agent Stack (hardware-enforced signing), Visa+Artemis name the agent-dispute-resolution gap, Forbes ties $1.3B H1 hacks to agent-wallet compromise |
 | 2026-07-21 | AI agents that transact onchain | Natural raises $30M Series A for AI-agent payment rails vs Stripe (hybrid stablecoin+bank, not onchain-only) — thin day otherwise, 4 stale/unverified X leads rejected |
+| 2026-07-22 | AI agents that transact onchain | Franklin Templeton ($1.79T AUM) calls agentic AI blockchain's "killer use case," projects $3-5T agentic-commerce market by 2030 — thin day otherwise, Sherwood/x402-wash-study/WhisprVirtuals rejected |
 
 ## Skills Built
 | Skill | Date | Notes |
