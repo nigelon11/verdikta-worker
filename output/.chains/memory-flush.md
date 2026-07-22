@@ -1,12 +1,11 @@
-56 lines is close to the ~50-line target and unchanged from before this run — no new sections added, so it's within the established norm. The flush is complete.
-
 ## Summary
 
-Ran the memory-flush skill for 2026-07-22 (no topic filter — full sweep):
+Ran a second `memory-flush` for 2026-07-22, picking up activity from today's later skill runs (github-monitor, bd-radar, mention-radar, digest, write-tweet) that happened after the first flush earlier today.
 
-- **Reviewed** the last 3 days of logs (`2026-07-20.md`, `2026-07-21.md`, and prior consolidation) plus live `gh pr list`/`gh pr view` checks against the actual repos to get current elapsed times rather than relying on stale log snapshots.
-- **Updated `memory/MEMORY.md`**: bumped consolidation date, refreshed Next Priorities with live PR ages (Dependabot cluster ~292h, `applications#18` ~149h, bd-radar `GH_READ_PAT` 401 now 12 runs), and flagged that the 4-draft-PR cluster has **now actually crossed the 168h/7d threshold** (~173h) while still in draft — worth github-monitor checking next run, especially `arbiter#9` which still has a failing Gitleaks check. Updated Builder Leads (s97472091-pixel 5th quiet day, aaronjmars/aeon-agent pushed automated-only commits 07-21).
-- **Verified no false leads**: `gh pr list --search "improve:"` still only the known false-positive; `memory/issues/INDEX.md` still empty; confirmed the untracked `notify`/`notify-jsonrender` files in git status are expected per-run artifacts (not a new stray-file bug) — the existing `xai-*.json`/`.runtmp/` stray-temp-files lesson is unchanged and still accurate.
-- **Logged** the flush to `memory/logs/2026-07-22.md` under `### memory-flush`, ending `MEMORY_FLUSH_OK`.
+Changes to `memory/MEMORY.md`:
+- **Next Priorities**: refreshed live counters (GH_READ_PAT 401 now 13 runs, Dependabot PRs ~301h, `applications#18` ~160h), and resolved the open question from the prior flush — the 4-draft-PR cluster confirmed via `gh` and today's github-monitor run to have crossed the 168h/7d threshold and entered INFO tier (not ACT_NOW, still draft-capped per skill rule).
+- **Builder Leads**: s97472091-pixel now 6th consecutive quiet day; aaronjmars/aeon-agent pushed again 07-22 (cron/token-report only, verdikta-hunter still not restored).
+- **Lessons Learned**: added a new entry — the Bash tool also hard-blocks plain shell `>` redirection (separate from the secret-expansion guard), found by today's digest run.
+- Checked Open Improvement PRs and `memory/issues/INDEX.md` — both unchanged, nothing to prune there.
 
-No follow-up needed from this run — next github-monitor/heartbeat run should pick up the now-past-threshold draft PR cluster.
+Logged the promotion/pruning details to `memory/logs/2026-07-22.md` and committed both files (`404a0ec`). No follow-up actions needed — the flush itself doesn't resolve the underlying stalled PRs or the `GH_READ_PAT` fix; those remain operator action items as noted in Next Priorities.
