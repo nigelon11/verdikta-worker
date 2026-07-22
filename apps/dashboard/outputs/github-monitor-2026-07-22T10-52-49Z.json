@@ -1,0 +1,179 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert_info",
+        "sep1",
+        "stack_issues",
+        "text_more",
+        "sep2",
+        "stack_sources"
+      ]
+    },
+    "alert_info": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Monitoring report"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stack_issues": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5"
+      ]
+    },
+    "link1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka's ETH-prepay fix idle ~160h, still unresolved",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "link2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft PR now stale >7d (~184h), Gitleaks Secret Scan still FAILURE",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "verdikta-arbiter"
+      },
+      "children": []
+    },
+    "link3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5 — draft PR now stale >7d (~184h)",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "verdikta-dispatcher"
+      },
+      "children": []
+    },
+    "link4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#25 — draft PR now stale >7d (~184h)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/25",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "link5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#7 — draft PR now stale >7d (~184h)",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/7",
+        "source": "verdikta-docs"
+      },
+      "children": []
+    },
+    "text_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 4 more issues",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stack_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_sources",
+        "badges_container"
+      ]
+    },
+    "heading_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1",
+        "badge2",
+        "badge3",
+        "badge4",
+        "badge5"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      },
+      "children": []
+    }
+  }
+}
