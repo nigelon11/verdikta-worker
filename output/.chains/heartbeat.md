@@ -1,9 +1,15 @@
-No new signal today — same drivers as the last two days, so no notification. `docs/status.md` and the log entry are updated.
-
 ## Summary
-- Ran heartbeat's ambient check (empty `${var}`, the live scheduled path). P0: all 8 enabled skills healthy, no stuck/failed/chronic-failure skills, heartbeat's own self-check well under the 36h bar.
-- P1: confirmed the known Dependabot PRs #1-#4 (this repo, ~254h stalled) and `verdikta-applications#18` (~157h idle) are unchanged, plus checked the 4-draft-PR cluster (`applications#25`/`arbiter#9`/`dispatcher#5`/`docs#7`) flagged in memory as due to cross the 7-day mark today — still ~166h, not yet past 168h, so no escalation to report yet.
-- P2/P3: no new flagged memory items or missing scheduled skills.
-- Everything findable was already reported within the 48h dedup window, so **no notification sent** (matches the pattern from 07-19 and 07-20).
-- Updated `docs/status.md` (verdict 🟡 WATCH, driven by the long-stalled Dependabot PRs) and appended a `### heartbeat` entry to `memory/logs/2026-07-21.md`.
-- Follow-up: the draft-PR cluster crosses the 7-day threshold ~18:48 UTC this evening — worth a check on tomorrow's heartbeat/github-monitor run for an ACT_NOW escalation.
+
+Ran the heartbeat skill's **ambient check** (default `${var}`, the live scheduled path).
+
+**Findings:**
+- P0: fleet fully healthy — all 8 enabled skills (`github-monitor`, `digest`, `shiplog`, `mention-radar`, `write-tweet`, `bd-radar`, `memory-flush`, `heartbeat`) show `last_status: success`, 0 consecutive failures, ≥93% success rates. Heartbeat's own self-check is well under the 36h staleness bar.
+- P1: noted a new PR (`verdikta-applications#26`, the operator's own fix for a live `/rubric` 404 bug found via dogfooding) — only ~11h old, not stalled, no action needed. All previously-flagged stalled items (Dependabot #1-4 at ~301h, `verdikta-applications#18` at ~157h, the 4-draft-PR cluster now past the 168h/7d threshold) were already reported within the 48h dedup window by today's earlier memory-flush run, so no duplicate notification was sent.
+- P2/P3: nothing new to flag; no skills overdue vs. their schedule.
+
+**Actions taken:**
+- Regenerated `docs/status.md` (Overall: 🟡 WATCH — driven by the ongoing stalled-PR items, unchanged verdict from prior days).
+- Logged findings to `memory/logs/2026-07-22.md` under `### heartbeat` (`mode: ambient`).
+- No notification sent (nothing new crossed the dedup bar).
+
+**Result:** `HEARTBEAT_OK · STATUS_PAGE=WATCH`. Next scheduled run: `github-monitor` at 09:00 UTC.
