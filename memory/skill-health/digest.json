@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-21T14:31:16Z",
+  "last_analyzed": "2026-07-22T14:33:23Z",
   "quality_score": 4,
-  "assessment": "Substantive, methodical work: pulled 15+ candidates, rigorously filtered 4 stale signals, surfaced 1 verified lead (Natural Series A, 2026-07-20), sent digest, updated memory, and documented sandbox friction for future runs. Honest thin-day reporting instead of filler.",
+  "assessment": "Excellent execution with substantive findings, hard filtering discipline, and transparent process; thin-day digest reflects market signal, not output quality.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -56,6 +56,10 @@
     },
     {
       "date": "2026-07-21",
+      "score": 4
+    },
+    {
+      "date": "2026-07-22",
       "score": 4
     }
   ]

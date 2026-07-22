@@ -1,0 +1,156 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-meta",
+        "sep-1",
+        "heading-tldr",
+        "text-tldr",
+        "sep-2",
+        "stack-story-1",
+        "sep-3",
+        "stack-thin"
+      ]
+    },
+    "text-meta": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents that transact onchain — 2026-07-22",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "A $1.79T asset manager put agentic AI in writing as blockchain's \"killer use case,\" projecting a $3-5T agentic-commerce market by 2030 — a quiet day otherwise."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-story-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-story-1",
+        "text-story-1-body",
+        "text-story-1-why",
+        "link-story-1"
+      ]
+    },
+    "heading-story-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Franklin Templeton calls agentic AI blockchain's \"killer use case\"",
+        "level": "h3"
+      }
+    },
+    "text-story-1-body": {
+      "type": "Text",
+      "props": {
+        "text": "Franklin Templeton's digital-assets team argued this week that AI agents can't use card rails or bank accounts for sub-cent micropayments, so blockchain becomes the only infrastructure that works economically — and told institutional clients to buy the tokens of the networks powering it, projecting a $3-5 trillion agentic-commerce market by 2030."
+      }
+    },
+    "text-story-1-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: A $1.79T traditional asset manager is now telling institutions to buy crypto specifically because AI agents need onchain payment rails — a credibility marker builders can cite that outranks the usual VC/founder hype.",
+        "variant": "lead"
+      }
+    },
+    "link-story-1": {
+      "type": "Link",
+      "props": {
+        "label": "Full article on CoinDesk",
+        "href": "https://www.coindesk.com/markets/2026/07/21/forget-nvidia-the-next-big-ai-trade-could-be-crypto-and-blockchain"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-thin": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-thin",
+        "text-thin-1",
+        "text-thin-2",
+        "text-thin-3",
+        "text-thin-summary"
+      ]
+    },
+    "heading-thin": {
+      "type": "Heading",
+      "props": {
+        "text": "Thin day otherwise",
+        "level": "h3"
+      }
+    },
+    "text-thin-1": {
+      "type": "Text",
+      "props": {
+        "text": "\"Sherwood\" guardian-verified agent-fund pitch on Robinhood Chain couldn't be reconciled against a same-named site that reads as a meme token."
+      }
+    },
+    "text-thin-2": {
+      "type": "Text",
+      "props": {
+        "text": "July x402 wash-trading study (independently-verified spend as low as ~$188K vs. a $24M headline) is real but 5 days old and its own reported figures disagree across sources."
+      }
+    },
+    "text-thin-3": {
+      "type": "Text",
+      "props": {
+        "text": "WhisprVirtuals \"private agent payments\" teaser had zero independent corroboration."
+      }
+    },
+    "text-thin-summary": {
+      "type": "Text",
+      "props": {
+        "text": "None cleared the bar.",
+        "variant": "muted"
+      }
+    }
+  }
+}
