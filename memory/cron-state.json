@@ -55,8 +55,8 @@
     "last_dispatch": "2026-07-22T08:41:33Z"
   },
   "write-tweet": {
-    "last_dispatch": "2026-07-21T22:03:31Z",
-    "last_status": "success",
+    "last_dispatch": "2026-07-22T21:53:52Z",
+    "last_status": "dispatched",
     "last_success": "2026-07-21T22:09:00Z",
     "total_runs": 14,
     "total_successes": 14,
