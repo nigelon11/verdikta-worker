@@ -1,8 +1,8 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-21T22:08:44Z",
+  "last_analyzed": "2026-07-22T21:58:12Z",
   "quality_score": 4,
-  "assessment": "Well-executed skill: generated 10 substantive draft tweets across 5 tiers with successful enrichment research, extracted specific actionable angle (auth/fraud/routing), followed all constraints, managed memory properly. Actual tweet quality cannot be assessed from truncated output.",
+  "assessment": "Substantive, well-sourced, properly logged — ran live X search on today's digest item, generated 10 tweet variations across tiers, cited real tweets, handled known sandbox limits gracefully.",
   "flags": [],
   "avg_score": 4.07,
   "history": [
@@ -60,6 +60,10 @@
     },
     {
       "date": "2026-07-21",
+      "score": 4
+    },
+    {
+      "date": "2026-07-22",
       "score": 4
     }
   ]

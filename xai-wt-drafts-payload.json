@@ -1,0 +1,1 @@
+{"model":"grok-4-1-fast","input":[{"role":"user","content":"Search X for what people are saying about Franklin Templeton calling agentic AI blockchain the killer use case and projecting a 3-5 trillion dollar agentic-commerce market by 2030, in the last 48 hours. Return the 5 most notable tweets with @handle and summary."}],"tools":[{"type":"x_search"}]}
