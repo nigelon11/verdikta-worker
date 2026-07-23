@@ -1,12 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-22T08:49:14Z",
-  "quality_score": 4,
-  "assessment": "Well-executed skill with clear findings and proper gate logic; persistent auth issue flagged for operator but doesn't prevent operation",
+  "last_analyzed": "2026-07-23T09:36:22Z",
+  "quality_score": 3,
+  "assessment": "Skill completed correctly with thorough multi-source search, confirmed 0 new leads, properly applied quiet-gate rule, and flagged persistent GH_READ_PAT auth issue—but low inherent value due to lack of new signal across 14 consecutive runs.",
   "flags": [
     "api_error"
   ],
-  "avg_score": 3.77,
+  "avg_score": 3.71,
   "history": [
     {
       "date": "2026-07-10",
@@ -59,6 +59,10 @@
     {
       "date": "2026-07-22",
       "score": 4
+    },
+    {
+      "date": "2026-07-23",
+      "score": 3
     }
   ]
 }
