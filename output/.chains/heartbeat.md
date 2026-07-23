@@ -1,15 +1,17 @@
 ## Summary
 
-Ran the heartbeat skill's **ambient check** (default `${var}`, the live scheduled path).
+Ran the heartbeat ambient fleet check (default `${var}=""`, live scheduled path).
 
 **Findings:**
-- P0: fleet fully healthy — all 8 enabled skills (`github-monitor`, `digest`, `shiplog`, `mention-radar`, `write-tweet`, `bd-radar`, `memory-flush`, `heartbeat`) show `last_status: success`, 0 consecutive failures, ≥93% success rates. Heartbeat's own self-check is well under the 36h staleness bar.
-- P1: noted a new PR (`verdikta-applications#26`, the operator's own fix for a live `/rubric` 404 bug found via dogfooding) — only ~11h old, not stalled, no action needed. All previously-flagged stalled items (Dependabot #1-4 at ~301h, `verdikta-applications#18` at ~157h, the 4-draft-PR cluster now past the 168h/7d threshold) were already reported within the 48h dedup window by today's earlier memory-flush run, so no duplicate notification was sent.
-- P2/P3: nothing new to flag; no skills overdue vs. their schedule.
+- P0: Fleet fully healthy — all 8 enabled skills succeeding, no failures/stuck dispatches, heartbeat self-check clean (~25h since last success).
+- P1: Live-checked all 5 watched repos + this repo's PRs/issues. Notable: **`verdikta-docs#7` merged** (2026-07-22), resolving 1 of the 4 stalled draft PRs from the 07-14 cluster — 3 remain (`applications#25`, `dispatcher#5`, `arbiter#9`, the last still failing Gitleaks). New `applications#26` (operator's own fix) just crossed the 24h-stalled mark but isn't notify-worthy yet. All other items (Dependabot #1-4, `applications#18`) already flagged within the 48h dedup window.
+- P2/P3: no new flags.
+- No urgent-labeled issues anywhere.
 
-**Actions taken:**
-- Regenerated `docs/status.md` (Overall: 🟡 WATCH — driven by the ongoing stalled-PR items, unchanged verdict from prior days).
-- Logged findings to `memory/logs/2026-07-22.md` under `### heartbeat` (`mode: ambient`).
-- No notification sent (nothing new crossed the dedup bar).
+**No notification sent** — nothing new cleared the bar (existing items already reported; the docs#7 merge is a resolution, not a problem).
 
-**Result:** `HEARTBEAT_OK · STATUS_PAGE=WATCH`. Next scheduled run: `github-monitor` at 09:00 UTC.
+**Files modified:**
+- `docs/status.md` — regenerated (🟡 WATCH, updated skill-health table, next run = digest @ 14:00 UTC)
+- `memory/logs/2026-07-23.md` — new log entry under `### heartbeat`
+
+Logged `HEARTBEAT_OK · STATUS_PAGE=WATCH`. Follow-up: memory-flush should promote the docs#7 merge and the reduced 3-PR draft cluster into MEMORY.md's Next Priorities.
