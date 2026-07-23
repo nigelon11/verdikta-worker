@@ -1,0 +1,175 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert_status",
+        "heading_prs",
+        "stack_prs",
+        "separator_main",
+        "stack_sources"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "title": "Status",
+        "message": "0 repos need action",
+        "type": "success"
+      }
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Open PRs",
+        "level": "h3"
+      }
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5",
+        "text_more"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications",
+        "score": "bingmokaka's ETH-prepay fix idle 182h, still unmerged"
+      }
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "verdikta-arbiter",
+        "score": "Draft PR stale 207h (past 7d), Gitleaks Secret Scan still failing"
+      }
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "verdikta-dispatcher",
+        "score": "Draft PR stale 207h (past 7d), CodeQL passing"
+      }
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#25",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/25",
+        "source": "verdikta-applications",
+        "score": "Draft PR stale 207h (past 7d), backlog workflow guidance"
+      }
+    },
+    "pr5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "verdikta-docs",
+        "score": "Zetav1 PR idle 325h (~13.5d)"
+      }
+    },
+    "text_more": {
+      "type": "Text",
+      "props": {
+        "text": "… and 3 more PRs monitored",
+        "variant": "muted"
+      }
+    },
+    "separator_main": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_sources",
+        "stack_badges"
+      ]
+    },
+    "heading_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h4"
+      }
+    },
+    "stack_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge1",
+        "badge2",
+        "badge3",
+        "badge4",
+        "badge5"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications",
+        "variant": "default"
+      }
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter",
+        "variant": "default"
+      }
+    },
+    "badge3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher",
+        "variant": "default"
+      }
+    },
+    "badge4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs",
+        "variant": "default"
+      }
+    },
+    "badge5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap",
+        "variant": "default"
+      }
+    }
+  }
+}

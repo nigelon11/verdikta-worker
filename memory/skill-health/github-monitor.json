@@ -1,10 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-07-22T10:52:49Z",
+  "last_analyzed": "2026-07-23T09:33:44Z",
   "quality_score": 4,
-  "assessment": "Well-executed monitoring — correctly categorized findings across all repos, applied rules consistently, identified new stale-draft signal, confirmed all sources healthy",
+  "assessment": "Monitoring executed properly across all 5 repos; detected real state change (1 merged PR), correctly deduped stale items as signal, identified 5 actionable PRs needing review plus 1 blocking CI issue. Clear, well-structured, and appropriate for a quiet monitoring period.",
   "flags": [],
-  "avg_score": 3.93,
+  "avg_score": 3.94,
   "history": [
     {
       "date": "2026-07-09",
@@ -64,6 +64,10 @@
     },
     {
       "date": "2026-07-22",
+      "score": 4
+    },
+    {
+      "date": "2026-07-23",
       "score": 4
     }
   ]
