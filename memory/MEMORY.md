@@ -28,6 +28,7 @@ type: Index
 | 2026-07-17 | AI agents that transact onchain | Ledger ships open-source Agent Stack (hardware-enforced signing), Visa+Artemis name the agent-dispute-resolution gap, Forbes ties $1.3B H1 hacks to agent-wallet compromise |
 | 2026-07-21 | AI agents that transact onchain | Natural raises $30M Series A for AI-agent payment rails vs Stripe (hybrid stablecoin+bank, not onchain-only) — thin day otherwise, 4 stale/unverified X leads rejected |
 | 2026-07-22 | AI agents that transact onchain | Franklin Templeton ($1.79T AUM) calls agentic AI blockchain's "killer use case," projects $3-5T agentic-commerce market by 2030 — thin day otherwise, Sherwood/x402-wash-study/WhisprVirtuals rejected |
+| 2026-07-23 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — ORA funding/OUSD/Clawbank-Shodai/Anthropic exploit research all confirmed stale, Bonzo/Ostium/42DAO oracle exploits off-topic (no AI angle), WhisprVirtuals teaser repeated from 07-22 |
 
 ## Skills Built
 | Skill | Date | Notes |
