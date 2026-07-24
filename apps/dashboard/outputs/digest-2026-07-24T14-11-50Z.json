@@ -1,0 +1,101 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-24"
+      },
+      "children": [
+        "heading_tldr",
+        "text_tldr",
+        "sep_1",
+        "heading_main",
+        "stack_main_content",
+        "sep_2",
+        "heading_other",
+        "text_other"
+      ]
+    },
+    "heading_tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      }
+    },
+    "text_tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase turned on native x402 USDC payment acceptance for every Coinbase Business customer plus a 3-line agent-payments SDK — the one concrete infrastructure move today; everything else in the pipeline was stale, off-topic, or unverified PR."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Coinbase flips on x402 payment acceptance for businesses, ships 3-line SDK",
+        "level": "h2"
+      }
+    },
+    "stack_main_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_main_details",
+        "text_why_matters",
+        "link_coindesk"
+      ]
+    },
+    "text_main_details": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase Business customers can now accept USDC sent directly by AI agents via the x402 protocol Coinbase incubated, and Coinbase Developer Platform shipped an x402 SDK that adds agent-payment acceptance to an API, MCP server, or web service in three lines of code. Coinbase says AI-generated traffic passed human traffic on Base's developer docs for the first time in June."
+      }
+    },
+    "text_why_matters": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: this moves x402 from spec/pilot status to default merchant tooling — any Coinbase Business account can now serve agent customers with no custom integration.",
+        "variant": "lead"
+      }
+    },
+    "link_coindesk": {
+      "type": "Link",
+      "props": {
+        "label": "Coinbase closes the gaps in AI agent economy for businesses, users, and developers",
+        "href": "https://www.coindesk.com/business/2026/07/23/coinbase-closes-the-gaps-in-ai-agent-economy-for-businesses-users-and-developers"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_other": {
+      "type": "Heading",
+      "props": {
+        "text": "Other News (Dropped)",
+        "level": "h2"
+      }
+    },
+    "text_other": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise — checked and dropped: World Liberty Financial AgentPay SDK, Cambrian Network's oracle seed round, LCX's PayAgent, MoonPay's agent wallets, and AgenC's Solana marketplace all recirculated on X today but are 1–5 months stale; a Hugging Face agent-found zero-day story has no payments/oracle angle; ALPHEA's \"$5M funding\" traces only to paid PR-wire syndication with no independent coverage.",
+        "variant": "muted"
+      }
+    }
+  }
+}

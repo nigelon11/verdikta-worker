@@ -1,19 +1,12 @@
-Committed. Since this is a `DIGEST_FETCH_EMPTY` day (no items cleared the bar), the skill rule is to skip the notification rather than pad — so no `./notify` call was made.
+ℹ️ Digest: AI agents that transact onchain
 
-## Summary
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-24*
 
-Ran the digest skill for var `"AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"` (web sources: xAI X-search + 9 WebSearch queries + 5 WebFetch verifications).
+_TL;DR: Coinbase turned on native x402 USDC payment acceptance for every Coinbase Business customer plus a 3-line agent-payments SDK — the one concrete infrastructure move today; everything else in the pipeline was stale, off-topic, or unverified PR.
 
-**Result: DIGEST_FETCH_EMPTY** — zero items survived filtering. Everything found was one of:
-- **Stale, mis-dated as recent**: ORA's "$20M oracle funding" (actually June 2024), Clawbank/Shodai AI-to-AI legal deal (June 18), Anthropic's smart-contract-exploit research (2025), Open USD stablecoin (June 30, and not even AI-agent-specific)
-- **Already covered in the last 3+ days**: x402 Foundation, XRPL milestone, Ledger Agent Stack, OKX marketplace, GenLayer Internet Court, Firepan Arena, Natural's $30M round, AIsa
-- **Off-topic despite being fresh**: Bonzo Lend / Ostium / 42DAO oracle exploits (real, dated, but plain price-feed hacks with no AI component)
-- **Unverifiable/promotional**: WhisprVirtuals' repeated "launch is close" teaser, a Dialectic_Group post whose underlying page had no dated launch news
+1. *Coinbase flips on x402 payment acceptance for businesses, ships 3-line SDK*
+   Coinbase Business customers can now accept USDC sent directly by AI agents via the x402 protocol Coinbase incubated, and Coinbase Developer Platform shipped an x402 SDK that adds agent-payment acceptance to an API, MCP server, or web service in three lines of code. Coinbase says AI-generated traffic passed human traffic on Base's developer docs for the first time in June.
+   Why it matters: this moves x402 from spec/pilot status to default merchant tooling — any Coinbase Business account can now serve agent customers with no custom integration.
+   https://www.coindesk.com/business/2026/07/23/coinbase-closes-the-gaps-in-ai-agent-economy-for-businesses-users-and-developers
 
-Per the skill's thin-day rule, no notification was sent (avoiding padding with weak items).
-
-**Files modified:**
-- `memory/logs/2026-07-23.md` — appended `### digest` entry with full rejection notes
-- `memory/MEMORY.md` — added 2026-07-23 row to Recent Digests table
-
-Committed as `adcebef`. No follow-up action needed — this is the 3rd empty day out of the last 6, consistent with the topic's ongoing signal drought.
+Quiet day otherwise — checked and dropped: World Liberty Financial AgentPay SDK, Cambrian Network's oracle seed round, LCX's PayAgent, MoonPay's agent wallets, and AgenC's Solana marketplace all recirculated on X today but are 1-5 months stale; a Hugging Face agent-found zero-day story has no payments/oracle angle; ALPHEA's "$5M funding" traces only to paid PR-wire syndication with no independent coverage.
