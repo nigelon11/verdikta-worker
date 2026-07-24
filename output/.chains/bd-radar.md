@@ -1,17 +1,21 @@
-The skill run is complete. Since this is 0 new leads and no new `building`/`integrating` signal, per the skill's quiet-gate rule (step 6) no notification is sent — this matches the pattern of the prior 13 runs. Git commits for these state files are handled automatically by the outer cron workflow after the run, so no manual commit is needed here.
+Committed. Per the skill's notify gate, no notification is sent since there were no new `building`/`integrating` leads this run.
 
 ## Summary
 
-Ran `bd-radar` (14th consecutive run) for Verdikta. **0 new leads** — all 7 tracked leads carried forward, unchanged in class/score:
+Ran `bd-radar` (15th consecutive run) across GitHub, X, and web for Verdikta builder-lead signal.
 
-- **GitHub** (5 watched repos): `GH_READ_PAT` still 401 (14th consecutive run since 07-10, flagged again for the operator). Public `gh api` fallback confirmed the same known fork/issue set — no new independent activity. `gh search` discovery found no new third-party repos.
-- **X** (xAI search, since 07-20): zero third-party mentions, only official `@verdikta19633` posts.
-- **Web** (HN/Reddit/blog): zero independent mentions, 14th consecutive quiet window.
-- Updated two lead entries with fresher status: `s97472091-pixel` now on a 7th consecutive quiet day; `aaronjmars/aeon-agent` pushed again today but confirmed automated-only, verdikta-hunter skill still not restored.
+**Result: 0 new leads.** All 7 tracked leads carried forward unchanged (1 building, 2 integrating, 1 adjacent/competitive-intel, 3 mentioning).
 
-**Files created/modified:**
-- `memory/topics/bd-radar-leads.json` — refreshed signal text on 2 leads, no new keys
-- `output/articles/bd-radar-2026-07-23.md` — ranked digest (new)
-- `memory/logs/2026-07-23.md` — `### bd-radar` log block (new)
+- `s97472091-pixel`: 8th consecutive quiet day (no repo since bounty-147 on 07-16)
+- `aaronjmars/aeon-agent`: pushed again today but only automated cron/scheduler commits — verdikta-hunter skill still not restored
+- GitHub forks/issues (5 watched repos): `GH_READ_PAT` still returns 401 "Bad credentials" (15th consecutive run since 07-10) — fell back to unauthenticated `gh api`/`gh search`, no new independent activity found
+- X (xAI search, since 07-21): zero third-party mentions, only the official `@verdikta19633` account — 15th consecutive quiet window
+- Web (HN/Reddit/blog): zero independent mentions — 15th consecutive quiet window
 
-**Follow-up needed:** `GH_READ_PAT` is still 401 — the operator should rotate/fix this credential; no immediate impact (public fallback covers everything) but it's now 14 consecutive failed runs. No notification sent (quiet gate: no new high-intent lead).
+**Files changed** (committed to main, `1df1803`):
+- `output/articles/bd-radar-2026-07-24.md` — new ranked digest
+- `memory/topics/bd-radar-leads.json` — refreshed signal text for the two top leads
+- `memory/topics/builder-leads.md` — added 07-23 and 07-24 run notes
+- `memory/logs/2026-07-24.md` — appended `### bd-radar` block
+
+**Follow-up needed:** `GH_READ_PAT` remains broken (401 for 15 straight runs, since 2026-07-10) — no functional impact yet since the public API fallback covers all watched repos, but it should be fixed before rate limits become a problem.

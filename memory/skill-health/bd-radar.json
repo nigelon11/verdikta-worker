@@ -1,12 +1,13 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-23T09:36:22Z",
+  "last_analyzed": "2026-07-24T08:46:46Z",
   "quality_score": 3,
-  "assessment": "Skill completed correctly with thorough multi-source search, confirmed 0 new leads, properly applied quiet-gate rule, and flagged persistent GH_READ_PAT auth issue—but low inherent value due to lack of new signal across 14 consecutive runs.",
+  "assessment": "Skill executed correctly with structured output and proper logging, but 15 consecutive zero-lead runs combined with known GH_READ_PAT auth failure (15 runs, 2 weeks) indicates degraded search capability and stalled signal discovery.",
   "flags": [
-    "api_error"
+    "api_error",
+    "stale_data"
   ],
-  "avg_score": 3.71,
+  "avg_score": 3.67,
   "history": [
     {
       "date": "2026-07-10",
@@ -62,6 +63,10 @@
     },
     {
       "date": "2026-07-23",
+      "score": 3
+    },
+    {
+      "date": "2026-07-24",
       "score": 3
     }
   ]
