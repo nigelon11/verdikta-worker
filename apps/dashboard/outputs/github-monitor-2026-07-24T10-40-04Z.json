@@ -1,0 +1,176 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor — 5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_status",
+        "separator_1",
+        "stack_prs",
+        "separator_2",
+        "stack_sources"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "Scan Status",
+        "message": "All 5 repos healthy — no action required"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_prs",
+        "pr_26",
+        "pr_18",
+        "pr_9",
+        "pr_5",
+        "pr_25",
+        "text_more"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests Noted",
+        "level": "h3"
+      }
+    },
+    "pr_26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid fix, no CI configured, idle ~61h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26"
+      }
+    },
+    "pr_18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka's ETH-prepay fix, idle ~207h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18"
+      }
+    },
+    "pr_9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft PR stale ~232h, Gitleaks Secret Scan still FAILURE",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9"
+      }
+    },
+    "pr_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5 — draft PR stale ~232h, CodeQL passing",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5"
+      }
+    },
+    "pr_25": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#25 — draft PR stale ~232h, backlog workflow guidance",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/25"
+      }
+    },
+    "text_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 4 more",
+        "variant": "muted"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_sources",
+        "stack_badges"
+      ]
+    },
+    "heading_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "stack_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_app",
+        "badge_arb",
+        "badge_disp",
+        "badge_docs",
+        "badge_roadmap"
+      ]
+    },
+    "badge_app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok"
+      }
+    },
+    "badge_arb": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok"
+      }
+    },
+    "badge_disp": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok"
+      }
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok"
+      }
+    },
+    "badge_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok"
+      }
+    }
+  }
+}
