@@ -1,8 +1,8 @@
 {
   "skill": "mention-radar",
-  "last_analyzed": "2026-07-22T08:46:15Z",
+  "last_analyzed": "2026-07-24T08:43:49Z",
   "quality_score": 4,
-  "assessment": "Thorough execution across all configured sources with proper dedupe logic, correct skip-notify decision, and verifiable API confirmations; result is inherently low-signal (quiet cycle) but handled appropriately.",
+  "assessment": "Skill executed correctly across all sources (Twitter, Web, GitHub), properly distinguished resurfacing vs. new mentions, and correctly applied the quiet-cycle rule — substantive, well-structured, and useful even with no new signal.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -36,6 +36,10 @@
     },
     {
       "date": "2026-07-22",
+      "score": 4
+    },
+    {
+      "date": "2026-07-24",
       "score": 4
     }
   ]
