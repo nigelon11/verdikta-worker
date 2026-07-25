@@ -1,13 +1,10 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-24T08:46:46Z",
-  "quality_score": 3,
-  "assessment": "Skill executed correctly with structured output and proper logging, but 15 consecutive zero-lead runs combined with known GH_READ_PAT auth failure (15 runs, 2 weeks) indicates degraded search capability and stalled signal discovery.",
-  "flags": [
-    "api_error",
-    "stale_data"
-  ],
-  "avg_score": 3.67,
+  "last_analyzed": "2026-07-25T08:26:12Z",
+  "quality_score": 4,
+  "assessment": "Methodical multi-channel search with sound signal/noise discrimination; zero leads for 16 consecutive runs suggests lead-sourcing strategy may need review",
+  "flags": [],
+  "avg_score": 3.69,
   "history": [
     {
       "date": "2026-07-10",
@@ -68,6 +65,10 @@
     {
       "date": "2026-07-24",
       "score": 3
+    },
+    {
+      "date": "2026-07-25",
+      "score": 4
     }
   ]
 }
