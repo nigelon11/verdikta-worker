@@ -82,3 +82,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-24,digest,claude-sonnet-5,9612,14625,2855855,183452
 2026-07-24,write-tweet,claude-sonnet-5,3587,18453,2796397,94200
 2026-07-25,memory-flush,claude-sonnet-5,2249,13660,1327423,82063
+2026-07-25,heartbeat,claude-sonnet-5,2251,14631,1509219,89825
