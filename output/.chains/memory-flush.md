@@ -1,13 +1,13 @@
-Files are staged for the workflow's auto-commit step. The memory-flush skill run is complete.
+Committed. No notification needed since this is routine housekeeping with no signal-worthy findings (per `MEMORY_FLUSH_OK` convention and CLAUDE.md's "notify only on signal").
 
 ## Summary
 
-Ran the `memory-flush` skill (invoked directly from `skills/memory-flush/SKILL.md` since it wasn't in the invokable-skill registry list).
+Ran the `memory-flush` skill:
+- Bumped MEMORY.md's "Last consolidated" date to 2026-07-25.
+- Live-checked (via `gh pr view`/`gh pr list`) every stalled PR tracked in Next Priorities — all still open, unchanged in status, only hour counts refreshed (Dependabot #1-4 ~365h, `applications#18` ~221h, the `applications#25`/`arbiter#9`/`dispatcher#5` draft cluster ~245h).
+- Promoted the part of 07-24's log that ran after that day's own memory-flush (bd-radar's 15th run): s97472091-pixel's quiet streak is now 8 days, aaronjmars/aeon-agent pushed 07-24 cron-only commits.
+- Added `verdikta-applications#26` as a new Next Priorities line (crossed github-monitor's 48h INFO floor on 07-24, wasn't previously tracked).
+- Confirmed no stale sections to remove (Open Improvement PRs check is still a false positive, issues index still empty, `builder-leads.md` already current).
+- Logged the run to `memory/logs/2026-07-25.md` and committed both files (`f8cb8af`).
 
-**Changes made:**
-- `memory/MEMORY.md`: bumped "Last consolidated" to 2026-07-24; refreshed all live-checked numbers via `gh pr view`/`gh pr list` (Dependabot #1-#4 now ~341h stalled, `verdikta-applications#18` ~197h idle, draft-PR cluster now ~221h) and updated the draft-PR cluster to reflect `verdikta-docs#7`'s merge on 2026-07-22 (first resolution — 3 PRs remain instead of 4); updated Builder Leads (s97472091-pixel now 7th consecutive quiet day, aaronjmars/aeon-agent pushed again 07-23 with cron-only commits); bumped bd-radar's `GH_READ_PAT` 401 streak to 14 consecutive runs.
-- `memory/logs/2026-07-24.md`: new log entry documenting what was promoted/updated, ending `MEMORY_FLUSH_OK`.
-
-**Nothing removed:** no stale "Open Improvement PRs" section (still just the one false-positive), `memory/issues/INDEX.md` still empty, no stale Lessons Learned found.
-
-**Follow-up needed (unchanged, already flagged):** operator review of the 4 stalled Dependabot PRs, `verdikta-applications#18`, and the 3 remaining draft PRs (especially `arbiter#9`'s Gitleaks failure); fix `bd-radar`'s `GH_READ_PAT` and add `read:org` scope to the github-monitor token.
+Follow-up: nothing new needing operator attention beyond what's already in Next Priorities (stalled PRs, `GH_READ_PAT` 401, `read:org` scope, stray temp-file cleanup).
