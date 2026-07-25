@@ -1,0 +1,247 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-25"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "alert_tldr",
+        "sep1",
+        "main_story",
+        "sep2",
+        "other_activity"
+      ]
+    },
+    "alert_tldr": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "TL;DR",
+        "message": "A new academic audit found exploitable vulnerabilities in every major x402 payment facilitator tested — including Coinbase's own — the exact rail this month's agent-payment announcements have been built on."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "main_story": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_link",
+        "research_meta",
+        "findings",
+        "vulnerability_types",
+        "significance"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Academic audit finds exploitable holes in every x402 payment facilitator, including Coinbase's",
+        "href": "https://arxiv.org/abs/2607.19545",
+        "source": "arxiv.org"
+      }
+    },
+    "research_meta": {
+      "type": "Text",
+      "props": {
+        "text": "Researchers: EPFL, Zhejiang University, independent auditor tested all 15 major x402 facilitators representing 99% of transaction volume across 60K+ sellers and 360K+ buyers.",
+        "variant": "caption"
+      }
+    },
+    "findings": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_violations",
+        "stat_vulns",
+        "stat_coinbase_volume"
+      ]
+    },
+    "stat_violations": {
+      "type": "Stat",
+      "props": {
+        "label": "Security-rule violations",
+        "value": "49"
+      }
+    },
+    "stat_vulns": {
+      "type": "Stat",
+      "props": {
+        "label": "Previously unknown vulnerabilities",
+        "value": "31"
+      }
+    },
+    "stat_coinbase_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Coinbase's tested volume (largest facilitator)",
+        "value": "$26.85M"
+      }
+    },
+    "vulnerability_types": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "vuln_heading",
+        "vuln_list"
+      ]
+    },
+    "vuln_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Vulnerability types discovered",
+        "level": "h4"
+      }
+    },
+    "vuln_list": {
+      "type": "Text",
+      "props": {
+        "text": "Payment replay · Wallet drain via overpayment · Prompt-injection-triggered fraudulent payments · Privacy leakage",
+        "variant": "body"
+      }
+    },
+    "significance": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sig_heading",
+        "sig_context",
+        "sig_response"
+      ]
+    },
+    "sig_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "sig_context": {
+      "type": "Text",
+      "props": {
+        "text": "x402 is the rail nearly every agent-payments story this month has run on: Coinbase Business, AWS Bedrock AgentCore, Binance Agentic Wallet, x402 Foundation. A systemic, cross-vendor security finding outweighs any single integration announcement.",
+        "variant": "body"
+      }
+    },
+    "sig_response": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase acknowledged the findings via responsible disclosure and shipped mitigations; other vendors did the same.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "other_activity": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "other_heading",
+        "recycled_section",
+        "offTopic_section"
+      ]
+    },
+    "other_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Other activity",
+        "level": "h3"
+      }
+    },
+    "recycled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recycled_label",
+        "coinbase_rollout",
+        "wave_recycled"
+      ]
+    },
+    "recycled_label": {
+      "type": "Text",
+      "props": {
+        "text": "Recycled announcements (not new):",
+        "variant": "lead"
+      }
+    },
+    "coinbase_rollout": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase Business x402 rollout stats (~$1B cumulative volume, ~5,000 customers) — same story already led on 07-24",
+        "variant": "body"
+      }
+    },
+    "wave_recycled": {
+      "type": "Text",
+      "props": {
+        "text": "Wave of OKX/BNB/AEON/Ledger X posts: OKX Agentic Wallet, BNB Chain's ERC-8183 escrow SDK (from May), Ledger Agent Stack (from 07-16)",
+        "variant": "body"
+      }
+    },
+    "offTopic_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "offTopic_label",
+        "offTopic_items"
+      ]
+    },
+    "offTopic_label": {
+      "type": "Text",
+      "props": {
+        "text": "Off-topic / already covered:",
+        "variant": "lead"
+      }
+    },
+    "offTopic_items": {
+      "type": "Text",
+      "props": {
+        "text": "Natural's $30M round, GenLayer Internet Court, OpenAI/Hugging Face autonomous-hack story (no onchain angle or previously covered)",
+        "variant": "body"
+      }
+    }
+  }
+}

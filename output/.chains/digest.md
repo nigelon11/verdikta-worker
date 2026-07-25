@@ -1,12 +1,12 @@
 ℹ️ Digest: AI agents that transact onchain
 
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-24*
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-25*
 
-_TL;DR: Coinbase turned on native x402 USDC payment acceptance for every Coinbase Business customer plus a 3-line agent-payments SDK — the one concrete infrastructure move today; everything else in the pipeline was stale, off-topic, or unverified PR.
+_TL;DR: A new academic audit found exploitable vulnerabilities in every major x402 payment facilitator tested — including Coinbase's own — the exact rail this month's agent-payment announcements have been built on._
 
-1. *Coinbase flips on x402 payment acceptance for businesses, ships 3-line SDK*
-   Coinbase Business customers can now accept USDC sent directly by AI agents via the x402 protocol Coinbase incubated, and Coinbase Developer Platform shipped an x402 SDK that adds agent-payment acceptance to an API, MCP server, or web service in three lines of code. Coinbase says AI-generated traffic passed human traffic on Base's developer docs for the first time in June.
-   Why it matters: this moves x402 from spec/pilot status to default merchant tooling — any Coinbase Business account can now serve agent customers with no custom integration.
-   https://www.coindesk.com/business/2026/07/23/coinbase-closes-the-gaps-in-ai-agent-economy-for-businesses-users-and-developers
+1. *Academic audit finds exploitable holes in every x402 payment facilitator, including Coinbase's*
+   Researchers from EPFL, Zhejiang University, and an independent auditor tested all 15 major x402 facilitators (99% of transaction volume, 60K+ sellers, 360K+ buyers) and found 49 security-rule violations translating to 31 previously unknown vulnerabilities — payment replay, wallet drain via overpayment, prompt-injection-triggered fraudulent payments, and privacy leakage. Coinbase, the largest facilitator in the sample ($26.85M of the volume tested), acknowledged the findings via responsible disclosure and shipped mitigations, as did the other vendors.
+   Why it matters: x402 is the rail nearly every agent-payments story this month has run on (Coinbase Business, AWS Bedrock AgentCore, Binance Agentic Wallet, the x402 Foundation) — a systemic, cross-vendor security finding outweighs any single integration announcement.
+   https://arxiv.org/abs/2607.19545
 
-Quiet day otherwise — checked and dropped: World Liberty Financial AgentPay SDK, Cambrian Network's oracle seed round, LCX's PayAgent, MoonPay's agent wallets, and AgenC's Solana marketplace all recirculated on X today but are 1-5 months stale; a Hugging Face agent-found zero-day story has no payments/oracle angle; ALPHEA's "$5M funding" traces only to paid PR-wire syndication with no independent coverage.
+Quiet day otherwise: Coinbase's follow-up stats on its Business x402 rollout (~$1B cumulative volume, ~5,000 customers) are the same story already led on 07-24, not a new one. A wave of OKX/BNB/AEON/Ledger X posts recycled older launches (OKX Agentic Wallet, BNB Chain's ERC-8183 escrow SDK from May, Ledger Agent Stack from 07-16). Natural's $30M round, GenLayer Internet Court, and the OpenAI/Hugging Face autonomous-hack story were all confirmed already-covered or off-topic (no onchain angle) on verification.
