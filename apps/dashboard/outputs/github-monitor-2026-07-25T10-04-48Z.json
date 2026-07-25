@@ -1,0 +1,179 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs-section",
+        "separator1",
+        "sources-section"
+      ]
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs-heading",
+        "prs-stack",
+        "more-text"
+      ]
+    },
+    "prs-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h2"
+      }
+    },
+    "prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid fix, idle 85h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "Note"
+      }
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka ETH-prepay fix, idle 231h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "Note"
+      }
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft, Gitleaks Secret Scan still FAILURE, idle 255h",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "Review"
+      }
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5 — draft, idle 255h, CodeQL passing",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "Note"
+      }
+    },
+    "pr5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#25 — draft, idle 255h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/25",
+        "source": "Note"
+      }
+    },
+    "more-text": {
+      "type": "Text",
+      "props": {
+        "text": "…and 4 more",
+        "variant": "caption"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sources-heading",
+        "sources-grid"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h2"
+      }
+    },
+    "sources-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 5,
+        "gap": "sm"
+      },
+      "children": [
+        "repo1",
+        "repo2",
+        "repo3",
+        "repo4",
+        "repo5"
+      ]
+    },
+    "repo1": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "caption"
+      }
+    },
+    "repo2": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "caption"
+      }
+    },
+    "repo3": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "caption"
+      }
+    },
+    "repo4": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "caption"
+      }
+    },
+    "repo5": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
