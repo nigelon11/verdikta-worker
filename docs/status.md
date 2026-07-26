@@ -8,7 +8,7 @@ permalink: /status/
 # Agent Status
 
 **Overall:** 🟡 WATCH
-**Updated:** 2026-07-25 08:20 UTC
+**Updated:** 2026-07-26 08:44 UTC
 **Open issues:** 0
 **Next scheduled run:** github-monitor at 09:00 UTC
 
@@ -22,13 +22,13 @@ Regressions also surface as **votable** per-skill GitHub Issues (`health: <skill
 
 | Skill | Last run | Status | Success rate | Consecutive failures |
 |-------|----------|--------|-------------:|---------------------:|
-| memory-flush | 2026-07-25 00:19 UTC | ✅ success | 100% | 0 |
-| write-tweet | 2026-07-24 21:15 UTC | ✅ success | 100% | 0 |
-| digest | 2026-07-24 14:12 UTC | ✅ success | 100% | 0 |
-| github-monitor | 2026-07-24 10:40 UTC | ✅ success | 100% | 0 |
-| bd-radar | 2026-07-24 08:46 UTC | ✅ success | 100% | 0 |
+| memory-flush | 2026-07-26 00:11 UTC | ✅ success | 100% | 0 |
+| write-tweet | 2026-07-25 21:14 UTC | ✅ success | 100% | 0 |
+| digest | 2026-07-25 15:10 UTC | ✅ success | 100% | 0 |
+| github-monitor | 2026-07-25 10:05 UTC | ✅ success | 100% | 0 |
+| bd-radar | 2026-07-25 08:26 UTC | ✅ success | 100% | 0 |
+| heartbeat | 2026-07-25 08:23 UTC | ✅ success | 95% | 0 |
 | mention-radar | 2026-07-24 08:43 UTC | ✅ success | 100% | 0 |
-| heartbeat | 2026-07-24 08:43 UTC | ✅ success | 94% | 0 |
 | shiplog | 2026-07-20 09:53 UTC | ✅ success | 100% | 0 |
 
 ## Open issues
@@ -36,5 +36,4 @@ Regressions also surface as **votable** per-skill GitHub Issues (`health: <skill
 No open issues.
 
 ---
-
 *Data sources: `memory/cron-state.json` (run state), `memory/issues/INDEX.md` (filed issues), `aeon.yml` (enabled skills). Page regenerated every heartbeat; the workflow auto-commits it to `main` on each run.*
