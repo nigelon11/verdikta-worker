@@ -1,0 +1,202 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert-info",
+        "separator1",
+        "stack-prs",
+        "separator2",
+        "stack-sources"
+      ]
+    },
+    "alert-info": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "5 repos scanned, 0 need action"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-active",
+        "stack-active-prs",
+        "heading-idle",
+        "stack-idle-prs"
+      ]
+    },
+    "heading-active": {
+      "type": "Heading",
+      "props": {
+        "text": "Pending PRs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack-active-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "operator's own rubricCid fix, no CI configured, idle 109h"
+      },
+      "children": []
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "bingmokaka's ETH-prepay fix, idle 255h"
+      },
+      "children": []
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "draft, stale 280h, Gitleaks Secret Scan still FAILURE"
+      },
+      "children": []
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "draft, stale 280h, CodeQL passing"
+      },
+      "children": []
+    },
+    "pr5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#25",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/25",
+        "source": "draft, stale 280h, backlog-workflow docs"
+      },
+      "children": []
+    },
+    "heading-idle": {
+      "type": "Heading",
+      "props": {
+        "text": "Long-Idle PRs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack-idle-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr6",
+        "pr7",
+        "pr8",
+        "pr9"
+      ]
+    },
+    "pr6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "long-idle ~398h, unchanged"
+      },
+      "children": []
+    },
+    "pr7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "long-idle ~2676h, unchanged"
+      },
+      "children": []
+    },
+    "pr8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#4",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/4",
+        "source": "long-idle ~3595h, unchanged"
+      },
+      "children": []
+    },
+    "pr9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#2",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/2",
+        "source": "long-idle ~4122h, unchanged"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stack-sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-sources",
+        "text-sources"
+      ]
+    },
+    "heading-sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-sources": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications=ok  •  verdikta-arbiter=ok  •  verdikta-dispatcher=ok  •  verdikta-docs=ok  •  verdikta-roadmap=ok",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
