@@ -1,16 +1,13 @@
-Memory-flush complete for 2026-07-26.
+Committed. No notification needed — this is routine memory housekeeping, not a signal event.
 
 ## Summary
 
-Read the last 3 days of logs (07-23 through 07-25) plus MEMORY.md, and live-checked GitHub state (`gh pr list`/`gh pr view`) rather than relying only on log text.
+Ran a second `memory-flush` pass for 2026-07-26, promoting activity that occurred after this morning's earlier flush:
 
-**Promoted:**
-- bd-radar's 16th run (07-25) tail — s97472091-pixel now 9th consecutive quiet day, aaronjmars/aeon-agent pushed 07-25 automation-only.
-- New signal: `verdikta-applications#27`/`#28` (mumuzhong3) — two real, MERGEABLE fixes for open issues #14/#16, just crossed the 24h stalled threshold (~29h old). Flagged both as a Next Priorities review item and as a possible new Builder Lead, noting bd-radar's 07-25 run only assessed this account's *fork* commit log (dropped as drive-by) without cross-referencing these direct upstream PRs — worth a fresh bd-radar look.
-- Refreshed hour counts on all existing stalled-PR priorities (Dependabot #1-4 ~388h, applications#18 ~245h, draft cluster ~269h, applications#26 ~99h, docs#1 ~388h) via live `gh` checks.
+- **Builder Leads**: Updated the `mumuzhong3` entry in MEMORY.md from "possible new lead, needs reassessment" to confirmed — bd-radar's 17th run verified PRs #27/#28 as a genuine integrating-class lead and self-notified (topics/builder-leads.md was already current, maintained directly by bd-radar).
+- **Next Priorities**: Refreshed stalled-PR hour counts (Dependabot #1-#4 ~403h, `applications#18` ~254h, draft cluster ~280h, `applications#26` ~109h, `applications#27`/`#28` ~37-38h) and bumped the bd-radar `GH_READ_PAT` 401 streak to 17 runs.
+- Checked improvement PRs (still only the same false-positive #2) and issues index (still empty) — no changes needed.
+- No new Lessons Learned entries and nothing found stale enough to remove.
+- Logged the pass to `memory/logs/2026-07-26.md` and committed both files directly to `main` (`ded8de9`), consistent with how prior memory-flush runs have operated.
 
-**Pruned/checked, no change needed:** Open Improvement PRs (still just the one false-positive), `memory/issues/INDEX.md` (empty), Lessons Learned (no stray temp files present this run), Recent Digests/Dogfooding tables (nothing stale, no new digest yet today).
-
-**Files modified:** `memory/MEMORY.md` (targeted edits), `memory/logs/2026-07-26.md` (new). Committed as `61a608c`.
-
-No follow-up actions needed from this skill run — the flagged items (Dependabot PRs, draft-PR cluster, applications#18/#26/#27/#28, `GH_READ_PAT` 401) are for the operator/other skills to act on.
+Files modified: `memory/MEMORY.md`, `memory/logs/2026-07-26.md`. No follow-up actions needed from this run.
