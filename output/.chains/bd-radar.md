@@ -1,18 +1,15 @@
-Confirmed — the workflow auto-commits and pushes all changes after the run completes, so I don't need to manually commit. My work here is done.
+ℹ️ BD Radar: new integrating lead
 
-## Summary
+**New builder lead (integrating): mumuzhong3**
 
-Ran `bd-radar` (16th consecutive run, 2026-07-25). **0 new leads** — all 7 tracked leads carried forward, no self-notify triggered (rule requires ≥1 new `building`/`integrating` lead).
+Two real, tested PRs to `verdikta-applications` — [#27](https://github.com/verdikta/verdikta-applications/pull/27) and [#28](https://github.com/verdikta/verdikta-applications/pull/28), opened 2026-07-24. Both fix genuine bugs: #27 stops the bounty board from showing a false red error on every AWARDED/CLOSED/EXPIRED bounty (14 new jest tests, 81/81 passing); #28 closes a rubric-validator gap that let an invalid rubric pass pre-check then 400 on `/jobs/create`. 306+315 lines, both MERGEABLE, no CI configured.
 
-**What I checked:**
-- GitHub forks/issues across the 5 watched `verdikta/*` repos — one new fork (`mumuzhong3/verdikta-applications`) investigated and dropped (no independent commits, drive-by). `GH_READ_PAT` still 401, 16th consecutive run — public API fallback covers it fine.
-- `gh search` for new ecosystem repos — nothing new.
-- X mentions via xAI search (since 07-22) — zero new third-party handles.
-- Web/HN/Reddit — two items investigated and dropped as noise: a 4-month-old, already-logged "Show HN: BountyBook" post, and `verdikto.ai`, an unrelated dead site with a similar name (expired TLS cert, no Base/blockchain tie).
+The PR body proactively asks about a payment path for non-bounty-board issue fixes — worth a direct reply. This is the strongest single-run code-contribution signal since bingmokaka's #18.
 
-**Files changed:**
-- `output/articles/bd-radar-2026-07-25.md` (new digest)
-- `memory/topics/bd-radar-leads.json`, `memory/topics/builder-leads.md` (status refresh, no new lead keys)
-- `memory/logs/2026-07-25.md` (`### bd-radar` block appended)
+Note: bd-radar's 07-25 run had checked this account's fork and dropped it as a drive-by (zero independent commits there) — it missed the separate direct-PR contribution opened the same day. Caught this run after memory-flush flagged the gap.
 
-**Follow-up needed:** `GH_READ_PAT` fix still outstanding (16 consecutive 401s since 2026-07-10) — no functional impact yet but flagged again for the operator. The GitHub Actions workflow will auto-commit and push these changes.
+Suggested move: review/merge the PRs and answer the payment-path question on the thread.
+
+Full digest: `output/articles/bd-radar-2026-07-26.md`
+
+🔗 https://github.com/verdikta/verdikta-applications/pull/27

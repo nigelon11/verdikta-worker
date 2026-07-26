@@ -1,0 +1,297 @@
+{
+  "root": "card-bd-radar",
+  "state": {},
+  "elements": {
+    "card-bd-radar": {
+      "type": "Card",
+      "props": {
+        "title": "BD Radar: new integrating lead",
+        "description": "mumuzhong3 — Two real, tested PRs fixing genuine bugs"
+      },
+      "children": [
+        "lead-section",
+        "sep-1",
+        "pr-timeline",
+        "sep-2",
+        "pr27-section",
+        "sep-3",
+        "pr28-section",
+        "sep-4",
+        "common-status",
+        "sep-5",
+        "payment-question",
+        "sep-6",
+        "signal-strength",
+        "sep-7",
+        "prev-run-gap",
+        "sep-8",
+        "next-steps",
+        "sep-9",
+        "digest-and-links"
+      ]
+    },
+    "lead-section": {
+      "type": "Heading",
+      "props": {
+        "text": "New builder lead (integrating): mumuzhong3",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-timeline": {
+      "type": "Text",
+      "props": {
+        "text": "Two real, tested PRs to verdikta-applications opened 2026-07-24",
+        "variant": "lead"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr27-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr27-title",
+        "pr27-description",
+        "pr27-details-stack"
+      ]
+    },
+    "pr27-title": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #27: Fix false red error on bounty board",
+        "level": "h3"
+      }
+    },
+    "pr27-description": {
+      "type": "Text",
+      "props": {
+        "text": "Stops the bounty board from showing a false red error on every AWARDED/CLOSED/EXPIRED bounty",
+        "variant": "body"
+      }
+    },
+    "pr27-details-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr27-tests",
+        "pr27-passing",
+        "pr27-lines",
+        "pr27-link"
+      ]
+    },
+    "pr27-tests": {
+      "type": "Text",
+      "props": {
+        "text": "14 new jest tests added",
+        "variant": "body"
+      }
+    },
+    "pr27-passing": {
+      "type": "Stat",
+      "props": {
+        "label": "Tests passing",
+        "value": "81/81"
+      }
+    },
+    "pr27-lines": {
+      "type": "Text",
+      "props": {
+        "text": "306 lines",
+        "variant": "caption"
+      }
+    },
+    "pr27-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications #27",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "GitHub"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr28-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr28-title",
+        "pr28-description",
+        "pr28-details-stack"
+      ]
+    },
+    "pr28-title": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #28: Close rubric-validator gap",
+        "level": "h3"
+      }
+    },
+    "pr28-description": {
+      "type": "Text",
+      "props": {
+        "text": "Closes a rubric-validator gap that let an invalid rubric pass pre-check then 400 on /jobs/create",
+        "variant": "body"
+      }
+    },
+    "pr28-details-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr28-lines",
+        "pr28-link"
+      ]
+    },
+    "pr28-lines": {
+      "type": "Text",
+      "props": {
+        "text": "315 lines",
+        "variant": "caption"
+      }
+    },
+    "pr28-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications #28",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "GitHub"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "common-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "status-badge",
+        "ci-status"
+      ]
+    },
+    "status-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "MERGEABLE",
+        "variant": "default"
+      }
+    },
+    "ci-status": {
+      "type": "Badge",
+      "props": {
+        "text": "No CI configured",
+        "variant": "outline"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "payment-question": {
+      "type": "Alert",
+      "props": {
+        "title": "PR body asks about payment path",
+        "message": "mumuzhong3 proactively asks about a payment path for non-bounty-board issue fixes — worth a direct reply",
+        "type": "info"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "signal-strength": {
+      "type": "Alert",
+      "props": {
+        "title": "Signal strength",
+        "message": "This is the strongest single-run code-contribution signal since bingmokaka's #18",
+        "type": "success"
+      }
+    },
+    "sep-7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prev-run-gap": {
+      "type": "Alert",
+      "props": {
+        "title": "Previous run note (07-25)",
+        "message": "bd-radar's 07-25 run checked this account's fork and dropped it as a drive-by (zero independent commits there) — it missed the separate direct-PR contribution opened the same day. Caught this run after memory-flush flagged the gap",
+        "type": "info"
+      }
+    },
+    "sep-8": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "next-steps": {
+      "type": "Alert",
+      "props": {
+        "title": "Suggested move",
+        "message": "Review and merge the PRs. Answer the payment-path question on the thread.",
+        "type": "success"
+      }
+    },
+    "sep-9": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "digest-and-links": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "full-digest-link"
+      ]
+    },
+    "full-digest-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full digest: bd-radar-2026-07-26",
+        "href": "output/articles/bd-radar-2026-07-26.md",
+        "source": "BD Radar report"
+      }
+    }
+  }
+}

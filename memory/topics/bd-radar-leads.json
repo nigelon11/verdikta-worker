@@ -69,6 +69,16 @@
       "fit": 1,
       "score": 2,
       "date_found": "2026-07-17"
+    },
+    {
+      "key": "github:mumuzhong3",
+      "class": "integrating",
+      "who": "mumuzhong3",
+      "signal": "PR #27 ('fix(validate): treat terminal bounties as INFO not ERROR', closes #14) and PR #28 ('fix(validate): now sees juryNodes', closes #16) to verdikta-applications, opened 2026-07-24. Real, substantial, tested fixes: #27 is 306 lines across 4 files with 14 new jest tests (81/81 passing) fixing a UI bug where every AWARDED/CLOSED/EXPIRED bounty rendered a false red error chip; #28 is 315 lines closing a validator gap that let a rubric pass pre-check then 400 on /jobs/create. Both MERGEABLE, no CI failures. PR body proactively asks nigelon11 about a payment path for non-bounty-board issue fixes — genuine unprompted contributor engagement, not a bounty submission. bd-radar's 07-25 run only checked this account's *fork* commit log (0 independent commits there, dropped as drive-by) and missed that the same account had opened these direct upstream PRs on 07-24; memory-flush (07-26) flagged the gap. Account: 10 public repos, 0 followers, no bio — thin profile, but the PRs themselves are the strongest single-run technical-contribution signal since bingmokaka's #18.",
+      "links": ["https://github.com/verdikta/verdikta-applications/pull/27", "https://github.com/verdikta/verdikta-applications/pull/28"],
+      "fit": 3,
+      "score": 9,
+      "date_found": "2026-07-26"
     }
   ],
   "surfaced": [
@@ -78,6 +88,7 @@
     "x:AjAkmarudi72937",
     "github:bingmokaka",
     "github:NSPG13/agent-bounties",
-    "x:Project0_Z"
+    "x:Project0_Z",
+    "github:mumuzhong3"
   ]
 }
