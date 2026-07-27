@@ -1,0 +1,44 @@
+[
+  {
+    "sha": "fd6c8c403eba42b1bb765dd79ff2160d2a74eb4f",
+    "node_id": "C_kwDORcHD7doAKGZkNmM4YzQwM2ViYTQyYjFiYjc2NWRkNzlmZjIxNjBkMmE3NGViNGY",
+    "commit": {
+      "author": {
+        "name": "The Doctor (MyClaw)",
+        "email": "doctor@myclaw.ai",
+        "date": "2026-05-05T16:01:57Z"
+      },
+      "committer": {
+        "name": "The Doctor (MyClaw)",
+        "email": "doctor@myclaw.ai",
+        "date": "2026-05-05T16:03:12Z"
+      },
+      "message": "feat(v0.13.0): mass import — 611 → 1211 skills (+600 new)\n\nBulk import from openclaw/skills official Archive (⭐3,600+).\nQuality filter: SKILL.md 800B-30KB with proper YAML frontmatter.\n\nCoverage areas:\n- Crypto / Web3 / DeFi / Trading bots\n- Feishu / DingTalk / Enterprise WeChat\n- Business systems (freelance ops, performance eng, legal docs)\n- Document templates / PPT design / OCR\n- Email / CRM / Customer service\n- Financial analytics / Stock trading\n- AI tools / Agent collaboration / Model management",
+      "tree": {
+        "sha": "9e1b27e50b3634804a3edca5578dad703c452bdb",
+        "url": "https://api.github.com/repos/LeoYeAI/openclaw-master-skills/git/trees/9e1b27e50b3634804a3edca5578dad703c452bdb"
+      },
+      "url": "https://api.github.com/repos/LeoYeAI/openclaw-master-skills/git/commits/fd6c8c403eba42b1bb765dd79ff2160d2a74eb4f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/LeoYeAI/openclaw-master-skills/commits/fd6c8c403eba42b1bb765dd79ff2160d2a74eb4f",
+    "html_url": "https://github.com/LeoYeAI/openclaw-master-skills/commit/fd6c8c403eba42b1bb765dd79ff2160d2a74eb4f",
+    "comments_url": "https://api.github.com/repos/LeoYeAI/openclaw-master-skills/commits/fd6c8c403eba42b1bb765dd79ff2160d2a74eb4f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c7c23f136ff618469de8ffcf0ee212a35b1a4e82",
+        "url": "https://api.github.com/repos/LeoYeAI/openclaw-master-skills/commits/c7c23f136ff618469de8ffcf0ee212a35b1a4e82",
+        "html_url": "https://github.com/LeoYeAI/openclaw-master-skills/commit/c7c23f136ff618469de8ffcf0ee212a35b1a4e82"
+      }
+    ]
+  }
+]

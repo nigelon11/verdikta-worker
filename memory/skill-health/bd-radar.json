@@ -1,10 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-26T08:48:50Z",
+  "last_analyzed": "2026-07-27T08:26:35Z",
   "quality_score": 4,
-  "assessment": "Substantive lead discovery with specific evidence (PRs #27/#28, test counts, issue fixes), clear scoring, and actionable follow-up. Caught a prior gap (fork vs direct PR differentiation) and systematically confirmed existing leads. Well-structured output with proper documentation and operator-ready next steps.",
-  "flags": [],
-  "avg_score": 3.71,
+  "assessment": "Good — substantive builder lead analysis with concrete evidence (s97472091-pixel → AjAkmarudi72937 linkage via Medium writeup + on-chain proof); proper memory/output updates; correctly applied quiet-by-default gate. GH_READ_PAT 401 persistent but handled via fallback.",
+  "flags": [
+    "api_error"
+  ],
+  "avg_score": 3.72,
   "history": [
     {
       "date": "2026-07-10",
@@ -72,6 +74,10 @@
     },
     {
       "date": "2026-07-26",
+      "score": 4
+    },
+    {
+      "date": "2026-07-27",
       "score": 4
     }
   ]

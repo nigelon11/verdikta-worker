@@ -1,0 +1,66 @@
+[
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "8a59f6828fcd6b2aba8a561fb19bc869139ab649",
+    "size": 4454,
+    "url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/README.md?ref=main",
+    "html_url": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/8a59f6828fcd6b2aba8a561fb19bc869139ab649",
+    "download_url": "https://raw.githubusercontent.com/s97472091-pixel/verdikta-agent/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/8a59f6828fcd6b2aba8a561fb19bc869139ab649",
+      "html": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/README.md"
+    }
+  },
+  {
+    "name": "config.example.json",
+    "path": "config.example.json",
+    "sha": "dbf03a9f3994d9bc0fb7f20cbfdb04a43ee0df67",
+    "size": 168,
+    "url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/config.example.json?ref=main",
+    "html_url": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/config.example.json",
+    "git_url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/dbf03a9f3994d9bc0fb7f20cbfdb04a43ee0df67",
+    "download_url": "https://raw.githubusercontent.com/s97472091-pixel/verdikta-agent/main/config.example.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/config.example.json?ref=main",
+      "git": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/dbf03a9f3994d9bc0fb7f20cbfdb04a43ee0df67",
+      "html": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/config.example.json"
+    }
+  },
+  {
+    "name": "requirements.txt",
+    "path": "requirements.txt",
+    "sha": "ecebac4661e4661f94cb9aedd9d079a9e412b784",
+    "size": 58,
+    "url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/requirements.txt?ref=main",
+    "html_url": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/requirements.txt",
+    "git_url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/ecebac4661e4661f94cb9aedd9d079a9e412b784",
+    "download_url": "https://raw.githubusercontent.com/s97472091-pixel/verdikta-agent/main/requirements.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/requirements.txt?ref=main",
+      "git": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/ecebac4661e4661f94cb9aedd9d079a9e412b784",
+      "html": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/requirements.txt"
+    }
+  },
+  {
+    "name": "verdikta_agent.py",
+    "path": "verdikta_agent.py",
+    "sha": "6e939c1213c933466cf94369f2e50a351411ef9a",
+    "size": 13284,
+    "url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/verdikta_agent.py?ref=main",
+    "html_url": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/verdikta_agent.py",
+    "git_url": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/6e939c1213c933466cf94369f2e50a351411ef9a",
+    "download_url": "https://raw.githubusercontent.com/s97472091-pixel/verdikta-agent/main/verdikta_agent.py",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/contents/verdikta_agent.py?ref=main",
+      "git": "https://api.github.com/repos/s97472091-pixel/verdikta-agent/git/blobs/6e939c1213c933466cf94369f2e50a351411ef9a",
+      "html": "https://github.com/s97472091-pixel/verdikta-agent/blob/main/verdikta_agent.py"
+    }
+  }
+]

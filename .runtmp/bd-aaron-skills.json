@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "action-converter",
+    "path": "skills/action-converter",
+    "sha": "2cfe34936cfadb57e35b8dc4b823b515a9fcf859",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/action-converter?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/action-converter",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2cfe34936cfadb57e35b8dc4b823b515a9fcf859",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/action-converter?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2cfe34936cfadb57e35b8dc4b823b515a9fcf859",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/action-converter"
+    }
+  },
+  {
+    "name": "article",
+    "path": "skills/article",
+    "sha": "e08e2ebf4531fc0d9ff8aa2800921ed8a3a6c9fd",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/article?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/article",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e08e2ebf4531fc0d9ff8aa2800921ed8a3a6c9fd",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/article?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e08e2ebf4531fc0d9ff8aa2800921ed8a3a6c9fd",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/article"
+    }
+  },
+  {
+    "name": "auto-merge",
+    "path": "skills/auto-merge",
+    "sha": "930aced8bb204841107015dad233179a2c42ded6",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/auto-merge?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/auto-merge",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/930aced8bb204841107015dad233179a2c42ded6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/auto-merge?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/930aced8bb204841107015dad233179a2c42ded6",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/auto-merge"
+    }
+  },
+  {
+    "name": "auto-workflow",
+    "path": "skills/auto-workflow",
+    "sha": "a06a9c3b1321cdfe9f01f3625d3525234a1f2d47",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/auto-workflow?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/auto-workflow",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/a06a9c3b1321cdfe9f01f3625d3525234a1f2d47",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/auto-workflow?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/a06a9c3b1321cdfe9f01f3625d3525234a1f2d47",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/auto-workflow"
+    }
+  },
+  {
+    "name": "autoresearch",
+    "path": "skills/autoresearch",
+    "sha": "203b3abe695c6d29306dde34d4d77dbea7eb8fdb",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/autoresearch?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/autoresearch",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/203b3abe695c6d29306dde34d4d77dbea7eb8fdb",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/autoresearch?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/203b3abe695c6d29306dde34d4d77dbea7eb8fdb",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/autoresearch"
+    }
+  },
+  {
+    "name": "base-mcp",
+    "path": "skills/base-mcp",
+    "sha": "3a98212b29eaf9ead772e2fb652aa406317bfde4",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/base-mcp?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/base-mcp",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/3a98212b29eaf9ead772e2fb652aa406317bfde4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/base-mcp?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/3a98212b29eaf9ead772e2fb652aa406317bfde4",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/base-mcp"
+    }
+  },
+  {
+    "name": "bd-radar",
+    "path": "skills/bd-radar",
+    "sha": "705cfa3e7bc67c92928ebf576e3531e1e290b9a3",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/bd-radar?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/bd-radar",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/705cfa3e7bc67c92928ebf576e3531e1e290b9a3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/bd-radar?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/705cfa3e7bc67c92928ebf576e3531e1e290b9a3",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/bd-radar"
+    }
+  },
+  {
+    "name": "changelog",
+    "path": "skills/changelog",
+    "sha": "f3f5d3c3ec6ffc997fec13be5561ed697f0485fe",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/changelog?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/changelog",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f3f5d3c3ec6ffc997fec13be5561ed697f0485fe",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/changelog?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f3f5d3c3ec6ffc997fec13be5561ed697f0485fe",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/changelog"
+    }
+  },
+  {
+    "name": "create-skill",
+    "path": "skills/create-skill",
+    "sha": "05f9a91f718a336506d0a32001acbf3568ddc2a2",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/create-skill?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/create-skill",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/05f9a91f718a336506d0a32001acbf3568ddc2a2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/create-skill?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/05f9a91f718a336506d0a32001acbf3568ddc2a2",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/create-skill"
+    }
+  },
+  {
+    "name": "ctrl",
+    "path": "skills/ctrl",
+    "sha": "e58c75e2f56013e07b7a37358fa97436aafebe58",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/ctrl?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/ctrl",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e58c75e2f56013e07b7a37358fa97436aafebe58",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/ctrl?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e58c75e2f56013e07b7a37358fa97436aafebe58",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/ctrl"
+    }
+  },
+  {
+    "name": "defi-overview",
+    "path": "skills/defi-overview",
+    "sha": "fca93d95a34df5adab65aaec2674b6ff9058e1e0",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/defi-overview?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/defi-overview",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/fca93d95a34df5adab65aaec2674b6ff9058e1e0",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/defi-overview?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/fca93d95a34df5adab65aaec2674b6ff9058e1e0",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/defi-overview"
+    }
+  },
+  {
+    "name": "deploy-prototype",
+    "path": "skills/deploy-prototype",
+    "sha": "12c05565a5aba5b6305567d6ab19f87669788335",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/deploy-prototype?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/deploy-prototype",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/12c05565a5aba5b6305567d6ab19f87669788335",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/deploy-prototype?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/12c05565a5aba5b6305567d6ab19f87669788335",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/deploy-prototype"
+    }
+  },
+  {
+    "name": "digest",
+    "path": "skills/digest",
+    "sha": "064ebad11a53808697797252894247b78db30fd3",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/digest?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/digest",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/064ebad11a53808697797252894247b78db30fd3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/digest?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/064ebad11a53808697797252894247b78db30fd3",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/digest"
+    }
+  },
+  {
+    "name": "distribute-tokens",
+    "path": "skills/distribute-tokens",
+    "sha": "50e9d9c9b15bf43b4acc5318f37f52e8c3f2b9a9",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/distribute-tokens?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/distribute-tokens",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/50e9d9c9b15bf43b4acc5318f37f52e8c3f2b9a9",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/distribute-tokens?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/50e9d9c9b15bf43b4acc5318f37f52e8c3f2b9a9",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/distribute-tokens"
+    }
+  },
+  {
+    "name": "docs-sync",
+    "path": "skills/docs-sync",
+    "sha": "71f5d75bb9cf44f9a93025e5f0019cd029963643",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/docs-sync?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/docs-sync",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/71f5d75bb9cf44f9a93025e5f0019cd029963643",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/docs-sync?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/71f5d75bb9cf44f9a93025e5f0019cd029963643",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/docs-sync"
+    }
+  },
+  {
+    "name": "feature",
+    "path": "skills/feature",
+    "sha": "2c67ba2461cf8e753023f894cc443eab225d75a5",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/feature?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/feature",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2c67ba2461cf8e753023f894cc443eab225d75a5",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/feature?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2c67ba2461cf8e753023f894cc443eab225d75a5",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/feature"
+    }
+  },
+  {
+    "name": "fetch-tweets",
+    "path": "skills/fetch-tweets",
+    "sha": "1223efae2aea48d1a3dcc171d6381053059afb20",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fetch-tweets?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fetch-tweets",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/1223efae2aea48d1a3dcc171d6381053059afb20",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fetch-tweets?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/1223efae2aea48d1a3dcc171d6381053059afb20",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fetch-tweets"
+    }
+  },
+  {
+    "name": "fleet-control",
+    "path": "skills/fleet-control",
+    "sha": "101628fc9bd5a61c400b9f055b53b13337bd62d4",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fleet-control?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fleet-control",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/101628fc9bd5a61c400b9f055b53b13337bd62d4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fleet-control?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/101628fc9bd5a61c400b9f055b53b13337bd62d4",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fleet-control"
+    }
+  },
+  {
+    "name": "fork-fleet",
+    "path": "skills/fork-fleet",
+    "sha": "17c451d8105f980c48266494347b8958ef57b15c",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fork-fleet?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fork-fleet",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/17c451d8105f980c48266494347b8958ef57b15c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/fork-fleet?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/17c451d8105f980c48266494347b8958ef57b15c",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/fork-fleet"
+    }
+  },
+  {
+    "name": "github-monitor",
+    "path": "skills/github-monitor",
+    "sha": "0222eea8dbd7a4ab4651cf059895b584269597b7",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/github-monitor?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/github-monitor",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0222eea8dbd7a4ab4651cf059895b584269597b7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/github-monitor?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0222eea8dbd7a4ab4651cf059895b584269597b7",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/github-monitor"
+    }
+  },
+  {
+    "name": "github-trending",
+    "path": "skills/github-trending",
+    "sha": "0d30811e8269f6d11872e82479681fbf59e17b35",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/github-trending?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/github-trending",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0d30811e8269f6d11872e82479681fbf59e17b35",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/github-trending?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0d30811e8269f6d11872e82479681fbf59e17b35",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/github-trending"
+    }
+  },
+  {
+    "name": "heartbeat",
+    "path": "skills/heartbeat",
+    "sha": "5730736f284812e86ddd88bdafceee2bf53113aa",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/heartbeat?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/heartbeat",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/5730736f284812e86ddd88bdafceee2bf53113aa",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/heartbeat?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/5730736f284812e86ddd88bdafceee2bf53113aa",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/heartbeat"
+    }
+  },
+  {
+    "name": "idea-forge",
+    "path": "skills/idea-forge",
+    "sha": "4db22c4f758a661ac8fc7dea8885d0c965cf4c9d",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/idea-forge?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/idea-forge",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/4db22c4f758a661ac8fc7dea8885d0c965cf4c9d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/idea-forge?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/4db22c4f758a661ac8fc7dea8885d0c965cf4c9d",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/idea-forge"
+    }
+  },
+  {
+    "name": "idea-pipeline",
+    "path": "skills/idea-pipeline",
+    "sha": "e0ec0ffc754fabbbcb76b3aa8e40b8661789b2ca",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/idea-pipeline?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/idea-pipeline",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e0ec0ffc754fabbbcb76b3aa8e40b8661789b2ca",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/idea-pipeline?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e0ec0ffc754fabbbcb76b3aa8e40b8661789b2ca",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/idea-pipeline"
+    }
+  },
+  {
+    "name": "inbox-triage",
+    "path": "skills/inbox-triage",
+    "sha": "17cc6841f05a89778dda0dd28e9ccdf1ad2f0aee",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/inbox-triage?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/inbox-triage",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/17cc6841f05a89778dda0dd28e9ccdf1ad2f0aee",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/inbox-triage?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/17cc6841f05a89778dda0dd28e9ccdf1ad2f0aee",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/inbox-triage"
+    }
+  },
+  {
+    "name": "install-skill",
+    "path": "skills/install-skill",
+    "sha": "7dc086114233b1d97d1e91123aaef57bd261be5f",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/install-skill?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/install-skill",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/7dc086114233b1d97d1e91123aaef57bd261be5f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/install-skill?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/7dc086114233b1d97d1e91123aaef57bd261be5f",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/install-skill"
+    }
+  },
+  {
+    "name": "investigation-report",
+    "path": "skills/investigation-report",
+    "sha": "b509c0b50827adc7e49b022f00e313f17fa70a2a",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/investigation-report?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/investigation-report",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/b509c0b50827adc7e49b022f00e313f17fa70a2a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/investigation-report?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/b509c0b50827adc7e49b022f00e313f17fa70a2a",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/investigation-report"
+    }
+  },
+  {
+    "name": "last30",
+    "path": "skills/last30",
+    "sha": "ad4c5e03ced164b617522fe3955238087555518b",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/last30?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/last30",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ad4c5e03ced164b617522fe3955238087555518b",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/last30?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ad4c5e03ced164b617522fe3955238087555518b",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/last30"
+    }
+  },
+  {
+    "name": "memory-flush",
+    "path": "skills/memory-flush",
+    "sha": "6d57132d59f0e5cbc3017b483b4581669bb8ce68",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/memory-flush?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/memory-flush",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/6d57132d59f0e5cbc3017b483b4581669bb8ce68",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/memory-flush?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/6d57132d59f0e5cbc3017b483b4581669bb8ce68",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/memory-flush"
+    }
+  },
+  {
+    "name": "mention-radar",
+    "path": "skills/mention-radar",
+    "sha": "ea0bc36c8fc71c27e5159f9fdad942d474a78504",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/mention-radar?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/mention-radar",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ea0bc36c8fc71c27e5159f9fdad942d474a78504",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/mention-radar?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ea0bc36c8fc71c27e5159f9fdad942d474a78504",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/mention-radar"
+    }
+  },
+  {
+    "name": "monitor-polymarket",
+    "path": "skills/monitor-polymarket",
+    "sha": "bd2b6593055882368b79d9fc1ef4ef6a8993ef76",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/monitor-polymarket?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/monitor-polymarket",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/bd2b6593055882368b79d9fc1ef4ef6a8993ef76",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/monitor-polymarket?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/bd2b6593055882368b79d9fc1ef4ef6a8993ef76",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/monitor-polymarket"
+    }
+  },
+  {
+    "name": "narrative-convergence",
+    "path": "skills/narrative-convergence",
+    "sha": "15d9243ebe16ea3d8a9ed568213c4f62111f4b1a",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/narrative-convergence?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/narrative-convergence",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/15d9243ebe16ea3d8a9ed568213c4f62111f4b1a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/narrative-convergence?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/15d9243ebe16ea3d8a9ed568213c4f62111f4b1a",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/narrative-convergence"
+    }
+  },
+  {
+    "name": "narrative-tracker",
+    "path": "skills/narrative-tracker",
+    "sha": "d86de98131cac2ea5ed2efb88f7e11e9cd2bbf25",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/narrative-tracker?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/narrative-tracker",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d86de98131cac2ea5ed2efb88f7e11e9cd2bbf25",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/narrative-tracker?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d86de98131cac2ea5ed2efb88f7e11e9cd2bbf25",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/narrative-tracker"
+    }
+  },
+  {
+    "name": "okf-export",
+    "path": "skills/okf-export",
+    "sha": "dad90f94540ff5e5ce5ab68648360a5cd7d91bde",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/okf-export?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/okf-export",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/dad90f94540ff5e5ce5ab68648360a5cd7d91bde",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/okf-export?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/dad90f94540ff5e5ce5ab68648360a5cd7d91bde",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/okf-export"
+    }
+  },
+  {
+    "name": "okf-ingest",
+    "path": "skills/okf-ingest",
+    "sha": "63c1f60d76c69b1a719763d4cb2ccfe97225ce23",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/okf-ingest?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/okf-ingest",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/63c1f60d76c69b1a719763d4cb2ccfe97225ce23",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/okf-ingest?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/63c1f60d76c69b1a719763d4cb2ccfe97225ce23",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/okf-ingest"
+    }
+  },
+  {
+    "name": "onchain-monitor",
+    "path": "skills/onchain-monitor",
+    "sha": "d9a7b753b7fb08eb663fbd3aec7d667059eee4a1",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/onchain-monitor?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/onchain-monitor",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d9a7b753b7fb08eb663fbd3aec7d667059eee4a1",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/onchain-monitor?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d9a7b753b7fb08eb663fbd3aec7d667059eee4a1",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/onchain-monitor"
+    }
+  },
+  {
+    "name": "operator-scorecard",
+    "path": "skills/operator-scorecard",
+    "sha": "180599755348c431d6b358c71d852fd777fb86b4",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/operator-scorecard?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/operator-scorecard",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/180599755348c431d6b358c71d852fd777fb86b4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/operator-scorecard?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/180599755348c431d6b358c71d852fd777fb86b4",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/operator-scorecard"
+    }
+  },
+  {
+    "name": "picks-tracker",
+    "path": "skills/picks-tracker",
+    "sha": "f90bfed0d7f7b7d6c3fa3bea3471bf60e0bbbd79",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/picks-tracker?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/picks-tracker",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f90bfed0d7f7b7d6c3fa3bea3471bf60e0bbbd79",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/picks-tracker?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f90bfed0d7f7b7d6c3fa3bea3471bf60e0bbbd79",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/picks-tracker"
+    }
+  },
+  {
+    "name": "pm-manipulation",
+    "path": "skills/pm-manipulation",
+    "sha": "986e98de9f844eaba651a5049b84c98177708cb5",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pm-manipulation?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pm-manipulation",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/986e98de9f844eaba651a5049b84c98177708cb5",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pm-manipulation?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/986e98de9f844eaba651a5049b84c98177708cb5",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pm-manipulation"
+    }
+  },
+  {
+    "name": "pr-review",
+    "path": "skills/pr-review",
+    "sha": "d35abf5a5ab2f82fcf30bce324fb878acf833085",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pr-review?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pr-review",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d35abf5a5ab2f82fcf30bce324fb878acf833085",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pr-review?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d35abf5a5ab2f82fcf30bce324fb878acf833085",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pr-review"
+    }
+  },
+  {
+    "name": "pr-triage",
+    "path": "skills/pr-triage",
+    "sha": "e465097e34c59663b634dbcd7a9482b8926d7427",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pr-triage?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pr-triage",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e465097e34c59663b634dbcd7a9482b8926d7427",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/pr-triage?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/e465097e34c59663b634dbcd7a9482b8926d7427",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/pr-triage"
+    }
+  },
+  {
+    "name": "price-alert",
+    "path": "skills/price-alert",
+    "sha": "29315fc2f05bcf8923ab3a9f12089cf648966cd4",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/price-alert?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/price-alert",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/29315fc2f05bcf8923ab3a9f12089cf648966cd4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/price-alert?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/29315fc2f05bcf8923ab3a9f12089cf648966cd4",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/price-alert"
+    }
+  },
+  {
+    "name": "reply-maker",
+    "path": "skills/reply-maker",
+    "sha": "59aea74126b1ff579633f2311f9e73dc09a7cdd7",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/reply-maker?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/reply-maker",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/59aea74126b1ff579633f2311f9e73dc09a7cdd7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/reply-maker?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/59aea74126b1ff579633f2311f9e73dc09a7cdd7",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/reply-maker"
+    }
+  },
+  {
+    "name": "repo-pulse",
+    "path": "skills/repo-pulse",
+    "sha": "4753dc1fc060f123a04faf52f10a24f1e051fca7",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/repo-pulse?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/repo-pulse",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/4753dc1fc060f123a04faf52f10a24f1e051fca7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/repo-pulse?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/4753dc1fc060f123a04faf52f10a24f1e051fca7",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/repo-pulse"
+    }
+  },
+  {
+    "name": "schedule-ads",
+    "path": "skills/schedule-ads",
+    "sha": "ffd742af48772df7d3350187f1636664c50963f3",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/schedule-ads?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/schedule-ads",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ffd742af48772df7d3350187f1636664c50963f3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/schedule-ads?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ffd742af48772df7d3350187f1636664c50963f3",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/schedule-ads"
+    }
+  },
+  {
+    "name": "search-skill",
+    "path": "skills/search-skill",
+    "sha": "c80f3838f6b858527825bf86a09632b4a14bc31f",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/search-skill?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/search-skill",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/c80f3838f6b858527825bf86a09632b4a14bc31f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/search-skill?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/c80f3838f6b858527825bf86a09632b4a14bc31f",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/search-skill"
+    }
+  },
+  {
+    "name": "secured-watch",
+    "path": "skills/secured-watch",
+    "sha": "7314196d9c2ae7788a164beff6b6026f0e150c0a",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/secured-watch?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/secured-watch",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/7314196d9c2ae7788a164beff6b6026f0e150c0a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/secured-watch?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/7314196d9c2ae7788a164beff6b6026f0e150c0a",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/secured-watch"
+    }
+  },
+  {
+    "name": "security",
+    "path": "skills/security",
+    "sha": "15f0e9711f30b8a5951b26502fcbe8c7ad7ede2c",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/security?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/security",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/15f0e9711f30b8a5951b26502fcbe8c7ad7ede2c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/security?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/15f0e9711f30b8a5951b26502fcbe8c7ad7ede2c",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/security"
+    }
+  },
+  {
+    "name": "self-improve",
+    "path": "skills/self-improve",
+    "sha": "8c288d2550ce4e225ea07484291db82d00c588ca",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/self-improve?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/self-improve",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/8c288d2550ce4e225ea07484291db82d00c588ca",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/self-improve?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/8c288d2550ce4e225ea07484291db82d00c588ca",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/self-improve"
+    }
+  },
+  {
+    "name": "send-email",
+    "path": "skills/send-email",
+    "sha": "0fb13e2dec5ad21533a36b00f018dd0661df1060",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/send-email?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/send-email",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0fb13e2dec5ad21533a36b00f018dd0661df1060",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/send-email?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/0fb13e2dec5ad21533a36b00f018dd0661df1060",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/send-email"
+    }
+  },
+  {
+    "name": "shiplog",
+    "path": "skills/shiplog",
+    "sha": "cb7fba10e8775fcc4ce777cb4eb1b631d22cbdb6",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/shiplog?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/shiplog",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/cb7fba10e8775fcc4ce777cb4eb1b631d22cbdb6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/shiplog?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/cb7fba10e8775fcc4ce777cb4eb1b631d22cbdb6",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/shiplog"
+    }
+  },
+  {
+    "name": "skill-health",
+    "path": "skills/skill-health",
+    "sha": "d54933989b052309231c0d6d7d702df745d475fd",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/skill-health?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/skill-health",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d54933989b052309231c0d6d7d702df745d475fd",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/skill-health?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/d54933989b052309231c0d6d7d702df745d475fd",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/skill-health"
+    }
+  },
+  {
+    "name": "skill-repair",
+    "path": "skills/skill-repair",
+    "sha": "2ce477b4d0f3341ece1fdb882b61970f050749c2",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/skill-repair?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/skill-repair",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2ce477b4d0f3341ece1fdb882b61970f050749c2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/skill-repair?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/2ce477b4d0f3341ece1fdb882b61970f050749c2",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/skill-repair"
+    }
+  },
+  {
+    "name": "soul-builder",
+    "path": "skills/soul-builder",
+    "sha": "183417c6d2312e1102ff9853984e833cd9dd6975",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/soul-builder?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/soul-builder",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/183417c6d2312e1102ff9853984e833cd9dd6975",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/soul-builder?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/183417c6d2312e1102ff9853984e833cd9dd6975",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/soul-builder"
+    }
+  },
+  {
+    "name": "spawn-instance",
+    "path": "skills/spawn-instance",
+    "sha": "1a9fb16444268b1fc0f569882e5b24cb2c64934e",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/spawn-instance?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/spawn-instance",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/1a9fb16444268b1fc0f569882e5b24cb2c64934e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/spawn-instance?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/1a9fb16444268b1fc0f569882e5b24cb2c64934e",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/spawn-instance"
+    }
+  },
+  {
+    "name": "strategy-builder",
+    "path": "skills/strategy-builder",
+    "sha": "54442e918c9eac18ef24439402ade5378f3ac40e",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/strategy-builder?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/strategy-builder",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/54442e918c9eac18ef24439402ade5378f3ac40e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/strategy-builder?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/54442e918c9eac18ef24439402ade5378f3ac40e",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/strategy-builder"
+    }
+  },
+  {
+    "name": "token-movers",
+    "path": "skills/token-movers",
+    "sha": "dd241d52f387188bc04202c1e41c2ebb45baa3be",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-movers?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-movers",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/dd241d52f387188bc04202c1e41c2ebb45baa3be",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-movers?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/dd241d52f387188bc04202c1e41c2ebb45baa3be",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-movers"
+    }
+  },
+  {
+    "name": "token-pick",
+    "path": "skills/token-pick",
+    "sha": "153a27ec5a6c5e7110d828137d24c46549b9ca00",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-pick?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-pick",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/153a27ec5a6c5e7110d828137d24c46549b9ca00",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-pick?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/153a27ec5a6c5e7110d828137d24c46549b9ca00",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-pick"
+    }
+  },
+  {
+    "name": "token-report",
+    "path": "skills/token-report",
+    "sha": "fe1e641e852366b7ccb66e75969c3d7b8737cffa",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-report?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-report",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/fe1e641e852366b7ccb66e75969c3d7b8737cffa",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/token-report?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/fe1e641e852366b7ccb66e75969c3d7b8737cffa",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/token-report"
+    }
+  },
+  {
+    "name": "tweet-digest",
+    "path": "skills/tweet-digest",
+    "sha": "f0f3b704aac01097e53405ebf3d781a7ab4dd6a2",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/tweet-digest?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/tweet-digest",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f0f3b704aac01097e53405ebf3d781a7ab4dd6a2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/tweet-digest?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/f0f3b704aac01097e53405ebf3d781a7ab4dd6a2",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/tweet-digest"
+    }
+  },
+  {
+    "name": "tx-explain",
+    "path": "skills/tx-explain",
+    "sha": "3172beb2e41d64051fca85fc48adfceda9997ffc",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/tx-explain?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/tx-explain",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/3172beb2e41d64051fca85fc48adfceda9997ffc",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/tx-explain?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/3172beb2e41d64051fca85fc48adfceda9997ffc",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/tx-explain"
+    }
+  },
+  {
+    "name": "unlock-monitor",
+    "path": "skills/unlock-monitor",
+    "sha": "ab5fef3ce860ae3313f8e71c961e6b46b6cb5065",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/unlock-monitor?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/unlock-monitor",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ab5fef3ce860ae3313f8e71c961e6b46b6cb5065",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/unlock-monitor?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/ab5fef3ce860ae3313f8e71c961e6b46b6cb5065",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/unlock-monitor"
+    }
+  },
+  {
+    "name": "vuln-scanner",
+    "path": "skills/vuln-scanner",
+    "sha": "bfdc313816a3f9c0088a4244a1e275c63c9c08f3",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/vuln-scanner?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/vuln-scanner",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/bfdc313816a3f9c0088a4244a1e275c63c9c08f3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/vuln-scanner?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/bfdc313816a3f9c0088a4244a1e275c63c9c08f3",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/vuln-scanner"
+    }
+  },
+  {
+    "name": "vuln-tracker",
+    "path": "skills/vuln-tracker",
+    "sha": "693503d1d648a7b6783ca948796ab8df58c14270",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/vuln-tracker?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/vuln-tracker",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/693503d1d648a7b6783ca948796ab8df58c14270",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/vuln-tracker?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/693503d1d648a7b6783ca948796ab8df58c14270",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/vuln-tracker"
+    }
+  },
+  {
+    "name": "write-tweet",
+    "path": "skills/write-tweet",
+    "sha": "63286f38b52c064d2c8cc68cd0bad1ff8d891bfe",
+    "size": 0,
+    "url": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/write-tweet?ref=main",
+    "html_url": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/write-tweet",
+    "git_url": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/63286f38b52c064d2c8cc68cd0bad1ff8d891bfe",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aaronjmars/aeon-agent/contents/skills/write-tweet?ref=main",
+      "git": "https://api.github.com/repos/aaronjmars/aeon-agent/git/trees/63286f38b52c064d2c8cc68cd0bad1ff8d891bfe",
+      "html": "https://github.com/aaronjmars/aeon-agent/tree/main/skills/write-tweet"
+    }
+  }
+]

@@ -1,15 +1,20 @@
-ℹ️ BD Radar: new integrating lead
+## Summary
 
-**New builder lead (integrating): mumuzhong3**
+Ran `bd-radar` for 2026-07-27 (18th consecutive run). Gathered candidates from GitHub forks/issues (public API fallback — `GH_READ_PAT` still 401, 18th run in a row), `gh search`, xAI X search (since 2026-07-24), and WebSearch.
 
-Two real, tested PRs to `verdikta-applications` — [#27](https://github.com/verdikta/verdikta-applications/pull/27) and [#28](https://github.com/verdikta/verdikta-applications/pull/28), opened 2026-07-24. Both fix genuine bugs: #27 stops the bounty board from showing a false red error on every AWARDED/CLOSED/EXPIRED bounty (14 new jest tests, 81/81 passing); #28 closes a rubric-validator gap that let an invalid rubric pass pre-check then 400 on `/jobs/create`. 306+315 lines, both MERGEABLE, no CI configured.
+**Key finding:** the top building lead, **s97472091-pixel**, broke a 10-day quiet streak by shipping `verdikta-agent` — a complete autonomous bounty-hunting agent (monitor/viability-score/submit/track, matching the real API, on-chain read) — their most ambitious artifact yet. The same evening, **@AjAkmarudi72937** (a previously-tracked X account) claimed "I built" that same repo and posted a citable "I tried to cheat a Verdikta bounty — the AI caught it" Medium writeup with on-chain proof, strong evidence they and s97472091-pixel are the same operator running a GitHub+X pair. `@Project0_Z` posted 2 more unprompted advocacy tweets (now a 4-for-5 pattern, still worth a cheap reply/DM).
 
-The PR body proactively asks about a payment path for non-bounty-board issue fixes — worth a direct reply. This is the strongest single-run code-contribution signal since bingmokaka's #18.
+No genuinely new lead keys surfaced this run (0 new / 8 tracked), so per the skill's gate I did **not** self-notify (quiet-by-default, consistent with how prior narrative updates to existing leads were handled).
 
-Note: bd-radar's 07-25 run had checked this account's fork and dropped it as a drive-by (zero independent commits there) — it missed the separate direct-PR contribution opened the same day. Caught this run after memory-flush flagged the gap.
+**Files modified/created:**
+- `memory/topics/bd-radar-leads.json` — updated signal text for s97472091-pixel, AjAkmarudi72937, Project0_Z, NSPG13/agent-bounties, aaronjmars/aeon-agent
+- `output/articles/bd-radar-2026-07-27.md` — new ranked digest (8 leads)
+- `memory/logs/2026-07-27.md` — new `### bd-radar` log block
+- `memory/MEMORY.md` — updated Builder Leads summary
 
-Suggested move: review/merge the PRs and answer the payment-path question on the thread.
+Committed as 2 commits (`9f45744`, `193817f`) directly to `main`, matching this system's established pattern for memory-only skill runs (per the existing "always save files AND commit" lesson in MEMORY.md).
 
-Full digest: `output/articles/bd-radar-2026-07-26.md`
-
-🔗 https://github.com/verdikta/verdikta-applications/pull/27
+**Follow-up for operator:**
+- `GH_READ_PAT` needs fixing — 18 consecutive 401s, no impact yet but should be corrected before public-API rate limits bite.
+- The "tried to cheat a bounty" Medium writeup is good reusable material for priority-3 credible-content work.
+- `@Project0_Z` and `@Fishhead8u` remain cheap, low-effort reply/DM opportunities.
