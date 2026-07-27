@@ -1,0 +1,231 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Shiplog: Jul 20 → 27"
+      },
+      "children": [
+        "intro_text",
+        "metrics_section",
+        "sep1",
+        "findings_section",
+        "sep2",
+        "article_link"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet window on the public repos. The real signal is off the commit graph.",
+        "variant": "lead"
+      }
+    },
+    "metrics_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_prs",
+        "stat_commits",
+        "stat_stars"
+      ]
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Merged PRs",
+        "value": "1"
+      }
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "4"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Star Movement",
+        "value": "0"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "findings_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "finding_dogfood",
+        "finding_docs",
+        "finding_housekeeping"
+      ]
+    },
+    "finding_dogfood": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h_dogfood",
+        "alert_dogfood",
+        "text_dogfood_fix"
+      ]
+    },
+    "h_dogfood": {
+      "type": "Heading",
+      "props": {
+        "text": "Dogfooding",
+        "level": "h3"
+      }
+    },
+    "alert_dogfood": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Hunter paid for Verdikta bounty then deleted the article it required — rubric only checked URL existed at eval time."
+      }
+    },
+    "text_dogfood_fix": {
+      "type": "Text",
+      "props": {
+        "text": "Fix: Bounty #153 now requires archive.org snapshot + 7-day Wayback persistence proof before payout clears (via @verdikta19633, 2026-07-24)."
+      }
+    },
+    "finding_docs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h_docs",
+        "text_ci_fixed",
+        "badge_pr7",
+        "text_blocked_prs"
+      ]
+    },
+    "h_docs": {
+      "type": "Heading",
+      "props": {
+        "text": "verdikta-docs",
+        "level": "h3"
+      }
+    },
+    "text_ci_fixed": {
+      "type": "Text",
+      "props": {
+        "text": "CI outage silently failing submodule syncs since Jul 17 is fixed."
+      }
+    },
+    "badge_pr7": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #7 merged: Cross-repo backlog/issue workflow guide",
+        "variant": "secondary"
+      }
+    },
+    "text_blocked_prs": {
+      "type": "Text",
+      "props": {
+        "text": "3 of 4 sibling PRs still stuck in draft.",
+        "variant": "muted"
+      }
+    },
+    "finding_housekeeping": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h_housekeeping",
+        "pr26_item",
+        "pr18_item"
+      ]
+    },
+    "h_housekeeping": {
+      "type": "Heading",
+      "props": {
+        "text": "Housekeeping",
+        "level": "h3"
+      }
+    },
+    "pr26_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr26",
+        "text_pr26"
+      ]
+    },
+    "badge_pr26": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications#26",
+        "variant": "outline"
+      }
+    },
+    "text_pr26": {
+      "type": "Text",
+      "props": {
+        "text": "/rubric 404 fix — mergeable and clean, awaiting review."
+      }
+    },
+    "pr18_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr18",
+        "text_pr18"
+      ]
+    },
+    "badge_pr18": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications#18",
+        "variant": "outline"
+      }
+    },
+    "text_pr18": {
+      "type": "Text",
+      "props": {
+        "text": "External contributor, ETH-prepay fix — unreviewed for 17 days."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full shiplog report",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-07-27.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
