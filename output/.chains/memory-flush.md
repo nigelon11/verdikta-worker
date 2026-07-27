@@ -1,13 +1,13 @@
-Committed. No notification needed — this is routine memory housekeeping, not a signal event.
+Committed. Per skill guidance, this run had material updates (not a no-op `MEMORY_FLUSH_OK` with nothing to do), so no separate notification is needed — memory-flush doesn't notify per CLAUDE.md's "notify only on signal" rule and the skill itself has no notify step.
 
 ## Summary
 
-Ran a second `memory-flush` pass for 2026-07-26, promoting activity that occurred after this morning's earlier flush:
+Ran the memory-flush skill, consolidating the 07-25→07-27 log tail into `memory/MEMORY.md`:
+- Bumped "Last consolidated" to 2026-07-27.
+- Archived the 8 oldest Recent Digests rows (07-09→07-17) to new `memory/topics/digest-history.md`, trimming MEMORY.md from 66→61 lines (was over the ~50-line index target).
+- Added a new Dogfooding entry: bounty #153's rubric was hardened (archive.org 7-day persistence proof) after a hunter deleted a required deliverable — surfaced by today's shiplog run.
+- Refreshed all Next Priorities PR-age counts via live `gh pr view`/`gh pr list` checks and updated the `applications#27`/`#28` line to reflect today's github-monitor tier crossing (48h INFO floor, ~51h old).
+- Fixed a stale GH_READ_PAT streak count in Next Priorities (17/07-26) that had drifted out of sync with Builder Leads (18/07-27) — both now agree.
+- Confirmed "Open Improvement PRs" search and `memory/issues/INDEX.md` unchanged (no action needed); stray `.runtmp*` temp files present but match the already-documented sandbox pattern.
 
-- **Builder Leads**: Updated the `mumuzhong3` entry in MEMORY.md from "possible new lead, needs reassessment" to confirmed — bd-radar's 17th run verified PRs #27/#28 as a genuine integrating-class lead and self-notified (topics/builder-leads.md was already current, maintained directly by bd-radar).
-- **Next Priorities**: Refreshed stalled-PR hour counts (Dependabot #1-#4 ~403h, `applications#18` ~254h, draft cluster ~280h, `applications#26` ~109h, `applications#27`/`#28` ~37-38h) and bumped the bd-radar `GH_READ_PAT` 401 streak to 17 runs.
-- Checked improvement PRs (still only the same false-positive #2) and issues index (still empty) — no changes needed.
-- No new Lessons Learned entries and nothing found stale enough to remove.
-- Logged the pass to `memory/logs/2026-07-26.md` and committed both files directly to `main` (`ded8de9`), consistent with how prior memory-flush runs have operated.
-
-Files modified: `memory/MEMORY.md`, `memory/logs/2026-07-26.md`. No follow-up actions needed from this run.
+Files changed: `memory/MEMORY.md`, `memory/logs/2026-07-27.md`, `memory/topics/digest-history.md` (new). Committed directly as `chore(cron): memory-flush success` (47bc106), consistent with other cron skill runs. No follow-up actions needed — this is a self-contained memory-hygiene pass.
