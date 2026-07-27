@@ -1,0 +1,207 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-27"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "tldr_section",
+        "sep1",
+        "story_section",
+        "sep2",
+        "rest_of_day_section"
+      ]
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tldr_label",
+        "tldr_text"
+      ]
+    },
+    "tldr_label": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase CEO Brian Armstrong publicly bet the company's roadmap on \"AiFi\" (agentic finance), naming crypto as the required settlement layer for AI agents — one strong signal, otherwise a quiet news day.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_title",
+        "story_body1",
+        "story_body2",
+        "story_link"
+      ]
+    },
+    "story_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Coinbase CEO stakes the company on \"AiFi,\" says AI agents will out-transact humans on crypto rails",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "story_body1": {
+      "type": "Text",
+      "props": {
+        "text": "In a July 27 X post, Brian Armstrong rejected the \"pivot from crypto to AI\" framing crypto firms are adopting, arguing instead that AI agents — unable to use traditional banking — will need blockchains and stablecoins for machine-speed payments. He coined the bet \"AiFi\" and tied it to real shipped products: the x402 protocol (now governed by the independent x402 Foundation), Base, USDC, AI Agent Accounts (deployed June), and the Coinbase Business x402-acceptance feature (launched the prior week).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story_body2": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: it's the clearest public statement yet that Coinbase's core strategy — not a side bet — is agent-payment infrastructure on Base/x402, the same rails Verdikta's bounty escrow sits adjacent to. Independent usage data (a July study verifying only ~$188K of x402's ~$20M in reported settlement as genuinely independent) still hasn't caught up to the rhetoric — a gap worth tracking, not yet resolved.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read on CoinDesk",
+        "href": "https://www.coindesk.com/business/2026/07/27/coinbase-ceo-brian-armstrong-criticizes-crypto-startups-that-rebrand-to-ai"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "rest_of_day_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "rest_heading",
+        "rest_intro",
+        "investigated_stack"
+      ]
+    },
+    "rest_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Rest of the day",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "rest_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day otherwise — nothing else cleared the bar. Investigated and dropped:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "investigated_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "inv_1",
+        "inv_2",
+        "inv_3",
+        "inv_4",
+        "inv_5",
+        "inv_6"
+      ]
+    },
+    "inv_1": {
+      "type": "Text",
+      "props": {
+        "text": "UnionPay's \"Agentic Payment Open Protocol\" (PR-wire republish of an April launch)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "inv_2": {
+      "type": "Text",
+      "props": {
+        "text": "SolvaPay's €2.4M raise (April raise recirculating)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "inv_3": {
+      "type": "Text",
+      "props": {
+        "text": "OKX Agent Payments Protocol/LEAPSY tie-in (April launch, low-signal builder tweet)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "inv_4": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare's x402 Monetization Gateway waitlist (July 6, already stale)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "inv_5": {
+      "type": "Text",
+      "props": {
+        "text": "Bankr/Grok prompt-injection wallet drain (May incident resurfacing)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "inv_6": {
+      "type": "Text",
+      "props": {
+        "text": "Triple-A $9.7M-$11.8M multi-chain wallet drain (real and growing, but no AI-agent angle)",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
