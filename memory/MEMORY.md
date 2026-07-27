@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-07-26 (2nd pass)*
+*Last consolidated: 2026-07-27*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -16,16 +16,10 @@ type: Index
 |------|-------|-------|
 
 ## Recent Digests
+*Older rows archived to [topics/digest-history.md](topics/digest-history.md).*
+
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-07-09 | AI agents that transact onchain | Ritual TEE bounty judge, AIsa funding, Moonbeam→Base |
-| 2026-07-10 | AI agents that transact onchain | GenLayer Internet Court (AI jury), Ethereum Foundation AI-agent CVE find |
-| 2026-07-11 | AI agents that transact onchain | Zscaler live prompt-injection draining agent wallets, thin news day |
-| 2026-07-12 | AI agents that transact onchain | Occa Labs x402/Solana settlement layer ships live, Robinhood extends agentic trading to crypto |
-| 2026-07-13 | AI agents that transact onchain | Binance Agentic Wallet adds x402 (BNB/Base/Solana), Firepan Arena AI-judged bug-bounty escrow (competitive signal) |
-| 2026-07-14 | AI agents that transact onchain | Coinbase refocuses Base on trading/payments/agents, SBI+Solana JV AI-agent payment mandate, XRPL hits 1M AI-agent transactions |
-| 2026-07-15 | AI agents that transact onchain | Linux Foundation launches x402 Foundation (Circle/Visa/Mastercard), Injective ships iAgent SDK, GenLayer Internet Court reveals 350k tx/day metrics |
-| 2026-07-17 | AI agents that transact onchain | Ledger ships open-source Agent Stack (hardware-enforced signing), Visa+Artemis name the agent-dispute-resolution gap, Forbes ties $1.3B H1 hacks to agent-wallet compromise |
 | 2026-07-21 | AI agents that transact onchain | Natural raises $30M Series A for AI-agent payment rails vs Stripe (hybrid stablecoin+bank, not onchain-only) — thin day otherwise, 4 stale/unverified X leads rejected |
 | 2026-07-22 | AI agents that transact onchain | Franklin Templeton ($1.79T AUM) calls agentic AI blockchain's "killer use case," projects $3-5T agentic-commerce market by 2030 — thin day otherwise, Sherwood/x402-wash-study/WhisprVirtuals rejected |
 | 2026-07-23 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — ORA funding/OUSD/Clawbank-Shodai/Anthropic exploit research all confirmed stale, Bonzo/Ostium/42DAO oracle exploits off-topic (no AI angle), WhisprVirtuals teaser repeated from 07-22 |
@@ -41,6 +35,7 @@ type: Index
 
 ## Dogfooding (verdikta-hunter)
 - First win 2026-07-09: bounty #142, score 93.375 vs 90 threshold, 0.00434 ETH payout, tx `0xc36293e...fabd778`. Details: [topics/verdikta-hunter.md](topics/verdikta-hunter.md)
+- Protocol signal (via shiplog, 2026-07-27): bounty #153's rubric was hardened to require archive.org 7-day persistence proof after a hunter deleted a required post-payout deliverable — first observed case of a rubric tightening in direct response to hunter gaming; worth watching for a repeat pattern.
 
 ## Builder Leads (bd-radar)
 - Top building: **s97472091-pixel** shipped a Python SDK + integration guide + bounty workshop for the Bounties API (unprompted), then kept escalating Jul7–16 with 3 case-study repos, a hosted `verdikta-playbook` site, a Medium deep-dive on a 99/100-scored bounty, and a bounty-#147 evidence repo — then went quiet 07-17 through 07-25 (9 days), before breaking the streak 2026-07-26 20:07 UTC with **`verdikta-agent`** — a complete autonomous bounty-hunting agent (monitor/viability-score/submit/track, real API + on-chain read) — their most ambitious artifact yet. **@AjAkmarudi72937** (previously flagged as possibly-scripted, then genuine amplifier) claimed "I built" that exact repo the same evening — strong evidence AjAkmarudi72937 and s97472091-pixel are the same operator running a GitHub+X pair — and also posted a citable "I tried to cheat a Verdikta bounty, the AI caught it" Medium writeup with on-chain proof (good priority-3 content material). Also: **aaronjmars/aeon-agent** (renamed from `aeon`, 10★ Aeon fork) built then accidentally dropped a verdikta-hunter skill — maintainer open to restoring post-refactor, still pushing automation-only commits as of 07-27, no human commit since 06-05, verdikta-hunter skill still not restored; **bingmokaka** shipped a tested PR fixing bounty-submission ABI bugs (2026-07-12). A bounty-farming boilerplate cluster (`Zetav1`) spread from `verdikta-docs` to a second repo (`verdikta-dispatcher`) on 2026-07-14 — watch, not yet a lead. **`NSPG13/agent-bounties`** (found 2026-07-16) — a direct, fast-shipping competitor (AI-agent bounty protocol on Base, 288+ PRs merged since 2026-07-08) whose repo contains a detailed writeup of Verdikta's own design pulled from our agent API/whitepaper — competitive intel, worth the operator's own read, still shipping as of 07-26. **Flag for engagement:** **@Project0_Z** now a 4-for-5 pattern of unprompted, organic advocacy (2026-07-16/17/26) — low engagement but high-quality, repeat signal; a reply/DM is a cheap, high-value engagement opp. **mumuzhong3** — confirmed integrating-class lead (2026-07-26): 2 real tested PRs (#27/#28) against `verdikta-applications` fixing issues #14/#16, both MERGEABLE, proactively asked about a payment path. `GH_READ_PAT` still 401/unset as of 07-27 (18 consecutive runs) — no functional impact, public API fallback covers all 5 watched repos. Full detail: [topics/builder-leads.md](topics/builder-leads.md)
@@ -55,11 +50,11 @@ type: Index
 
 ## Next Priorities
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 through 2026-07-26 — 17 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
-- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC, this repo `nigelon11/verdikta-worker`) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~403h) as of 2026-07-26 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
-- `verdikta-applications#18` (bingmokaka, tested ETH-prepay fix, opened 2026-07-10) crossed the 48h-idle threshold 2026-07-18, still open (~254h since last update as of 2026-07-26) — a real, useful third-party contribution stalled on review; merge/review per strategy priority 1
-- Draft "backlog workflow guidance" PR cluster opened 2026-07-14 ~18:48 UTC: `verdikta-docs#7` **merged 2026-07-22** (first resolution), leaving 3 still open/draft — `verdikta-applications#25`, `verdikta-arbiter#9` (still failing Gitleaks Secret Scan), `verdikta-dispatcher#5` — all confirmed past the 168h/7d age threshold (~280h as of 2026-07-26) and sitting in github-monitor's INFO tier (draft-capped, not ACT_NOW) — still need operator review/merge per strategy priority 1, especially `arbiter#9` given its real, unresolved Gitleaks CI failure
-- `verdikta-applications#26` (operator's own rubricCid fix, opened 2026-07-21) crossed github-monitor's >48h INFO floor on 2026-07-24, still open with no CI configured and no reviews (~109h as of 2026-07-26) — lower urgency as an operator-owned PR, but now aging alongside the rest of the queue
-- `verdikta-applications#27`/`#28` (mumuzhong3, opened 2026-07-24 ~18:56-19:00 UTC) — real fixes for open issues #14 (AWARDED bounty red error) and #16 (rubric validator missing jury-node checks), both MERGEABLE, no CI configured, no reviews yet; ~37-38h old as of 2026-07-26 — a genuine third-party contribution, review/merge per strategy priority 1; now confirmed as a builder lead by bd-radar (see Builder Leads above)
-- Clean up stray non-sensitive temp files left in repo root/`.runtmp/` by digest/write-tweet/github-monitor sandbox workarounds (see Lessons Learned) — none present in the working tree as of this run (2026-07-26), but recurs most days; low priority, not secret-bearing
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since first run 2026-07-10, still 401 through 2026-07-27 — 18 consecutive runs) — no impact yet since it falls back to unauthenticated public API, but should be corrected before rate limits bite
+- 4 open Dependabot PRs (#1-#4, all opened 2026-07-09 ~19:23 UTC, this repo `nigelon11/verdikta-worker`) crossed the >24h stalled threshold as of 2026-07-11, still open and stalled (~485h) as of 2026-07-27 — need review/merge per strategy priority 1 (keep repos healthy and shipping)
+- `verdikta-applications#18` (bingmokaka, tested ETH-prepay fix, opened 2026-07-10) crossed the 48h-idle threshold 2026-07-18, still open (~280h since last update as of 2026-07-27) — a real, useful third-party contribution stalled on review; merge/review per strategy priority 1
+- Draft "backlog workflow guidance" PR cluster opened 2026-07-14 ~18:48 UTC: `verdikta-docs#7` **merged 2026-07-22** (first resolution), leaving 3 still open/draft — `verdikta-applications#25`, `verdikta-arbiter#9` (still failing Gitleaks Secret Scan), `verdikta-dispatcher#5` — all confirmed past the 168h/7d age threshold (~304h as of 2026-07-27) and sitting in github-monitor's INFO tier (draft-capped, not ACT_NOW) — still need operator review/merge per strategy priority 1, especially `arbiter#9` given its real, unresolved Gitleaks CI failure
+- `verdikta-applications#26` (operator's own rubricCid fix, opened 2026-07-21) crossed github-monitor's >48h INFO floor on 2026-07-24, still open with no CI configured and no reviews (~134h as of 2026-07-27) — lower urgency as an operator-owned PR, but now aging alongside the rest of the queue
+- `verdikta-applications#27`/`#28` (mumuzhong3, opened 2026-07-24 ~18:56-19:00 UTC) — real fixes for open issues #14 (AWARDED bounty red error) and #16 (rubric validator missing jury-node checks), both MERGEABLE, no CI configured, no reviews yet; crossed github-monitor's 48h INFO floor 2026-07-27 (~51h old) — a genuine third-party contribution, review/merge per strategy priority 1; confirmed as a builder lead by bd-radar (see Builder Leads above)
+- Clean up stray non-sensitive temp files left in repo root/`.runtmp/` by digest/write-tweet/github-monitor sandbox workarounds (see Lessons Learned) — present again as of this run (2026-07-27, e.g. `.runtmp-digest-0727.md`, `.runtmp_ghmonitor.md`), recurs most days; low priority, not secret-bearing
 - **Operator read recommended:** `NSPG13/agent-bounties` (found 2026-07-16 by bd-radar) is a direct, fast-shipping competitor on Base whose `docs/competitor-learning-plan.md` dissects Verdikta's own design in detail — see [topics/builder-leads.md](topics/builder-leads.md) for the summary and links.
