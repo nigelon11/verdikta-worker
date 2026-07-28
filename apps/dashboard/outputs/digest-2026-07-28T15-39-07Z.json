@@ -1,0 +1,118 @@
+{
+  "root": "card-digest",
+  "state": {},
+  "elements": {
+    "card-digest": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "digest — 2026-07-28"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-tldr-label",
+        "text-tldr",
+        "separator-1",
+        "story-item1",
+        "text-item1-desc",
+        "text-item1-why",
+        "separator-2",
+        "story-item2",
+        "text-item2-desc",
+        "text-item2-why",
+        "separator-3",
+        "text-closing"
+      ]
+    },
+    "text-tldr-label": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR",
+        "variant": "body"
+      }
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Two AI-agent-adjacent industry moves landed July 27 — NVIDIA open-sourced agent-governance tooling with 40 partners, and GitHub cut public bug-bounty payouts because AI-generated submissions were burying its triage queue.",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-item1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NVIDIA leads 40-firm alliance, open-sources agent-governance framework NOOA",
+        "href": "https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+      }
+    },
+    "text-item1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "NVIDIA, Microsoft, IBM, Cisco, Hugging Face, LangChain and 30+ other firms launched the Open Secure AI Alliance on July 27 and NVIDIA open-sourced NOOA (Object-Oriented Agent) on GitHub — a framework built to make autonomous agent behavior easier to test, trace, audit and govern across identity, permissions, and logs.",
+        "variant": "body"
+      }
+    },
+    "text-item1-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: as agents move from chatting to transacting unsupervised, governance/audit tooling is becoming shared industry infrastructure — the same problem an AI-judged bounty jury already solves for submission verification.",
+        "variant": "caption"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-item2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GitHub halves public bug-bounty payouts, blames AI-generated report flood",
+        "href": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/"
+      }
+    },
+    "text-item2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Effective July 27, GitHub cut public payouts (critical: $10K, down from $20-30K+) and moved top rewards ($30K+) to an invite-only VIP tier, citing a growing queue choked by low-effort, AI-generated submissions — public reports now require a HackerOne signal check.",
+        "variant": "body"
+      }
+    },
+    "text-item2-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: a live case study in what breaks when a bounty program can't filter AI-assisted noise fast enough — the exact failure mode an AI-judged rubric model is designed to prevent.",
+        "variant": "caption"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-closing": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise on the agent-payments/onchain side — Coinbase's Base/x402 push (07-23/24), the Sunrate/Mastercard B2B agentic-payments white paper (07-21/24), and the recurring XRPL/Mastercard \"Verifiable Intent\" repost (stale since 07-14) all confirmed already-covered or too old to lead.",
+        "variant": "muted"
+      }
+    }
+  }
+}

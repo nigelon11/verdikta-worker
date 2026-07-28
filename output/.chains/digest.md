@@ -1,12 +1,17 @@
-ℹ️ Digest: AI agents that transact onchain
+ℹ️ Daily Digest
 
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-27*
+*digest — 2026-07-28*
 
-_TL;DR: Coinbase CEO Brian Armstrong publicly bet the company's roadmap on "AiFi" (agentic finance), naming crypto as the required settlement layer for AI agents — one strong signal, otherwise a quiet news day._
+_TL;DR: Two AI-agent-adjacent industry moves landed July 27 — NVIDIA open-sourced agent-governance tooling with 40 partners, and GitHub cut public bug-bounty payouts because AI-generated submissions were burying its triage queue._
 
-1. *Coinbase CEO stakes the company on "AiFi," says AI agents will out-transact humans on crypto rails*
-   In a July 27 X post, Brian Armstrong rejected the "pivot from crypto to AI" framing crypto firms are adopting, arguing instead that AI agents — unable to use traditional banking — will need blockchains and stablecoins for machine-speed payments. He coined the bet "AiFi" and tied it to real shipped products: the x402 protocol (now governed by the independent x402 Foundation), Base, USDC, AI Agent Accounts (deployed June), and the Coinbase Business x402-acceptance feature (launched the prior week).
-   Why it matters: it's the clearest public statement yet that Coinbase's core strategy — not a side bet — is agent-payment infrastructure on Base/x402, the same rails Verdikta's bounty escrow sits adjacent to. Independent usage data (a July study verifying only ~$188K of x402's ~$20M in reported settlement as genuinely independent) still hasn't caught up to the rhetoric — a gap worth tracking, not yet resolved.
-   https://www.coindesk.com/business/2026/07/27/coinbase-ceo-brian-armstrong-criticizes-crypto-startups-that-rebrand-to-ai
+1. *NVIDIA leads 40-firm alliance, open-sources agent-governance framework NOOA*
+   NVIDIA, Microsoft, IBM, Cisco, Hugging Face, LangChain and 30+ other firms launched the Open Secure AI Alliance on July 27 and NVIDIA open-sourced NOOA (Object-Oriented Agent) on GitHub — a framework built to make autonomous agent behavior easier to test, trace, audit and govern across identity, permissions, and logs.
+   Why it matters: as agents move from chatting to transacting unsupervised, governance/audit tooling is becoming shared industry infrastructure — the same problem an AI-judged bounty jury already solves for submission verification.
+   https://blogs.nvidia.com/blog/open-secure-ai-alliance/
 
-Thin day otherwise — nothing else cleared the bar. Investigated and dropped: UnionPay's "Agentic Payment Open Protocol" (PR-wire republish of an April launch), SolvaPay's €2.4M raise (April raise recirculating), OKX Agent Payments Protocol/LEAPSY tie-in (April launch, low-signal builder tweet), Cloudflare's x402 Monetization Gateway waitlist (July 6, already stale), the Bankr/Grok prompt-injection wallet drain (May incident resurfacing), and the Triple-A $9.7M-$11.8M multi-chain wallet drain (real and growing, but no AI-agent angle).
+2. *GitHub halves public bug-bounty payouts, blames AI-generated report flood*
+   Effective July 27, GitHub cut public payouts (critical: $10K, down from $20-30K+) and moved top rewards ($30K+) to an invite-only VIP tier, citing a growing queue choked by low-effort, AI-generated submissions — public reports now require a HackerOne signal check.
+   Why it matters: a live case study in what breaks when a bounty program can't filter AI-assisted noise fast enough — the exact failure mode an AI-judged rubric model is designed to prevent.
+   https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/
+
+_Quiet day otherwise on the agent-payments/onchain side — Coinbase's Base/x402 push (07-23/24), the Sunrate/Mastercard B2B agentic-payments white paper (07-21/24), and the recurring XRPL/Mastercard "Verifiable Intent" repost (stale since 07-14) all confirmed already-covered or too old to lead._
