@@ -1,20 +1,11 @@
+Log looks correct and consistent with the other skill entries that ran earlier today. Per the skill's gate, no self-notify is needed since there's no new `building`/`integrating`-class lead this run.
+
 ## Summary
 
-Ran `bd-radar` for 2026-07-27 (18th consecutive run). Gathered candidates from GitHub forks/issues (public API fallback — `GH_READ_PAT` still 401, 18th run in a row), `gh search`, xAI X search (since 2026-07-24), and WebSearch.
+Ran `bd-radar` (19th consecutive run) — **no new leads found**. Checked and rejected as noise: 5 drive-by GitHub forks, 2 stale one-shot repos (`ViKu7988/TechOn_Hackathon_VerdiktAI`, `salvio1050/verdikta-zealy`), a generic skill-aggregator mirror (`modbender/skill-library-mcp`), and a repeat of the already-tracked 07-26 X burst (AjAkmarudi72937/Project0_Z). `GH_READ_PAT` remains 401, but the default `gh api`/`gh search` token successfully read forks/issues/PRs across all 5 watched repos directly.
 
-**Key finding:** the top building lead, **s97472091-pixel**, broke a 10-day quiet streak by shipping `verdikta-agent` — a complete autonomous bounty-hunting agent (monitor/viability-score/submit/track, matching the real API, on-chain read) — their most ambitious artifact yet. The same evening, **@AjAkmarudi72937** (a previously-tracked X account) claimed "I built" that same repo and posted a citable "I tried to cheat a Verdikta bounty — the AI caught it" Medium writeup with on-chain proof, strong evidence they and s97472091-pixel are the same operator running a GitHub+X pair. `@Project0_Z` posted 2 more unprompted advocacy tweets (now a 4-for-5 pattern, still worth a cheap reply/DM).
+Files created/modified:
+- `output/articles/bd-radar-2026-07-28.md` — ranked lead digest (all 8 tracked leads, unchanged ranking)
+- `memory/logs/2026-07-28.md` — added `### bd-radar` block (resolved a merge conflict with github-monitor/mention-radar entries that landed first)
 
-No genuinely new lead keys surfaced this run (0 new / 8 tracked), so per the skill's gate I did **not** self-notify (quiet-by-default, consistent with how prior narrative updates to existing leads were handled).
-
-**Files modified/created:**
-- `memory/topics/bd-radar-leads.json` — updated signal text for s97472091-pixel, AjAkmarudi72937, Project0_Z, NSPG13/agent-bounties, aaronjmars/aeon-agent
-- `output/articles/bd-radar-2026-07-27.md` — new ranked digest (8 leads)
-- `memory/logs/2026-07-27.md` — new `### bd-radar` log block
-- `memory/MEMORY.md` — updated Builder Leads summary
-
-Committed as 2 commits (`9f45744`, `193817f`) directly to `main`, matching this system's established pattern for memory-only skill runs (per the existing "always save files AND commit" lesson in MEMORY.md).
-
-**Follow-up for operator:**
-- `GH_READ_PAT` needs fixing — 18 consecutive 401s, no impact yet but should be corrected before public-API rate limits bite.
-- The "tried to cheat a bounty" Medium writeup is good reusable material for priority-3 credible-content work.
-- `@Project0_Z` and `@Fishhead8u` remain cheap, low-effort reply/DM opportunities.
+Committed and pushed to `main` (`077abc2`). No notify sent, per the skill's quiet-by-default gate (only fires on new building/integrating leads). Follow-up already flagged in prior runs: `GH_READ_PAT` should still be fixed/rotated even though it's not blocking anything, and PRs #18/#27/#28 remain the top actionable integrating-lead follow-ups for the operator.

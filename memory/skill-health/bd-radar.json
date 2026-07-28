@@ -1,12 +1,13 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-27T08:26:35Z",
+  "last_analyzed": "2026-07-28T09:29:04Z",
   "quality_score": 4,
-  "assessment": "Good — substantive builder lead analysis with concrete evidence (s97472091-pixel → AjAkmarudi72937 linkage via Medium writeup + on-chain proof); proper memory/output updates; correctly applied quiet-by-default gate. GH_READ_PAT 401 persistent but handled via fallback.",
+  "assessment": "Well-executed — correctly filtered noise, properly gated notifications, created artifacts, and flagged follow-ups; limited by 19 consecutive zero-lead runs and unfixed GH_READ_PAT.",
   "flags": [
-    "api_error"
+    "stale_data",
+    "infrastructure_issue"
   ],
-  "avg_score": 3.72,
+  "avg_score": 3.74,
   "history": [
     {
       "date": "2026-07-10",
@@ -78,6 +79,10 @@
     },
     {
       "date": "2026-07-27",
+      "score": 4
+    },
+    {
+      "date": "2026-07-28",
       "score": 4
     }
   ]
