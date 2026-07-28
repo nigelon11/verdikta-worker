@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-07-27T00:00:00Z
+timestamp: 2026-07-28T00:00:00Z
 ---
 
 # Digest History Archive
@@ -20,3 +20,4 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-07-14 | AI agents that transact onchain | Coinbase refocuses Base on trading/payments/agents, SBI+Solana JV AI-agent payment mandate, XRPL hits 1M AI-agent transactions |
 | 2026-07-15 | AI agents that transact onchain | Linux Foundation launches x402 Foundation (Circle/Visa/Mastercard), Injective ships iAgent SDK, GenLayer Internet Court reveals 350k tx/day metrics |
 | 2026-07-17 | AI agents that transact onchain | Ledger ships open-source Agent Stack (hardware-enforced signing), Visa+Artemis name the agent-dispute-resolution gap, Forbes ties $1.3B H1 hacks to agent-wallet compromise |
+| 2026-07-21 | AI agents that transact onchain | Natural raises $30M Series A for AI-agent payment rails vs Stripe (hybrid stablecoin+bank, not onchain-only) — thin day otherwise, 4 stale/unverified X leads rejected |
