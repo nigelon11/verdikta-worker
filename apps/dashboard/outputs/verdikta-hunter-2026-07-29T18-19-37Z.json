@@ -1,0 +1,247 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — Dry-run #164"
+      },
+      "children": [
+        "status",
+        "bounty-stack",
+        "report-stack",
+        "checks-stack",
+        "tracked-stack",
+        "spend-alert"
+      ]
+    },
+    "status": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "VALID",
+        "message": "Dry-run validation passed, no transactions sent."
+      }
+    },
+    "bounty-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-heading",
+        "bounty-desc",
+        "bounty-table"
+      ]
+    },
+    "bounty-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bounty #164",
+        "level": "h3"
+      }
+    },
+    "bounty-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Write an integration guide for submitting to Verdikta bounties from an autonomous agent",
+        "variant": "lead"
+      }
+    },
+    "bounty-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Field",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Reward",
+            "0.004 ETH"
+          ],
+          [
+            "Threshold",
+            "80%"
+          ],
+          [
+            "Prior Submissions",
+            "0"
+          ],
+          [
+            "Time Remaining",
+            "~96h"
+          ]
+        ]
+      }
+    },
+    "report-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "report-heading",
+        "report-info",
+        "report-flow-block",
+        "report-modes-block"
+      ]
+    },
+    "report-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Report Written",
+        "level": "h3"
+      }
+    },
+    "report-info": {
+      "type": "Text",
+      "props": {
+        "text": "File: .pending-verdikta/files/164/report.md (12.8KB, single markdown file)",
+        "variant": "body"
+      }
+    },
+    "report-flow-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "report-flow-label",
+        "report-flow-text"
+      ]
+    },
+    "report-flow-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full flow covered:",
+        "variant": "caption"
+      }
+    },
+    "report-flow-text": {
+      "type": "Text",
+      "props": {
+        "text": "register → bundle upload → prepare → bundle/complete → confirm → payable start → finalize",
+        "variant": "body"
+      }
+    },
+    "report-modes-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "report-modes-label",
+        "report-modes-text",
+        "report-validation"
+      ]
+    },
+    "report-modes-label": {
+      "type": "Text",
+      "props": {
+        "text": "Failure modes (6 named):",
+        "variant": "caption"
+      }
+    },
+    "report-modes-text": {
+      "type": "Text",
+      "props": {
+        "text": "BOUNTY_NOT_ONCHAIN, underfunded start, skipped confirm, archive attachments, premature finalize, jobId/bountyId drift",
+        "variant": "body"
+      }
+    },
+    "report-validation": {
+      "type": "Text",
+      "props": {
+        "text": "Cross-checked against live /api/docs and agents.txt responses for no_fabrication gate",
+        "variant": "caption"
+      }
+    },
+    "checks-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "checks-heading",
+        "checks-table"
+      ]
+    },
+    "checks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dry-run Checks",
+        "level": "h3"
+      }
+    },
+    "checks-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Check",
+          "Status"
+        ],
+        "rows": [
+          [
+            "files_present",
+            "✓"
+          ],
+          [
+            "file_size (12.8KB)",
+            "✓"
+          ],
+          [
+            "non_empty",
+            "✓"
+          ],
+          [
+            "file_readable",
+            "✓"
+          ],
+          [
+            "oracle_readable",
+            "✓"
+          ]
+        ]
+      }
+    },
+    "tracked-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tracked-heading",
+        "tracked-text"
+      ]
+    },
+    "tracked-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Tracked Submissions",
+        "level": "h3"
+      }
+    },
+    "tracked-text": {
+      "type": "Text",
+      "props": {
+        "text": "Submission #142: FINALIZED on 2026-07-09 (no new activity this run)",
+        "variant": "body"
+      }
+    },
+    "spend-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "No real spend — dry-run mode only (var=dry-run:164)"
+      }
+    }
+  }
+}
