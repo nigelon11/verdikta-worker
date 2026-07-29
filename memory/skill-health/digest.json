@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-28T15:39:07Z",
+  "last_analyzed": "2026-07-29T15:33:33Z",
   "quality_score": 4,
-  "assessment": "Solid execution: clean run (http=200), robust filtering logic (16 candidates → 2 substantive items), proper verification steps, and contextual signal tied to strategy (GitHub bounty changes as parallel to Verdikta's model).",
+  "assessment": "Substantive output with one verified finding on OpenAI's ExploitGym sandbox escape; strong editorial discipline rejecting weak candidates; connects to Verdikta strategy",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -84,6 +84,10 @@
     },
     {
       "date": "2026-07-28",
+      "score": 4
+    },
+    {
+      "date": "2026-07-29",
       "score": 4
     }
   ]
