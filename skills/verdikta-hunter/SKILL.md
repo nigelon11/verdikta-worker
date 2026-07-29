@@ -2,7 +2,7 @@
 type: Skill
 name: Verdikta Hunter
 category: crypto
-description: Hunt Verdikta AI-judged bounties on Base — discover open bounties, write rubric-targeted reports, and submit on-chain through scripts/verdikta-exec.sh, a deterministic hard-capped executor (the model never signs)
+description: Hunt Verdikta AI-judged bounties on Base — discover open bounties, write rubric-targeted reports, and submit on-chain through skills/verdikta-hunter/verdikta_exec.py, a deterministic hard-capped executor (the model never signs)
 var: ""
 tags: [crypto, bounties, base, verdikta, web3]
 requires: [VERDIKTA_API_KEY, VERDIKTA_WALLET_KEY?]
@@ -16,7 +16,7 @@ capabilities: [external_api, writes_external_host, onchain_writes, sends_notific
 
 ## Goal
 
-Earn ETH from [Verdikta](https://bounties.verdikta.org) bounties on Base: open bounties carry an escrowed ETH reward and a public rubric; two independent AI models score each submission against the rubric, and a submission at or above the bounty's threshold wins the escrow. This skill does the judgment work — choosing bounties worth attempting and writing reports that score well. Authed **reads** go through `./secretcurl` (see Network note); all transaction **signing** happens only inside `scripts/verdikta-exec.sh`, a deterministic cap-enforcing executor you invoke as your final step. Never sign or broadcast a transaction any other way.
+Earn ETH from [Verdikta](https://bounties.verdikta.org) bounties on Base: open bounties carry an escrowed ETH reward and a public rubric; two independent AI models score each submission against the rubric, and a submission at or above the bounty's threshold wins the escrow. This skill does the judgment work — choosing bounties worth attempting and writing reports that score well. Authed **reads** go through `./secretcurl` (see Network note); all transaction **signing** happens only inside `skills/verdikta-hunter/verdikta_exec.py`, a deterministic cap-enforcing executor you invoke as your final step. Never sign or broadcast a transaction any other way.
 
 ## Config
 
@@ -33,7 +33,7 @@ Cap overrides live in `memory/verdikta-hunter.env` (plain `KEY=VALUE` lines, com
 
 ### Fund safety — read before enabling
 
-This skill can spend real ETH. The safety envelope, enforced by `scripts/verdikta-exec.sh` (not by the model, and not by the remote API):
+This skill can spend real ETH. The safety envelope, enforced by `skills/verdikta-hunter/verdikta_exec.py` (not by the model, and not by the remote API):
 
 - **Dedicated wallet only.** Fund a fresh wallet with a small working balance (~0.005 ETH covers gas plus several oracle prepays) and use its key as `VERDIKTA_WALLET_KEY`. Never reuse a wallet that holds anything you can't lose.
 - **Hard spend cap.** The oracle prepay (`ethMaxBudget`) comes from the API response, so the executor treats it as untrusted: any transaction whose value exceeds `VERDIKTA_MAX_SPEND_ETH` is refused and logged, never signed. The real-world worst-case prepay is ~0.00024 ETH, so the 0.0005 default has headroom without meaningful blast radius. The prepay is escrow, not a fee — the unspent portion is refunded at finalize.
@@ -43,21 +43,21 @@ This skill can spend real ETH. The safety envelope, enforced by `scripts/verdikt
 
 ## Steps
 
-### 0. Parse `${var}` and load context
+### 0. Parse the mode selector and load context
 
 - Parse the mode: empty → `MODE=discover`; `hunt[:<jobId>]` → `MODE=hunt`; `dry-run[:<jobId>]` → `MODE=hunt` with `DRY_RUN=true`. A trailing `<jobId>` pins the target bounty.
 - Read `memory/MEMORY.md` and the last ~3 days of `memory/logs/` (don't re-report signals already sent).
 - Read `memory/state/verdikta-hunter.json` if present — it tracks prior submissions (`jobId`, `submissionId`, tx hashes, status, spend) and the daily submission count. Treat as `{"submissions": {}, "daily": {}}` if absent; the executor owns writes to this file.
-- `mkdir -p .verdikta-cache` (gitignored scratch for this run), then fetch the open-bounty list:
+- Fetch the open-bounty list. **Read the output directly — do not redirect to a file** (`>` redirection is blocked by the harness's Bash permission layer; if you need to keep a copy, use the `Write` tool):
   ```bash
   ./secretcurl -s -w '\nhttp=%{http_code}' -H "X-Bot-API-Key: {VERDIKTA_API_KEY}" \
-    "https://bounties.verdikta.org/api/jobs?status=OPEN&limit=30" > .verdikta-cache/bounties.json
+    "https://bounties.verdikta.org/api/jobs?status=OPEN&limit=30"
   ```
   Print the `http=` code before deciding anything. Non-2xx or empty body → notify `VERDIKTA_HUNTER_ERROR — /jobs returned http-<code>; check VERDIKTA_API_KEY`, log, and stop.
 
 ### 1. Settle prior submissions (every mode)
 
-For each tracked submission in state, fetch its current status (`./secretcurl … /api/jobs/<jobId>/submissions > .verdikta-cache/submissions-<jobId>.json`):
+For each tracked submission in state, fetch its current status with `./secretcurl … /api/jobs/<jobId>/submissions` (read the output directly, no redirect):
 
 - `ACCEPTED_PENDING_CLAIM` or `REJECTED_PENDING_FINALIZATION` → queue a finalize: write `.pending-verdikta/finalize-<jobId>-<subId>.json` containing `{"action": "finalize", "jobId": <n>, "submissionId": <n>}`. Finalize is **mandatory even after a pass** — payment is not automatic, and it's what refunds the unspent oracle prepay after a fail.
 - `PENDING_EVALUATION` for more than ~30 minutes (compare state's `submittedAt` to now) → the oracle may be stuck; note it in the notification and log. Timeout recovery is intentionally not automated — flag it for the operator with the manual command: `POST /api/jobs/<jobId>/submissions/<subId>/timeout` (see gotcha #24).
@@ -65,9 +65,9 @@ For each tracked submission in state, fetch its current status (`./secretcurl �
 
 ### 2. Discover and rank open bounties
 
-From `.verdikta-cache/bounties.json`, drop bounties that are: already submitted to by our wallet (in state), past or within ~24h of their `submissionDeadline`, targeted at another hunter (`targetHunter` set and not us), or in a creator-approval window flow (`creatorAssessmentWindowSize > 0`) — windowed bounties are out of scope for v1.
+From the bounty list fetched in step 0, drop bounties that are: already submitted to by our wallet (in state), past or within ~24h of their `submissionDeadline`, targeted at another hunter (`targetHunter` set and not us), or in a creator-approval window flow (`creatorAssessmentWindowSize > 0`) — windowed bounties are out of scope for v1.
 
-Score the rest on: reward (`payoutWei`) vs. effort implied by the rubric, threshold attainability (lower threshold = easier), competition (`submissions` count), and fit with `STRATEGY.md` priorities and our actual capabilities — **skip bounties requiring work we can't genuinely deliver** (e.g. deliverables needing binary assets, human accounts, or off-repo actions). For each surviving candidate fetch the rubric (`./secretcurl … /api/jobs/<jobId>/rubric > .verdikta-cache/rubric-<jobId>.json`): `must: true` criteria are binary gates (fail one = score 0); weighted criteria sum to 1.0.
+Score the rest on: reward (`payoutWei`) vs. effort implied by the rubric, threshold attainability (lower threshold = easier), competition (`submissions` count), and fit with `STRATEGY.md` priorities and our actual capabilities — **skip bounties requiring work we can't genuinely deliver** (e.g. deliverables needing binary assets, human accounts, or off-repo actions). For each surviving candidate fetch the rubric with `./secretcurl … /api/jobs/<jobId>/rubric` (no redirect): `must: true` criteria are binary gates (fail one = score 0); weighted criteria sum to 1.0.
 
 - `MODE=discover`: notify the top 3–5 as a shortlist (jobId, reward in ETH, threshold, submissions count, one-line rubric summary, deadline), run the executor if finalizes are queued (step 4), log, and stop. If nothing is worth attempting and nothing settled, stay silent — no empty reports.
 - `MODE=hunt`: pick the single best candidate (or the pinned `<jobId>` — but still refuse it if it fails the drop-filters above, and say why). If the daily count in state already meets `VERDIKTA_MAX_SUBMISSIONS_PER_DAY`, fall back to discover behaviour and note the cap in the notification.
@@ -107,10 +107,10 @@ Then write `.pending-verdikta/submit-<jobId>.json`:
 As your **final action** before notifying, run the executor once and read its output:
 
 ```bash
-./scripts/verdikta-exec.sh
+python3 skills/verdikta-hunter/verdikta_exec.py
 ```
 
-Invoke it exactly like that — directly, never via a `bash …` prefix and never with a redirect. It is allowlisted by that exact path (the harness grants no wildcard shell), so any other invocation form is denied.
+Invoke it exactly like that — `python3` is granted on the write tier by stock Aeon, so this needs no allowlist change. Never add a redirect (`>` is blocked); read the output from the command result. It installs its own two dependencies (`eth-account`, `requests`) on first run if they're absent.
 
 It processes queued finalizes first (reclaim/settle — no new spend), then at most one submit (cap-checked: pinned contract, `VERDIKTA_MAX_SPEND_ETH`, daily cap, balance preflight), records tx hashes / `submissionId` / spend into `memory/state/verdikta-hunter.json`, and appends a `### verdikta-hunter (exec)` entry to today's log. Read its output — tx hashes, dry-run verdicts, and `SAFETY CAP REFUSED` lines go into your notification. If it exits non-zero or refuses on a cap, report that honestly (severity `warn`); never retry by signing manually.
 
@@ -118,7 +118,7 @@ If nothing was queued (pure discover with no settlements), skip the executor.
 
 ### 5. Notify
 
-One `./notify -f` message per run with real signal, following soul/ voice if present. Write the message body to `.verdikta-cache/notify.md` (gitignored scratch):
+One `./notify -f` message per run with real signal, following soul/ voice if present. Write the message body with the `Write` tool to `.pending-verdikta/notify.md` (`.pending-*/` is gitignored, so the scratch file never lands in a commit — don't write scratch anywhere else, since the harness can't `rm` and stray files get auto-committed):
 
 - Settlements first: won (score, payout, finalize tx), lost (score vs threshold, one-line diagnosis), finalizes executed.
 - Then the action taken: shortlist (discover), or "submitted to #<jobId> (<reward> ETH, threshold <t>%) — prepare <tx>, start <tx>" (hunt), or the dry-run verdict with any error codes.
@@ -175,7 +175,7 @@ Append to `memory/logs/YYYY-MM-DD.md` (the executor writes its own `(exec)` bloc
 
 ## API Reference
 
-All endpoints at `https://bounties.verdikta.org/api` with header `X-Bot-API-Key: <key>`. Read (GET) calls are yours to make via `./secretcurl`; the POST submission-flow calls are made only by `scripts/verdikta-exec.sh` — documented here for reference and manual recovery.
+All endpoints at `https://bounties.verdikta.org/api` with header `X-Bot-API-Key: <key>`. Read (GET) calls are yours to make via `./secretcurl`; the POST submission-flow calls are made only by `skills/verdikta-hunter/verdikta_exec.py` — documented here for reference and manual recovery.
 
 ### Bounty Discovery (skill reads, via `./secretcurl`)
 
@@ -210,7 +210,7 @@ POST /submit/bundle/complete-> {success, parsed:{submissionId, evalWallet, ethMa
 
 ## On-Chain Submission Flow
 
-Reference for the three transactions `scripts/verdikta-exec.sh` signs and broadcasts (cap-checked against `VERDIKTA_MAX_SPEND_ETH`, pinned to the BountyEscrow contract on Base, chainId 8453). The model never signs — this documents the flow for review and manual recovery only.
+Reference for the three transactions `skills/verdikta-hunter/verdikta_exec.py` signs and broadcasts (cap-checked against `VERDIKTA_MAX_SPEND_ETH`, pinned to the BountyEscrow contract on Base, chainId 8453). The model never signs — this documents the flow for review and manual recovery only.
 
 ### Step 1: `prepareSubmission` (gas only, no value)
 
@@ -240,8 +240,8 @@ Claims the reward or refunds the escrow. **Mandatory** — the escrow stays lock
 
 This template injects the `requires:` keys directly into the run's environment; bash egress is open, but any command line containing a secret expansion is refused by the permission layer. So:
 
-- **Authed API reads:** always `./secretcurl` with the literal `{VERDIKTA_API_KEY}` placeholder (never `$VERDIKTA_API_KEY`). Capture `-w '%{http_code}'` and print `http=<code>` before deciding anything; fall back to WebFetch only for *public* pages, never for authed calls.
-- **Signing:** only `scripts/verdikta-exec.sh`. It reads `VERDIKTA_WALLET_KEY` from its own environment — the key never appears in your commands, and the cap envelope lives in deterministic code. Do not install web3 libraries or hand-roll transactions; a cap refusal from the executor is an answer, not an obstacle.
+- **Authed API reads:** always `./secretcurl` with the key written as the literal brace placeholder `{VERDIKTA_API_KEY}`. Never rewrite it into a shell variable expansion — a command line carrying an expanded secret is refused by the permission layer. Capture `-w '%{http_code}'` and print `http=<code>` before deciding anything; fall back to WebFetch only for *public* pages, never for authed calls.
+- **Signing:** only `skills/verdikta-hunter/verdikta_exec.py`. It reads `VERDIKTA_WALLET_KEY` from its own environment — the key never appears in your commands, and the cap envelope lives in deterministic code. Do not install web3 libraries or hand-roll transactions; a cap refusal from the executor is an answer, not an obstacle.
 
 ## Exit codes
 
