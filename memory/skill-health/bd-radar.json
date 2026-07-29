@@ -1,13 +1,10 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-28T09:29:04Z",
+  "last_analyzed": "2026-07-29T09:56:14Z",
   "quality_score": 4,
-  "assessment": "Well-executed — correctly filtered noise, properly gated notifications, created artifacts, and flagged follow-ups; limited by 19 consecutive zero-lead runs and unfixed GH_READ_PAT.",
-  "flags": [
-    "stale_data",
-    "infrastructure_issue"
-  ],
-  "avg_score": 3.74,
+  "assessment": "Systematic 20-run sweep with transparent methodology; no new high-intent builders found but signal vs noise clearly separated, state properly tracked across runs, actionable follow-ups documented.",
+  "flags": [],
+  "avg_score": 3.75,
   "history": [
     {
       "date": "2026-07-10",
@@ -83,6 +80,10 @@
     },
     {
       "date": "2026-07-28",
+      "score": 4
+    },
+    {
+      "date": "2026-07-29",
       "score": 4
     }
   ]

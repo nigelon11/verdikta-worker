@@ -1,11 +1,18 @@
-Log looks correct and consistent with the other skill entries that ran earlier today. Per the skill's gate, no self-notify is needed since there's no new `building`/`integrating`-class lead this run.
-
 ## Summary
 
-Ran `bd-radar` (19th consecutive run) — **no new leads found**. Checked and rejected as noise: 5 drive-by GitHub forks, 2 stale one-shot repos (`ViKu7988/TechOn_Hackathon_VerdiktAI`, `salvio1050/verdikta-zealy`), a generic skill-aggregator mirror (`modbender/skill-library-mcp`), and a repeat of the already-tracked 07-26 X burst (AjAkmarudi72937/Project0_Z). `GH_READ_PAT` remains 401, but the default `gh api`/`gh search` token successfully read forks/issues/PRs across all 5 watched repos directly.
+Ran the 20th consecutive `bd-radar` sweep. **No new lead keys** — all 8 tracked leads (1 building, 3 integrating, 1 adjacent/competitor, 3 mentioning) carried forward.
 
-Files created/modified:
-- `output/articles/bd-radar-2026-07-28.md` — ranked lead digest (all 8 tracked leads, unchanged ranking)
-- `memory/logs/2026-07-28.md` — added `### bd-radar` block (resolved a merge conflict with github-monitor/mention-radar entries that landed first)
+What I checked and found:
+- **GitHub** (forks/issues/PRs across all 5 watched repos, `GH_READ_PAT` still 401/unset — 20th consecutive run): only the already-known contributors (mumuzhong3, bingmokaka), PRs #27/#28/#18 still open/unreviewed. No new forks, no new discovery repos via `gh search`.
+- **X** (xAI `x_search`, http=200): @AjAkmarudi72937 posted a new analytical mention (2026-07-28) reframing Verdikta around agent-settlement dispute resolution at scale — a continuation of an already-tracked handle, not a new lead. `aaronjmars/aeon-agent` pushed again today, still hasn't restored its dropped verdikta-hunter skill.
+- **Web**: no genuine builder discussion; one false positive (`sinster2003/grantitude`) investigated and rejected.
 
-Committed and pushed to `main` (`077abc2`). No notify sent, per the skill's quiet-by-default gate (only fires on new building/integrating leads). Follow-up already flagged in prior runs: `GH_READ_PAT` should still be fixed/rotated even though it's not blocking anything, and PRs #18/#27/#28 remain the top actionable integrating-lead follow-ups for the operator.
+Files changed:
+- `output/articles/bd-radar-2026-07-29.md` — today's ranked digest.
+- `memory/logs/2026-07-29.md` — `### bd-radar` run log.
+- `memory/topics/bd-radar-leads.json` — refreshed AjAkmarudi72937 and aaronjmars entries with latest activity.
+- `memory/topics/builder-leads.md` — backfilled the per-run detail log for runs 17-20 (07-26 through 07-29), fixing the gap flagged in MEMORY.md's Lessons Learned (it had stalled at run 16/07-25).
+
+Committed as `dffa2e4`. No self-notify — no new high-intent (building/integrating) lead this run, per the skill's notification gate.
+
+Follow-up for the operator (unchanged from prior runs): `GH_READ_PAT` is still 401 after 20 consecutive runs (no functional impact, but worth fixing before rate limits bite); PRs #18/#27/#28 against `verdikta-applications` remain open and worth reviewing/merging.
