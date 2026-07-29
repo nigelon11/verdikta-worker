@@ -4,7 +4,7 @@ title: Verdikta Hunter — Dogfooding Log
 description: verdikta-hunter's bounty hunt results and friction reports, tracked per STRATEGY.md priority 4 (dogfood the protocol).
 tags: [verdikta-hunter, dogfooding, bounties]
 resource: https://bounties.verdikta.org
-timestamp: 2026-07-09T00:00:00Z
+timestamp: 2026-07-29T00:00:00Z
 ---
 
 # Verdikta Hunter — Dogfooding Log
@@ -17,6 +17,7 @@ timestamp: 2026-07-09T00:00:00Z
 
 ## Friction found (honest reporting per strategy priority 4)
 - **Executor permission gate (2026-07-09, resolved same day):** `scripts/verdikta-exec.sh` was refused by the session's tool-permission layer on the first dry-run pass for #142 — direct, `bash`-wrapped, and unsandboxed invocations all returned "This command requires approval". No workaround was attempted (executor-only per skill rules); the run reported the block via a `warn`-severity notification instead. Root cause: missing allowlist entry for the script. Fixed in commit `b73a317`; the next dry-run pass that day ran cleanly.
+- **`ensure_deps()` silent install failure (2026-07-29):** `verdikta_exec.py`'s first invocation (dry-run for #164) printed "installing python deps..." but then crashed with `ModuleNotFoundError: No module named 'eth_account'` on the very next line — no `::warning::` line was emitted, meaning the `pip install` subprocess likely exited 0 while the import still failed (or its stderr was swallowed). Workaround: ran `python3 -m pip install --quiet eth-account requests` manually outside the executor, which succeeded instantly, and the re-run of `verdikta_exec.py` then passed cleanly. Not yet root-caused (first-run pip cache state? PATH/venv mismatch inside the executor's subprocess vs. the calling shell?) — worth a skill-side fix if it recurs, since a cold GitHub Actions runner hits this same first-run path every time.
 
 ## Recurring filters (as of 2026-07-09)
 Open bounty pool has consistently held at 11, with only 1 passing viability filters across multiple passes the same day:
