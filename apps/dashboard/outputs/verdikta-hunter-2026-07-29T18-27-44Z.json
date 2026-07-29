@@ -1,0 +1,302 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — submitted #164"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "intro-text",
+        "separator-1",
+        "bounty-section",
+        "separator-2",
+        "tx-section",
+        "separator-3",
+        "status-alert",
+        "separator-4",
+        "deliverable-section",
+        "separator-5",
+        "note-section",
+        "separator-6",
+        "next-section"
+      ]
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "Submitted a real on-chain entry to bounty #164 (\"Write an integration guide for submitting to Verdikta bounties from an autonomous agent\") — 0.004 ETH reward, threshold 80%, 0 prior submissions.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bounty-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-heading",
+        "bounty-stats-grid"
+      ]
+    },
+    "bounty-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bounty Details",
+        "level": "h3"
+      }
+    },
+    "bounty-stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "reward-stat",
+        "threshold-stat",
+        "submissions-stat"
+      ]
+    },
+    "reward-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.004 ETH"
+      }
+    },
+    "threshold-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "80%"
+      }
+    },
+    "submissions-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Prior Submissions",
+        "value": "0"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tx-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tx-heading",
+        "tx-details-stack"
+      ]
+    },
+    "tx-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Transactions",
+        "level": "h3"
+      }
+    },
+    "tx-details-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "prepare-tx-row",
+        "start-tx-row",
+        "oracle-prepay-stat"
+      ]
+    },
+    "prepare-tx-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "prepare-tx-label",
+        "prepare-tx-badge"
+      ]
+    },
+    "prepare-tx-label": {
+      "type": "Text",
+      "props": {
+        "text": "prepare tx:",
+        "variant": "caption"
+      }
+    },
+    "prepare-tx-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "0xb80d0ab2c2eac6bb65c6a7ea05dc401593fa9f6e9ba0df22c8d9e718131d307e",
+        "variant": "outline"
+      }
+    },
+    "start-tx-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "start-tx-label",
+        "start-tx-badge"
+      ]
+    },
+    "start-tx-label": {
+      "type": "Text",
+      "props": {
+        "text": "start tx:",
+        "variant": "caption"
+      }
+    },
+    "start-tx-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "0x5b7891636cecf0ba0ab396f2aabcd01953ec0f971685d71bc5fb864d5265f6fc",
+        "variant": "outline"
+      }
+    },
+    "oracle-prepay-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Oracle Prepay",
+        "value": "0.00024 ETH",
+        "delta": "under 0.0005 ETH cap"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Status",
+        "message": "PENDING_EVALUATION — oracle typically takes 2–10 min",
+        "type": "info"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "deliverable-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "deliverable-heading",
+        "deliverable-text"
+      ]
+    },
+    "deliverable-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Deliverable",
+        "level": "h3"
+      }
+    },
+    "deliverable-text": {
+      "type": "Text",
+      "props": {
+        "text": "Single markdown file, full 8-step flow (register → discover → upload → prepare → confirm → start → poll → finalize) + 6 failure modes, every endpoint/address cross-checked against the live `agents.txt`/`/api/docs`. This bounty already had a dry-run VALID pass earlier today; this run converted that to a real submission.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "note-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "note-heading",
+        "note-text"
+      ]
+    },
+    "note-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Note",
+        "level": "h3"
+      }
+    },
+    "note-text": {
+      "type": "Text",
+      "props": {
+        "text": "The rubric's own step numbering listed `confirm` before `prepare`, which is backwards from the actual API (`confirm` needs `submissionId`/`evalWallet`, only available after `prepare`) — the report uses the technically correct order and calls this out explicitly rather than mirroring the rubric's ordering.",
+        "variant": "body"
+      }
+    },
+    "separator-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "next-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "next-heading",
+        "next-text"
+      ]
+    },
+    "next-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Next Steps",
+        "level": "h3"
+      }
+    },
+    "next-text": {
+      "type": "Text",
+      "props": {
+        "text": "Finalize is required regardless of outcome — will run automatically on a future pass once the oracle settles.",
+        "variant": "body"
+      }
+    }
+  }
+}
