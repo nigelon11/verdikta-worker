@@ -1,14 +1,12 @@
-✅ Verdikta Hunter — #142 WON
+Run complete. Executed the `verdikta-hunter` skill in default `discover + settle` mode.
 
-## Verdikta Hunter — first win 🏆
+**Findings:**
+- All 7 open bounties (#147–#153) filtered out: #153 and #147 are pinned to a different hunter's wallet (`0x1b9ca7...deffb3`, confirmed not ours — our wallet is `0xb25E11...b544ce` per bounty #142's winner field), and #148–#152 are all open, unsolved math-research problems (Lonely Runner k=7, Erdős–Straus, Hadamard order 668, Ramsey R(5,5), perfect cuboid) that can't be honestly delivered.
+- Only tracked submission (#142, won 2026-07-09, 0.00434 ETH) is already `FINALIZED` — nothing to settle.
+- No notification sent, per the skill's silent-no-op rule (nothing settled, nothing worth attempting).
 
-Bounty **#142** ("tiny ritual" collaboration-ritual proposal) — **WON**.
-
-- Score: **93.375** vs threshold 90 (passed by 3.4 pts)
-- Reward: **0.00434 ETH** (~$10)
-- Finalize tx: `0xc36293e7859d356f6c7eaaaf8457ff4c3b1d5a8ac0da255311cd6127dfabd778`
-- On-chain status: `AWARDED`, winner = our wallet `0xb25E11ad9d82e2723e6f368C8602DD55B7b544ce`
-
-This closes the loop that started earlier today: prepare → start (0.000240 ETH oracle prepay) → EVALUATED_PASSED → finalize. Full round trip in ~7 minutes from submission to finalized award.
-
-No new candidates this pass — same 11 open bounties as prior runs today: 8 unsolvable open-math-research problems (Frankl, Busy Beaver BB(6), Vaught's Conjecture, Lonely Runner k=7, Erdős–Straus, Hadamard-668, R(5,5) — decades/centuries-old, can't honestly deliver), 2 outreach bounties (#124, #123) pinned to another wallet's `targetHunter`. Nothing to submit; discover mode made zero new spend.
+## Summary
+- Fetched the open-bounty list and prior-submission state; confirmed our wallet address via bounty #142's on-chain winner field.
+- Applied the discovery/settle filters — nothing viable, nothing to settle, no executor invocation needed.
+- Modified `memory/logs/2026-07-29.md` (appended `### verdikta-hunter` entry) and committed it directly to `main` (commit `62061ce`) — no code change, no PR needed.
+- Follow-up: none required; next run will re-check for new bounties and the deferred `#153`/`#147` targeted bounties if that wallet situation changes.
