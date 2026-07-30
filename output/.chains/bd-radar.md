@@ -1,18 +1,20 @@
+Everything's in order. This CI workflow auto-commits after the run (single-commit shallow history, `chore(cron):` pattern), so no manual commit needed here.
+
 ## Summary
 
-Ran the 20th consecutive `bd-radar` sweep. **No new lead keys** — all 8 tracked leads (1 building, 3 integrating, 1 adjacent/competitor, 3 mentioning) carried forward.
+Ran `bd-radar`'s 21st consecutive sweep (2026-07-30). **No new lead keys** — all 8 tracked leads carried forward unchanged.
 
-What I checked and found:
-- **GitHub** (forks/issues/PRs across all 5 watched repos, `GH_READ_PAT` still 401/unset — 20th consecutive run): only the already-known contributors (mumuzhong3, bingmokaka), PRs #27/#28/#18 still open/unreviewed. No new forks, no new discovery repos via `gh search`.
-- **X** (xAI `x_search`, http=200): @AjAkmarudi72937 posted a new analytical mention (2026-07-28) reframing Verdikta around agent-settlement dispute resolution at scale — a continuation of an already-tracked handle, not a new lead. `aaronjmars/aeon-agent` pushed again today, still hasn't restored its dropped verdikta-hunter skill.
-- **Web**: no genuine builder discussion; one false positive (`sinster2003/grantitude`) investigated and rejected.
+**Checked:** forks/issues/PRs across all 5 watched `verdikta/*` repos (`GH_READ_PAT` still 401, 21st consecutive run — fell back to default `gh` token, no functional impact), `gh search` discovery, xAI X search since 07-27 (only official `@verdikta19633` + already-tracked `@AjAkmarudi72937`), and WebSearch for HN/Reddit/web mentions.
 
-Files changed:
-- `output/articles/bd-radar-2026-07-29.md` — today's ranked digest.
-- `memory/logs/2026-07-29.md` — `### bd-radar` run log.
-- `memory/topics/bd-radar-leads.json` — refreshed AjAkmarudi72937 and aaronjmars entries with latest activity.
-- `memory/topics/builder-leads.md` — backfilled the per-run detail log for runs 17-20 (07-26 through 07-29), fixing the gap flagged in MEMORY.md's Lessons Learned (it had stalled at run 16/07-25).
+**Two false positives investigated and ruled out:**
+- `LeoYeAI/openclaw-master-skills` + `modbender/skill-library-mcp` surfaced a `verdikta-bounties-onboarding` skill — traced to source and confirmed it's the operator's own skill (all commits by nigelon11 in `verdikta/verdikta-applications`), just mirrored by bot-curated skill aggregators, not third-party activity.
+- `agentbounty.org` — an Auth0/x402 pay-per-use marketplace with no AI-judging component, off-wedge.
 
-Committed as `dffa2e4`. No self-notify — no new high-intent (building/integrating) lead this run, per the skill's notification gate.
+**Files written:**
+- `output/articles/bd-radar-2026-07-30.md` — ranked lead digest
+- `memory/topics/builder-leads.md` — appended 21st-run entry, bumped timestamp and s97472091-pixel's quiet-streak count
+- `memory/logs/2026-07-30.md` — appended `### bd-radar` block
 
-Follow-up for the operator (unchanged from prior runs): `GH_READ_PAT` is still 401 after 20 consecutive runs (no functional impact, but worth fixing before rate limits bite); PRs #18/#27/#28 against `verdikta-applications` remain open and worth reviewing/merging.
+**No notify sent** — quiet-by-default gate requires a new `building`/`integrating` lead, and there wasn't one this run.
+
+**Follow-up needed:** `GH_READ_PAT` is still 401/unset after 21 consecutive runs (no functional impact yet, but flagged repeatedly for the operator to fix before rate limits bite the unauthenticated fallback).
