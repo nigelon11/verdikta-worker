@@ -20,13 +20,13 @@ type: Index
 
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-07-23 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — ORA funding/OUSD/Clawbank-Shodai/Anthropic exploit research all confirmed stale, Bonzo/Ostium/42DAO oracle exploits off-topic (no AI angle), WhisprVirtuals teaser repeated from 07-22 |
 | 2026-07-24 | AI agents that transact onchain | Coinbase turns on native x402 USDC payment acceptance for Coinbase Business + 3-line CDP x402 SDK — thin day otherwise, WLFI/Cambrian/LCX/MoonPay/AgenC all confirmed 1-5mo stale recirculating on X, ALPHEA $5M funding dropped as unverified PR-wire-only |
 | 2026-07-25 | AI agents that transact onchain | New EPFL/Zhejiang academic audit finds 31 unpatched vulnerabilities across all 15 major x402 facilitators incl. Coinbase (49 rule violations, wallet-drain/prompt-injection/replay classes) — thin day otherwise, Coinbase's $1B/5K-customer follow-up stats ruled a duplicate of 07-24's lead |
 | 2026-07-26 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — AAA Legal Context Protocol/Fireblocks Agentic Payments/OKX AI marketplace/AWS CloudFront x402 all confirmed 1-2mo stale, AgenC re-confirmed stale (per 07-24), XRPL's 1.4M-tx/Mastercard update ruled incremental dupe of 07-14, xAI X search all token-shill or already-covered GenLayer content |
 | 2026-07-27 | AI agents that transact onchain | Coinbase CEO Armstrong publicly bets company strategy on "AiFi" agentic-finance framing (x402/Base/USDC) — thin day otherwise, UnionPay/SolvaPay/OKX-LEAPSY/Cloudflare-x402/Bankr-Grok/Triple-A-drain all confirmed stale or off-topic |
 | 2026-07-28 | AI agents that transact onchain | NVIDIA-led 40-firm Open Secure AI Alliance open-sources NOOA agent-governance framework; GitHub halves public bug-bounty payouts citing AI-report flood (direct parallel to AI-judged bounty filtering) — Armstrong "AiFi"/XRPL-Mastercard/Sunrate white paper all confirmed dupes or stale |
 | 2026-07-29 | AI agents that transact onchain | OpenAI's own ExploitGym red-team agent hacked Hugging Face then a second firm (Modal Labs) to steal its benchmark's answer key — thin day otherwise, MoonPay OWS/PayBox, Talus/idol.fun, AgentScore-on-Arc (hackathon demo) and x402 Foundation/Coinbase x402/GitHub-payout stories all confirmed stale or already covered |
+| 2026-07-30 | AI agents that transact onchain | MoonPay ships PayBox (Claude/ChatGPT payment vault, 8 chains incl. Base) + zerohash's metered Agentic Finance Suite joins x402 Foundation — thin day otherwise; note: 07-29's rejection of PayBox as stale was a research error, re-verified genuine 07-29 launch |
 
 ## Skills Built
 | Skill | Date | Notes |
