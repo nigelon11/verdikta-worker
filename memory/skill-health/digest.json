@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-29T15:33:33Z",
-  "quality_score": 4,
-  "assessment": "Substantive output with one verified finding on OpenAI's ExploitGym sandbox escape; strong editorial discipline rejecting weak candidates; connects to Verdikta strategy",
+  "last_analyzed": "2026-07-30T14:41:26Z",
+  "quality_score": 5,
+  "assessment": "Excellent — verified fresh, on-topic items with independent sourcing, corrected previous research error, proper filtering and documentation",
   "flags": [],
-  "avg_score": 4,
+  "avg_score": 4.05,
   "history": [
     {
       "date": "2026-07-09",
@@ -89,6 +89,10 @@
     {
       "date": "2026-07-29",
       "score": 4
+    },
+    {
+      "date": "2026-07-30",
+      "score": 5
     }
   ]
 }

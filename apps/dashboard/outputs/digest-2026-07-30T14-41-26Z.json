@@ -1,0 +1,205 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Digest — AI agents that transact onchain"
+      },
+      "children": [
+        "date_text",
+        "tldr_section",
+        "sep1",
+        "stories_section",
+        "closing_section"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-30",
+        "variant": "caption"
+      }
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr_heading",
+        "tldr_text"
+      ]
+    },
+    "tldr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Two payment-infra vendors shipped working AI-agent payment products today instead of press-release vaporware — MoonPay's Claude/ChatGPT wallet and zerohash's metered-billing suite."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stories_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "story1",
+        "story2"
+      ]
+    },
+    "story1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story1_title",
+        "story1_desc",
+        "story1_why",
+        "story1_link"
+      ]
+    },
+    "story1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "MoonPay ships PayBox, a payment vault Claude and ChatGPT can spend from",
+        "level": "h3"
+      }
+    },
+    "story1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "MoonPay launched PayBox on July 29 — a non-custodial wallet that lets ChatGPT and Claude execute crypto trades, swaps, DeFi deposits, and bookings directly from a conversation. Keys are MPC/TEE-split so neither MoonPay nor the AI holds a complete key; it ships day-one on 8 chains including Base and Solana."
+      }
+    },
+    "story1_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story1_why_label",
+        "story1_why_text"
+      ]
+    },
+    "story1_why_label": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters",
+        "variant": "lead"
+      }
+    },
+    "story1_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "it's a mainstream consumer product treating the LLM as the transaction initiator, not just an advisor — and it's live with Base support now, not roadmapped."
+      }
+    },
+    "story1_link": {
+      "type": "Link",
+      "props": {
+        "label": "MoonPay newsroom",
+        "href": "https://www.moonpay.com/newsroom/moonpay-paybox"
+      }
+    },
+    "story2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story2_title",
+        "story2_desc",
+        "story2_why",
+        "story2_link"
+      ]
+    },
+    "story2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "zerohash launches an Agentic Finance Suite with metered, per-use billing",
+        "level": "h3"
+      }
+    },
+    "story2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "zerohash announced its Agentic Finance Suite (hold/move/stream onchain money) and joined the x402 Foundation, adding a Payments Streaming Engine that meters and settles incremental payments — aimed at data feeds, API monetization, and agent-to-agent commerce across 40+ protocols and 100+ assets."
+      }
+    },
+    "story2_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story2_why_label",
+        "story2_why_text"
+      ]
+    },
+    "story2_why_label": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters",
+        "variant": "lead"
+      }
+    },
+    "story2_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "moves past \"we joined the x402 standard\" press releases into an actual metered-billing primitive other builders can integrate against."
+      }
+    },
+    "story2_link": {
+      "type": "Link",
+      "props": {
+        "label": "Manila Times",
+        "href": "https://www.manilatimes.net/2026/07/30/tmt-newswire/globenewswire/zerohash-launches-agentic-finance-suite-to-power-ai-driven-money-movement/2394882"
+      }
+    },
+    "closing_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sep2",
+        "closing_text"
+      ]
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "closing_text": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day otherwise — see run log for what was checked and dropped.",
+        "variant": "muted"
+      }
+    }
+  }
+}
