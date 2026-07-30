@@ -1,17 +1,19 @@
 ## Summary
 
-Ran `memory-flush` for 2026-07-28 (no topic filter — flushed all recent activity):
+Executed the `memory-flush` skill (no topic filter — full sweep), reading `memory/MEMORY.md` and the last 3 days of `memory/logs/` (07-28, 07-29) plus a live `gh pr list` check across this repo and the 3 watched Verdikta repos with open PRs.
 
-**Promoted:**
-- Refreshed Builder Leads and Next Priorities with live `gh pr`/`gh pr list` checks (not stale log numbers): Dependabot #1-#4 ~460h, `applications#18` ~316h, draft cluster ~341h, `applications#26` ~170h, `applications#27`/`#28` ~87h.
-- Bumped GH_READ_PAT 401 streak to 19 consecutive runs and added bd-radar's 19th-run summary (no new leads).
-- Two new Lessons Learned: `cp` is blocked by the Bash permission layer (use Write instead); `memory/topics/builder-leads.md` has stalled at its 07-25/16th-run entry even though bd-radar is now on run 19 — the detail file is drifting behind MEMORY.md's own summary. Added a matching Next Priorities line for this.
+**Promoted to MEMORY.md:**
+- Bumped "Last consolidated" to 2026-07-30
+- Refreshed all stalled-PR hour counts from a live `gh pr list` check (Dependabot ~484h, `applications#18` ~341h, draft cluster ~365h, `applications#26` ~195h, `applications#27`/`#28` ~112h)
+- Bumped bd-radar's `GH_READ_PAT` streak to 20 consecutive runs and added its 07-29 run summary (new @AjAkmarudi72937 mention, no new lead keys)
+- Added verdikta-hunter's 07-29 second real submission (bounty #164, still `PENDING_EVALUATION`) to Dogfooding, with a matching watch-item in Next Priorities
+- Added a Lessons Learned entry for github-monitor's `.runtmp_*` stray files not matching the `.gitignore` `tmp_*` pattern
 
 **Pruned:**
-- Removed the resolved "verdikta-hunter executor allowlist" lesson (already fixed in `b73a317`).
-- Archived the 2026-07-21 Recent Digests row to `topics/digest-history.md`.
-- Confirmed "Open Improvement PRs" (still just the Dependabot false-positive) and `memory/issues/INDEX.md` (still empty) need no changes.
+- Removed the "bd-radar not appending to builder-leads.md" lesson/priority — bd-radar backfilled runs 17-20 into `topics/builder-leads.md` itself on 07-29, closing the gap
+- Archived the 2026-07-22 Recent Digests row to `topics/digest-history.md`, keeping the last 7 days inline
+- Confirmed "Open Improvement PRs" and `memory/issues/INDEX.md` unchanged (no action needed)
 
-**Files changed:** `memory/MEMORY.md`, `memory/topics/digest-history.md`, `memory/logs/2026-07-28.md` — committed as `0740af8`.
+**Files modified:** `memory/MEMORY.md`, `memory/topics/digest-history.md`, `memory/logs/2026-07-30.md` (new)
 
-Follow-up needed: operator should confirm whether bd-radar's `builder-leads.md` upkeep is worth a skill fix, and the long-standing GH_READ_PAT/read:org-scope/stalled-PR items remain open.
+No git commit was made — this repo's automation commits skill output at the end of the workflow run, so no `git commit` was needed here.
