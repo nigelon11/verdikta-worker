@@ -110,3 +110,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-29,verdikta-hunter,claude-sonnet-5,2100,5051,656561,48139
 2026-07-29,write-tweet,claude-sonnet-5,2541,17130,2729373,62348
 2026-07-30,memory-flush,claude-sonnet-5,2519,16301,2042761,99577
+2026-07-30,mention-radar,claude-sonnet-5,2384,8802,1480874,153165
