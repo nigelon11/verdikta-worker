@@ -1,8 +1,8 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-07-30T21:37:57Z",
+  "last_analyzed": "2026-07-31T21:35:47Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-researched draft generation with proper deduplication verification and strategy alignment; clear methodology and logging.",
+  "assessment": "Substantive skill run with strategic angle selection, API research, multi-variant output, and proper memory hygiene; no visible errors or low-quality output.",
   "flags": [],
   "avg_score": 4.04,
   "history": [
@@ -96,6 +96,10 @@
     },
     {
       "date": "2026-07-30",
+      "score": 4
+    },
+    {
+      "date": "2026-07-31",
       "score": 4
     }
   ]

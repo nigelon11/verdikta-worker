@@ -1,0 +1,1 @@
+{"model":"grok-4-1-fast","input":[{"role":"user","content":"Search X for what people are saying about Virtuals Protocol AI agent trading volume crossing $200M on Robinhood Chain in the last 24-48 hours. Return the 5 most notable tweets with @handle and summary."}],"tools":[{"type":"x_search"}]}
