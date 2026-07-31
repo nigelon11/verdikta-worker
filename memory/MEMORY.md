@@ -27,6 +27,7 @@ type: Index
 | 2026-07-28 | AI agents that transact onchain | NVIDIA-led 40-firm Open Secure AI Alliance open-sources NOOA agent-governance framework; GitHub halves public bug-bounty payouts citing AI-report flood (direct parallel to AI-judged bounty filtering) — Armstrong "AiFi"/XRPL-Mastercard/Sunrate white paper all confirmed dupes or stale |
 | 2026-07-29 | AI agents that transact onchain | OpenAI's own ExploitGym red-team agent hacked Hugging Face then a second firm (Modal Labs) to steal its benchmark's answer key — thin day otherwise, MoonPay OWS/PayBox, Talus/idol.fun, AgentScore-on-Arc (hackathon demo) and x402 Foundation/Coinbase x402/GitHub-payout stories all confirmed stale or already covered |
 | 2026-07-30 | AI agents that transact onchain | MoonPay ships PayBox (Claude/ChatGPT payment vault, 8 chains incl. Base) + zerohash's metered Agentic Finance Suite joins x402 Foundation — thin day otherwise; note: 07-29's rejection of PayBox as stale was a research error, re-verified genuine 07-29 launch |
+| 2026-07-31 | AI agents that transact onchain | Virtuals Protocol crosses $200M agent-trading volume on Robinhood Chain, 5,600+ agents, 3-week ramp from $77M→$150M→$200M — thin day otherwise, zerohash/OpenAI-breach/Binance-x402/x402-Foundation/Blockaid-H1-report all confirmed dupes or stale, 10 X posts all opinion/promo with no new claim |
 
 ## Skills Built
 | Skill | Date | Notes |

@@ -1,15 +1,10 @@
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-07-10*
+*AI agents that transact onchain — 2026-07-31*
 
-_TL;DR: GenLayer's "Internet Court" — a live, beta-stage AI jury for agent-to-agent disputes backed by 27 companies including OKX and MetaMask — is the clearest signal yet that multi-model AI arbitration for onchain commerce is becoming a category, not a novelty._
+_TL;DR: Virtuals Protocol crossed $200M in AI-agent trading volume on Robinhood Chain in under a month — the one real usage-growth story today against an otherwise recycled news cycle._
 
-1. *GenLayer launches "Internet Court," an AI jury for AI-agent disputes*
-   27 companies (OKX, MetaMask, Matter Labs, BNB Chain, and others) backed the launch of a protocol where 5 randomly-selected validators — each running a different model (Claude, GPT, Gemini) — vote blind, reveal, and escalate to 11 validators on disagreement, built on Condorcet's Jury Theorem. Already processing ~350K transactions/day (20-25K decisions) in beta; public launch with a validator token planned later this year.
-   Why it matters: A second live reference architecture for AI-judged onchain arbitration, at meaningfully larger scale than most single-project judges — useful comparison point for anyone evaluating trust layers for agent commerce, Verdikta included.
-   https://www.forbes.com/sites/ninabambysheva/2026/07/10/all-rise-internet-court-for-ai-agents-is-in-session/
+1. *Virtuals Protocol hits $200M in agent volume on Robinhood Chain in under a month*
+   Virtuals Protocol's infrastructure now underpins $200M+ in AI-agent trading volume and 5,600+ deployed agents on Robinhood Chain — up from $77M/2,100 agents in week one and $150M/4,500 agents in week two, a three-week ramp since the chain's early-July launch.
+   Why it matters: week-over-week usage growth is rarer signal than another launch press release — worth tracking whether the curve holds past its first month or plateaus like most agent-marketplace launches have.
+   https://cryptobriefing.com/virtuals-protocol-200m-robinhood-chain/
 
-2. *Ethereum Foundation's AI agents find a critical libp2p bug, CVE-2026-34219*
-   The Ethereum Foundation's Protocol Security team ran coordinated, role-specialized AI agents (recon, hunting, gap-filling, validation) against core protocol code and surfaced a remotely-triggerable panic in gossipsub, the p2p layer every consensus client depends on. Patched; each finding still required an independent human-reproduced exploit before disclosure.
-   Why it matters: Concrete evidence that AI-driven verification is now doing consequential work on live crypto infrastructure, not just demos — the same "let AI judge the work, but require independent verification" pattern Verdikta applies to bounty submissions.
-   https://www.coinspeaker.com/protocol-security-ai-agents-ethereum-triage/
-
-_Quiet day otherwise: the usual agent-payments headlines (OKX marketplace, Visa/Mastercard agent rails, x402 volume stats) were all 5+ days old with no new development today, so they were cut rather than repeated._
+_Thin day otherwise: zerohash's Agentic Finance Suite (07-30's lead, unchanged) and the OpenAI/Hugging Face agent breach (07-29's lead, now with forensic detail — same incident) both recirculated; Binance x402 and the Linux Foundation's x402 Foundation launch confirmed 2+ weeks stale; most X chatter was explainer/opinion content with no new claim._

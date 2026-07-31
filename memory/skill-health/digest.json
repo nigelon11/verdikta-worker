@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-07-30T14:41:26Z",
-  "quality_score": 5,
-  "assessment": "Excellent — verified fresh, on-topic items with independent sourcing, corrected previous research error, proper filtering and documentation",
+  "last_analyzed": "2026-07-31T14:37:51Z",
+  "quality_score": 4,
+  "assessment": "Well-executed skill: applied critical filtering to find one genuinely new, verifiable signal (Virtuals Protocol $200M volume) and correctly rejected stale/duplicate content; properly documented findings and followed strategy (signal over filler). Thin output (1 item from 7 queries) is justified by stated no-padding rule and strategy priorities.",
   "flags": [],
-  "avg_score": 4.05,
+  "avg_score": 4.04,
   "history": [
     {
       "date": "2026-07-09",
@@ -93,6 +93,10 @@
     {
       "date": "2026-07-30",
       "score": 5
+    },
+    {
+      "date": "2026-07-31",
+      "score": 4
     }
   ]
 }

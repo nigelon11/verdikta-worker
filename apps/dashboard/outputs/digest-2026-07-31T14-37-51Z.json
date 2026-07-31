@@ -1,0 +1,150 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest — AI agents that transact onchain",
+        "description": "2026-07-31"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr-section",
+        "sep-1",
+        "main-story",
+        "sep-2",
+        "other-news"
+      ]
+    },
+    "tldr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tldr-label",
+        "tldr-text"
+      ]
+    },
+    "tldr-label": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "Virtuals Protocol crossed $200M in AI-agent trading volume on Robinhood Chain in under a month — the one real usage-growth story today against an otherwise recycled news cycle.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "main-story": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story-headline",
+        "story-body",
+        "story-why-matters",
+        "story-link"
+      ]
+    },
+    "story-headline": {
+      "type": "Heading",
+      "props": {
+        "text": "Virtuals Protocol hits $200M in agent volume on Robinhood Chain in under a month",
+        "level": "h2"
+      }
+    },
+    "story-body": {
+      "type": "Text",
+      "props": {
+        "text": "Virtuals Protocol's infrastructure now underpins $200M+ in AI-agent trading volume and 5,600+ deployed agents on Robinhood Chain — up from $77M/2,100 agents in week one and $150M/4,500 agents in week two, a three-week ramp since the chain's early-July launch."
+      }
+    },
+    "story-why-matters": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-label",
+        "why-text"
+      ]
+    },
+    "why-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Week-over-week usage growth is rarer signal than another launch press release — worth tracking whether the curve holds past its first month or plateaus like most agent-marketplace launches have."
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Virtuals Protocol hits $200M in agent volume on Robinhood Chain",
+        "href": "https://cryptobriefing.com/virtuals-protocol-200m-robinhood-chain/",
+        "source": "Crypto Briefing"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "other-news": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "other-label",
+        "other-text"
+      ]
+    },
+    "other-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Other news",
+        "level": "h3"
+      }
+    },
+    "other-text": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day otherwise: zerohash's Agentic Finance Suite (07-30's lead, unchanged) and the OpenAI/Hugging Face agent breach (07-29's lead, now with forensic detail — same incident) both recirculated; Binance x402 and the Linux Foundation's x402 Foundation launch confirmed 2+ weeks stale; most X chatter was explainer/opinion content with no new claim.",
+        "variant": "muted"
+      }
+    }
+  }
+}
