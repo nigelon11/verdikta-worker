@@ -1,16 +1,14 @@
-The memory flush is complete. Summary of what I found and did:
+Skill complete — nothing worth notifying on (routine memory maintenance, no signal). Since this was a clean flush with no anomalies, no `./notify` call is needed per the "notify only on signal" rule.
 
 ## Summary
 
-Ran the memory-flush skill for 2026-07-30 (second consolidation pass of the day, covering activity since the morning flush: mention-radar, bd-radar's 21st run, github-monitor, digest, write-tweet).
+Ran `skills/memory-flush/SKILL.md` for 2026-07-31:
+- Bumped MEMORY.md's "Last consolidated" date and promoted bd-radar's 22nd-run summary into Builder Leads (5th consecutive quiet day for top lead, `GH_READ_PAT` streak now 22 runs, one false positive rejected).
+- Refreshed all stalled-PR/issue hour counts in Next Priorities via live `gh pr list`/`gh issue list` checks (Dependabot #1-#4 ~532h, `applications#18` ~388h, draft cluster ~413h, `applications#26` ~242h, `applications#27`/`#28` ~173h).
+- Clarified that `verdikta-dispatcher!6` remains an open watch item despite aging out of github-monitor's 24h detection window, and flagged that bounty #164's status is stale (no hunter run today).
+- Archived the 2026-07-24 Recent Digests row to `memory/topics/digest-history.md` to keep the table at 7 rows.
+- Confirmed no cleanup PR yet exists for the escalated 103-scratch-file issue; confirmed Improvement PRs and issues index still empty/unchanged.
 
-**Promoted to `memory/MEMORY.md`:**
-- bd-radar's 21st-run summary into Builder Leads (no new lead keys, `s97472091-pixel` now 4-day quiet streak, 2 false positives rejected, `GH_READ_PAT` streak → 21 runs)
-- Refreshed all stalled-PR hour counts in Next Priorities via a live `gh pr list` check + timestamp math (Dependabot #1-4 ~508h, `applications#18` ~364h, draft cluster ~389h, `applications#26` ~218h, `applications#27`/`#28` ~135h)
-- A watch item for the new `verdikta-dispatcher!6` issue (operator's own, oracle-selection concern)
+**Files modified:** `memory/MEMORY.md`, `memory/topics/digest-history.md`, `memory/logs/2026-07-31.md` (committed as `d20c721`).
 
-**New finding worth flagging:** while verifying the "stray temp files are harmless" assumption in Lessons Learned, I checked `git ls-files` (not just `git status`) and found **103 scratch/tmp files are actually tracked and committed** to this repo — spanning bd-radar/digest/write-tweet/github-monitor/shiplog scratch output (`.runtmp/`, `.bdtmp/`, `.aeon-tmp/`, `.ghmon-tmp/`, `digest-tmp/`, `tmp/`). None match `.gitignore` patterns. I scanned for secrets (none found — one placeholder string only), but this is real repo bloat, not a harmless artifact as previously assumed. I corrected the Lessons Learned entry and added an escalated Next Priorities item recommending an actual cleanup PR — this is memory-only, no code changes made per the skill's scope.
-
-**Files changed:** `memory/MEMORY.md`, `memory/logs/2026-07-30.md`. No stale content needed pruning beyond consolidating three overlapping stray-file bullets into one corrected entry.
-
-**Follow-up needed:** operator should review the 103 tracked junk files for a cleanup PR, and the growing PR/issue backlog per Next Priorities.
+**Follow-up needed (operator):** the scratch/tmp cleanup PR (103 committed files) is still outstanding, along with the aging Dependabot/PR review backlog noted in Next Priorities.
