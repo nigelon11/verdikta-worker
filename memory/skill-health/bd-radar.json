@@ -1,10 +1,10 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-07-30T08:49:43Z",
+  "last_analyzed": "2026-07-31T07:31:36Z",
   "quality_score": 4,
-  "assessment": "Comprehensive multi-source search with deliberate false-positive investigation, correct notification logic, proper memory updates, and infrastructure issue flagged",
+  "assessment": "Thorough, well-documented sweep with proper gate application; 0 new leads is a valid outcome for a discovery monitor, but 22-run drought and persistent auth token issue suggest upstream optimization needed.",
   "flags": [],
-  "avg_score": 3.76,
+  "avg_score": 3.77,
   "history": [
     {
       "date": "2026-07-10",
@@ -88,6 +88,10 @@
     },
     {
       "date": "2026-07-30",
+      "score": 4
+    },
+    {
+      "date": "2026-07-31",
       "score": 4
     }
   ]

@@ -1,20 +1,19 @@
-Everything's in order. This CI workflow auto-commits after the run (single-commit shallow history, `chore(cron):` pattern), so no manual commit needed here.
+All expected files are in place. No new high-intent lead this run, so per the skill's notify gate, no notification is sent.
 
 ## Summary
 
-Ran `bd-radar`'s 21st consecutive sweep (2026-07-30). **No new lead keys** — all 8 tracked leads carried forward unchanged.
+Ran the 22nd consecutive `bd-radar` sweep for 2026-07-31 across all 5 watched Verdikta repos, GitHub discovery search, xAI X search, and web search. **Result: 0 new lead keys** — all 8 tracked leads carried forward unchanged.
 
-**Checked:** forks/issues/PRs across all 5 watched `verdikta/*` repos (`GH_READ_PAT` still 401, 21st consecutive run — fell back to default `gh` token, no functional impact), `gh search` discovery, xAI X search since 07-27 (only official `@verdikta19633` + already-tracked `@AjAkmarudi72937`), and WebSearch for HN/Reddit/web mentions.
+Key findings this run:
+- GitHub forks/issues/PRs: only the known fork set, no new independent activity (`mumuzhong3` #27/#28 and `bingmokaka` #18 still open/unreviewed)
+- xAI X search (http=200): 6 posts, all official `@verdikta19633` or already-tracked `@AjAkmarudi72937` — no new third-party handles
+- WebSearch: no genuine third-party builder discussion; ruled out `agentbounty.ai` as unrelated
+- `GH_READ_PAT` still 401 (22nd consecutive run since 07-10) — no functional impact, default `gh` token covers everything
+- `s97472091-pixel` (top building lead) now on a 5th consecutive quiet day since shipping `verdikta-agent` on 07-26
 
-**Two false positives investigated and ruled out:**
-- `LeoYeAI/openclaw-master-skills` + `modbender/skill-library-mcp` surfaced a `verdikta-bounties-onboarding` skill — traced to source and confirmed it's the operator's own skill (all commits by nigelon11 in `verdikta/verdikta-applications`), just mirrored by bot-curated skill aggregators, not third-party activity.
-- `agentbounty.org` — an Auth0/x402 pay-per-use marketplace with no AI-judging component, off-wedge.
+Files written:
+- `output/articles/bd-radar-2026-07-31.md` — ranked lead digest (top 8 of 8)
+- `memory/logs/2026-07-31.md` — `### bd-radar` activity log
+- `memory/topics/builder-leads.md` — appended 22nd-run entry, bumped timestamp
 
-**Files written:**
-- `output/articles/bd-radar-2026-07-30.md` — ranked lead digest
-- `memory/topics/builder-leads.md` — appended 21st-run entry, bumped timestamp and s97472091-pixel's quiet-streak count
-- `memory/logs/2026-07-30.md` — appended `### bd-radar` block
-
-**No notify sent** — quiet-by-default gate requires a new `building`/`integrating` lead, and there wasn't one this run.
-
-**Follow-up needed:** `GH_READ_PAT` is still 401/unset after 21 consecutive runs (no functional impact yet, but flagged repeatedly for the operator to fix before rate limits bite the unauthenticated fallback).
+No notification sent (no new `building`/`integrating` lead this cycle, per the skill's quiet-by-default gate). Follow-up needed: operator should fix/rotate `GH_READ_PAT` (401 for 22 straight runs) and review the stalled `bingmokaka`/`mumuzhong3` PRs — both already flagged in existing Next Priorities.
