@@ -12,7 +12,7 @@
     "last_success": "2026-07-27T08:19:51Z"
   },
   "github-monitor": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-07-30T10:53:53Z",
     "total_runs": 23,
     "total_successes": 23,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4,
-    "last_dispatch": "2026-07-30T10:50:08Z"
+    "last_dispatch": "2026-07-31T10:02:45Z"
   },
   "verdikta-hunter": {
     "last_status": "success",
