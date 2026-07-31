@@ -1,0 +1,281 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "info-heading",
+        "pr-items-stack",
+        "more-text",
+        "separator",
+        "sources-heading",
+        "sources-badges"
+      ]
+    },
+    "info-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "INFO",
+        "level": "h3"
+      }
+    },
+    "pr-items-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "pr-28-item",
+        "pr-27-item",
+        "pr-26-item",
+        "pr-18-item",
+        "pr-9-item"
+      ]
+    },
+    "pr-28-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-28-title",
+        "pr-28-meta",
+        "pr-28-link"
+      ]
+    },
+    "pr-28-title": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications#28 — mumuzhong3's fix for issue #16 (rubric validator jury-node check)"
+      }
+    },
+    "pr-28-meta": {
+      "type": "Text",
+      "props": {
+        "text": "idle 146h, no CI configured",
+        "variant": "caption"
+      }
+    },
+    "pr-28-link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28"
+      }
+    },
+    "pr-27-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-27-title",
+        "pr-27-meta",
+        "pr-27-link"
+      ]
+    },
+    "pr-27-title": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications#27 — mumuzhong3's fix for issue #14 (AWARDED-bounty red error)"
+      }
+    },
+    "pr-27-meta": {
+      "type": "Text",
+      "props": {
+        "text": "idle 146h, no CI configured",
+        "variant": "caption"
+      }
+    },
+    "pr-27-link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27"
+      }
+    },
+    "pr-26-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-26-title",
+        "pr-26-meta",
+        "pr-26-link"
+      ]
+    },
+    "pr-26-title": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications#26 — operator's own rubricCid-heal fix"
+      }
+    },
+    "pr-26-meta": {
+      "type": "Text",
+      "props": {
+        "text": "idle 229h, no CI configured",
+        "variant": "caption"
+      }
+    },
+    "pr-26-link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26"
+      }
+    },
+    "pr-18-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-18-title",
+        "pr-18-meta",
+        "pr-18-link"
+      ]
+    },
+    "pr-18-title": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-applications#18 — bingmokaka's ETH-prepay submission fix"
+      }
+    },
+    "pr-18-meta": {
+      "type": "Text",
+      "props": {
+        "text": "idle 375h, no CI configured",
+        "variant": "caption"
+      }
+    },
+    "pr-18-link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub PR",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18"
+      }
+    },
+    "pr-9-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-9-title",
+        "pr-9-meta",
+        "pr-9-link"
+      ]
+    },
+    "pr-9-title": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-arbiter#9 — draft, Gitleaks Secret Scan still FAILURE"
+      }
+    },
+    "pr-9-meta": {
+      "type": "Text",
+      "props": {
+        "text": "idle 399h (draft-capped, not ACT NOW)",
+        "variant": "caption"
+      }
+    },
+    "pr-9-link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub PR",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9"
+      }
+    },
+    "more-text": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Sources",
+        "level": "h3"
+      }
+    },
+    "sources-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-app",
+        "badge-arbiter",
+        "badge-dispatcher",
+        "badge-docs",
+        "badge-roadmap"
+      ]
+    },
+    "badge-app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      }
+    },
+    "badge-arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      }
+    },
+    "badge-dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      }
+    },
+    "badge-docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      }
+    },
+    "badge-roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      }
+    }
+  }
+}
