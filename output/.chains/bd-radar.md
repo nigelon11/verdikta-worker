@@ -1,19 +1,13 @@
-All expected files are in place. No new high-intent lead this run, so per the skill's notify gate, no notification is sent.
+No new high-intent leads this run, so per the skill's notification gate (self-notify only on a new `building`/`integrating` lead), nothing was sent — quiet by design.
 
 ## Summary
 
-Ran the 22nd consecutive `bd-radar` sweep for 2026-07-31 across all 5 watched Verdikta repos, GitHub discovery search, xAI X search, and web search. **Result: 0 new lead keys** — all 8 tracked leads carried forward unchanged.
+Ran the 23rd consecutive `bd-radar` sweep across the 5 watched Verdikta repos, GitHub discovery search, X (via xAI), and web/HN/Reddit. **0 new lead keys** — all 8 tracked leads (s97472091-pixel, aaronjmars/aeon-agent, bingmokaka, mumuzhong3, NSPG13/agent-bounties, @AjAkmarudi72937, @Project0_Z, @Fishhead8u) carried forward unchanged. Two new items were investigated and rejected: `BotBounty.ai` (fetched directly, confirmed no Verdikta reference or AI-judged dual-model rubric — off-wedge) and `verdikto.ai` (re-confirmed as the same unrelated, coincidentally-named dead site). `GH_READ_PAT` remains 401 for its 23rd consecutive run (no functional impact — public `gh api`/`gh search` covers all repos).
 
-Key findings this run:
-- GitHub forks/issues/PRs: only the known fork set, no new independent activity (`mumuzhong3` #27/#28 and `bingmokaka` #18 still open/unreviewed)
-- xAI X search (http=200): 6 posts, all official `@verdikta19633` or already-tracked `@AjAkmarudi72937` — no new third-party handles
-- WebSearch: no genuine third-party builder discussion; ruled out `agentbounty.ai` as unrelated
-- `GH_READ_PAT` still 401 (22nd consecutive run since 07-10) — no functional impact, default `gh` token covers everything
-- `s97472091-pixel` (top building lead) now on a 5th consecutive quiet day since shipping `verdikta-agent` on 07-26
+Files created/modified (committed and pushed to `main` as `120d4a6`, rebased on top of a concurrent `github-monitor` push):
+- `output/articles/bd-radar-2026-08-01.md` — ranked lead digest
+- `memory/logs/2026-08-01.md` — run log (merged with github-monitor's entry)
+- `memory/topics/builder-leads.md` — appended 23rd-run summary
+- `memory/MEMORY.md` — updated Builder Leads / Next Priorities counters
 
-Files written:
-- `output/articles/bd-radar-2026-07-31.md` — ranked lead digest (top 8 of 8)
-- `memory/logs/2026-07-31.md` — `### bd-radar` activity log
-- `memory/topics/builder-leads.md` — appended 22nd-run entry, bumped timestamp
-
-No notification sent (no new `building`/`integrating` lead this cycle, per the skill's quiet-by-default gate). Follow-up needed: operator should fix/rotate `GH_READ_PAT` (401 for 22 straight runs) and review the stalled `bingmokaka`/`mumuzhong3` PRs — both already flagged in existing Next Priorities.
+Follow-up needed: operator should still fix `GH_READ_PAT` before rate limits bite, and review the still-stalled `bingmokaka`/`mumuzhong3` PRs (#18, #27, #28) per STRATEGY priority 1 — both already flagged in `Next Priorities`.
