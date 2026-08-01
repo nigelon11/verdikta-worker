@@ -1,0 +1,116 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content"
+      ]
+    },
+    "content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "info_label",
+        "pr_list",
+        "more_text",
+        "sep",
+        "sources_text"
+      ]
+    },
+    "info_label": {
+      "type": "Text",
+      "props": {
+        "text": "▶ INFO",
+        "variant": "lead"
+      }
+    },
+    "pr_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_28",
+        "pr_27",
+        "pr_26",
+        "pr_18",
+        "pr_9"
+      ]
+    },
+    "pr_28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#28 — mumuzhong3's fix for issue #16",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "verdikta-applications",
+        "score": "idle ~169h, no CI configured"
+      }
+    },
+    "pr_27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#27 — mumuzhong3's fix for issue #14",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "verdikta-applications",
+        "score": "idle ~169h, no CI configured"
+      }
+    },
+    "pr_26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#26 — operator's own rubricCid fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "verdikta-applications",
+        "score": "idle ~252h, no CI configured"
+      }
+    },
+    "pr_18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#18 — bingmokaka's ETH-prepay fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications",
+        "score": "idle ~398h, no CI configured"
+      }
+    },
+    "pr_9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-arbiter#9 — draft, Gitleaks Secret Scan still failing",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "verdikta-arbiter",
+        "score": "idle ~422h"
+      }
+    },
+    "more_text": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
