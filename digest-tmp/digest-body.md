@@ -1,10 +1,10 @@
-*AI agents that transact onchain — 2026-07-31*
+*Digest — 2026-08-01*
 
-_TL;DR: Virtuals Protocol crossed $200M in AI-agent trading volume on Robinhood Chain in under a month — the one real usage-growth story today against an otherwise recycled news cycle._
+_TL;DR: Quiet day — the one real development is XDC Network's July 31 launch of an enterprise-compliance-first entrant (KYC/AML, dispute resolution) into the AI-agent payment rail race, contrasting with the consumer-UX plays covered this week._
 
-1. *Virtuals Protocol hits $200M in agent volume on Robinhood Chain in under a month*
-   Virtuals Protocol's infrastructure now underpins $200M+ in AI-agent trading volume and 5,600+ deployed agents on Robinhood Chain — up from $77M/2,100 agents in week one and $150M/4,500 agents in week two, a three-week ramp since the chain's early-July launch.
-   Why it matters: week-over-week usage growth is rarer signal than another launch press release — worth tracking whether the curve holds past its first month or plateaus like most agent-marketplace launches have.
-   https://cryptobriefing.com/virtuals-protocol-200m-robinhood-chain/
+1. *XDC Network launches XDC AI, an x402 payment rail built for enterprise compliance*
+   XDC Network launched XDC AI on July 31 at a New York event (100+ bankers, partners, and AI firms attending), pairing the x402 payment standard with gasless USDC settlement (via Bridge, the Stripe-owned payments firm) so AI agents can pay per API call, book services, or settle trades without accounts, API keys, or human sign-off. Co-founders Atul Khekade and Ritesh Kakkad framed it around the compliance gaps — dispute resolution, KYC, AML — that consumer-facing agent-payment tools have skipped.
+   Why it matters: it's the first x402-based agent-payment launch this week to lead with compliance infrastructure instead of consumer UX — a sign the space is splitting into a consumer stack (MoonPay PayBox, covered 07-29) and an enterprise/regulated stack.
+   https://www.gncrypto.news/news/xdc-launches-xdc-ai-enables-ai-agents-to-pay/
 
-_Thin day otherwise: zerohash's Agentic Finance Suite (07-30's lead, unchanged) and the OpenAI/Hugging Face agent breach (07-29's lead, now with forensic detail — same incident) both recirculated; Binance x402 and the Linux Foundation's x402 Foundation launch confirmed 2+ weeks stale; most X chatter was explainer/opinion content with no new claim._
+Thin day otherwise — nothing else cleared the bar.

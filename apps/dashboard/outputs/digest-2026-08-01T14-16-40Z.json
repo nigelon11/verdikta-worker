@@ -1,0 +1,85 @@
+{
+  "root": "card_digest",
+  "state": {},
+  "elements": {
+    "card_digest": {
+      "type": "Card",
+      "props": {
+        "title": "Digest — 2026-08-01"
+      },
+      "children": [
+        "tldr_heading",
+        "tldr_text",
+        "separator1",
+        "story_link",
+        "story_description",
+        "why_matters_heading",
+        "why_matters_text",
+        "separator2",
+        "closing_text"
+      ]
+    },
+    "tldr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day — the one real development is XDC Network's July 31 launch of an enterprise-compliance-first entrant (KYC/AML, dispute resolution) into the AI-agent payment rail race, contrasting with the consumer-UX plays covered this week.",
+        "variant": "lead"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "XDC Network launches XDC AI, an x402 payment rail built for enterprise compliance",
+        "href": "https://www.gncrypto.news/news/xdc-launches-xdc-ai-enables-ai-agents-to-pay/",
+        "source": "GNCrypto"
+      }
+    },
+    "story_description": {
+      "type": "Text",
+      "props": {
+        "text": "XDC Network launched XDC AI on July 31 at a New York event (100+ bankers, partners, and AI firms attending), pairing the x402 payment standard with gasless USDC settlement (via Bridge, the Stripe-owned payments firm) so AI agents can pay per API call, book services, or settle trades without accounts, API keys, or human sign-off. Co-founders Atul Khekade and Ritesh Kakkad framed it around the compliance gaps — dispute resolution, KYC, AML — that consumer-facing agent-payment tools have skipped.",
+        "variant": "body"
+      }
+    },
+    "why_matters_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "why_matters_text": {
+      "type": "Text",
+      "props": {
+        "text": "It's the first x402-based agent-payment launch this week to lead with compliance infrastructure instead of consumer UX — a sign the space is splitting into a consumer stack (MoonPay PayBox, covered 07-29) and an enterprise/regulated stack.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "closing_text": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day otherwise — nothing else cleared the bar.",
+        "variant": "muted"
+      }
+    }
+  }
+}
