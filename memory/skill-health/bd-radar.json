@@ -1,10 +1,13 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-01T09:18:58Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured tracking of 8 leads across 23 runs; investigated and rejected 2 new items with clear reasoning. Quiet run by design (0 new leads), thorough state management and strategic follow-ups align with STRATEGY priorities.",
-  "flags": [],
-  "avg_score": 3.78,
+  "last_analyzed": "2026-08-02T08:46:25Z",
+  "quality_score": 3,
+  "assessment": "Skill ran successfully with proper documentation, but produced zero new leads and persists a 24-run-old auth failure (GH_READ_PAT 401) without resolution.",
+  "flags": [
+    "api_error",
+    "low_quality"
+  ],
+  "avg_score": 3.75,
   "history": [
     {
       "date": "2026-07-10",
@@ -97,6 +100,10 @@
     {
       "date": "2026-08-01",
       "score": 4
+    },
+    {
+      "date": "2026-08-02",
+      "score": 3
     }
   ]
 }
