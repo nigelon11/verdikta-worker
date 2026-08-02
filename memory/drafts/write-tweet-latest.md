@@ -2,58 +2,56 @@
 type: Reference
 ---
 
-## Tweet Drafts: XDC AI launches compliance-first agent payments — but compliance isn't verification
+## Tweet Drafts: Verdikta's rubric hardening — objective checks gate the AI jury
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> KYC/AML tells you who can pay. It doesn't tell you if the work was worth paying for.
+> Verdikta patched a bounty exploit with a dumber rule, not a smarter AI.
 
 **1b. Observation**
-> Every agent-payment launch this year solves authorization. None of them solve verification.
+> An AI jury can be gamed. A hard pass/fail check can't be argued with.
 
 ### Tier 2 — Two-punch
 **2a. Data drop**
-> XDC AI just shipped KYC/AML screening for AI agent payments. Great — now do the same rigor for whether the agent's output was actually correct.
+> A hunter deleted a paid deliverable. Verdikta's fix: proof it stays online for 7 days, verified on archive.org.
 
 **2b. Reframe**
-> Compliance-first agent payments is the safe pitch — it reassures banks, not users. The harder problem is still unsolved: proving the agent did what it said.
+> Everyone wants a smarter AI judge. Verdikta's actual fix for gaming was a boring HTTP-200 check that doesn't care what the models think.
 
 ### Tier 3 — Paragraph
-**3a. Structural critique**
-> XDC AI leads with KYC/AML and dispute resolution instead of consumer UX — the right instinct for banks. But compliance proves a payment is authorized, not that the agent's output was worth paying for. Those are different problems, and only one of them is solved.
+**3a. Narrative**
+> A Verdikta bounty required a live URL. Cloudflare returned a 403. Four submissions scored zero — not because two AI models disagreed, but because the objective check ran first and failed. No appeal, no re-vote. That's the design working.
 
-**3b. Data drop**
-> Every agent-payment rail launching in 2026 — MoonPay, zerohash, now XDC AI — competes on the same axis: custody, compliance, settlement speed. Zero of them compete on judging whether the agent's work was any good. That gap doesn't close itself.
+**3b. Structural critique**
+> Most "AI-judged" systems put the model in charge of everything, so gaming the model games the whole system. Verdikta's rubrics increasingly gate the AI jury behind deterministic checks — archive.org proofs, HTTP-200 pings — so consensus can't override a fact.
 
 ### Tier 4 — Long tweet
 **4a. Structural critique**
-> XDC AI's differentiator is real: KYC/AML screening, dispute resolution, Bridge-backed settlement, 2000+ TPS — enterprise trust instead of the usual "agents can pay now!" consumer pitch. Smart positioning in a crowded field.
->
-> But look at what compliance actually verifies: that the payer is authorized, the funds are clean, the transaction is traceable. None of that touches whether the agent's output was worth the payment. XDC AI solved who gets to pay. Nobody's solved whether they should have.
+> A hunter got paid for a bounty, then deleted the deliverable they were paid to keep live. Verdikta's response wasn't a smarter jury — it was archive.org. New bounties in that class now require a 7-day persistence proof before payout counts as final. Compare that to how most "AI-judged" systems handle gaming: retrain the model, add a prompt rule, hope it generalizes. Verdikta just closed the door with a fact the model can't argue with. Two independent models can disagree on quality. They can't disagree on whether a URL returns 200 or 403.
 
-**4b. Narrative**
-> Three agent-payment launches in a week: MoonPay's PayBox, zerohash's Agentic Finance Suite, now XDC AI. Each ships more compliance infrastructure than the last — KYC/AML, dispute resolution, regulated settlement rails. Good. Necessary, even.
->
-> But stack all three up and count how many solve this: an AI agent buys or completes something on your behalf — how do you know it was actually correct? Zero. The payment rail gets safer every week. The judgment layer hasn't moved at all.
+**4b. Builder's breakdown**
+> The interesting part of Verdikta's bounty #153 rubric fix isn't that a hunter tried to game it — people always try. It's what "harden the rubric" meant in practice: not more AI, not a bigger jury, just a deterministic check (archive.org persistence, HTTP-200 accessibility) placed ahead of the two-model consensus. When four submissions on a content bounty hit a Cloudflare 403, they scored zero regardless of what the models thought of the writing. That's a design choice worth copying: let AI judge subjective quality, let dumb checks gate objective fact.
 
 ### Tier 5 — Thread opener
-**5a. Structural critique**
-> XDC AI just launched with KYC/AML screening, dispute resolution, and Bridge-backed settlement for AI agent payments — and deliberately skipped the usual consumer-UX pitch. Here's why that's the right instinct, and the one problem it still leaves wide open:
+**5a. Thesis-first**
+> Verdikta's AI jury got gamed once. The fix wasn't a smarter model — it was a dumber check placed in front of it.
 ---
-- The consumer-UX vs. enterprise-compliance split in this year's agent-payment launches
-- What KYC/AML actually verifies (payer identity, fund legitimacy) vs. what it doesn't (output quality)
-- MoonPay, zerohash, XDC AI: three launches, same blind spot
-- Why "judging the work" is harder than "moving the money" — and who's actually building for it
-- The opening for whoever solves agent-output verification, not just agent-payment rails
+- Bounty #153: hunter got paid, then deleted the deliverable they were required to keep live
+- Fix: rubric now requires a 7-day archive.org persistence proof before payout is final
+- Second, separate case: a content bounty's HTTP-200 accessibility check zeroed 4 submissions when Cloudflare returned 403 — the two-model jury never got a vote
+- The pattern: AI judges subjective quality, deterministic checks gate objective fact
+- Why that split matters for anyone building an "AI-judged" system, not just Verdikta
 
-**5b. Question**
-> Every AI-agent-payment launch this year asks "how does the agent pay?" XDC AI just answered that better than anyone — KYC/AML, dispute resolution, Bridge settlement. Nobody's asking the harder question yet: how do you know what the agent bought was any good? Thread:
+**5b. Structural critique**
+> An on-chain bounty market with a two-model AI jury is going to get gamed. The interesting question is what you do next.
 ---
-- XDC AI's compliance-first pitch and what it actually ships
-- Why "who's authorized to pay" and "was the output correct" are different problems
-- The pattern: MoonPay, zerohash, XDC AI all optimize payment, none optimize judgment
-- What a verification layer for agent output actually requires
-- Where this gap gets expensive: high-frequency, low-oversight agent-to-agent commerce
+- What gaming an AI judge actually looks like in practice (delete-after-payout, technically-in-spec exploits)
+- Verdikta's answer: don't out-AI the gaming, out-fact it — archive.org proofs, HTTP-200 checks, deterministic gates
+- The Cloudflare-403 case: 4 submissions zeroed, no AI consensus needed
+- Contrast: most "AI-judged" systems respond to gaming by tuning the model, which is slower and never fully closes the hole
+- Takeaway: the AI jury's job should shrink, not grow, as a protocol matures
 
-**Best overall:** 4a — sharpest version of the core critique with concrete detail (TPS, KYC/AML, Bridge) to back it.
-**Best per tier:** 1a, 2a, 3a, 4a, 5a
+---
+
+Best overall: **4b** — captures the specific mechanism (deterministic gate ahead of AI consensus) with two concrete, dated examples, and states a design principle other builders can actually use.
+Best per tier: 1a (one-liner) · 2b (two-punch) · 3a (paragraph) · 4b (long tweet) · 5a (thread opener)
