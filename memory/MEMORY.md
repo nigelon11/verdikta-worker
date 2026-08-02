@@ -27,6 +27,7 @@ type: Index
 | 2026-07-30 | AI agents that transact onchain | MoonPay ships PayBox (Claude/ChatGPT payment vault, 8 chains incl. Base) + zerohash's metered Agentic Finance Suite joins x402 Foundation — thin day otherwise; note: 07-29's rejection of PayBox as stale was a research error, re-verified genuine 07-29 launch |
 | 2026-07-31 | AI agents that transact onchain | Virtuals Protocol crosses $200M agent-trading volume on Robinhood Chain, 5,600+ agents, 3-week ramp from $77M→$150M→$200M — thin day otherwise, zerohash/OpenAI-breach/Binance-x402/x402-Foundation/Blockaid-H1-report all confirmed dupes or stale, 10 X posts all opinion/promo with no new claim |
 | 2026-08-01 | AI agents that transact onchain | XDC Network launches XDC AI (x402 + gasless USDC via Bridge), first agent-payment entrant this week to lead with enterprise compliance (KYC/AML, dispute resolution) over consumer UX — thin day otherwise, MoonPay/BRIJ flight-booking post and "100M x402 tx" stat both confirmed recirculated/stale (latter's volume partly meme-coin farming per Chainalysis) |
+| 2026-08-02 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — XDC AI recirculated with no new development (dupe of 08-01), YC's QM multi-agent harness OSS launch confirmed real but off-topic (not payments/oracles/bounties), "Chance" agent-spend-verification and Aemulus AI MCP-marketplace posts both unverifiable promo, 31-vulnerability x402 audit confirmed 6-day-stale dupe of 07-27 content |
 
 ## Skills Built
 | Skill | Date | Notes |
