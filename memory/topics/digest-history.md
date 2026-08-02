@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-07-31T00:00:00Z
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Digest History Archive
@@ -24,3 +24,4 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-07-22 | AI agents that transact onchain | Franklin Templeton ($1.79T AUM) calls agentic AI blockchain's "killer use case," projects $3-5T agentic-commerce market by 2030 — thin day otherwise, Sherwood/x402-wash-study/WhisprVirtuals rejected |
 | 2026-07-23 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — ORA funding/OUSD/Clawbank-Shodai/Anthropic exploit research all confirmed stale, Bonzo/Ostium/42DAO oracle exploits off-topic (no AI angle), WhisprVirtuals teaser repeated from 07-22 |
 | 2026-07-24 | AI agents that transact onchain | Coinbase turns on native x402 USDC payment acceptance for Coinbase Business + 3-line CDP x402 SDK — thin day otherwise, WLFI/Cambrian/LCX/MoonPay/AgenC all confirmed 1-5mo stale recirculating on X, ALPHEA $5M funding dropped as unverified PR-wire-only |
+| 2026-07-25 | AI agents that transact onchain | New EPFL/Zhejiang academic audit finds 31 unpatched vulnerabilities across all 15 major x402 facilitators incl. Coinbase (49 rule violations, wallet-drain/prompt-injection/replay classes) — thin day otherwise, Coinbase's $1B/5K-customer follow-up stats ruled a duplicate of 07-24's lead |
