@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-01T14:16:40Z",
-  "quality_score": 3,
-  "assessment": "Solid execution with disciplined filtering, but thin signal and procedural output—reports what happened, not strategic implications",
+  "last_analyzed": "2026-08-02T14:17:18Z",
+  "quality_score": 4,
+  "assessment": "Substantive filtering with strategic alignment; correctly rejected weak candidates and skipped notification per quality-gate rule.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -101,6 +101,10 @@
     {
       "date": "2026-08-01",
       "score": 3
+    },
+    {
+      "date": "2026-08-02",
+      "score": 4
     }
   ]
 }
