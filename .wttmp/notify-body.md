@@ -1,8 +1,39 @@
-tweet drafts: Virtuals Protocol $200M agent trading volume — volume vs. verified outcomes
+tweet drafts: Verdikta's rubric hardening — objective checks gate the AI jury
 
 — one-liner —
-1a. Volume is not verification. Virtuals just proved agents can trade — not that they deliver.
-1b. 5,600 agents, $200M moved, zero proof any of them finished a job.
+1a. Verdikta patched a bounty exploit with a dumber rule, not a smarter AI.
+1b. An AI jury can be gamed. A hard pass/fail check can't be argued with.
+
+— two-punch —
+2a. A hunter deleted a paid deliverable. Verdikta's fix: proof it stays online for 7 days, verified on archive.org.
+2b. Everyone wants a smarter AI judge. Verdikta's actual fix for gaming was a boring HTTP-200 check that doesn't care what the models think.
+
+— paragraph —
+3a. A Verdikta bounty required a live URL. Cloudflare returned a 403. Four submissions scored zero — not because two AI models disagreed, but because the objective check ran first and failed. No appeal, no re-vote. That's the design working.
+3b. Most "AI-judged" systems put the model in charge of everything, so gaming the model games the whole system. Verdikta's rubrics increasingly gate the AI jury behind deterministic checks — archive.org proofs, HTTP-200 pings — so consensus can't override a fact.
+
+— long tweet —
+4a. A hunter got paid for a bounty, then deleted the deliverable they were paid to keep live. Verdikta's response wasn't a smarter jury — it was archive.org. New bounties in that class now require a 7-day persistence proof before payout counts as final. Compare that to how most "AI-judged" systems handle gaming: retrain the model, add a prompt rule, hope it generalizes. Verdikta just closed the door with a fact the model can't argue with. Two independent models can disagree on quality. They can't disagree on whether a URL returns 200 or 403.
+4b. The interesting part of Verdikta's bounty #153 rubric fix isn't that a hunter tried to game it — people always try. It's what "harden the rubric" meant in practice: not more AI, not a bigger jury, just a deterministic check (archive.org persistence, HTTP-200 accessibility) placed ahead of the two-model consensus. When four submissions on a content bounty hit a Cloudflare 403, they scored zero regardless of what the models thought of the writing. That's a design choice worth copying: let AI judge subjective quality, let dumb checks gate objective fact.
+
+— thread opener —
+5a. Verdikta's AI jury got gamed once. The fix wasn't a smarter model — it was a dumber check placed in front of it.
+---
+- Bounty #153: hunter got paid, then deleted the deliverable they were required to keep live
+- Fix: rubric now requires a 7-day archive.org persistence proof before payout is final
+- Second case: HTTP-200 accessibility check zeroed 4 submissions on Cloudflare 403 — the AI jury never got a vote
+- Pattern: AI judges subjective quality, deterministic checks gate objective fact
+- Why that split matters for anyone building an "AI-judged" system
+
+5b. An on-chain bounty market with a two-model AI jury is going to get gamed. The interesting question is what you do next.
+---
+- What gaming an AI judge actually looks like in practice
+- Verdikta's answer: out-fact the gaming, not out-AI it — archive.org proofs, HTTP-200 checks, deterministic gates
+- The Cloudflare-403 case: 4 submissions zeroed, no AI consensus needed
+- Contrast: most "AI-judged" systems respond to gaming by tuning the model — slower, never fully closes the hole
+- Takeaway: the AI jury's job should shrink, not grow, as a protocol matures
+
+best: #4b — long tweet / builder's breakdown, ties two dated examples to a reusable design principle
 
 — two-punch —
 2a. $200M in agent trading volume on Robinhood Chain in under a month. Impressive activity — but activity isn't the same as agents completing verified work.
