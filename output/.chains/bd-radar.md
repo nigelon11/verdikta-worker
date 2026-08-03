@@ -1,16 +1,21 @@
 ## Summary
 
-Ran the 24th `bd-radar` sweep for 2026-08-02. Result: **0 new lead keys** — all 8 previously tracked leads carried forward unchanged (building: s97472091-pixel, now 7 consecutive quiet days since shipping `verdikta-agent`; integrating: mumuzhong3, bingmokaka, aaronjmars/aeon-agent; adjacent: NSPG13/agent-bounties; mentioning: @AjAkmarudi72937, @Project0_Z, @Fishhead8u).
+Ran the 25th consecutive `bd-radar` sweep (2026-08-03). Result: **0 new lead keys** — all 8 tracked builder leads carried forward unchanged.
 
-Sources checked: GitHub forks/issues across all 5 watched repos (`gh api`, `GH_READ_PAT` still 401 — 24th consecutive run, fell back to default token), `gh search` discovery (one mechanical index hit, not a lead), xAI X search (3 posts, 0 new handles), and WebSearch across HN/Reddit/web (nothing new).
+**What I checked:**
+- GitHub forks/issues/PRs across all 5 watched repos via `gh api` (`GH_READ_PAT` confirmed still 401 "Bad credentials" — 25th consecutive run, falls back cleanly to the default token)
+- `gh search repos`/`gh search code` for new ecosystem repos — none found beyond the known set
+- xAI X search (http=200) since 07-31 — only the official `@verdikta19633` account posted, 0 new third-party handles
+- WebSearch across HN/Reddit/web/subreddits — no genuine third-party builder discussion
+- Spot-checked `s97472091-pixel` (top building lead, now 8th quiet day on Verdikta specifically — pushed 2 unrelated crypto/DeFi repos instead), `aaronjmars/aeon-agent` (still automation-only), `NSPG13/agent-bounties` (competitor, quiet 5 days — longest gap yet)
 
-**Files created/modified:**
-- `output/articles/bd-radar-2026-08-02.md` — ranked lead digest (new)
-- `memory/topics/builder-leads.md` — appended 24th-run summary
-- `memory/logs/2026-08-02.md` — appended `### bd-radar` log block
+**Files written/modified:**
+- `output/articles/bd-radar-2026-08-03.md` — ranked lead digest (new)
+- `memory/topics/builder-leads.md` — 25th-run entry appended
+- `memory/MEMORY.md` — Builder Leads section + Next Priorities `GH_READ_PAT` counter bumped
+- `memory/logs/2026-08-03.md` — `### bd-radar` block appended
+- `.bdtmp/*` scratch files overwritten with today's fetch data (pre-existing tracked scratch bloat, already flagged separately in Next Priorities — not addressed here, out of scope for this run)
 
-Committed directly to `main` (`dc9863d`) — this is a data/memory write, not a code change, consistent with the repo's established pattern for skill runs.
+Committed as `e9ff285`. No self-notify sent — quiet by design since there was no new `building`/`integrating` lead this run.
 
-**No notification sent** — per the skill's gating rule, self-notify only fires on a new `building`/`integrating` lead, and there were none this run.
-
-**Follow-up still open** (unchanged from prior runs, already tracked in `MEMORY.md`): `GH_READ_PAT` remains 401/unset — no functional impact but should be fixed before rate limits bite; `mumuzhong3`/`bingmokaka` PRs still awaiting operator review/merge.
+**Follow-up needed:** `GH_READ_PAT` remains broken (25 consecutive runs, 401) — still flagged for the operator to fix before rate limits bite on the fallback token.
