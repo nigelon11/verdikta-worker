@@ -1,16 +1,17 @@
+Committed. The remaining untracked files (`notify`, `notify-jsonrender`, `.notify-sent-hashes`) are the standard runtime tool scripts documented in CLAUDE.md, not scratch output — correctly left alone.
+
 ## Summary
 
-Ran the `memory-flush` skill (no topic filter — full scan):
+Ran the `memory-flush` skill (topic-agnostic, `${var}` empty) against the last 3 days of logs (2026-07-31 → 2026-08-02):
 
-**Promoted / updated in `memory/MEMORY.md`:**
-- Bumped "Last consolidated" to 2026-08-02.
-- Archived the 07-25 Recent Digests row to `topics/digest-history.md` (table was at 8 rows, kept last 7 inline).
-- **Key finding:** live `gh pr list` check showed Dependabot `#1`/`#4` (stalled since 07-09, previously flagged in Next Priorities) were auto-closed 08-01 and superseded by new grouped PRs `#9`/`#10`; `#2`/`#3` remain open and are now the longest-stalled (~557h). Rewrote that Next Priorities line to reflect the churn instead of the stale "#1-#4" framing.
-- Refreshed all other stalled-PR/issue hour counts (`applications#18` ~413h, draft cluster ~437h, `applications#26` ~267h, `applications#27`/`#28` ~184h, `dispatcher!6` ~75h) against current time.
-- Escalated the tmp/scratch-file cleanup item — committed count grew from 103 (07-30) to **108** (08-02), still no cleanup PR opened.
-- Confirmed "Open Improvement PRs" is still just a false-positive text match (now PR `#10` instead of `#2`) — no section needed.
-- Verified `memory/issues/INDEX.md` still empty; Builder Leads/Dogfooding/Lessons Learned already current (no promotion needed).
+**Promoted to MEMORY.md:**
+- Added `mention-radar` to the Skills Built table (new skill, first ran 2026-08-02, quiet).
+- Updated Builder Leads paragraph with bd-radar's 24th run (08-02) summary, replacing the stale 23rd-run text; confirmed `topics/builder-leads.md` is already self-maintained and current.
+- Refreshed all stalled-PR/issue hour counts in Next Priorities via live `gh` checks (Dependabot #2/#3 ~581h now longest-stalled; `#9`/`#10` ~43h, not yet stalled; `applications#18` ~437h; draft cluster ~461h; `applications#26` ~291h; `applications#27`/`#28` ~208h; `dispatcher!6` ~99h).
+- Escalated the committed-scratch-file count (108 → 115) — confirmed the newly-seen untracked `notify`/`notify-jsonrender`/`.notify-sent-hashes` are the documented tool scripts, not part of that bloat.
 
-**Files changed:** `memory/MEMORY.md`, `memory/topics/digest-history.md`, new `memory/logs/2026-08-02.md`. Not committed manually — the `aeon.yml` workflow auto-commits after a successful run.
+**Pruned:** archived the oldest Recent Digests row (07-26) to `topics/digest-history.md` to keep the inline table at 7 rows.
 
-**Follow-up for the operator:** the Dependabot PR set and the growing (108-file) tmp/scratch bloat both need real action — the details are in Next Priorities.
+**Unchanged (checked, no action needed):** Open Improvement PRs section, `memory/issues/INDEX.md` (still empty), Lessons Learned.
+
+Logged the promote/prune summary to `memory/logs/2026-08-03.md` and committed all changes (`c8b66b1`).
