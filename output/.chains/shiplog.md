@@ -1,11 +1,13 @@
-ℹ️ Verdikta Shiplog: Jul 20 → 27
+ℹ️ Shiplog: Jul 27 → Aug 3
 
-Verdikta shiplog — Jul 20 → 27
+verdikta shiplog — jul 27 → aug 3
 
-Quiet window on the public repos: 1 merged PR, 4 commits, zero star movement. The real signal is off the commit graph:
+shipped 1 merged PR + 3 commits on the public repos this window. the bytes:
 
-- Dogfooding: a hunter got paid for a Verdikta bounty then deleted the article it required — the rubric only checked the URL existed at eval time. Fix: bounty #153 now requires an archive.org snapshot + 7-day Wayback persistence proof before payout clears (via @verdikta19633, 2026-07-24).
-- verdikta-docs: a CI outage that had been silently failing submodule syncs since Jul 17 got fixed, plus the cross-repo backlog/issue workflow guide finally merged (#7) — 3 of its 4 sibling PRs are still stuck in draft.
-- Housekeeping: verdikta-applications#26 (a real /rubric 404 fix) is mergeable and clean, just waiting on review; #18 (external contributor, ETH-prepay fix) has sat unreviewed for 17 days.
+- fixed a live mainnet failure: attachments were trusted on their submitter-declared media type; a mislabeled image knocked out an AI model mid-evaluation and cost bounty 165 its commit quorum. now sniffs the actual bytes instead. @verdikta19633 verdikta-arbiter#10
+- rubric enforcement held under real conditions: a Cloudflare 403 on a persistence-proof URL scored 4 submissions to zero rather than let consensus override an unverifiable claim.
+- first cumulative payout number disclosed: 139 bounties awarded, 0.42 ETH paid out to date, across two jury configurations scoring identically on the same rubric.
 
-https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-07-27.md
+traction: stars flat across all 5 repos, third week running (verdikta-docs 72, verdikta-applications 24, verdikta-arbiter 22, verdikta-dispatcher 17, verdikta-roadmap 0). no ecosystem mentions this window (no scouts configured).
+
+https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-08-03.md

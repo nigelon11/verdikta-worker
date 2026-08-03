@@ -1,0 +1,289 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Shiplog: Jul 27 → Aug 3",
+        "description": "verdikta shiplog — jul 27 → aug 3"
+      },
+      "children": [
+        "summary",
+        "shipped-section",
+        "traction-section",
+        "article-link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Shipped 1 merged PR + 3 commits on the public repos this window.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "shipped-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-heading",
+        "sep1",
+        "item1",
+        "item2",
+        "item3"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1-title",
+        "item1-desc",
+        "item1-refs"
+      ]
+    },
+    "item1-title": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed a live mainnet failure: attachments were trusted on their submitter-declared media type",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A mislabeled image knocked out an AI model mid-evaluation and cost bounty 165 its commit quorum. Now sniffs the actual bytes instead.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item1-refs": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item1-badge",
+        "item1-pr-link"
+      ]
+    },
+    "item1-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta19633",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item1-pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "verdikta-arbiter#10",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/10"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2-title",
+        "item2-desc"
+      ]
+    },
+    "item2-title": {
+      "type": "Text",
+      "props": {
+        "text": "Rubric enforcement held under real conditions",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A Cloudflare 403 on a persistence-proof URL scored 4 submissions to zero rather than let consensus override an unverifiable claim.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3-title",
+        "item3-stats",
+        "item3-desc"
+      ]
+    },
+    "item3-title": {
+      "type": "Text",
+      "props": {
+        "text": "First cumulative payout number disclosed",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item3-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-bounties",
+        "stat-payout"
+      ]
+    },
+    "stat-bounties": {
+      "type": "Stat",
+      "props": {
+        "label": "Bounties awarded",
+        "value": "139"
+      },
+      "children": []
+    },
+    "stat-payout": {
+      "type": "Stat",
+      "props": {
+        "label": "Total payout",
+        "value": "0.42 ETH"
+      },
+      "children": []
+    },
+    "item3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Across two jury configurations scoring identically on the same rubric.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "traction-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "traction-heading",
+        "sep2",
+        "stars-table",
+        "traction-notes"
+      ]
+    },
+    "traction-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Traction",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stars-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Stars"
+        ],
+        "rows": [
+          [
+            "verdikta-docs",
+            "72"
+          ],
+          [
+            "verdikta-applications",
+            "24"
+          ],
+          [
+            "verdikta-arbiter",
+            "22"
+          ],
+          [
+            "verdikta-dispatcher",
+            "17"
+          ],
+          [
+            "verdikta-roadmap",
+            "0"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "traction-notes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "traction-stars-note",
+        "traction-mentions-note"
+      ]
+    },
+    "traction-stars-note": {
+      "type": "Text",
+      "props": {
+        "text": "Stars flat across all 5 repos, third week running.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "traction-mentions-note": {
+      "type": "Text",
+      "props": {
+        "text": "No ecosystem mentions this window (no scouts configured).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full shiplog article",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-08-03.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
