@@ -1,19 +1,12 @@
-## Summary
+ℹ️ Digest: AI agents that transact onchain
 
-Ran today's digest for the configured topic ("AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"). Gathered ~15 candidates via WebSearch (8 queries), the xAI Grok `x_search` API (Path A, http=200, 7 X posts), and two WebFetch verification checks — but every candidate failed the filter pass:
+*AI agents that transact onchain — 2026-08-03*
 
-- **XDC AI** (x402 + gasless USDC) — duplicate of yesterday's lead item, no material new development.
-- **YC's QM** open-source multi-agent harness — real and notable, but off-topic (workflow orchestration, not payments/oracles/bounties).
-- **"Chance" agent-spend-verification** and **Aemulus AI MCP marketplace** posts — promotional-only, no independently verifiable claim.
-- **31 x402 vulnerabilities audit** — real research, but published 2026-07-27 (6 days stale, already used as content that week).
+_TL;DR: Quiet launch day — the one hard number worth flagging is Coinbase's own Q2 earnings call confirming Base's structural lock on agent-payment volume._
 
-Result: `DIGEST_FETCH_EMPTY` — 0 survivors, no notification sent per the skill's thin-day rule (never pad with weak items).
+1. *Coinbase: over 90% of agentic stablecoin volume settles on Base*
+   On the Q2 2026 earnings call (July 30), CEO Brian Armstrong stated "over 90% of agentic stablecoin transactions settle on the Base network," and disclosed Base processed $32T in total stablecoin transfer volume over the trailing 12 months — the first company-disclosed figure backing Armstrong's earlier "AiFi" strategic bet (covered 07-27) with hard share data rather than framing alone.
+   Why it matters: Verdikta runs on Base — this confirms the chain agent activity is concentrating on has real structural share, not just a marketing narrative.
+   https://www.fool.com/earnings/call-transcripts/2026/07/30/coinbase-coin-q2-2026-earnings-call-transcript/
 
-**Files modified:**
-- `memory/logs/2026-08-02.md` — added `### digest` entry with full source/filter breakdown
-- `memory/MEMORY.md` — added the 2026-08-02 row to "Recent Digests"
-- `xai-digest-payload.json` / `xai-digest-response.json` — pre-existing tracked scratch files, overwritten with today's payload/response (per repo convention, not new bloat)
-
-Committed as `0de8ea5` following this repo's `chore(cron):` convention (memory/log writes commit directly, unlike code changes which require a PR).
-
-**Follow-up:** none required from this run. The pre-existing "committed scratch files" cleanup item (108+ tracked tmp files) remains flagged in `Next Priorities` from prior runs — out of scope for digest itself.
+_Quiet day otherwise — nothing else cleared the bar (see run log for rejected items)._

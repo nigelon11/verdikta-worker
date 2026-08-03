@@ -1,0 +1,113 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest: AI agents that transact onchain",
+        "description": "2026-08-03"
+      },
+      "children": [
+        "text_tldr",
+        "sep1",
+        "stack_content"
+      ]
+    },
+    "text_tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet launch day — the one hard number worth flagging is Coinbase's own Q2 earnings call confirming Base's structural lock on agent-payment volume.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_coinbase",
+        "text_detail",
+        "stack_stats",
+        "text_why",
+        "sep2",
+        "text_closing"
+      ]
+    },
+    "story_coinbase": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Coinbase: over 90% of agentic stablecoin volume settles on Base",
+        "href": "https://www.fool.com/earnings/call-transcripts/2026/07/30/coinbase-coin-q2-2026-earnings-call-transcript/",
+        "source": "Motley Fool"
+      },
+      "children": []
+    },
+    "text_detail": {
+      "type": "Text",
+      "props": {
+        "text": "On the Q2 2026 earnings call (July 30), CEO Brian Armstrong stated \"over 90% of agentic stablecoin transactions settle on the Base network,\" and disclosed Base processed $32T in total stablecoin transfer volume over the trailing 12 months — the first company-disclosed figure backing Armstrong's earlier \"AiFi\" strategic bet (covered 07-27) with hard share data rather than framing alone."
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_agentic_vol",
+        "stat_total_vol"
+      ]
+    },
+    "stat_agentic_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Agentic stablecoin volume on Base",
+        "value": ">90%"
+      },
+      "children": []
+    },
+    "stat_total_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Base 12-month stablecoin transfer volume",
+        "value": "$32T"
+      },
+      "children": []
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Verdikta runs on Base — this confirms the chain agent activity is concentrating on has real structural share, not just a marketing narrative."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text_closing": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise — nothing else cleared the bar (see run log for rejected items).",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}

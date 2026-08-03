@@ -1,10 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-02T14:17:18Z",
-  "quality_score": 4,
-  "assessment": "Substantive filtering with strategic alignment; correctly rejected weak candidates and skipped notification per quality-gate rule.",
-  "flags": [],
-  "avg_score": 4,
+  "last_analyzed": "2026-08-03T16:06:31Z",
+  "quality_score": 3,
+  "assessment": "Competent execution with honest reporting; found one strategy-aligned signal (Coinbase $32T Base stablecoin stat) but low signal-to-noise ratio (1/15) from extensive source filtering.",
+  "flags": [
+    "stale_data"
+  ],
+  "avg_score": 3.96,
   "history": [
     {
       "date": "2026-07-09",
@@ -105,6 +107,10 @@
     {
       "date": "2026-08-02",
       "score": 4
+    },
+    {
+      "date": "2026-08-03",
+      "score": 3
     }
   ]
 }
