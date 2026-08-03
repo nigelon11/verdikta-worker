@@ -1,17 +1,15 @@
-Committed. The remaining untracked files (`notify`, `notify-jsonrender`, `.notify-sent-hashes`) are the standard runtime tool scripts documented in CLAUDE.md, not scratch output — correctly left alone.
-
 ## Summary
 
-Ran the `memory-flush` skill (topic-agnostic, `${var}` empty) against the last 3 days of logs (2026-07-31 → 2026-08-02):
+Ran the memory-flush skill (no `${var}` topic filter, so all recent activity in scope). This was a second flush pass for 2026-08-03 — the morning's flush had already covered bd-radar's 24th run, but three more skills (shiplog, bd-radar's 25th run, digest, write-tweet) ran afterward.
 
-**Promoted to MEMORY.md:**
-- Added `mention-radar` to the Skills Built table (new skill, first ran 2026-08-02, quiet).
-- Updated Builder Leads paragraph with bd-radar's 24th run (08-02) summary, replacing the stale 23rd-run text; confirmed `topics/builder-leads.md` is already self-maintained and current.
-- Refreshed all stalled-PR/issue hour counts in Next Priorities via live `gh` checks (Dependabot #2/#3 ~581h now longest-stalled; `#9`/`#10` ~43h, not yet stalled; `applications#18` ~437h; draft cluster ~461h; `applications#26` ~291h; `applications#27`/`#28` ~208h; `dispatcher!6` ~99h).
-- Escalated the committed-scratch-file count (108 → 115) — confirmed the newly-seen untracked `notify`/`notify-jsonrender`/`.notify-sent-hashes` are the documented tool scripts, not part of that bloat.
+**Findings:**
+- `bd-radar` and `digest` self-update their own MEMORY.md sections (Builder Leads, Recent Digests) — both were already current, no edit needed.
+- `shiplog`'s 08-03 run surfaced two facts not yet anywhere in MEMORY.md: the protocol's first disclosed cumulative adoption stat (139 bounties awarded, 0.42 ETH paid out) and a real mainnet incident (`verdikta-arbiter#10`, merged 07-30, fixed a commit-quorum miss from a mislabeled attachment).
+- Live-checked open PRs across all 4 watched repos + this repo — unchanged from this morning's check, so left the stalled-PR hour counts as-is.
+- Attempted to re-verify the committed-scratch-file count (115) but couldn't reproduce the prior methodology reliably — left the existing figure rather than overwrite with a possibly-wrong number, and flagged this for whoever does the eventual cleanup PR.
 
-**Pruned:** archived the oldest Recent Digests row (07-26) to `topics/digest-history.md` to keep the inline table at 7 rows.
+**Files changed:**
+- `memory/MEMORY.md` — added the north-star metric + arbiter#10 risk note to Dogfooding; widened the Bounty #164 no-run gap to "through 08-03" in both Dogfooding and Next Priorities.
+- `memory/logs/2026-08-03.md` — appended a new `### memory-flush` entry documenting this pass.
 
-**Unchanged (checked, no action needed):** Open Improvement PRs section, `memory/issues/INDEX.md` (still empty), Lessons Learned.
-
-Logged the promote/prune summary to `memory/logs/2026-08-03.md` and committed all changes (`c8b66b1`).
+Committed both files. Nothing else needed promotion or pruning this pass.
