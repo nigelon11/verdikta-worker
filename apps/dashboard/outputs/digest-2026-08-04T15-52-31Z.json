@@ -1,0 +1,105 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "AI agents that transact onchain — 2026-08-04"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr_text",
+        "sep1",
+        "item1_link",
+        "item1_detail",
+        "sep2",
+        "item2_link",
+        "item2_detail",
+        "sep3",
+        "item3_link",
+        "item3_detail"
+      ]
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: Quiet day for the core agent-payments/oracle/bounty niche (nothing new cleared 36h); the real signal is adjacent — a $116M Coldcard wallet hack tied to AI-assisted exploit discovery, and the largest funding round yet for securing autonomous agents.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Coldcard hardware wallet hack grows to $116M as Coinkite tells users to move funds now",
+        "href": "https://fortune.com/2026/08/03/bitcoin-owners-116-million-hack-coldcard-coinkite-exploit/",
+        "source": "Fortune"
+      }
+    },
+    "item1_detail": {
+      "type": "Text",
+      "props": {
+        "text": "A 2021 firmware bug routed Coldcard seed generation to a predictable software RNG instead of the hardware RNG; four attack waves have now drained 1,816 BTC (~$116M) from 5,200+ addresses. Coinkite believes an attacker used AI to review the open-source firmware and spot the flaw — its own AI-assisted audit weeks earlier missed it — and is telling anyone who generated a seed on a Coldcard to migrate funds immediately.\n\nWhy it matters: it's a live case study in AI compressing the gap between vulnerability, discovery, and exploitation in security-critical code — the same dynamic that makes AI-judged verification (catching bad submissions before payout, not after a hack) valuable rather than optional.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Zenity raises $125M Series C — the largest round yet for securing autonomous AI agents",
+        "href": "https://siliconangle.com/2026/08/03/israeli-startup-zenity-bags-125m-funding-build-security-layer-ai-agents/",
+        "source": "SiliconAngle"
+      }
+    },
+    "item2_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Norwest led, with SoftBank Vision Fund 2, Qumra, Hitachi Ventures and Intel Capital joining; total funding now ~$185M. The platform monitors agents built on Copilot, ChatGPT Enterprise, Gemini, Claude and AWS Bedrock/AgentCore for policy drift and unauthorized actions.\n\nWhy it matters: enterprise budget is now flowing specifically toward \"did this agent actually do what it was authorized to do\" — the verification problem AI-judged bounty/escrow systems already solve on-chain.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "EU AI Act's Article 50 transparency rules became enforceable August 2",
+        "href": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026",
+        "source": "Cooley"
+      }
+    },
+    "item3_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Providers/deployers of chatbots, AI-generated content and public-interest deepfakes must now disclose AI involvement; violations run up to €15M or 3% of global turnover. The Commission's implementing guidelines only landed July 20 — two weeks before the deadline took effect.\n\nWhy it matters: any agent-facing product with EU users now carries real compliance exposure for undisclosed AI interaction, not just a best-practice suggestion.",
+        "variant": "body"
+      }
+    }
+  }
+}

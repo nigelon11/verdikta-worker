@@ -1,5 +1,3 @@
-ℹ️ Daily Digest
-
 *AI agents that transact onchain — 2026-08-04*
 
 _TL;DR: Quiet day for the core agent-payments/oracle/bounty niche (nothing new cleared 36h); the real signal is adjacent — a $116M Coldcard wallet hack tied to AI-assisted exploit discovery, and the largest funding round yet for securing autonomous agents._
