@@ -1,0 +1,22 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "alert_refine"
+      ]
+    },
+    "alert_refine": {
+      "type": "Alert",
+      "props": {
+        "message": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "type": "info"
+      }
+    }
+  }
+}
