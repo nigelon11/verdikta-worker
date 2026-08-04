@@ -1,11 +1,9 @@
-ℹ️ GitHub Monitor
-
 *GitHub Monitor* — 5 repos scanned, 0 need action
 ▶ INFO
-  • Note verdikta-applications#28 — mumuzhong3's issue-#16 fix, no CI configured, idle 218h — https://github.com/verdikta/verdikta-applications/pull/28
-  • Note verdikta-applications#27 — mumuzhong3's issue-#14 fix, no CI configured, idle 218h — https://github.com/verdikta/verdikta-applications/pull/27
-  • Note verdikta-applications#26 — operator's rubricCid fix, no CI configured, idle 301h — https://github.com/verdikta/verdikta-applications/pull/26
-  • Note verdikta-applications#18 — bingmokaka's ETH-prepay fix, no CI configured, idle 447h — https://github.com/verdikta/verdikta-applications/pull/18
-  • Note verdikta-arbiter#9 — draft, Gitleaks Secret Scan still failing, idle 472h — https://github.com/verdikta/verdikta-arbiter/pull/9
+  • Note verdikta-applications#28 — idle 241h, mumuzhong3 fix for issue #16, no CI configured — https://github.com/verdikta/verdikta-applications/pull/28
+  • Note verdikta-applications#27 — idle 241h, mumuzhong3 fix for issue #14, no CI configured — https://github.com/verdikta/verdikta-applications/pull/27
+  • Note verdikta-applications#26 — idle 324h, operator's own rubricCid fix, no CI configured — https://github.com/verdikta/verdikta-applications/pull/26
+  • Note verdikta-applications#18 — idle 470h, bingmokaka ETH-prepay fix, no CI configured — https://github.com/verdikta/verdikta-applications/pull/18
+  • Note verdikta-arbiter#9 — idle 495h, draft, Gitleaks Secret Scan still FAILURE — https://github.com/verdikta/verdikta-arbiter/pull/9
   • …and 6 more
 sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok
