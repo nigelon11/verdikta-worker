@@ -1,0 +1,245 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Bounty #164 May Not Have Paid Out",
+        "description": "Jury configuration error; verdikta-hunter submission settlement uncertain"
+      },
+      "children": [
+        "alert",
+        "source-info",
+        "sep1",
+        "bounty-section",
+        "sep2",
+        "cause-section",
+        "sep3",
+        "impact-section",
+        "sep4",
+        "action-section"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Bounty Expired Without Winners",
+        "message": "29 submissions, zero winners"
+      }
+    },
+    "source-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "source-text",
+        "discovery-context"
+      ]
+    },
+    "source-text": {
+      "type": "Text",
+      "props": {
+        "text": "Official post from @verdikta19633 (2026-08-03)"
+      }
+    },
+    "discovery-context": {
+      "type": "Text",
+      "props": {
+        "text": "Found by bd-radar (27th consecutive quiet run on builder lead front)",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "bounty-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-heading",
+        "bounty-stats"
+      ]
+    },
+    "bounty-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bounty #164 Status",
+        "level": "h3"
+      }
+    },
+    "bounty-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "submissions-stat",
+        "winners-stat"
+      ]
+    },
+    "submissions-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Submissions",
+        "value": "29"
+      }
+    },
+    "winners-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Winners",
+        "value": "0"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "cause-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "cause-heading",
+        "cause-problem",
+        "cause-detail"
+      ]
+    },
+    "cause-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      }
+    },
+    "cause-problem": {
+      "type": "Text",
+      "props": {
+        "text": "Both jury models were invalid for the deployed class",
+        "variant": "lead"
+      }
+    },
+    "cause-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Configuration error not caught by the rubric validator",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact-heading",
+        "submission-info",
+        "submission-details",
+        "submission-status",
+        "settlement-note"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Verdikta-Hunter Exposure",
+        "level": "h3"
+      }
+    },
+    "submission-info": {
+      "type": "Text",
+      "props": {
+        "text": "Bounty #164 is verdikta-hunter's second real submission",
+        "variant": "lead"
+      }
+    },
+    "submission-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "prepay-stat",
+        "date-stat"
+      ]
+    },
+    "prepay-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Prepay",
+        "value": "0.004 ETH"
+      }
+    },
+    "date-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Submitted",
+        "value": "2026-07-29"
+      }
+    },
+    "submission-status": {
+      "type": "Badge",
+      "props": {
+        "text": "PENDING_EVALUATION",
+        "variant": "outline"
+      }
+    },
+    "settlement-note": {
+      "type": "Text",
+      "props": {
+        "text": "If this is the same bounty, settlement likely did not occur",
+        "variant": "muted"
+      }
+    },
+    "sep4": {
+      "type": "Separator"
+    },
+    "action-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-heading",
+        "action-primary",
+        "action-secondary"
+      ]
+    },
+    "action-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Recommended Action",
+        "level": "h3"
+      }
+    },
+    "action-primary": {
+      "type": "Text",
+      "props": {
+        "text": "Run verdikta-hunter to confirm submission status",
+        "variant": "body"
+      }
+    },
+    "action-secondary": {
+      "type": "Text",
+      "props": {
+        "text": "If confirmed, log as a dogfooding bug per the usual honest-reporting rule",
+        "variant": "body"
+      }
+    }
+  }
+}
