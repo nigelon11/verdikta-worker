@@ -1,15 +1,15 @@
+Committed as `a4683aa`.
+
 ## Summary
 
-Ran the memory-flush skill (no `${var}` topic filter, so all recent activity in scope). This was a second flush pass for 2026-08-03 — the morning's flush had already covered bd-radar's 24th run, but three more skills (shiplog, bd-radar's 25th run, digest, write-tweet) ran afterward.
+Ran the `memory-flush` skill for 2026-08-04 (executed directly since it wasn't in the invokable skill list — read `skills/memory-flush/SKILL.md` and followed its steps).
 
-**Findings:**
-- `bd-radar` and `digest` self-update their own MEMORY.md sections (Builder Leads, Recent Digests) — both were already current, no edit needed.
-- `shiplog`'s 08-03 run surfaced two facts not yet anywhere in MEMORY.md: the protocol's first disclosed cumulative adoption stat (139 bounties awarded, 0.42 ETH paid out) and a real mainnet incident (`verdikta-arbiter#10`, merged 07-30, fixed a commit-quorum miss from a mislabeled attachment).
-- Live-checked open PRs across all 4 watched repos + this repo — unchanged from this morning's check, so left the stalled-PR hour counts as-is.
-- Attempted to re-verify the committed-scratch-file count (115) but couldn't reproduce the prior methodology reliably — left the existing figure rather than overwrite with a possibly-wrong number, and flagged this for whoever does the eventual cleanup PR.
+**Changes to `memory/MEMORY.md`:**
+- Bumped "Last consolidated" to 2026-08-04
+- Live-refreshed all stalled-PR/issue hour counts in Next Priorities via `gh pr list`/`gh issue view` (Dependabot #2/#3 ~628h, applications#18 ~484h, draft cluster ~509h, applications#26 ~338h, applications#27/#28 ~269h, dispatcher!6 ~147h)
+- **Fixed the scratch/tmp file count methodology**, which the prior flush (08-03) flagged as unreproducible — pinned a reproducible `git ls-files` command, giving **97** (documented in Lessons Learned). This is lower than the previously reported 108/115, but `git log` showed no actual deletions, so I noted explicitly this is a corrected baseline, not real cleanup, to avoid a false "shrinking" narrative later
+- Widened the bounty #164 no-run gap note (Dogfooding + Next Priorities) to cover through 08-04
 
-**Files changed:**
-- `memory/MEMORY.md` — added the north-star metric + arbiter#10 risk note to Dogfooding; widened the Bounty #164 no-run gap to "through 08-03" in both Dogfooding and Next Priorities.
-- `memory/logs/2026-08-03.md` — appended a new `### memory-flush` entry documenting this pass.
+**Not promoted** (already self-maintained current by their own skills): bd-radar's Builder Leads paragraph and the digest's Recent Digests row both already reflected today's runs.
 
-Committed both files. Nothing else needed promotion or pruning this pass.
+Logged the flush under `### memory-flush` in `memory/logs/2026-08-04.md` and committed both files (`a4683aa`). No follow-up actions needed beyond the existing Next Priorities items (dependabot review, stalled PR merges, tmp cleanup PR, bounty #164 settlement check).
