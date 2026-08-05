@@ -1,0 +1,162 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert_status",
+        "sep1",
+        "prs_heading",
+        "prs_stack",
+        "sep2",
+        "sources_heading",
+        "sources_grid"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "5 repos scanned, 0 need action"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "prs_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests Flagged",
+        "level": "h3"
+      }
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_link_1",
+        "pr_link_2",
+        "pr_link_3",
+        "pr_link_4",
+        "pr_link_5",
+        "pr_note_more"
+      ]
+    },
+    "pr_link_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28 — mumuzhong3 fix for issue #16",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "No CI configured, idle ~265h"
+      }
+    },
+    "pr_link_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27 — mumuzhong3 fix for issue #14",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "No CI configured, idle ~265h"
+      }
+    },
+    "pr_link_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's rubricCid fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "No CI configured, idle ~348h"
+      }
+    },
+    "pr_link_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka's ETH-prepay fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "No CI configured, idle ~494h"
+      }
+    },
+    "pr_link_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft, Gitleaks Secret Scan still FAILURE",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "idle ~519h"
+      }
+    },
+    "pr_note_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "sources_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "sources_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "source_1",
+        "source_2",
+        "source_3",
+        "source_4",
+        "source_5"
+      ]
+    },
+    "source_1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      }
+    },
+    "source_2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      }
+    },
+    "source_3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      }
+    },
+    "source_4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      }
+    },
+    "source_5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      }
+    }
+  }
+}
