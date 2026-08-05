@@ -1,0 +1,178 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "AI agents that transact onchain — 2026-08-05"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_tldr",
+        "text_tldr",
+        "separator_1",
+        "item1_heading",
+        "item1_text",
+        "item1_why",
+        "item1_link",
+        "separator_2",
+        "item2_heading",
+        "item2_text",
+        "item2_why",
+        "item2_link",
+        "separator_3",
+        "item3_heading",
+        "item3_text",
+        "item3_why",
+        "item3_link"
+      ]
+    },
+    "heading_tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare shipped agent-side stablecoin wallets to complete its x402 payment rail, OpenZeppelin warned unaudited agent-payment standards are a systemic risk, and Coinkite's postmortem confirmed frontier AI missed the bug behind its now-$130M Coldcard hack.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Cloudflare launches stablecoin wallets, completing its AI-agent payment rail",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare shipped \"Cloudflare Wallets\" — an Account Wallet for humans to fund and set spend limits, plus a Virtual Wallet agents use via API keys — running on x402 (Coinbase's open standard, now under the Linux Foundation). Owners set an allowance, allow-list, and per-transaction cap; handle-claiming is live, payment execution is \"coming soon.\" Pairs with Cloudflare's July 1 Monetization Gateway (the seller side), giving one vendor both halves of agent-native payments.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: a major CDN now ships spend-capped agent wallets as infrastructure, not a demo — the allowance/allow-list/cap pattern is a bar any escrow-style protocol should be checked against.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "item1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Cloudflare kicks off stablecoin wallet rollout",
+        "href": "https://www.theblock.co/post/410629/cloudflare-kicks-off-stablecoin-wallet-rollout-ai-agents-pay-apis-online-content",
+        "source": "The Block"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "OpenZeppelin: unaudited agentic-payment standards are a systemic risk",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item2_text": {
+      "type": "Text",
+      "props": {
+        "text": "OpenZeppelin published a security review arguing agents given delegated spend authority are only as safe as the smart-contract infrastructure underneath — and that infrastructure is unevenly audited: some agent-payment protocols run on battle-tested libraries, others on draft specs whose reference code has never been reviewed. A single flawed payment primitive propagates across every agent built on it.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: directly relevant to any AI-judged escrow design — an unaudited settlement or judging primitive is a shared point of failure, not an isolated bug.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "item2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The security risk hiding in agentic payments infrastructure",
+        "href": "https://www.openzeppelin.com/news/the-security-risk-hiding-in-agentic-payments-infrastructure",
+        "source": "OpenZeppelin"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Coldcard hack grows to $130M — maker says AI code review missed the bug",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Update: Coinkite, maker of the Coldcard hardware wallet hit by an ongoing exploit (first reported 08-03, previously ~$116M), now puts losses at $130M and says its AI-assisted code review — run in the weeks before the exploit — never caught the flaw. Post-incident it tested the vulnerable code against several frontier models; none flagged it. The bug sat in the interaction between two firmware components, outside the paths most manual reviews cover.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: a concrete, sourced data point against relying on AI review alone for security-critical code — relevant to any protocol, including AI-judged ones, that leans on model output as a security control.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "item3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Hacked bitcoin wallet maker warns of AI failure to detect bug",
+        "href": "https://www.thestar.com.my/tech/tech-news/2026/08/05/hacked-bitcoin-wallet-maker-warns-of-ai-failure-to-detect-bug",
+        "source": "The Star"
+      },
+      "children": []
+    }
+  }
+}
