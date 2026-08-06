@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-05T15:32:51Z",
+  "last_analyzed": "2026-08-06T15:33:55Z",
   "quality_score": 4,
-  "assessment": "Substantive digest with 3 high-signal findings (Cloudflare stablecoins, OpenZeppelin security review, Coldcard hack update); strong filtering discipline (16→3 candidates), proper memory management, aligned to strategy.",
+  "assessment": "Substantive, well-curated digest with strong editorial judgment, verifiable sources (http=200 both), and proper memory integration; good signal-to-noise filtering with clear rejection reasoning",
   "flags": [],
-  "avg_score": 3.96,
+  "avg_score": 3.97,
   "history": [
     {
       "date": "2026-07-09",
@@ -116,6 +116,10 @@
     },
     {
       "date": "2026-08-05",
+      "score": 4
+    },
+    {
+      "date": "2026-08-06",
       "score": 4
     }
   ]

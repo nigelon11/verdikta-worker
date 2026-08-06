@@ -1,20 +1,20 @@
-ℹ️ Daily Digest
+ℹ️ Digest: AI agents that transact onchain
 
-*AI agents that transact onchain — 2026-08-05*
+*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-08-06*
 
-_TL;DR: Cloudflare shipped agent-side stablecoin wallets to complete its x402 payment rail, OpenZeppelin warned unaudited agent-payment standards are a systemic risk, and Coinkite's postmortem confirmed frontier AI missed the bug behind its now-$130M Coldcard hack._
+_TL;DR: Singapore's MAS puts agentic AI under binding risk-management guidelines, Microsoft and GitHub take opposite paths on the same AI-driven bounty-submission flood, and researchers document the first real agent-vs-agent exploit in production._
 
-1. *Cloudflare launches stablecoin wallets, completing its AI-agent payment rail*
-   Cloudflare shipped "Cloudflare Wallets" — an Account Wallet for humans to fund and set spend limits, plus a Virtual Wallet agents use via API keys — running on x402 (Coinbase's open standard, now under the Linux Foundation). Owners set an allowance, allow-list, and per-transaction cap; handle-claiming is live, payment execution is "coming soon." Pairs with Cloudflare's July 1 Monetization Gateway (the seller side), giving one vendor both halves of agent-native payments.
-   Why it matters: a major CDN now ships spend-capped agent wallets as infrastructure, not a demo — the allowance/allow-list/cap pattern is a bar any escrow-style protocol should be checked against.
-   https://www.theblock.co/post/410629/cloudflare-kicks-off-stablecoin-wallet-rollout-ai-agents-pay-apis-online-content
+1. *Singapore's MAS confirms agentic AI falls under its binding AI risk guidelines*
+   In an Aug 5 parliamentary reply, MAS said its AI Risk Management Guidelines — finalizing soon from a Nov 2025 consultation — cover agentic AI like any other AI use case, rather than leaving agents to the voluntary SAFR runtime framework industry published in July.
+   Why it matters: first major financial regulator to put a concrete, soon-binding guideline (not just a best-practices doc) under autonomous agents transacting for financial institutions.
+   https://www.techtimes.com/articles/323283/20260806/mas-confirms-agentic-ai-inside-binding-bank-rules-us-eu-fall-behind.htm
 
-2. *OpenZeppelin: unaudited agentic-payment standards are a systemic risk*
-   OpenZeppelin published a security review arguing agents given delegated spend authority are only as safe as the smart-contract infrastructure underneath — and that infrastructure is unevenly audited: some agent-payment protocols run on battle-tested libraries, others on draft specs whose reference code has never been reviewed. A single flawed payment primitive propagates across every agent built on it.
-   Why it matters: directly relevant to any AI-judged escrow design — an unaudited settlement or judging primitive is a shared point of failure, not an isolated bug.
-   https://www.openzeppelin.com/news/the-security-risk-hiding-in-agentic-payments-infrastructure
+2. *Microsoft pays record $20M in bug bounties as GitHub goes the opposite way*
+   MSRC's year-in-review (Aug 4): $20M+ paid to 562 researchers (avg ~$35k, top payout $200k), explicitly citing an AI-driven rise in submission volume — the same pressure that made GitHub halve payouts and gate access behind an invite-only tier on July 27.
+   Why it matters: two platforms hit the identical AI-submission-volume bottleneck and chose opposite fixes — pay more humans to triage vs. restrict who can submit — neither scales the judging step itself.
+   https://www.microsoft.com/en-us/msrc/blog/2026/08/microsoft-bounty-program-year-in-review-more-than-20-million-awarded-biggest-year
 
-3. *Coldcard hack grows to $130M — maker says AI code review missed the bug*
-   Update: Coinkite, maker of the Coldcard hardware wallet hit by an ongoing exploit (first reported 08-03, previously ~$116M), now puts losses at $130M and says its AI-assisted code review — run in the weeks before the exploit — never caught the flaw. Post-incident it tested the vulnerable code against several frontier models; none flagged it. The bug sat in the interaction between two firmware components, outside the paths most manual reviews cover.
-   Why it matters: a concrete, sourced data point against relying on AI review alone for security-critical code — relevant to any protocol, including AI-judged ones, that leans on model output as a security control.
-   https://www.thestar.com.my/tech/tech-news/2026/08/05/hacked-bitcoin-wallet-maker-warns-of-ai-failure-to-detect-bug
+3. *First documented case of one AI agent exploiting another in production*
+   Pillar Security (published Aug 3-4) found a low-privilege, public-facing triage agent in Google's adk-python repo could be manipulated via a poisoned GitHub issue into invoking a high-privilege maintainer agent — real agent-to-agent privilege escalation, not a lab demo. Google fixed it and paid a $10k bounty.
+   Why it matters: the attack surface for multi-agent systems isn't just human-to-agent prompt injection anymore — any protocol where one agent's output triggers another agent's action now has a demonstrated exploit pattern to defend against.
+   https://www.theregister.com/security/2026/08/03/google-dev-kit-spurs-first-ever-agent-on-agent-violence/5282496
