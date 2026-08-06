@@ -1,0 +1,156 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack_prs",
+        "text_more",
+        "sep",
+        "stack_sources"
+      ]
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr28",
+        "pr27",
+        "pr26",
+        "pr18",
+        "pr_arbiter9"
+      ]
+    },
+    "pr28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#28",
+        "source": "mumuzhong3's fix for issue #16, idle ~289h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28"
+      },
+      "children": []
+    },
+    "pr27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#27",
+        "source": "mumuzhong3's fix for issue #14, idle ~289h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27"
+      },
+      "children": []
+    },
+    "pr26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#26",
+        "source": "operator's own rubricCid fix, idle ~372h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26"
+      },
+      "children": []
+    },
+    "pr18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#18",
+        "source": "bingmokaka's ETH-prepay fix, idle ~518h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18"
+      },
+      "children": []
+    },
+    "pr_arbiter9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Unblock verdikta-arbiter#9",
+        "source": "draft, Gitleaks Secret Scan still FAILURE, idle ~542h",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9"
+      },
+      "children": []
+    },
+    "text_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_sources_label",
+        "badge_app",
+        "badge_arbiter",
+        "badge_dispatcher",
+        "badge_docs",
+        "badge_roadmap"
+      ]
+    },
+    "text_sources_label": {
+      "type": "Text",
+      "props": {
+        "text": "sources:",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications=ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter=ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher=ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs=ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap=ok",
+        "variant": "secondary"
+      },
+      "children": []
+    }
+  }
+}

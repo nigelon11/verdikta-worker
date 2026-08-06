@@ -1,10 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-08-05T09:27:07Z",
-  "quality_score": 4,
-  "assessment": "Substantive monitoring output with clear metrics, temporal comparison, confirmed notifications, and honest limitation disclosure",
+  "last_analyzed": "2026-08-06T09:07:28Z",
+  "quality_score": 3,
+  "assessment": "Skill ran correctly, reported accurate findings across all 5 repos with specific PR references and counts; appropriate decision to send INFO-only notification and log results. Low signal—same stale PRs repeated from prior days (289h–4385h old), no new action items.",
   "flags": [],
-  "avg_score": 3.79,
+  "avg_score": 3.77,
   "history": [
     {
       "date": "2026-07-09",
@@ -121,6 +121,10 @@
     {
       "date": "2026-08-05",
       "score": 4
+    },
+    {
+      "date": "2026-08-06",
+      "score": 3
     }
   ]
 }
