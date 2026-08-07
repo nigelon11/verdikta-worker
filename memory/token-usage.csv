@@ -146,3 +146,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-06,digest,claude-sonnet-5,6517,22261,4682248,134599
 2026-08-07,write-tweet,claude-sonnet-5,2543,19268,2843320,66371
 2026-08-07,bd-radar,claude-sonnet-5,2972,23315,5910449,203462
+2026-08-07,github-monitor,claude-sonnet-5,2539,14215,2011563,90525

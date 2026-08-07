@@ -1,0 +1,147 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert-info",
+        "stack-prs",
+        "separator-sources",
+        "stack-sources"
+      ]
+    },
+    "alert-info": {
+      "type": "Alert",
+      "props": {
+        "type": "info"
+      }
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-1",
+        "pr-2",
+        "pr-3",
+        "pr-4",
+        "pr-5",
+        "pr-more"
+      ]
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#28",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "mumuzhong3",
+        "score": "fix for issue #16, no CI configured, idle ~313h"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#27",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "mumuzhong3",
+        "score": "fix for issue #14, no CI configured, idle ~313h"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#26",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "operator",
+        "score": "rubricCid fix, no CI configured, idle ~396h"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Review verdikta-applications#18",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "bingmokaka",
+        "score": "ETH-prepay fix, no CI configured, idle ~542h"
+      }
+    },
+    "pr-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Note verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "draft PR",
+        "score": "Gitleaks Secret Scan still FAILURE, draft-capped not ACT_NOW, idle ~566h"
+      }
+    },
+    "pr-more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "separator-sources": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-1",
+        "badge-2",
+        "badge-3",
+        "badge-4",
+        "badge-5"
+      ]
+    },
+    "badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications=ok",
+        "variant": "default"
+      }
+    },
+    "badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter=ok",
+        "variant": "default"
+      }
+    },
+    "badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher=ok",
+        "variant": "default"
+      }
+    },
+    "badge-4": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs=ok",
+        "variant": "default"
+      }
+    },
+    "badge-5": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap=ok",
+        "variant": "default"
+      }
+    }
+  }
+}
