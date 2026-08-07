@@ -1,0 +1,408 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Drafts: Apple's Bug Bounty AI-Slop Failure"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "intro_text",
+        "sep1",
+        "heading_1liner",
+        "stack_1liner",
+        "sep2",
+        "heading_2punch",
+        "stack_2punch",
+        "sep3",
+        "heading_paragraph",
+        "stack_paragraph",
+        "sep4",
+        "heading_long",
+        "stack_long",
+        "sep5",
+        "heading_thread",
+        "stack_thread",
+        "sep6",
+        "heading_rec",
+        "rec_text"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Tweet draft variants for the Apple bug bounty story",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_1liner": {
+      "type": "Heading",
+      "props": {
+        "text": "One-liner",
+        "level": "h3"
+      }
+    },
+    "stack_1liner": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "variant_1a",
+        "variant_1b"
+      ]
+    },
+    "variant_1a": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1a",
+        "text_1a"
+      ]
+    },
+    "badge_1a": {
+      "type": "Badge",
+      "props": {
+        "text": "1a"
+      }
+    },
+    "text_1a": {
+      "type": "Text",
+      "props": {
+        "text": "A real $200K macOS exploit sat unpatched because Apple's bug bounty inbox was buried in AI slop."
+      }
+    },
+    "variant_1b": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1b",
+        "text_1b"
+      ]
+    },
+    "badge_1b": {
+      "type": "Badge",
+      "props": {
+        "text": "1b"
+      }
+    },
+    "text_1b": {
+      "type": "Text",
+      "props": {
+        "text": "Every bounty program has the same failure mode now: too much AI noise, not enough triage bandwidth."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_2punch": {
+      "type": "Heading",
+      "props": {
+        "text": "Two-Punch",
+        "level": "h3"
+      }
+    },
+    "stack_2punch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "variant_2a",
+        "variant_2b"
+      ]
+    },
+    "variant_2a": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2a",
+        "text_2a"
+      ]
+    },
+    "badge_2a": {
+      "type": "Badge",
+      "props": {
+        "text": "2a"
+      }
+    },
+    "text_2a": {
+      "type": "Text",
+      "props": {
+        "text": "Bynario found 50+ real macOS bugs with ChatGPT, one worth $200K. Apple's team was so buried in AI submissions they missed it — and only patched after direct outreach."
+      }
+    },
+    "variant_2b": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2b",
+        "text_2b"
+      ]
+    },
+    "badge_2b": {
+      "type": "Badge",
+      "props": {
+        "text": "2b"
+      }
+    },
+    "text_2b": {
+      "type": "Text",
+      "props": {
+        "text": "The problem was never AI finding bugs. It's that nobody built triage for a world where anyone can generate hundreds of plausible-looking reports for free."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_paragraph": {
+      "type": "Heading",
+      "props": {
+        "text": "Paragraph",
+        "level": "h3"
+      }
+    },
+    "stack_paragraph": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "variant_3a",
+        "variant_3b"
+      ]
+    },
+    "variant_3a": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3a",
+        "text_3a"
+      ]
+    },
+    "badge_3a": {
+      "type": "Badge",
+      "props": {
+        "text": "3a"
+      }
+    },
+    "text_3a": {
+      "type": "Text",
+      "props": {
+        "text": "Bynario found a $200K macOS exploit chain using ChatGPT. Apple's bounty inbox was so flooded with AI slop the submission got capped and buried — until Bynario reached out directly. The bug got patched. The process didn't."
+      }
+    },
+    "variant_3b": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3b",
+        "text_3b"
+      ]
+    },
+    "badge_3b": {
+      "type": "Badge",
+      "props": {
+        "text": "3b"
+      }
+    },
+    "text_3b": {
+      "type": "Text",
+      "props": {
+        "text": "Manual triage assumed submissions were expensive to produce. AI made them free. Apple's bug bounty is now proving what happens when a system built for scarcity meets a world of infinite cheap submissions: real signal gets lost in the noise."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_long": {
+      "type": "Heading",
+      "props": {
+        "text": "Long Tweet",
+        "level": "h3"
+      }
+    },
+    "stack_long": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "variant_4a",
+        "variant_4b"
+      ]
+    },
+    "variant_4a": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4a",
+        "text_4a"
+      ]
+    },
+    "badge_4a": {
+      "type": "Badge",
+      "props": {
+        "text": "4a"
+      }
+    },
+    "text_4a": {
+      "type": "Text",
+      "props": {
+        "text": "Apple capped open bug bounty submissions because AI-generated slop reports overwhelmed the queue. Inside that noise: Bynario, using ChatGPT, found 50+ real macOS bugs — including a $200K exploit chain (CVE-2026-43760) — that got buried and only patched after direct outreach. The lesson isn't ban AI submissions. It's that triage built for a handful of expert reports a month can't survive a world where anyone can generate hundreds of plausible-sounding ones. You need a system built for that volume from day one, not a queue and a prayer."
+      }
+    },
+    "variant_4b": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4b",
+        "text_4b"
+      ]
+    },
+    "badge_4b": {
+      "type": "Badge",
+      "props": {
+        "text": "4b"
+      }
+    },
+    "text_4b": {
+      "type": "Text",
+      "props": {
+        "text": "Here's the actual failure mode in Apple's bug bounty story: a first-come inbox has no way to rank submissions, so it either lets everything through or caps volume and buries the good ones with the bad. Both are the wrong axis. What you actually need is a way to score every submission against a fixed rubric regardless of how many arrive — that's the only design where a $200K exploit chain and a slop report get sorted correctly in the same pass, at any volume."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_thread": {
+      "type": "Heading",
+      "props": {
+        "text": "Thread Opener",
+        "level": "h3"
+      }
+    },
+    "stack_thread": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "variant_5a",
+        "variant_5b"
+      ]
+    },
+    "variant_5a": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5a",
+        "text_5a"
+      ]
+    },
+    "badge_5a": {
+      "type": "Badge",
+      "props": {
+        "text": "5a"
+      }
+    },
+    "text_5a": {
+      "type": "Text",
+      "props": {
+        "text": "Apple's bug bounty just proved a rule that's about to hit every open submission system: once submissions are free to generate, first-come triage collapses. A $200K macOS exploit sat buried in AI slop for weeks. Here's what actually breaks, and what doesn't."
+      }
+    },
+    "variant_5b": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5b",
+        "text_5b"
+      ]
+    },
+    "badge_5b": {
+      "type": "Badge",
+      "props": {
+        "text": "5b"
+      }
+    },
+    "text_5b": {
+      "type": "Text",
+      "props": {
+        "text": "Apple built one of the best bug bounty programs in the industry. AI just found the one thing it wasn't built for: infinite cheap submissions. A real $200K exploit got lost in the noise. Here's what that means for every bounty program still running the old model."
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_rec": {
+      "type": "Heading",
+      "props": {
+        "text": "Recommendation",
+        "level": "h3"
+      }
+    },
+    "rec_text": {
+      "type": "Text",
+      "props": {
+        "text": "best: #4b — sharpest technical reframe (rank-by-arrival vs. score-by-rubric), no hype",
+        "variant": "lead"
+      }
+    }
+  }
+}
