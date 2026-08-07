@@ -1,20 +1,20 @@
-ℹ️ Digest: AI agents that transact onchain
+ℹ️ Daily Digest — AI agents that transact onchain
 
-*AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-08-06*
+*AI agents that transact onchain — 2026-08-07*
 
-_TL;DR: Singapore's MAS puts agentic AI under binding risk-management guidelines, Microsoft and GitHub take opposite paths on the same AI-driven bounty-submission flood, and researchers document the first real agent-vs-agent exploit in production._
+_TL;DR: Apple's AI-flooded bug-bounty inbox blocked a real $200K exploit — a live failure mode for AI-judged submission filtering — while Circle backed its Coinbase deal renewal with the first hard usage number for agent stablecoin payments._
 
-1. *Singapore's MAS confirms agentic AI falls under its binding AI risk guidelines*
-   In an Aug 5 parliamentary reply, MAS said its AI Risk Management Guidelines — finalizing soon from a Nov 2025 consultation — cover agentic AI like any other AI use case, rather than leaving agents to the voluntary SAFR runtime framework industry published in July.
-   Why it matters: first major financial regulator to put a concrete, soon-binding guideline (not just a best-practices doc) under autonomous agents transacting for financial institutions.
-   https://www.techtimes.com/articles/323283/20260806/mas-confirms-agentic-ai-inside-binding-bank-rules-us-eu-fall-behind.htm
+1. *Apple's AI-flooded bug-bounty inbox blocked a real $200K macOS exploit*
+   Financial Times reporting (surfaced Aug 4) revealed Apple capped researcher report quotas in June after ChatGPT-assisted "slop" buried real findings — Italian firm Bynario hit its limit and couldn't submit a verified privilege-escalation chain worth up to $200K.
+   Why it matters: the exact failure mode any AI-judged bounty pipeline has to defend against — volume filtering that accidentally screens out the genuine submission, a direct design lesson for Verdikta's own two-model jury.
+   https://www.cultofmac.com/news/apple-caps-bug-bounty-reports-ai-slop
 
-2. *Microsoft pays record $20M in bug bounties as GitHub goes the opposite way*
-   MSRC's year-in-review (Aug 4): $20M+ paid to 562 researchers (avg ~$35k, top payout $200k), explicitly citing an AI-driven rise in submission volume — the same pressure that made GitHub halve payouts and gate access behind an invite-only tier on July 27.
-   Why it matters: two platforms hit the identical AI-submission-volume bottleneck and chose opposite fixes — pay more humans to triage vs. restrict who can submit — neither scales the judging step itself.
-   https://www.microsoft.com/en-us/msrc/blog/2026/08/microsoft-bounty-program-year-in-review-more-than-20-million-awarded-biggest-year
+2. *Circle renews Coinbase deal through 2029, discloses first hard AI-agent usage number*
+   Circle's Q2 earnings call locked in Coinbase as USDC's distribution partner through 2029 and revealed its Agent Stack now supports 900+ paid services, with USDC carrying 99.3% of x402 payment volume — the first concrete adoption figure behind the "agents need stablecoins" narrative, not just roadmap talk.
+   Why it matters: first verifiable usage number for agent-native stablecoin payments — a leading indicator for the market Verdikta's own bounty settlement sits inside.
+   https://www.blockhead.co/2026/08/07/circle-renews-its-coinbase-deal-through-2029-betting-growth-on-ai-agents-instead-of-payouts/
 
-3. *First documented case of one AI agent exploiting another in production*
-   Pillar Security (published Aug 3-4) found a low-privilege, public-facing triage agent in Google's adk-python repo could be manipulated via a poisoned GitHub issue into invoking a high-privilege maintainer agent — real agent-to-agent privilege escalation, not a lab demo. Google fixed it and paid a $10k bounty.
-   Why it matters: the attack surface for multi-agent systems isn't just human-to-agent prompt injection anymore — any protocol where one agent's output triggers another agent's action now has a demonstrated exploit pattern to defend against.
-   https://www.theregister.com/security/2026/08/03/google-dev-kit-spurs-first-ever-agent-on-agent-violence/5282496
+3. *OSL Group launches OSL AgentPay, a multi-stablecoin rail for AI agents*
+   Hong Kong-listed OSL Group (HKEX: 863) opened API access today to AgentPay, supporting USDT/USDC/USDGO and the x402/AP2/MPP protocols for autonomous agent payments — the first licensed exchange group building agent-payment infra alongside the crypto-native startups already in the space.
+   Why it matters: regulated players are now entering agent-payment rails, widening the settlement options builders can integrate against.
+   https://www.globenewswire.com/news-release/2026/08/07/3340938/0/en/osl-group-launches-osl-agentpay-multi-stablecoin-payment-infrastructure-for-ai-agents.html

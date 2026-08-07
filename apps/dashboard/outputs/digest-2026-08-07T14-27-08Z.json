@@ -1,0 +1,151 @@
+{
+  "root": "card-digest",
+  "state": {},
+  "elements": {
+    "card-digest": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest — AI agents that transact onchain"
+      },
+      "children": [
+        "text-date",
+        "heading-tldr",
+        "text-tldr",
+        "sep-intro",
+        "story1-stack",
+        "sep-1-2",
+        "story2-stack",
+        "sep-2-3",
+        "story3-stack"
+      ]
+    },
+    "text-date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-08-07",
+        "variant": "muted"
+      }
+    },
+    "heading-tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Apple's AI-flooded bug-bounty inbox blocked a real $200K exploit — a live failure mode for AI-judged submission filtering — while Circle backed its Coinbase deal renewal with the first hard usage number for agent stablecoin payments."
+      }
+    },
+    "sep-intro": {
+      "type": "Separator",
+      "props": {}
+    },
+    "story1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story1-link",
+        "story1-context",
+        "story1-importance"
+      ]
+    },
+    "story1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Apple's AI-flooded bug-bounty inbox blocked a real $200K macOS exploit",
+        "href": "https://www.cultofmac.com/news/apple-caps-bug-bounty-reports-ai-slop",
+        "source": "Cult of Mac"
+      }
+    },
+    "story1-context": {
+      "type": "Text",
+      "props": {
+        "text": "Financial Times reporting (surfaced Aug 4) revealed Apple capped researcher report quotas in June after ChatGPT-assisted \"slop\" buried real findings — Italian firm Bynario hit its limit and couldn't submit a verified privilege-escalation chain worth up to $200K."
+      }
+    },
+    "story1-importance": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: the exact failure mode any AI-judged bounty pipeline has to defend against — volume filtering that accidentally screens out the genuine submission, a direct design lesson for Verdikta's own two-model jury."
+      }
+    },
+    "sep-1-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "story2-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story2-link",
+        "story2-context",
+        "story2-importance"
+      ]
+    },
+    "story2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Circle renews Coinbase deal through 2029, discloses first hard AI-agent usage number",
+        "href": "https://www.blockhead.co/2026/08/07/circle-renews-its-coinbase-deal-through-2029-betting-growth-on-ai-agents-instead-of-payouts/",
+        "source": "Blockhead"
+      }
+    },
+    "story2-context": {
+      "type": "Text",
+      "props": {
+        "text": "Circle's Q2 earnings call locked in Coinbase as USDC's distribution partner through 2029 and revealed its Agent Stack now supports 900+ paid services, with USDC carrying 99.3% of x402 payment volume — the first concrete adoption figure behind the \"agents need stablecoins\" narrative, not just roadmap talk."
+      }
+    },
+    "story2-importance": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: first verifiable usage number for agent-native stablecoin payments — a leading indicator for the market Verdikta's own bounty settlement sits inside."
+      }
+    },
+    "sep-2-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "story3-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story3-link",
+        "story3-context",
+        "story3-importance"
+      ]
+    },
+    "story3-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "OSL Group launches OSL AgentPay, a multi-stablecoin rail for AI agents",
+        "href": "https://www.globenewswire.com/news-release/2026/08/07/3340938/0/en/osl-group-launches-osl-agentpay-multi-stablecoin-payment-infrastructure-for-ai-agents.html",
+        "source": "GlobeNewswire"
+      }
+    },
+    "story3-context": {
+      "type": "Text",
+      "props": {
+        "text": "Hong Kong-listed OSL Group (HKEX: 863) opened API access today to AgentPay, supporting USDT/USDC/USDGO and the x402/AP2/MPP protocols for autonomous agent payments — the first licensed exchange group building agent-payment infra alongside the crypto-native startups already in the space."
+      }
+    },
+    "story3-importance": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: regulated players are now entering agent-payment rails, widening the settlement options builders can integrate against."
+      }
+    }
+  }
+}

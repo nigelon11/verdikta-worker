@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-06T15:33:55Z",
+  "last_analyzed": "2026-08-07T14:27:08Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-curated digest with strong editorial judgment, verifiable sources (http=200 both), and proper memory integration; good signal-to-noise filtering with clear rejection reasoning",
+  "assessment": "Substantive, well-sourced digest with 3 actionable findings (Apple exploit lesson, Circle/Coinbase hard usage data, OSL AgentPay launch) verified via multiple channels; properly filtered and documented in memory.",
   "flags": [],
   "avg_score": 3.97,
   "history": [
@@ -120,6 +120,10 @@
     },
     {
       "date": "2026-08-06",
+      "score": 4
+    },
+    {
+      "date": "2026-08-07",
       "score": 4
     }
   ]
