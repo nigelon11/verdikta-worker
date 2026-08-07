@@ -1,10 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-06T09:12:29Z",
+  "last_analyzed": "2026-08-07T07:48:53Z",
   "quality_score": 4,
-  "assessment": "Systematic monitoring sweep with comprehensive source audits, false positive resolution, and honest null-result reporting; execution is solid but 29 consecutive quiet runs with persistent GH_READ_PAT blocker limits actionability.",
-  "flags": [],
-  "avg_score": 3.75,
+  "assessment": "Systematic multi-source check with correct signal gating (0 new leads → silent as per STRATEGY), substantive state tracking (dormancy, competitor activity), and properly maintained files/memory; GH_READ_PAT 401 persistent (30 runs) but mitigated.",
+  "flags": [
+    "api_error"
+  ],
+  "avg_score": 3.76,
   "history": [
     {
       "date": "2026-07-10",
@@ -116,6 +118,10 @@
     },
     {
       "date": "2026-08-06",
+      "score": 4
+    },
+    {
+      "date": "2026-08-07",
       "score": 4
     }
   ]

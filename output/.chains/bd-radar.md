@@ -1,15 +1,20 @@
+Everything looks in order. Per the skill's step 6, notify is gated on ≥1 new `building`/`integrating` lead — there are none this run, so I'll stay quiet (correctly avoiding notification noise per STRATEGY.md's "avoid busywork/filler").
+
 ## Summary
 
-Ran the 29th `bd-radar` sweep (2026-08-06). Result: **0 new lead keys** — all 8 tracked builder leads carried forward unchanged (`s97472091-pixel` now 11 consecutive quiet days since the `verdikta-agent` ship; `mumuzhong3`/`bingmokaka` PRs still open at 13/27 days).
+Ran the **bd-radar** skill (30th run) for Verdikta's builder-lead sweep. Result: **0 new leads** — all 8 previously-tracked leads carried forward unchanged.
 
-**Sources checked:**
-- GitHub forks/issues across all 5 watched repos — `GH_READ_PAT` still 401 (29th consecutive run), fell back to default `gh api`/`gh search` token; identical known fork/PR set, nothing new.
-- `gh search` discovery — no new ecosystem repos. Resolved a recurring false positive: `ExtraE113/moltbook_data` (an AI-agent social network data dump) has been surfacing since 07-17; this run confirmed it's synthetic/test data (its "Verdikta bounty" post's timestamp predates the actual bounties it describes by ~4 months).
-- X (xAI `x_search`, since 08-03) — 3 posts, all official `@verdikta19633`, no new third-party handles.
-- Web sweep — one new item checked and dropped ("AgentBounty" by Prema Ananda, an unrelated Auth0/x402 marketplace, name-coincidence only).
+What was checked:
+- **GitHub** (5 watched repos): forks/issues/PRs via `gh api`/`gh search` — `GH_READ_PAT` still 401 (30th consecutive unset/invalid run, no functional impact, public fallback works fine). No new independent activity.
+- **X** (xAI x_search, since 08-04): only the official `@verdikta19633` account posted — 0 new third-party handles.
+- **Web** (HN/Reddit/r/AI_Agents/r/LocalLLaMA): no third-party builder discussion; one first-party Verdikta blog post found and correctly excluded.
 
-**Files changed:** `output/articles/bd-radar-2026-08-06.md` (new digest), `memory/topics/builder-leads.md`, `memory/logs/2026-08-06.md`, `memory/MEMORY.md` — all committed directly to `main` (commit `7525d49`), consistent with how memory-only skill runs operate in this repo.
+Notable state: `s97472091-pixel` (top building lead) is now on a **12th consecutive quiet day** since shipping `verdikta-agent`; `mumuzhong3`/`bingmokaka` PRs and `aaronjmars/aeon-agent`'s dropped verdikta-hunter skill remain unresolved; competitor `NSPG13/agent-bounties` keeps shipping fast (156 open issues, up from 76).
 
-**Notify:** skipped — quiet by design since no new `building`/`integrating` lead this run.
+**Files written:**
+- `output/articles/bd-radar-2026-08-07.md` — ranked lead digest
+- `memory/topics/builder-leads.md` — 30th-run entry appended
+- `memory/MEMORY.md` — Builder Leads + Next Priorities bumped
+- `memory/logs/2026-08-07.md` — `### bd-radar` block appended
 
-**Follow-up still open (unchanged, not new):** `GH_READ_PAT` remains unset/401 after 29 runs — no functional impact yet, but flagged again for the operator per prior runs' recommendation.
+No self-notify sent (gated on new `building`/`integrating` leads, none found — quiet by design). Git commit/push is handled automatically by the CI harness after this run, not by me directly.
