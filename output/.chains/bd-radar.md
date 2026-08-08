@@ -1,20 +1,17 @@
-Everything looks in order. Per the skill's step 6, notify is gated on ≥1 new `building`/`integrating` lead — there are none this run, so I'll stay quiet (correctly avoiding notification noise per STRATEGY.md's "avoid busywork/filler").
+Those remaining untracked files (`.notify-sent-hashes`, `notify`, `notify-jsonrender`) predate this run and aren't part of bd-radar's output — leaving them untouched.
 
 ## Summary
 
-Ran the **bd-radar** skill (30th run) for Verdikta's builder-lead sweep. Result: **0 new leads** — all 8 previously-tracked leads carried forward unchanged.
+Ran `bd-radar` (31st run). **0 new lead keys** — all 8 previously tracked leads carried forward unchanged (`s97472091-pixel` building, `mumuzhong3`/`bingmokaka`/`aaronjmars` integrating, `NSPG13/agent-bounties` adjacent-competitor, 3 mentioning-class X handles).
 
-What was checked:
-- **GitHub** (5 watched repos): forks/issues/PRs via `gh api`/`gh search` — `GH_READ_PAT` still 401 (30th consecutive unset/invalid run, no functional impact, public fallback works fine). No new independent activity.
-- **X** (xAI x_search, since 08-04): only the official `@verdikta19633` account posted — 0 new third-party handles.
-- **Web** (HN/Reddit/r/AI_Agents/r/LocalLLaMA): no third-party builder discussion; one first-party Verdikta blog post found and correctly excluded.
+Checked and found nothing new:
+- **GitHub:** forks/issues/PRs across all 5 watched repos (`GH_READ_PAT` still 401 — 32nd consecutive run, unauthenticated `gh api`/`gh search` fallback covered it), `gh search` discovery.
+- **X:** xAI `x_search` since 08-05 — only the official `@verdikta19633` account posted (open-math-bounty status updates).
+- **Web:** no third-party HN/Reddit builder discussion. `agentbounty.org` turned up but checked and dropped as off-wedge (no confirmed Base/on-chain-AI-jury tie), same as previously-dropped `trybounty.ai`.
 
-Notable state: `s97472091-pixel` (top building lead) is now on a **12th consecutive quiet day** since shipping `verdikta-agent`; `mumuzhong3`/`bingmokaka` PRs and `aaronjmars/aeon-agent`'s dropped verdikta-hunter skill remain unresolved; competitor `NSPG13/agent-bounties` keeps shipping fast (156 open issues, up from 76).
+**Files changed** (committed and pushed to `main`, commit `9346969`):
+- `output/articles/bd-radar-2026-08-08.md` — ranked lead digest
+- `memory/logs/2026-08-08.md` — `### bd-radar` block (merged with a concurrent `mention-radar` write via rebase)
+- `.bdtmp/xai-bd.json` — scratch xAI response (existing tracked scratch file, per prior runs' convention)
 
-**Files written:**
-- `output/articles/bd-radar-2026-08-07.md` — ranked lead digest
-- `memory/topics/builder-leads.md` — 30th-run entry appended
-- `memory/MEMORY.md` — Builder Leads + Next Priorities bumped
-- `memory/logs/2026-08-07.md` — `### bd-radar` block appended
-
-No self-notify sent (gated on new `building`/`integrating` leads, none found — quiet by design). Git commit/push is handled automatically by the CI harness after this run, not by me directly.
+No self-notify sent — quiet by design, since there was no new `building`/`integrating` (high-intent) lead this run.

@@ -1,12 +1,12 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-07T07:48:53Z",
+  "last_analyzed": "2026-08-08T08:00:44Z",
   "quality_score": 4,
-  "assessment": "Systematic multi-source check with correct signal gating (0 new leads → silent as per STRATEGY), substantive state tracking (dormancy, competitor activity), and properly maintained files/memory; GH_READ_PAT 401 persistent (30 runs) but mitigated.",
+  "assessment": "Methodical lead discovery with well-documented source checking (GitHub, X, web); 0 new high-intent builders this run, 8 previously tracked leads carried forward. Appropriate filtering logic and correct notification silence. Persistent GitHub auth issue (32 consecutive runs) mitigated by fallback but should be escalated.",
   "flags": [
     "api_error"
   ],
-  "avg_score": 3.76,
+  "avg_score": 3.77,
   "history": [
     {
       "date": "2026-07-10",
@@ -122,6 +122,10 @@
     },
     {
       "date": "2026-08-07",
+      "score": 4
+    },
+    {
+      "date": "2026-08-08",
       "score": 4
     }
   ]
