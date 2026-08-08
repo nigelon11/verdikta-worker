@@ -44,7 +44,7 @@
     "last_quality_score": 4
   },
   "mention-radar": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-08-06T09:07:26Z",
     "total_runs": 15,
     "total_successes": 15,
@@ -52,7 +52,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4,
-    "last_dispatch": "2026-08-06T09:03:59Z"
+    "last_dispatch": "2026-08-08T07:53:57Z"
   },
   "write-tweet": {
     "last_dispatch": "2026-08-07T21:25:36Z",
@@ -76,8 +76,8 @@
     "success_rate": 1
   },
   "bd-radar": {
-    "last_dispatch": "2026-08-07T07:42:15Z",
-    "last_status": "success",
+    "last_dispatch": "2026-08-08T07:53:57Z",
+    "last_status": "dispatched",
     "last_success": "2026-08-07T07:48:55Z",
     "total_runs": 29,
     "total_successes": 29,
