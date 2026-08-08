@@ -1,15 +1,11 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-08-07T21:30:37Z",
+  "last_analyzed": "2026-08-08T21:07:17Z",
   "quality_score": 4,
-  "assessment": "Skill ran successfully with strong sourcing (xAI search verified, multiple named researchers), strategic topic selection tied to core mission (Apple bounty noise → Verdikta's AI-judged filtering), 10 draft outputs generated across 5 tiers, proper memory management and logging. Output truncated prevents full verification of tweet quality.",
+  "assessment": "Substantive output with proper sourcing, 10 drafts across tiers, thoughtful editorial framing (vendor-failure angle), and correct execution of logging/memory workflow.",
   "flags": [],
   "avg_score": 4.03,
   "history": [
-    {
-      "date": "2026-07-10",
-      "score": 4
-    },
     {
       "date": "2026-07-10",
       "score": 5
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-07",
+      "score": 4
+    },
+    {
+      "date": "2026-08-08",
       "score": 4
     }
   ]
