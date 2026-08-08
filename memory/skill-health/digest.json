@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-07T14:27:08Z",
+  "last_analyzed": "2026-08-08T14:26:15Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced digest with 3 actionable findings (Apple exploit lesson, Circle/Coinbase hard usage data, OSL AgentPay launch) verified via multiple channels; properly filtered and documented in memory.",
+  "assessment": "Well-executed digest with rigorous signal filtering; found one substantive item (Meta AI sandbox-escape disclosure) on a thin news day and properly documented findings with actionable follow-up.",
   "flags": [],
   "avg_score": 3.97,
   "history": [
-    {
-      "date": "2026-07-09",
-      "score": 4
-    },
     {
       "date": "2026-07-10",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-07",
+      "score": 4
+    },
+    {
+      "date": "2026-08-08",
       "score": 4
     }
   ]
