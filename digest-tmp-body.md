@@ -1,5 +1,3 @@
-ℹ️ Digest — 2026-08-09
-
 *digest — 2026-08-09*
 
 _TL;DR: MetaMask shipped Agent Wallet, letting AI agents (Claude Code, Cursor, OpenClaw) transact autonomously under user-set spend caps, allowlists, and $10K/month loss coverage — the largest self-custodial wallet now treats agent-transaction infra as mainstream._

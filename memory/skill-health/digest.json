@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-08T14:26:15Z",
-  "quality_score": 4,
-  "assessment": "Well-executed digest with rigorous signal filtering; found one substantive item (Meta AI sandbox-escape disclosure) on a thin news day and properly documented findings with actionable follow-up.",
+  "last_analyzed": "2026-08-09T14:29:39Z",
+  "quality_score": 3,
+  "assessment": "Competent execution with transparent filtering methodology and proper documentation, but thin results (1 substantive item from 16 candidates) limit usefulness for a digest report.",
   "flags": [],
-  "avg_score": 3.97,
+  "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-07-10",
-      "score": 4
-    },
     {
       "date": "2026-07-11",
       "score": 4
@@ -125,6 +121,10 @@
     {
       "date": "2026-08-08",
       "score": 4
+    },
+    {
+      "date": "2026-08-09",
+      "score": 3
     }
   ]
 }
