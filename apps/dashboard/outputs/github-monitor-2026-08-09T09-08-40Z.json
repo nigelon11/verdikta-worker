@@ -1,0 +1,102 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info-badge",
+        "prs-stack",
+        "sources-text"
+      ]
+    },
+    "info-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "INFO",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-28",
+        "pr-27",
+        "pr-26",
+        "pr-18",
+        "pr-9",
+        "more-indicator"
+      ]
+    },
+    "pr-28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28 — mumuzhong3 fix for issue #16",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "idle ~361h, no CI configured"
+      },
+      "children": []
+    },
+    "pr-27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27 — mumuzhong3 fix for issue #14",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "idle ~361h, no CI configured"
+      },
+      "children": []
+    },
+    "pr-26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "idle ~444h, no CI configured"
+      },
+      "children": []
+    },
+    "pr-18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka ETH-prepay fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "idle ~590h, no CI configured"
+      },
+      "children": []
+    },
+    "pr-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft PR, Gitleaks Secret Scan still FAILURE, draft-capped not ACT_NOW",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "idle ~614h"
+      },
+      "children": []
+    },
+    "more-indicator": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: verdikta-applications=ok, verdikta-arbiter=ok, verdikta-dispatcher=ok, verdikta-docs=ok, verdikta-roadmap=ok",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
