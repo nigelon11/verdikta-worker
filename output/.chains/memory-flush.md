@@ -1,11 +1,20 @@
+The commit succeeded. Per the skill's instructions, since nothing was blocked and real promotions/prunes happened, no `MEMORY_FLUSH_OK`-only log is needed — the detailed log entry is already in place.
+
 ## Summary
 
-Ran the memory-flush skill (no topic filter — flushed all recent activity):
+Executed the `memory-flush` skill for 2026-08-10:
 
-- **MEMORY.md**: bumped "Last consolidated" to 2026-08-09. Verified Recent Digests and Builder Leads were already self-maintained current by digest/bd-radar (no edit needed there).
-- **Refreshed Next Priorities**: live-checked all tracked PRs/issues across `verdikta-worker` + `verdikta-applications`/`arbiter`/`dispatcher`/`docs` — no merges/closures since 08-08, just updated hour counts (Dependabot #2/#3 now ~748h longest-stalled). Bumped `GH_READ_PAT` streak to 33 consecutive unset runs.
-- **Found and fixed a real gap**: the reproducible scratch/tmp count command was missing write-tweet's `.wttmp/` scratch directory (9 files, new today) since no prior day's pattern included it. Widened the grep pattern and corrected the count to **116** (up from the old pattern's 105) — most of that jump was previously-uncounted files, not new growth. Logged this in Lessons Learned with guidance to keep widening the pattern as new skills add scratch dirs.
-- Confirmed no state changes needed: Open Improvement PRs section, `memory/issues/INDEX.md`, Skills Built table, and Dogfooding/Bounty #164 status all unchanged.
-- Logged the flush to `memory/logs/2026-08-09.md` and committed both files (`cc23a38`).
+**Promoted/updated in `memory/MEMORY.md`:**
+- Bumped "Last consolidated" to 2026-08-10
+- Refreshed Builder Leads "Current state" to the 33rd bd-radar run (0 new leads, 15th consecutive quiet day for s97472091-pixel, `GH_READ_PAT` 34 runs unset)
+- Live re-checked all tracked stalled PRs (`gh pr view`) — confirmed no merges/closures — and refreshed every hour count in Next Priorities against the current timestamp
 
-Next priority for the operator remains the same set of stalled PRs plus the growing scratch/tmp cleanup — no cleanup PR opened yet.
+**Pruned/archived:**
+- Discovered mention-radar's own `.mrtmp/` scratch dir (2 files) wasn't covered by the tracked scratch/tmp grep pattern — widened it and corrected the repo scratch-file count to **118** (was 116)
+- Archived 7 stale Recent Digests rows (07-28 → 08-03) to `memory/topics/digest-history.md`, trimming `MEMORY.md` from 73 → 66 lines (still above the ~50-line target — flagged for a future flush to consider splitting Next Priorities into its own topic file)
+
+**Verified unchanged:** Open Improvement PRs section (still just the one false-positive Dependabot PR, no section needed), `memory/issues/INDEX.md` (still empty), Skills Built table (still 2 entries, no archiving needed).
+
+**Files modified:** `memory/MEMORY.md`, `memory/topics/digest-history.md`, `memory/logs/2026-08-10.md` — committed as `63d333f`.
+
+**Follow-up needed:** none blocking; the MEMORY.md line-count creep and the growing scratch/tmp repo bloat (118 files) remain open items already tracked in Next Priorities for the operator.
