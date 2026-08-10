@@ -1,0 +1,120 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info_badge",
+        "pr_28",
+        "pr_27",
+        "pr_26",
+        "pr_18",
+        "pr_9",
+        "more_prs",
+        "sep1",
+        "sources_table"
+      ]
+    },
+    "info_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "INFO",
+        "variant": "default"
+      }
+    },
+    "pr_28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mumuzhong3 fix for issue #16, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "verdikta-applications#28",
+        "score": "idle ~386h"
+      }
+    },
+    "pr_27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mumuzhong3 fix for issue #14, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "verdikta-applications#27",
+        "score": "idle ~386h"
+      }
+    },
+    "pr_26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "operator's own rubricCid fix, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "verdikta-applications#26",
+        "score": "idle ~468h"
+      }
+    },
+    "pr_18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "bingmokaka ETH-prepay fix, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications#18",
+        "score": "idle ~615h"
+      }
+    },
+    "pr_9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "draft — Gitleaks Secret Scan still FAILURE",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "verdikta-arbiter#9",
+        "score": "idle ~639h"
+      }
+    },
+    "more_prs": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repo",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
