@@ -1,0 +1,28 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "badge",
+        "text"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "revise"
+      }
+    },
+    "text": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it."
+      }
+    }
+  }
+}

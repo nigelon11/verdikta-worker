@@ -164,3 +164,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-10,bd-radar,claude-sonnet-5,2827,19814,3654091,155807
 2026-08-10,shiplog,claude-sonnet-5,2704,14281,3061475,55977
 2026-08-10,digest,claude-sonnet-5,3494,13064,2216319,160181
+2026-08-10,write-tweet,claude-sonnet-5,2992,33840,5288382,116114
