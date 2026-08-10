@@ -37,7 +37,7 @@ type: Index
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
-| shiplog | 2026-07-13 | Weekly PR/commit/star digest across public `verdikta/*` repos; first run established star baseline (verdikta-docs 72, verdikta-applications 24, verdikta-arbiter 22, verdikta-dispatcher 17, verdikta-roadmap 0). Correctly excluded 19 PRs to private `verdikta-agents` per STRATEGY.md public-repos-only constraint. |
+| shiplog | 2026-07-13 | Weekly PR/commit/star digest across public `verdikta/*` repos; first run established star baseline (verdikta-docs 72, verdikta-applications 24, verdikta-arbiter 22, verdikta-dispatcher 17, verdikta-roadmap 0). Correctly excluded 19 PRs to private `verdikta-agents` per STRATEGY.md public-repos-only constraint. 2026-08-10 run: SHIPLOG_NOTHING_NEW, 4th consecutive flat week (0 PRs/commits/star deltas on public repos); 8 more PRs to private `verdikta-agents` excluded. |
 | mention-radar | 2026-08-02 | Scans X (xAI x_search) + web (Reddit/HN/Product Hunt/Farcaster/blogs/GitHub) + star deltas for actionable external Verdikta mentions (first-time discovery, confusion, friction, competitor comparison, feature requests). First run QUIET — no actionable mentions, 0 star delta; complements bd-radar's builder-intent focus with a broader mention/sentiment sweep. |
 
 ## Dogfooding (verdikta-hunter)

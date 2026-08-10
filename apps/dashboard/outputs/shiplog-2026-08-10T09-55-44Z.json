@@ -1,0 +1,131 @@
+{
+  "root": "card-shiplog",
+  "state": {},
+  "elements": {
+    "card-shiplog": {
+      "type": "Card",
+      "props": {
+        "title": "Shiplog"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-status",
+        "text-period",
+        "sep1",
+        "heading-public",
+        "stat-prs",
+        "stat-commits",
+        "stat-stars",
+        "sep2",
+        "heading-social",
+        "text-x-posts",
+        "text-x-detail",
+        "sep3",
+        "heading-notes",
+        "text-private",
+        "text-article"
+      ]
+    },
+    "alert-status": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Nothing new"
+      }
+    },
+    "text-period": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet week (Aug 3 → Aug 10)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-public": {
+      "type": "Heading",
+      "props": {
+        "text": "Public Repo Activity",
+        "level": "h3"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Public Repo PRs",
+        "value": "0"
+      }
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Flagship Commits",
+        "value": "0"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Star Movement (across 5 repos)",
+        "value": "0"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-social": {
+      "type": "Heading",
+      "props": {
+        "text": "Social Media",
+        "level": "h3"
+      }
+    },
+    "text-x-posts": {
+      "type": "Text",
+      "props": {
+        "text": "X (@verdikta19633): 4 posts"
+      }
+    },
+    "text-x-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Nothing new beyond what's already logged (bounty #164's jury-config expiry)",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-notes": {
+      "type": "Heading",
+      "props": {
+        "text": "Notes",
+        "level": "h3"
+      }
+    },
+    "text-private": {
+      "type": "Text",
+      "props": {
+        "text": "8 PRs shipped in private verdikta-agents repo this window — excluded per policy"
+      }
+    },
+    "text-article": {
+      "type": "Text",
+      "props": {
+        "text": "No article written"
+      }
+    }
+  }
+}
