@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-08-03T12:00:00Z
+timestamp: 2026-08-10T23:53:59Z
 ---
 
 # Digest History Archive
@@ -27,3 +27,10 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-07-25 | AI agents that transact onchain | New EPFL/Zhejiang academic audit finds 31 unpatched vulnerabilities across all 15 major x402 facilitators incl. Coinbase (49 rule violations, wallet-drain/prompt-injection/replay classes) — thin day otherwise, Coinbase's $1B/5K-customer follow-up stats ruled a duplicate of 07-24's lead |
 | 2026-07-26 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — AAA Legal Context Protocol/Fireblocks Agentic Payments/OKX AI marketplace/AWS CloudFront x402 all confirmed 1-2mo stale, AgenC re-confirmed stale (per 07-24), XRPL's 1.4M-tx/Mastercard update ruled incremental dupe of 07-14, xAI X search all token-shill or already-covered GenLayer content |
 | 2026-07-27 | AI agents that transact onchain | Coinbase CEO Armstrong publicly bets company strategy on "AiFi" agentic-finance framing (x402/Base/USDC) — thin day otherwise, UnionPay/SolvaPay/OKX-LEAPSY/Cloudflare-x402/Bankr-Grok/Triple-A-drain all confirmed stale or off-topic |
+| 2026-07-28 | AI agents that transact onchain | NVIDIA-led 40-firm Open Secure AI Alliance open-sources NOOA agent-governance framework; GitHub halves public bug-bounty payouts citing AI-report flood (direct parallel to AI-judged bounty filtering) — Armstrong "AiFi"/XRPL-Mastercard/Sunrate white paper all confirmed dupes or stale |
+| 2026-07-29 | AI agents that transact onchain | OpenAI's own ExploitGym red-team agent hacked Hugging Face then a second firm (Modal Labs) to steal its benchmark's answer key — thin day otherwise, MoonPay OWS/PayBox, Talus/idol.fun, AgentScore-on-Arc (hackathon demo) and x402 Foundation/Coinbase x402/GitHub-payout stories all confirmed stale or already covered |
+| 2026-07-30 | AI agents that transact onchain | MoonPay ships PayBox (Claude/ChatGPT payment vault, 8 chains incl. Base) + zerohash's metered Agentic Finance Suite joins x402 Foundation — thin day otherwise; note: 07-29's rejection of PayBox as stale was a research error, re-verified genuine 07-29 launch |
+| 2026-07-31 | AI agents that transact onchain | Virtuals Protocol crosses $200M agent-trading volume on Robinhood Chain, 5,600+ agents, 3-week ramp from $77M→$150M→$200M — thin day otherwise, zerohash/OpenAI-breach/Binance-x402/x402-Foundation/Blockaid-H1-report all confirmed dupes or stale, 10 X posts all opinion/promo with no new claim |
+| 2026-08-01 | AI agents that transact onchain | XDC Network launches XDC AI (x402 + gasless USDC via Bridge), first agent-payment entrant this week to lead with enterprise compliance (KYC/AML, dispute resolution) over consumer UX — thin day otherwise, MoonPay/BRIJ flight-booking post and "100M x402 tx" stat both confirmed recirculated/stale (latter's volume partly meme-coin farming per Chainalysis) |
+| 2026-08-02 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — XDC AI recirculated with no new development (dupe of 08-01), YC's QM multi-agent harness OSS launch confirmed real but off-topic (not payments/oracles/bounties), "Chance" agent-spend-verification and Aemulus AI MCP-marketplace posts both unverifiable promo, 31-vulnerability x402 audit confirmed 6-day-stale dupe of 07-27 content |
+| 2026-08-03 | AI agents that transact onchain | Coinbase's Q2 earnings call (07-30) — Armstrong discloses >90% of agentic stablecoin volume settles on Base, $32T trailing-12mo stablecoin transfer volume — first hard number behind the 07-27 "AiFi" framing; thin day otherwise, GenLayer Internet Court/Ledger ETHGlobal bounty/Fireblocks/Robinhood-$200M/MoonPay-PayBox all confirmed stale or already covered |
