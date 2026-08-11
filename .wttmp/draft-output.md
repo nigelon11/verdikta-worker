@@ -1,7 +1,3 @@
----
-type: Reference
----
-
 ## Tweet Drafts: AI judges bounties in a day, its own PRs wait weeks for a human
 
 ### Tier 1 — One-liner
