@@ -1,15 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-08-10T09:55:57Z",
-  "quality_score": 4,
-  "assessment": "Comprehensive repo scan completed across all 5 watched repos with specific findings (11 INFO items), proper constraint documentation, and procedural compliance—substantive and well-structured for a monitoring task.",
-  "flags": [],
-  "avg_score": 3.73,
+  "last_analyzed": "2026-08-11T09:33:12Z",
+  "quality_score": 3,
+  "assessment": "Skill ran successfully and identified specific stuck PRs (applications#26-28, arbiter#9) and stale issues, but daily repetition of identical findings since 08-04 without new signals limits utility; known limitation (missing read:org scope) unresolved.",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 3.7,
   "history": [
-    {
-      "date": "2026-07-12",
-      "score": 4
-    },
     {
       "date": "2026-07-13",
       "score": 4
@@ -125,6 +123,10 @@
     {
       "date": "2026-08-10",
       "score": 4
+    },
+    {
+      "date": "2026-08-11",
+      "score": 3
     }
   ]
 }
