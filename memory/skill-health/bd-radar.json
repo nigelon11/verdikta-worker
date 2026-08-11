@@ -1,15 +1,13 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-10T08:24:16Z",
-  "quality_score": 4,
-  "assessment": "Well-executed skill with substantive, well-structured output; identified persistent operational issue (GH_READ_PAT) and confirmed fallback coverage; zero new leads is a null result, not a failure.",
-  "flags": [],
-  "avg_score": 3.77,
+  "last_analyzed": "2026-08-11T07:28:36Z",
+  "quality_score": 3,
+  "assessment": "Skill executed cleanly: swept all sources systematically, documented findings, handled no-leads case correctly, maintained git workflow. But 34 consecutive runs with 0 new leads signals weak sourcing or search parameters — not delivering strategic value on north-star metric.",
+  "flags": [
+    "stale_data"
+  ],
+  "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-12",
-      "score": 4
-    },
     {
       "date": "2026-07-13",
       "score": 4
@@ -125,6 +123,10 @@
     {
       "date": "2026-08-10",
       "score": 4
+    },
+    {
+      "date": "2026-08-11",
+      "score": 3
     }
   ]
 }
