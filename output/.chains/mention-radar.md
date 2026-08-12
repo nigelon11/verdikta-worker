@@ -1,15 +1,11 @@
 ## Summary
 
-Ran the **mention-radar** skill for target **Verdikta** (var override).
+Ran **mention-radar** for target **Verdikta** (var override, single project, no other targets configured).
 
-- **X/Twitter** (xAI `x_search`, http=200, 2026-08-03→08-10): 0 third-party mentions — only the project's own `@verdikta19633` account active.
-- **Web** (WebSearch — Reddit/HN/Product Hunt/Farcaster/blogs/GitHub): 0 independent third-party mentions; only first-party docs/whitepaper and unrelated directory noise (ToolPilot).
-- **GitHub stars** across all 5 watched `verdikta/*` repos: no change vs 08-08 baseline (docs=72, applications=24, arbiter=22, dispatcher=17, roadmap=0).
+- **X/Twitter (xAI `x_search` API, primary path):** HTTP 200, searched 2026-08-05→08-12 — 0 mentions by anyone other than @verdikta19633.
+- **Web (WebSearch):** 0 independent third-party mentions on Reddit/HN/Product Hunt/Farcaster/blogs — only first-party domains (verdikta.org/docs) and recurring AI-tool-directory noise (ToolPilot, TAAFT, allthingsai, verdikto.ai), same pattern as prior runs.
+- **GitHub stars** (verdikta-docs, verdikta-applications, verdikta-arbiter, verdikta-dispatcher, verdikta-roadmap): all unchanged vs. 08-10 baseline (72/24/22/17/0) — no deltas.
 
-Result: **QUIET** across all surfaces, no star delta > 5 — per the skill's rules, no notification was sent (`MENTION_RADAR_QUIET`).
+**Result:** quiet cycle, no engagement opportunities. Per the skill's rule, no notification sent (`MENTION_RADAR_QUIET`). Logged a summary entry under `### Mention Radar` in `memory/logs/2026-08-12.md`.
 
-**Files changed:**
-- `memory/logs/2026-08-10.md` (new) — logged the Mention Radar run.
-- `.mrtmp/xai-mr-payload.json`, `.mrtmp/xai-mr.json` — scratch files from the xAI API call (this skill has `commits: false` and can't `rm`; these will get swept into the framework's auto-commit, consistent with the already-tracked repo-bloat issue in `MEMORY.md`).
-
-No follow-up action needed — this is the 6th consecutive quiet mention-radar cycle for Verdikta.
+No files outside the log were modified; scratch API payloads were kept in `/tmp` (not the repo) to avoid contributing to the tmp-file bloat already flagged in memory.
