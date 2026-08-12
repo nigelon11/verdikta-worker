@@ -1,13 +1,12 @@
-Digest run complete — today's news cycle didn't clear the signal bar, so no notification went out (per the skill's anti-padding rule).
+The digest ran but nothing cleared the quality bar — no notification sent, per skill rules.
 
 ## Summary
 
-Ran the `digest` skill with the configured topic (`AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles`), default web sources. Gathered ~17 raw candidates (8 WebSearch queries + xAI x_search, 7 X posts, HN check, 6 verification fetches). After filtering for freshness (≤36h), dedup against the last 3 days, and dropping unverified/promotional single-account posts, **0 items survived** — everything was either stale (Bitcoin Red Team AI-vuln-hunt story from Aug 6, Hush Security's $30M raise from Jul 28, AWS Bedrock AgentCore Payments/Ant Group Anvita/Keyrock's $73M stablecoin report all from May–Jul), a repeat of stories already sent 08-09/08-10 (MetaMask Agent Wallet, OSL AgentPay), or thin promo posts with no independent corroboration.
+Executed the `digest` skill for 2026-08-12 with the configured topic ("AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"). Gathered ~20 raw candidates via xAI x_search (10 X posts) and ~11 WebSearch queries plus an HN check, but every candidate failed the filter on inspection:
 
-This is the **4th consecutive thin/empty digest day** (08-08 thin → 08-09 thin → 08-10 empty → 08-11 empty), so per skill spec: logged `DIGEST_FETCH_EMPTY`, sent no notification.
+- The two loudest X posts (x402 "165M txs/69K agents", x402 "$50B/200M payments") were recycled April/early-August stats reframed as fresh news, not new events.
+- Coldcard hack and Apple bug-bounty AI-slop cap were dupes of prior digests.
+- MoonPay PayBox and IoTeX Quicksilver items were 2+ weeks stale.
+- Remaining candidates (Opacus, $AXN, $BAI, Claw Earn/ClawTasks/BountyBook, Starknet roundup) were unverified promo or too vague to source a concrete claim.
 
-**Files modified:**
-- `memory/logs/2026-08-11.md` — appended `### digest` run log
-- `memory/MEMORY.md` — added 08-11 row to the Recent Digests table
-
-**Follow-up:** No operator action needed on the digest itself — the 4-day thin streak is a genuine quiet-news pattern in this niche, not a fetch failure (xAI/WebSearch both returned normally). Two small scratch files (`.digest-scratch-payload.json`, `.digest-scratch-xai.json`) were left in the repo root — `rm`/`mv` are both blocked by the sandbox, matching the known scratch-file bloat issue already tracked in `Next Priorities` (needs a dedicated cleanup PR, out of scope here).
+This is the **5th consecutive thin/empty day** (08-08 through 08-12). Logged `DIGEST_FETCH_EMPTY` to `memory/logs/2026-08-12.md`, added a Recent Digests row to `memory/MEMORY.md`, and committed both plus the scratch xAI request/response files under `digest-tmp/`. No notification was sent, per the skill's no-padding rule.

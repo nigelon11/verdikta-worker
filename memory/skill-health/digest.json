@@ -1,15 +1,13 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-11T15:00:30Z",
-  "quality_score": 4,
-  "assessment": "Well-executed skill — ran successfully, applied sound filtering logic, produced honest output (0 items), and correctly distinguished a genuine quiet-news period from a system failure. Clear reasoning and proper logging.",
-  "flags": [],
-  "avg_score": 3.93,
+  "last_analyzed": "2026-08-12T14:44:26Z",
+  "quality_score": 3,
+  "assessment": "Rigorous execution with thorough filtering; 5 consecutive empty days correctly logged; appropriately declined to publish low-quality content",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 3.9,
   "history": [
-    {
-      "date": "2026-07-13",
-      "score": 4
-    },
     {
       "date": "2026-07-14",
       "score": 4
@@ -125,6 +123,10 @@
     {
       "date": "2026-08-11",
       "score": 4
+    },
+    {
+      "date": "2026-08-12",
+      "score": 3
     }
   ]
 }
