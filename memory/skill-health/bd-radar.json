@@ -1,17 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-11T07:28:36Z",
-  "quality_score": 3,
-  "assessment": "Skill executed cleanly: swept all sources systematically, documented findings, handled no-leads case correctly, maintained git workflow. But 34 consecutive runs with 0 new leads signals weak sourcing or search parameters — not delivering strategic value on north-star metric.",
-  "flags": [
-    "stale_data"
-  ],
+  "last_analyzed": "2026-08-12T08:09:18Z",
+  "quality_score": 4,
+  "assessment": "Substantive monitoring run with specific lead tracking, proper memory updates, and honest no-new-leads reporting—solid execution aligned with strategy",
+  "flags": [],
   "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-13",
-      "score": 4
-    },
     {
       "date": "2026-07-14",
       "score": 4
@@ -127,6 +121,10 @@
     {
       "date": "2026-08-11",
       "score": 3
+    },
+    {
+      "date": "2026-08-12",
+      "score": 4
     }
   ]
 }
