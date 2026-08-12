@@ -1,14 +1,9 @@
-Committed. Memory-flush run complete for 2026-08-11.
-
 ## Summary
 
-Ran the `memory-flush` skill (invoked directly from `skills/memory-flush/SKILL.md` since it isn't in the harness's skill registry). Checked the last 3 days of logs against `memory/MEMORY.md`, live-verified PR/issue state across the watched repos, and made targeted updates:
+Ran the memory-flush skill for 2026-08-12. Scanned the last 3 days of logs (08-10 through 08-12); found Recent Digests and Builder Leads already self-updated by digest/bd-radar, so no duplicate edits there. Live-verified all tracked stalled PRs/issues via `gh` (no merges/closures since 08-11) and refreshed their age math, recounted scratch/tmp files (139, up +2 from 137 — growth slowed sharply vs the +19 spike on 08-11), widened the verdikta-hunter no-run gap note, and confirmed Open Improvement PRs / `memory/issues/INDEX.md` are unchanged (no action needed).
 
-- **Bumped** "Last consolidated" to 2026-08-11 and updated Builder Leads "Current state" (bd-radar's 34th run, 0 new leads).
-- **Refreshed** Next Priorities hour-counts for all tracked stalled PRs/issues (Dependabot #2/#3 ~797h longest-stalled, applications#18 ~638h, draft cluster ~663h, etc.) — confirmed no merges/closures since 08-10.
-- **Caught a real undercounting bug**: the scratch/tmp file tracker's root-level-loose pattern was missing 16 inconsistently-named files plus a brand-new no-dot `ghmon-tmp/` dir. Corrected count is **137** (up from 118 on 08-10) — logged the corrected recount command and escalated the cleanup-PR priority given the growth rate.
-- **Archived** the now-stale 08-04 digest row to `topics/digest-history.md`, trimming MEMORY.md to 66 lines.
-- Verified `memory/issues/INDEX.md` is still empty and the "Open Improvement PRs" search still returns only a false positive — no section changes needed.
-- Logged the promote/prune summary to `memory/logs/2026-08-11.md` and committed all changes (`5846ce2`).
+**Files modified:**
+- `memory/MEMORY.md` — bumped "Last consolidated", refreshed Next Priorities hour counts and scratch/tmp count/breakdown, widened Dogfooding gap note
+- `memory/logs/2026-08-12.md` — appended the `### memory-flush` log entry
 
-No follow-up actions needed from this run beyond what's already tracked in MEMORY.md's Next Priorities (the accelerating scratch/tmp bloat is now the most time-sensitive item there).
+Committed as `212322b`. No follow-up actions beyond what's already tracked in Next Priorities (GitHub review queue, `GH_READ_PAT`, scratch/tmp cleanup PR, verdikta-hunter run to confirm bounty #164 settlement).
