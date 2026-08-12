@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-08-10T23:53:59Z
+timestamp: 2026-08-11T23:57:04Z
 ---
 
 # Digest History Archive
@@ -34,3 +34,4 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-08-01 | AI agents that transact onchain | XDC Network launches XDC AI (x402 + gasless USDC via Bridge), first agent-payment entrant this week to lead with enterprise compliance (KYC/AML, dispute resolution) over consumer UX — thin day otherwise, MoonPay/BRIJ flight-booking post and "100M x402 tx" stat both confirmed recirculated/stale (latter's volume partly meme-coin farming per Chainalysis) |
 | 2026-08-02 | AI agents that transact onchain | Empty day (DIGEST_FETCH_EMPTY) — XDC AI recirculated with no new development (dupe of 08-01), YC's QM multi-agent harness OSS launch confirmed real but off-topic (not payments/oracles/bounties), "Chance" agent-spend-verification and Aemulus AI MCP-marketplace posts both unverifiable promo, 31-vulnerability x402 audit confirmed 6-day-stale dupe of 07-27 content |
 | 2026-08-03 | AI agents that transact onchain | Coinbase's Q2 earnings call (07-30) — Armstrong discloses >90% of agentic stablecoin volume settles on Base, $32T trailing-12mo stablecoin transfer volume — first hard number behind the 07-27 "AiFi" framing; thin day otherwise, GenLayer Internet Court/Ledger ETHGlobal bounty/Fireblocks/Robinhood-$200M/MoonPay-PayBox all confirmed stale or already covered |
+| 2026-08-04 | AI agents that transact onchain | Empty day for the core niche (Yield.xyz AgentKit/Natural $30M/Base Aug-9 mainnet all confirmed stale) — broadened to adjacent signal: Coldcard hardware-wallet hack grows to $116M with a suspected AI-assisted vulnerability discovery, Zenity's $125M Series C (largest round yet for AI-agent security), EU AI Act Article 50 transparency rules went enforceable Aug 2 |
