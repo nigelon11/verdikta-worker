@@ -2,54 +2,54 @@
 type: Reference
 ---
 
-## Tweet Drafts: AI judges bounties in a day, its own PRs wait weeks for a human
+## Tweet Drafts: x402 agent-payment stats are being recycled as breaking news
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> An AI jury can judge your bounty in a day. A human still hasn't reviewed last month's PR.
+> x402's "165M transactions" headline is five months old. Nobody checks the date before retweeting it.
 
 **1b. Data drop**
-> 17 days: how long a real, mergeable bug-fix PR has sat unreviewed on an AI-judged bounty protocol's own repo.
+> Real x402 settlement in July: $238,084. The headline number going around this week is 200x that.
 
 ### Tier 2 — Two-punch
 **2a. Observation**
-> Everyone's worried about AI PR floods drowning human reviewers. Verdikta's problem is the opposite: real human PRs sitting for weeks because nobody's reviewing at all.
+> Every few days someone posts the same April Coinbase stat like it happened this week. The agent-payment narrative runs on numbers nobody re-verifies.
 
-**2b. Sardonic**
-> Two AI models can verify your bounty work and settle payment the same day. Getting a human to click merge takes noticeably longer.
+**2b. Sardonic/ironic**
+> "Breaking: 165M agent transactions." It broke in April. It's still breaking, apparently, every time someone needs a tweet.
 
 ### Tier 3 — Paragraph
 **3a. Reframe**
-> The industry's panicking about AI agents flooding maintainers with low-effort PRs nobody can review fast enough. Verdikta has the inverse problem: a handful of real, tested, mergeable fixes from actual contributors, untouched for weeks. Same bottleneck, opposite cause.
+> The real story in agent payments isn't the 165M-transaction headline — it's that someone had to build a thread just to explain which numbers are real. July's actual x402 settlement across seven chains was $238K. The gap between the headline and the receipt is the story.
 
-**3b. Narrative**
-> mumuzhong3 opened two working PRs fixing real bugs in Verdikta's app repo. Bingmokaka fixed the ETH-prepay flow. Both tested, both mergeable, both still sitting there almost a month later. The protocol judges bounty work in a day. It reviews its own code at a different speed.
+**3b. Data drop**
+> Average x402 payment size dropped from $0.39 to $0.0396 this year. That is not adoption slowing, it is the opposite of what the "$50B in payments" headlines imply: small, frequent, machine-to-machine. Volume and payment-size numbers from the same rails do not agree.
 
 ### Tier 4 — Long tweet
-**4a. Data drop**
-> Verdikta's whole pitch is that two independent AI models can score a bounty submission against a public rubric and settle it same-day, on-chain, no human in the loop needed. Meanwhile three genuinely good third-party PRs against its own app repo — real bug fixes, tested, one of them fixing a live ETH-prepay bug — have sat unreviewed for 17 to 27 days. The AI can judge a stranger's work in hours. The team can't review its own contributor's work in weeks. That gap is the actual adoption risk, not the protocol design.
+**4a. Structural critique**
+> Watched three separate accounts this week cite "165M agent transactions, 69K agents, $50M volume" as fresh news. It's an April report. Meanwhile the actual July settlement figure — $238,084 across seven chains, four cents average payment — barely circulates. This is the tell for any narrative running ahead of its infrastructure: the big round number travels, the small precise one doesn't. If you're building on these rails, the four-cent number is the one that tells you what's actually happening.
 
-**4b. Reframe**
-> Right now the discourse is all about AI agents flooding repos with junk PRs nobody has time to review. Verdikta's repos show the opposite failure mode: three verified, mergeable, human-written fixes — including a real bug in the payment flow — stuck for 17, 26, and 27 days respectively. Not a slop problem. A capacity problem. And it's happening on the repo of a protocol built to solve exactly this with AI.
+**4b. Narrative**
+> Spent twenty minutes this week tracing one stat back to its source. "165M agent transactions" — turns out that's from an April report, still getting quoted as breaking in August. The actual number from last month: $238K settled, seven chains, four cents average. Nobody's lying exactly. They're just not checking dates. In a space this new, the stale stat and the fresh one look identical in a screenshot. That's a problem for anyone building against real signal instead of vibes.
 
 ### Tier 5 — Thread opener
-**5a. Data drop**
-> Verdikta judges bounty submissions with two AI models in about a day. Its own pull requests wait weeks for a human. That contradiction is worth a thread.
+**5a. Thesis-first**
+> The agent-payment space has a verification problem, not a growth problem. Every headline stat traces back to the same handful of reports, re-dated by whoever's posting it this week.
 ---
-- Bounty #142: submission to on-chain payout, same day, no human in the loop
-- verdikta-applications#27/#28 (mumuzhong3): real, tested fixes marked mergeable, ignored 17 days
-- verdikta-applications#18 (bingmokaka): fixes a live ETH-prepay bug, ignored 26 days
-- verdikta-arbiter#9: failing security scan, unresolved 27 days
-- takeaway: AI verification was the easy problem — review capacity is the one nobody's shipped
+- April's Coinbase report (165M txns, 69K agents, $50M) still circulating as "breaking" in August
+- July's actual settlement: $238K across 7 chains, $0.0396 average payment
+- The 200x gap between the headline and the receipt
+- Why round numbers travel and precise ones don't
+- What to actually check before citing an adoption stat
 
-**5b. Observation**
-> Everyone's arguing about AI agents flooding GitHub with PRs nobody can review. There's a quieter version of that story happening on an AI-judged bounty protocol's own repo.
+**5b. Question**
+> Next time you see an agent-payment adoption number, ask one thing: what month is that from?
 ---
-- the discourse this week: AI agents flooding repos, drowning human reviewers
-- Verdikta's repos are the inverse case — real, tested, human-written fixes, not AI slop
-- three of them (17, 26, 27 days old) sit untouched despite being mergeable
-- one fixes an actual bug in the payment flow
-- the irony: instant AI judgment is the product, but the org around it can't keep pace with real contributors
+- The 165M/69K/$50M figure making the rounds this week is from April
+- July's real number: $238K settled, seven chains
+- Average payment size fell 90% this year — that's the actual adoption signal
+- Who benefits from the stale number circulating
+- A five-minute source-check habit worth building
 
-**Best overall:** 2a — sharpest hook, ties directly into this week's live AI-PR-flood discourse (confirmed via X search), most shareable.
-**Best per tier:** 1a (one-liner) · 2a (two-punch) · 3a (paragraph) · 4a (long tweet) · 5a (thread opener)
+**Best overall:** 4a — structural critique lands the general lesson (round numbers travel, precise ones don't) and the four-cent figure is the sharpest evidence in the batch.
+**Best per tier:** 1b (cleanest single data point) · 2b (sharpest tone) · 3a (best framing) · 4a (strongest argument) · 5a (cleanest thread hook)
