@@ -1,0 +1,16 @@
+{
+  "model": "grok-4-1-fast",
+  "input": [
+    {
+      "role": "user",
+      "content": "Search X for substantive, recent posts about: the most notable technology, AI, and crypto stories today, with priority on AI agents that transact onchain, agent-payment rails, x402, AI-judged bounty/escrow protocols, and decentralized AI oracles. Date range: 2026-08-11 to 2026-08-12. Return up to 10 high-signal posts — prioritize verifiable claims, launches, funding, releases, exploits, or hard data over hot takes. For EACH post return: @handle, the full text, date posted, exact engagement counts (likes, retweets, replies; 0 if unknown), and the direct link https://x.com/handle/status/ID. Return a numbered list."
+    }
+  ],
+  "tools": [
+    {
+      "type": "x_search",
+      "from_date": "2026-08-11",
+      "to_date": "2026-08-12"
+    }
+  ]
+}
