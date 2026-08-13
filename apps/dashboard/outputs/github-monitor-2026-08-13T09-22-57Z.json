@@ -1,0 +1,183 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "alert_status",
+        "sep1",
+        "heading_prs",
+        "stack_prs",
+        "sep2",
+        "heading_repos",
+        "stack_repos"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "All monitored repositories are healthy. No action required."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Open Pull Requests",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5",
+        "pr_more"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "mumuzhong3: fix for issue #16",
+        "score": "no CI configured • idle ~457h"
+      },
+      "children": []
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "mumuzhong3: fix for issue #14",
+        "score": "no CI configured • idle ~457h"
+      },
+      "children": []
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "operator: rubricCid fix",
+        "score": "no CI configured • idle ~540h"
+      },
+      "children": []
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "bingmokaka: ETH-prepay fix",
+        "score": "no CI configured • idle ~686h"
+      },
+      "children": []
+    },
+    "pr5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "Draft PR • Gitleaks Secret Scan FAILURE",
+        "score": "idle ~711h"
+      },
+      "children": []
+    },
+    "pr_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more pull requests",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "heading_repos": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_apps",
+        "badge_arbiter",
+        "badge_dispatcher",
+        "badge_docs",
+        "badge_roadmap"
+      ]
+    },
+    "badge_apps": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap",
+        "variant": "secondary"
+      },
+      "children": []
+    }
+  }
+}

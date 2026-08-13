@@ -177,3 +177,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-12,write-tweet,claude-sonnet-5,2829,21943,4257435,77981
 2026-08-12,memory-flush,claude-sonnet-5,2410,17674,1815210,82548
 2026-08-13,bd-radar,claude-sonnet-5,3272,20416,5371809,142729
+2026-08-13,github-monitor,claude-sonnet-5,2557,12024,2697943,61617
