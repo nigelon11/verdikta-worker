@@ -1,9 +1,16 @@
+Committed. Memory-flush for 2026-08-13 is complete.
+
 ## Summary
 
-Ran the memory-flush skill for 2026-08-12. Scanned the last 3 days of logs (08-10 through 08-12); found Recent Digests and Builder Leads already self-updated by digest/bd-radar, so no duplicate edits there. Live-verified all tracked stalled PRs/issues via `gh` (no merges/closures since 08-11) and refreshed their age math, recounted scratch/tmp files (139, up +2 from 137 — growth slowed sharply vs the +19 spike on 08-11), widened the verdikta-hunter no-run gap note, and confirmed Open Improvement PRs / `memory/issues/INDEX.md` are unchanged (no action needed).
+Ran the `memory-flush` skill (no topic scoping, flushed all recent activity):
 
-**Files modified:**
-- `memory/MEMORY.md` — bumped "Last consolidated", refreshed Next Priorities hour counts and scratch/tmp count/breakdown, widened Dogfooding gap note
-- `memory/logs/2026-08-12.md` — appended the `### memory-flush` log entry
+- **Verified already-current sections**: Recent Digests (08-13 row) and Builder Leads "Current state" were already self-updated by digest/bd-radar — no duplicate edits.
+- **Live re-checked** all tracked stalled PRs/issues across `verdikta-worker`, `verdikta-applications`, `verdikta-arbiter`, `verdikta-dispatcher` — no merges/closures since 08-12. Refreshed all age counters in Next Priorities (Dependabot #2/#3 ~845h, #9/#10 ~307h, applications#18 ~701h, draft cluster ~725h, applications#26 ~555h, applications#27/#28 ~472h, dispatcher!6 ~363h).
+- **Scratch/tmp count**: recounted at 139 — unchanged from 08-12, the first flat day since tracking began 08-04. Updated Lessons Learned and Next Priorities to reflect the stall.
+- **Widened** the verdikta-hunter no-run gap note to "07-30 through 08-13" (bounty #164 settlement still unconfirmed).
+- **Confirmed no pruning needed**: no Open Improvement PRs section required, `memory/issues/INDEX.md` still empty, no stale Lessons Learned to remove.
+- Bumped MEMORY.md "Last consolidated" to 2026-08-13; file stays at 67 lines (above the ~50 target — real reduction still needs a Next Priorities/Builder Leads topic-file split, carried forward as a known gap).
 
-Committed as `212322b`. No follow-up actions beyond what's already tracked in Next Priorities (GitHub review queue, `GH_READ_PAT`, scratch/tmp cleanup PR, verdikta-hunter run to confirm bounty #164 settlement).
+**Files modified**: `memory/MEMORY.md`, `memory/logs/2026-08-13.md` (added `### memory-flush` entry). Committed as `a0e1b1e`.
+
+**Follow-up needed**: none new — existing Next Priorities items (Dependabot/stale PR review, `GH_READ_PAT` scope, scratch/tmp cleanup PR, bounty #164 settlement check) remain open for the operator.
