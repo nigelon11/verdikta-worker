@@ -1,0 +1,114 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "AI agents that transact onchain — 2026-08-13"
+      },
+      "children": [
+        "heading-date",
+        "text-tldr",
+        "sep1",
+        "story-container",
+        "sep2",
+        "text-note"
+      ]
+    },
+    "heading-date": {
+      "type": "Heading",
+      "props": {
+        "text": "AI agents that transact onchain",
+        "level": "h2"
+      }
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day — the one fresh, verifiable story is SKALE Labs shipping a Polymarket-mirroring sandbox for training AI trading agents before they touch real money.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story-heading",
+        "story-details",
+        "story-why-section",
+        "story-link"
+      ]
+    },
+    "story-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "SKALE launches Agent Pit, a Polymarket-mirror sandbox for AI trading agents",
+        "level": "h3"
+      }
+    },
+    "story-details": {
+      "type": "Text",
+      "props": {
+        "text": "SKALE Labs shipped Agent Pit on Aug 12 — a paper-trading prediction-market sandbox on its zero-gas chain that mirrors Polymarket's order books, resolution rules, and live event feeds, with leaderboards and risk params for benchmarking agent strategies before real deployment. First product out of SKALE's new Agentic Venture Studio."
+      }
+    },
+    "story-why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading",
+        "why-text"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Another team building a \"prove it before it touches money\" layer for autonomous agents — the same trust gap AI-judged verification/escrow protocols close, just applied to trading instead of dev work."
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "SKALE's Agent Pit lets builders train AI agents before taking them live on Polymarket",
+        "href": "https://www.theblock.co/news/defi/2026-08-12-skales-agent-pit-lets-builders-train-ai-agents-before-taking-them-live-on-polymarket-411580",
+        "source": "The Block",
+        "score": "Aug 12, 2026"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-note": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "Coverage note",
+        "message": "6th consecutive thin day. Everything else was a dupe (OSL AgentPay, MetaMask/Cloudflare/MoonPay agent wallets, Coldcard/Apple bounty-flood stories, the OpenAI/HuggingFace/Meta rogue-agent hack wave), stale by weeks-to-months (Fireblocks x402 Foundation — May; ORA AI-oracle funding — 2024; \"Bounty AI\" agent-freelance marketplace — late June launch), or thin X promo with sub-60 engagement and no verifiable claim."
+      }
+    }
+  }
+}

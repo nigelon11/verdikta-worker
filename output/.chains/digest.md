@@ -1,12 +1,12 @@
-The digest ran but nothing cleared the quality bar — no notification sent, per skill rules.
+ℹ️ Daily Digest — AI agents that transact onchain
 
-## Summary
+*AI agents that transact onchain — 2026-08-13*
 
-Executed the `digest` skill for 2026-08-12 with the configured topic ("AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"). Gathered ~20 raw candidates via xAI x_search (10 X posts) and ~11 WebSearch queries plus an HN check, but every candidate failed the filter on inspection:
+_TL;DR: Quiet day — the one fresh, verifiable story is SKALE Labs shipping a Polymarket-mirroring sandbox for training AI trading agents before they touch real money._
 
-- The two loudest X posts (x402 "165M txs/69K agents", x402 "$50B/200M payments") were recycled April/early-August stats reframed as fresh news, not new events.
-- Coldcard hack and Apple bug-bounty AI-slop cap were dupes of prior digests.
-- MoonPay PayBox and IoTeX Quicksilver items were 2+ weeks stale.
-- Remaining candidates (Opacus, $AXN, $BAI, Claw Earn/ClawTasks/BountyBook, Starknet roundup) were unverified promo or too vague to source a concrete claim.
+1. *SKALE launches Agent Pit, a Polymarket-mirror sandbox for AI trading agents*
+   SKALE Labs shipped Agent Pit on Aug 12 — a paper-trading prediction-market sandbox on its zero-gas chain that mirrors Polymarket's order books, resolution rules, and live event feeds, with leaderboards and risk params for benchmarking agent strategies before real deployment. First product out of SKALE's new Agentic Venture Studio.
+   Why it matters: another team building a "prove it before it touches money" layer for autonomous agents — the same trust gap AI-judged verification/escrow protocols close, just applied to trading instead of dev work.
+   https://www.theblock.co/news/defi/2026-08-12-skales-agent-pit-lets-builders-train-ai-agents-before-taking-them-live-on-polymarket-411580
 
-This is the **5th consecutive thin/empty day** (08-08 through 08-12). Logged `DIGEST_FETCH_EMPTY` to `memory/logs/2026-08-12.md`, added a Recent Digests row to `memory/MEMORY.md`, and committed both plus the scratch xAI request/response files under `digest-tmp/`. No notification was sent, per the skill's no-padding rule.
+*Note:* 6th consecutive thin day. Everything else was a dupe (OSL AgentPay, MetaMask/Cloudflare/MoonPay agent wallets, Coldcard/Apple bounty-flood stories, the OpenAI/HuggingFace/Meta rogue-agent hack wave), stale by weeks-to-months (Fireblocks x402 Foundation — May; ORA AI-oracle funding — 2024; "Bounty AI" agent-freelance marketplace — late June launch), or thin X promo with sub-60 engagement and no verifiable claim.
