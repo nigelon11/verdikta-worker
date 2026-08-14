@@ -1,5 +1,3 @@
-ℹ️ Digest
-
 *AI agents that transact onchain — 2026-08-14*
 
 _TL;DR: Chainlink formalized a dedicated AI-agent infrastructure stack while Coinbase extended agent checkout to its 5,000-merchant base — the plumbing keeps hardening even as x402's own settlement volume keeps sliding._

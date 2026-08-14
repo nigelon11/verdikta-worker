@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-13T15:41:34Z",
+  "last_analyzed": "2026-08-14T14:34:54Z",
   "quality_score": 4,
-  "assessment": "Substantive execution with good judgment—detected duplicate day run, found new verifiable finding (x402 volume decline), corroborated across sources, strategically avoided notification spam per mandate, logged for context",
+  "assessment": "Substantive output — found real signal (2 items), broke a 6-day dry spell, showed filtering work (22 candidates), properly documented and committed.",
   "flags": [],
   "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-07-16",
-      "score": 4
-    },
     {
       "date": "2026-07-17",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-13",
+      "score": 4
+    },
+    {
+      "date": "2026-08-14",
       "score": 4
     }
   ]
