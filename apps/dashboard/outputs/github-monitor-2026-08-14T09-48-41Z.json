@@ -1,0 +1,153 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs-stack",
+        "separator",
+        "sources-stack"
+      ]
+    },
+    "prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-28",
+        "pr-27",
+        "pr-26",
+        "pr-18",
+        "pr-9",
+        "more-prs"
+      ]
+    },
+    "pr-28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28 — mumuzhong3's fix for issue #16 (rubric validator jury-node check), idle ~481h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28"
+      }
+    },
+    "pr-27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27 — mumuzhong3's fix for issue #14 (AWARDED-bounty red error), idle ~481h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27"
+      }
+    },
+    "pr-26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid-heal fix, idle ~564h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26"
+      }
+    },
+    "pr-18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka's ETH-prepay submission fix, idle ~710h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18"
+      }
+    },
+    "pr-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft, Gitleaks Secret Scan still FAILURE, idle ~735h (draft-capped, not ACT NOW)",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9"
+      }
+    },
+    "more-prs": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-heading",
+        "sources-badges"
+      ]
+    },
+    "sources-heading": {
+      "type": "Text",
+      "props": {
+        "text": "Sources",
+        "variant": "muted"
+      }
+    },
+    "sources-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-app",
+        "badge-arb",
+        "badge-disp",
+        "badge-docs",
+        "badge-road"
+      ]
+    },
+    "badge-app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications=ok"
+      }
+    },
+    "badge-arb": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter=ok"
+      }
+    },
+    "badge-disp": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher=ok"
+      }
+    },
+    "badge-docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs=ok"
+      }
+    },
+    "badge-road": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap=ok"
+      }
+    }
+  }
+}

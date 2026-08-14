@@ -1,15 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-08-13T09:22:57Z",
-  "quality_score": 4,
-  "assessment": "Good — skill executed successfully across all repos, metrics clearly reported (11 INFO, 0 ACT_NOW/REVIEW), dedup behavior working as intended, systems confirmed stable, run properly logged.",
+  "last_analyzed": "2026-08-14T09:48:40Z",
+  "quality_score": 3,
+  "assessment": "Acceptable routine monitoring run — produced structured metrics, updated logs correctly, identified stale PR backlog, but no new urgent signal and acknowledged read:org scope gap limits one rule.",
   "flags": [],
-  "avg_score": 3.73,
+  "avg_score": 3.7,
   "history": [
-    {
-      "date": "2026-07-15",
-      "score": 4
-    },
     {
       "date": "2026-07-16",
       "score": 4
@@ -125,6 +121,10 @@
     {
       "date": "2026-08-13",
       "score": 4
+    },
+    {
+      "date": "2026-08-14",
+      "score": 3
     }
   ]
 }
