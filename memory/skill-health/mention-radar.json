@@ -1,8 +1,8 @@
 {
   "skill": "mention-radar",
-  "last_analyzed": "2026-08-12T08:05:55Z",
+  "last_analyzed": "2026-08-14T07:51:57Z",
   "quality_score": 4,
-  "assessment": "Well-executed skill run with clear structured results, proper error-free API usage, and good judgment on notification protocol — no flags.",
+  "assessment": "Well-executed skill run with proper source coverage, correct handling of quiet findings, data validation, and appropriate notification suppression.",
   "flags": [],
   "avg_score": 3.89,
   "history": [
@@ -76,6 +76,10 @@
     },
     {
       "date": "2026-08-12",
+      "score": 4
+    },
+    {
+      "date": "2026-08-14",
       "score": 4
     }
   ]
