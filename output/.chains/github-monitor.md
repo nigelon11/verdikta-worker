@@ -1,11 +1,9 @@
 *GitHub Monitor* — 5 repos scanned, 0 need action
-
 ▶ INFO
-• Note verdikta-applications#28 — mumuzhong3's fix for issue #16 (rubric validator jury-node check), idle ~481h, no CI configured — https://github.com/verdikta/verdikta-applications/pull/28
-• Note verdikta-applications#27 — mumuzhong3's fix for issue #14 (AWARDED-bounty red error), idle ~481h, no CI configured — https://github.com/verdikta/verdikta-applications/pull/27
-• Note verdikta-applications#26 — operator's own rubricCid-heal fix, idle ~564h, no CI configured — https://github.com/verdikta/verdikta-applications/pull/26
-• Note verdikta-applications#18 — bingmokaka's ETH-prepay submission fix, idle ~710h, no CI configured — https://github.com/verdikta/verdikta-applications/pull/18
-• Note verdikta-arbiter#9 — draft, Gitleaks Secret Scan still FAILURE, idle ~735h (draft-capped, not ACT NOW) — https://github.com/verdikta/verdikta-arbiter/pull/9
-…and 6 more
-
+  • Note verdikta-applications#28 — no CI configured, idle ~505h (mumuzhong3 fix for issue #16) — https://github.com/verdikta/verdikta-applications/pull/28
+  • Note verdikta-applications#27 — no CI configured, idle ~505h (mumuzhong3 fix for issue #14) — https://github.com/verdikta/verdikta-applications/pull/27
+  • Note verdikta-applications#26 — no CI configured, idle ~588h (operator's own rubricCid fix) — https://github.com/verdikta/verdikta-applications/pull/26
+  • Note verdikta-applications#18 — no CI configured, idle ~734h (bingmokaka ETH-prepay fix) — https://github.com/verdikta/verdikta-applications/pull/18
+  • Note verdikta-arbiter#9 — draft, Gitleaks Secret Scan still failing, idle ~758h — https://github.com/verdikta/verdikta-arbiter/pull/9
+  • …and 6 more
 sources: verdikta-applications=ok verdikta-arbiter=ok verdikta-dispatcher=ok verdikta-docs=ok verdikta-roadmap=ok
