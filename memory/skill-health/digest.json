@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-14T14:34:54Z",
+  "last_analyzed": "2026-08-15T14:05:54Z",
   "quality_score": 4,
-  "assessment": "Substantive output — found real signal (2 items), broke a 6-day dry spell, showed filtering work (22 candidates), properly documented and committed.",
+  "assessment": "Skill ran systematically with verified sources, correctly filtered 16 candidates via WebFetch, appropriately suppressed empty notification per rules, and updated memory with pattern data (9/10 thin days)—substantive execution on a no-signal day.",
   "flags": [],
   "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-07-17",
-      "score": 4
-    },
     {
       "date": "2026-07-18",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-14",
+      "score": 4
+    },
+    {
+      "date": "2026-08-15",
       "score": 4
     }
   ]

@@ -1,17 +1,18 @@
-ℹ️ Digest
+## Summary
 
-*AI agents that transact onchain — 2026-08-14*
+Ran the `digest` skill for 2026-08-15 with `${var}=""` (default web sources, topic defaulting to the operator's tracked area: "AI agents that transact onchain"). 
 
-_TL;DR: Chainlink formalized a dedicated AI-agent infrastructure stack while Coinbase extended agent checkout to its 5,000-merchant base — the plumbing keeps hardening even as x402's own settlement volume keeps sliding._
+**Process:** Pulled X signal via xAI Grok x_search (http=200, 6 posts), ran ~10 WebSearch queries plus 8 WebFetch verifications, and checked the HN front page. Every candidate failed the filter bar:
+- **Chainlink for Agents** X chatter — confirmed same launch already reported as yesterday's (08-14) lead item, no new development.
+- **OKX Ventures "x402 down 92%"**, **RigorLoop bounty marketplace**, **AAA Web3 dispute panel**, **Natural's $30M raise** — all looked fresh in search snippets but verified via WebFetch to actually be from April 2, Aug 4, Jul 29, and Jul 20 respectively (stale, misdated by the search index).
+- **Ledger/Coldcard**, **Ostium exploit**, **GenLayer Internet Court** — previously-flagged dupes.
+- **Ritual "Sovereign Agents"** — speculative (still testnet, "preparing for mainnet" unverified).
+- Rest was pure promo or off-topic.
 
-1. *Chainlink launches a dedicated AI-agent infrastructure stack*
-   Chainlink unveiled "Chainlink for Agents," bundling Data Feeds/Streams, cross-chain transfers via CCIP, Confidential Compute, and the Chainlink Runtime Environment (CRE) so an agent can verify data, move funds across chains, and act onchain (e.g. shifting capital into Aave off verified rates) without a human in the loop. Ships with Skill.md dev support for Claude Code, Cursor, OpenClaw, Hermes, and Codex.
-   Why it matters: the largest oracle by value secured (~$33.1B) is now building the trusted-data-plus-verifiable-execution layer that AI-judged systems, Verdikta's own jury included, depend on — its adoption is a bellwether for how this layer standardizes.
-   https://blockonomi.com/chainlink-unveils-infrastructure-platform-for-autonomous-ai-agents-in-crypto
+Result: **DIGEST_FETCH_EMPTY**, 0 of ~16 candidates survived — the 9th thin/empty day in the last 10. Per skill rules, skipped the notification rather than padding.
 
-2. *Coinbase Business opens AI-agent payments to its 5,000-merchant base*
-   Coinbase Business extended its existing payment-links/checkout/invoicing platform, 5,000+ companies, 100,000+ payments processed, to accept AI-agent payments via x402, settled in USDC, alongside new USDT support and reusable payment links.
-   Why it matters: this moves x402 from protocol standard into a live general-merchant checkout flow — a real adoption surface just as x402's own 7-day settlement average (~$41.8K, down 93% YTD per Thursday's report) keeps signaling that agent-initiated demand, not infra rollout, is the actual bottleneck.
-   https://fintech.global/2026/08/12/coinbase-business-brings-ai-agents-into-digital-asset-payments/
+**Files modified:**
+- `memory/logs/2026-08-15.md` — appended `### digest` section with full source accounting and drop reasons.
+- `memory/MEMORY.md` — added the 08-15 row to the Recent Digests table.
 
-_Quiet day otherwise — 7th thin day in the last 8 (see notes)._
+No follow-up action needed from the operator; noted RigorLoop's reverse-Verdikta model (AI agents post bounties, humans get paid in USDC on Base) as a worthwhile independent read in the log, though it didn't clear the digest's freshness bar.
