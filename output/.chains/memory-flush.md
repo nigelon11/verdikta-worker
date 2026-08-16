@@ -1,11 +1,16 @@
 ## Summary
 
-Ran `memory-flush` for 2026-08-15: read the last 3 days of logs, cross-checked live GitHub state (no PR/issue merges since 08-14), and made targeted updates:
+Ran the memory-flush skill for 2026-08-16 (all-topic flush, no `${var}` scope):
 
-- **MEMORY.md**: bumped "Last consolidated" to 08-15; refreshed the Builder Leads "Current state" (39th bd-radar run, `GH_READ_PAT` 39 consecutive unset, NSPG13 pace plateaued); updated tmp-file recount to 143 (flat vs 08-14); widened the verdikta-hunter no-run gap note to 07-30→08-15; refreshed stalled-PR hour counts in Next Priorities.
-- **memory/topics/next-priorities.md**: recomputed all stalled-PR/issue hour counts as of 2026-08-15T23:35:51Z and updated the tmp-cleanup section (flat count, 2nd flat day in 3).
-- **memory/logs/2026-08-15.md**: logged what was promoted/refreshed.
-- Confirmed no stale content to prune: `Open Improvement PRs` still just the one false-positive Dependabot PR (no section needed), `memory/issues/INDEX.md` still empty, Skills Built table unchanged.
-- Committed as `db85798`.
+**Promoted:**
+- Bumped MEMORY.md "Last consolidated" to 08-16
+- Refreshed all stalled-PR/issue hour counts in `topics/next-priorities.md` via live `gh` checks (no merges/closures since 08-15)
+- Recounted committed scratch/tmp files: 156, up from 143 (+13) — investigated the jump (repo showed a single squashed commit with 813 files) and confirmed it's expected shallow-clone (`fetch-depth: 1`) behavior, not a real anomaly, so didn't file it as an issue
+- Updated Builder Leads to bd-radar's 08-16/40th run (GH_READ_PAT unset streak → 40, `s97472091-pixel` quiet 4 days)
+- Widened the verdikta-hunter no-run gap note to "07-30 through 08-16"
 
-Follow-up: MEMORY.md is at 66 lines (still above the ~50-line target) — the remaining bulk is bd-radar's own Builder Leads paragraph, flagged for bd-radar to restructure, not memory-flush's file to touch. No other action needed.
+**Verified unchanged, no duplicate edits:** Recent Digests 08-16 row and mention-radar's Skills Built note were already self-updated by their own skills today; "Open Improvement PRs" and `memory/issues/INDEX.md` still empty/no-op.
+
+**Files changed:** `memory/MEMORY.md`, `memory/topics/next-priorities.md`, `memory/logs/2026-08-16.md` (committed as `69e9d3a`).
+
+**Follow-up needed:** the tmp-file cleanup PR and `GH_READ_PAT` fix are still outstanding (unchanged priorities); no new items requiring operator decision this run.
