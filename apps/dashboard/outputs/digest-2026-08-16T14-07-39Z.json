@@ -1,0 +1,102 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest — 2026-08-16",
+        "description": "AI agents that transact onchain"
+      },
+      "children": [
+        "date_text",
+        "sep1",
+        "tldr_heading",
+        "tldr_text",
+        "sep2",
+        "story_section",
+        "sep3",
+        "footer"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-08-16",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "tldr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day — the one hard signal is a formal security audit showing all 15 major x402 payment facilitators, including Coinbase, have unpatched trust-layer holes spanning 99% of tracked transaction volume."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "story_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_link",
+        "audit_desc",
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "x402 security audit finds 31 vulnerabilities across 15 facilitators covering 99% of volume",
+        "href": "https://cryptoslate.com/coinbase-and-14-other-x402-facilitators-failed-security-tests-built-for-the-coming-ai-agent-economy/",
+        "source": "Cryptoslate"
+      }
+    },
+    "audit_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A peer-reviewed study tested 15 x402 payment facilitators — Coinbase, Thirdweb, PayAI, Mogami, and others — and found every one violated at least one security rule, surfacing 31 distinct vulnerabilities across free-shopping, asset-theft, service-denial, and gas-abuse attack classes. Findings were presented at USENIX Security Symposium and republished Aug 13; Coinbase (77M+ transactions, ~$27M volume, the dominant facilitator by far) has acknowledged and partially patched issues via HackerOne."
+      }
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "x402 is the payment rail most agent-payment teams build on — a trust gap this wide at the settlement layer is exactly the failure mode an AI-judged dispute/escrow layer is built to catch."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet news day otherwise — nothing else cleared the bar.",
+        "variant": "muted"
+      }
+    }
+  }
+}
