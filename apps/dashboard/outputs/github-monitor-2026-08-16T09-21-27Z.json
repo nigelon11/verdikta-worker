@@ -1,0 +1,177 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_row",
+        "sep1",
+        "info_heading",
+        "pr_stack",
+        "more_text",
+        "sep2",
+        "status_heading",
+        "status_badges"
+      ]
+    },
+    "stat_row": {
+      "type": "Stat",
+      "props": {
+        "label": "Repos Scanned",
+        "value": "5",
+        "delta": "0 action needed"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "info_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "INFO",
+        "level": "h3"
+      }
+    },
+    "pr_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr28",
+        "pr27",
+        "pr26",
+        "pr18",
+        "pr9"
+      ]
+    },
+    "pr28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28 — mumuzhong3 fix for issue #16",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "no CI configured, idle 529h"
+      }
+    },
+    "pr27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27 — mumuzhong3 fix for issue #14",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "no CI configured, idle 529h"
+      }
+    },
+    "pr26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "no CI configured, idle 612h"
+      }
+    },
+    "pr18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka ETH-prepay fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "no CI configured, idle 758h"
+      }
+    },
+    "pr9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft, Gitleaks Secret Scan FAILURE",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "draft-capped, not ACT NOW, idle 783h"
+      }
+    },
+    "more_text": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "status_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_app",
+        "badge_arb",
+        "badge_disp",
+        "badge_docs",
+        "badge_road"
+      ]
+    },
+    "badge_app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications=ok",
+        "variant": "default"
+      }
+    },
+    "badge_arb": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter=ok",
+        "variant": "default"
+      }
+    },
+    "badge_disp": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher=ok",
+        "variant": "default"
+      }
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs=ok",
+        "variant": "default"
+      }
+    },
+    "badge_road": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap=ok",
+        "variant": "default"
+      }
+    }
+  }
+}
