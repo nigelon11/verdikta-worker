@@ -1,7 +1,3 @@
----
-type: Reference
----
-
 ## Tweet Drafts: x402's security audit found a payment protocol, not a judgment layer
 
 ### Tier 1 — One-liner
@@ -51,5 +47,5 @@ type: Reference
 - What "accountability" means once settlement alone can't be trusted
 - The missing piece: a layer that judges outcomes, not just moves money
 
-**Best overall:** 4a — the structural critique lands the full argument (audit → bug classes → reframe) with the hardest numbers.
-**Best per tier:** 1a (one-liner) · 2b (two-punch) · 3a (paragraph) · 4a (long tweet) · 5a (thread opener)
+**Best overall:** #4a — the structural critique lands the full argument (audit → bug classes → reframe) with the hardest numbers.
+**Best per tier:** 1a (sharpest compression) · 2b (best reframe) · 3a (densest factual paragraph) · 4a (best overall) · 5a (cleanest thread hook)
