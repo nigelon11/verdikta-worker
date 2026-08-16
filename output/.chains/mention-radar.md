@@ -1,9 +1,17 @@
-## Summary
+ℹ️ Mention Radar — Verdikta
 
-Executed the `mention-radar` skill for target **Verdikta** (var override), covering 2026-08-07 → 2026-08-14:
+*Mention Radar — 2026-08-16*
 
-- **X/Twitter (xAI `x_search`, http=200):** 0 mentions by anyone other than @verdikta19633 — Grok's own search summary: "nobody is talking about it" (X_SOURCE=api)
-- **Web (WebSearch — Reddit/HN/Product Hunt/Farcaster/blogs/GitHub):** 0 independent third-party mentions. All hits were first-party (verdikta.org, docs.verdikta.org/.com, blog.verdikta.com) or unrelated namesake noise (verdikto.ai, ToolPilot, allthingsai, sanssapien) — matches the recurring pattern from 08-08/08-10/08-12
-- **GitHub stars:** verdikta-docs 72 (Δ0), verdikta-applications 24 (Δ0), verdikta-arbiter 23 (Δ+1, below the 5-star notify threshold), verdikta-dispatcher 17 (Δ0), verdikta-roadmap 0 (Δ0)
+VERDIKTA
+- [X, @AjAkmarudi72937, 08-15] "Identity + permissions solves who can act. But once the agent acts, someone still has to verify the output is correct... Does @verdikta19633's model work as that verification layer on top of this?" — advocacy/discovery, repeat unprompted mention from a tracked lead (https://x.com/AjAkmarudi72937/status/2088630208945610909)
+- [X, @Fishhead8u, 08-13] "If @verdikta19633 binds the execution trace directly to a signed cryptographic receipt, you kill 90% of the he-said-she-said in agent arbitration. How do you handle state drift between the oracle check and settlement?" — friction/direct technical question (https://x.com/Fishhead8u/status/2087971631129878636)
+- [X, @AjAkmarudi72937, 08-13] "x402 solves how agents pay, not what happens when they disagree on what was delivered... @verdikta19633 is building that — verifiable, signed judgment records instead of 'trust the agent.'" — competitor comparison vs x402, favorable (https://x.com/AjAkmarudi72937/status/2087930852483428659)
+- [X, @Kuriahah, 08-10] "That's why @verdikta19633's audit-trail model matters: agents should show what was verified before spending." — discovery, new handle (https://x.com/Kuriahah/status/2086934292727464332)
+- Web (Reddit/HN/Product Hunt/Farcaster/blogs): 0 independent mentions — same first-party-only pattern as prior weeks
+- GitHub stars: flat vs 08-14 baseline — verdikta-docs=72, verdikta-applications=24, verdikta-arbiter=23, verdikta-dispatcher=17, verdikta-roadmap=0 (all Δ0)
 
-**Result:** MENTION_RADAR_QUIET — no notification sent (all targets quiet, no star delta > 5). Logged to `memory/logs/2026-08-14.md` under `### Mention Radar`. Noticed `.mrtmp/xai-mr.json` had a stale payload/response from a prior run (wrong date range) — overwrote it with this run's correct query before sending. No git commit made, per the skill's `commits: false` frontmatter (left for the outer workflow to handle).
+ENGAGEMENT OPPORTUNITIES
+- @Fishhead8u asked a real technical question (oracle/settlement state-drift handling) in a thread that name-drops @verdikta19633 as the fix — a substantive reply would read as credible, not promotional.
+- @AjAkmarudi72937 posted a 3rd+ unprompted advocacy mention this week (already a tracked lead per builder-leads.md) — cheap reply/thanks opportunity.
+
+Note: all 4 posts show 0 likes/retweets/replies — low reach, but genuine unprompted technical engagement across 2 known advocates + 1 new handle, not spam.

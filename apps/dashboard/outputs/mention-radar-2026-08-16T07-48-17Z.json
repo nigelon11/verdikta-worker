@@ -1,0 +1,386 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Mention Radar — Verdikta"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "date-text",
+        "verdikta-section",
+        "web-section",
+        "github-section",
+        "separator-1",
+        "engagement-section",
+        "engagement-note"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-08-16",
+        "variant": "caption"
+      }
+    },
+    "verdikta-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "verdikta-heading",
+        "mention-1",
+        "mention-2",
+        "mention-3",
+        "mention-4"
+      ]
+    },
+    "verdikta-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "VERDIKTA",
+        "level": "h2"
+      }
+    },
+    "mention-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "m1-author",
+        "m1-quote",
+        "m1-category",
+        "m1-link"
+      ]
+    },
+    "m1-author": {
+      "type": "Text",
+      "props": {
+        "text": "@AjAkmarudi72937 · 08-15",
+        "variant": "lead"
+      }
+    },
+    "m1-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Identity + permissions solves who can act. But once the agent acts, someone still has to verify the output is correct... Does @verdikta19633's model work as that verification layer on top of this?\"",
+        "variant": "body"
+      }
+    },
+    "m1-category": {
+      "type": "Badge",
+      "props": {
+        "text": "advocacy/discovery — repeat unprompted mention from tracked lead",
+        "variant": "secondary"
+      }
+    },
+    "m1-link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/AjAkmarudi72937/status/2088630208945610909"
+      }
+    },
+    "mention-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "m2-author",
+        "m2-quote",
+        "m2-category",
+        "m2-link"
+      ]
+    },
+    "m2-author": {
+      "type": "Text",
+      "props": {
+        "text": "@Fishhead8u · 08-13",
+        "variant": "lead"
+      }
+    },
+    "m2-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"If @verdikta19633 binds the execution trace directly to a signed cryptographic receipt, you kill 90% of the he-said-she-said in agent arbitration. How do you handle state drift between the oracle check and settlement?\"",
+        "variant": "body"
+      }
+    },
+    "m2-category": {
+      "type": "Badge",
+      "props": {
+        "text": "friction/direct technical question",
+        "variant": "secondary"
+      }
+    },
+    "m2-link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/Fishhead8u/status/2087971631129878636"
+      }
+    },
+    "mention-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "m3-author",
+        "m3-quote",
+        "m3-category",
+        "m3-link"
+      ]
+    },
+    "m3-author": {
+      "type": "Text",
+      "props": {
+        "text": "@AjAkmarudi72937 · 08-13",
+        "variant": "lead"
+      }
+    },
+    "m3-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"x402 solves how agents pay, not what happens when they disagree on what was delivered... @verdikta19633 is building that — verifiable, signed judgment records instead of 'trust the agent.'\"",
+        "variant": "body"
+      }
+    },
+    "m3-category": {
+      "type": "Badge",
+      "props": {
+        "text": "competitor comparison vs x402 — favorable",
+        "variant": "secondary"
+      }
+    },
+    "m3-link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/AjAkmarudi72937/status/2087930852483428659"
+      }
+    },
+    "mention-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "m4-author",
+        "m4-quote",
+        "m4-category",
+        "m4-link"
+      ]
+    },
+    "m4-author": {
+      "type": "Text",
+      "props": {
+        "text": "@Kuriahah · 08-10",
+        "variant": "lead"
+      }
+    },
+    "m4-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"That's why @verdikta19633's audit-trail model matters: agents should show what was verified before spending.\"",
+        "variant": "body"
+      }
+    },
+    "m4-category": {
+      "type": "Badge",
+      "props": {
+        "text": "discovery — new handle",
+        "variant": "secondary"
+      }
+    },
+    "m4-link": {
+      "type": "Link",
+      "props": {
+        "label": "View on X",
+        "href": "https://x.com/Kuriahah/status/2086934292727464332"
+      }
+    },
+    "web-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "web-heading",
+        "web-text"
+      ]
+    },
+    "web-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web",
+        "level": "h3"
+      }
+    },
+    "web-text": {
+      "type": "Text",
+      "props": {
+        "text": "Reddit/HN/Product Hunt/Farcaster/blogs: 0 independent mentions — same first-party-only pattern as prior weeks",
+        "variant": "body"
+      }
+    },
+    "github-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "github-heading",
+        "github-table"
+      ]
+    },
+    "github-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Stars",
+        "level": "h3"
+      }
+    },
+    "github-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Stars",
+          "Change vs 08-14"
+        ],
+        "rows": [
+          [
+            "verdikta-docs",
+            "72",
+            "Δ0"
+          ],
+          [
+            "verdikta-applications",
+            "24",
+            "Δ0"
+          ],
+          [
+            "verdikta-arbiter",
+            "23",
+            "Δ0"
+          ],
+          [
+            "verdikta-dispatcher",
+            "17",
+            "Δ0"
+          ],
+          [
+            "verdikta-roadmap",
+            "0",
+            "Δ0"
+          ]
+        ]
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "engagement-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "engagement-heading",
+        "engagement-opp-1",
+        "engagement-opp-2"
+      ]
+    },
+    "engagement-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "ENGAGEMENT OPPORTUNITIES",
+        "level": "h2"
+      }
+    },
+    "engagement-opp-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "opp1-handle",
+        "opp1-text"
+      ]
+    },
+    "opp1-handle": {
+      "type": "Badge",
+      "props": {
+        "text": "@Fishhead8u",
+        "variant": "outline"
+      }
+    },
+    "opp1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Asked a real technical question (oracle/settlement state-drift handling) in a thread that name-drops @verdikta19633 as the fix — a substantive reply would read as credible, not promotional.",
+        "variant": "body"
+      }
+    },
+    "engagement-opp-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "opp2-handle",
+        "opp2-text"
+      ]
+    },
+    "opp2-handle": {
+      "type": "Badge",
+      "props": {
+        "text": "@AjAkmarudi72937",
+        "variant": "outline"
+      }
+    },
+    "opp2-text": {
+      "type": "Text",
+      "props": {
+        "text": "Posted a 3rd+ unprompted advocacy mention this week (already a tracked lead per builder-leads.md) — cheap reply/thanks opportunity.",
+        "variant": "body"
+      }
+    },
+    "engagement-note": {
+      "type": "Alert",
+      "props": {
+        "title": "Note",
+        "message": "All 4 posts show 0 likes/retweets/replies — low reach, but genuine unprompted technical engagement across 2 known advocates + 1 new handle, not spam.",
+        "type": "info"
+      }
+    }
+  }
+}
