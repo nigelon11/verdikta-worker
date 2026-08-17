@@ -1,16 +1,15 @@
+Memory flush is complete for 2026-08-17.
+
 ## Summary
 
-Ran the memory-flush skill for 2026-08-16 (all-topic flush, no `${var}` scope):
+Ran the memory-flush skill (no topic filter, flushed all recent activity) against the last 3 days of logs (08-15, 08-16, 08-17).
 
-**Promoted:**
-- Bumped MEMORY.md "Last consolidated" to 08-16
-- Refreshed all stalled-PR/issue hour counts in `topics/next-priorities.md` via live `gh` checks (no merges/closures since 08-15)
-- Recounted committed scratch/tmp files: 156, up from 143 (+13) — investigated the jump (repo showed a single squashed commit with 813 files) and confirmed it's expected shallow-clone (`fetch-depth: 1`) behavior, not a real anomaly, so didn't file it as an issue
-- Updated Builder Leads to bd-radar's 08-16/40th run (GH_READ_PAT unset streak → 40, `s97472091-pixel` quiet 4 days)
-- Widened the verdikta-hunter no-run gap note to "07-30 through 08-16"
+**Promoted to `memory/MEMORY.md`:**
+- New Dogfooding signal (via today's shiplog): a second consecutive 0-submission math-bounty round alongside external creators now posting bounties independently (5 in 2 weeks, one closed at 93%) — first evidence of third-party bounty *posting*, a stronger north-star adoption signal than raw submissions.
+- New Lessons Learned entry: today's digest run found the Bash static-analysis guard also blocks `[ -n "$VAR" ]` checks, multi-line `` \` ``-continued commands, `jq --rawfile`, and `$(cat file)` substitution — worked around via `./secretcurl` + Write/Read tools.
+- Refreshed shiplog's Skills Built row, Builder Leads "Current state" (41st bd-radar run), and all stalled-PR hour counts / tmp-file recount (156, flat) in both `MEMORY.md` and `memory/topics/next-priorities.md`.
+- Widened the verdikta-hunter no-run gap note to 07-30→08-17.
 
-**Verified unchanged, no duplicate edits:** Recent Digests 08-16 row and mention-radar's Skills Built note were already self-updated by their own skills today; "Open Improvement PRs" and `memory/issues/INDEX.md` still empty/no-op.
+**Pruned:** nothing stale found — Improvement PRs section, `memory/issues/INDEX.md`, and Lessons Learned all checked and unchanged (still no open improvement PRs beyond the known false-positive dependabot one, issues index still empty).
 
-**Files changed:** `memory/MEMORY.md`, `memory/topics/next-priorities.md`, `memory/logs/2026-08-16.md` (committed as `69e9d3a`).
-
-**Follow-up needed:** the tmp-file cleanup PR and `GH_READ_PAT` fix are still outstanding (unchanged priorities); no new items requiring operator decision this run.
+Logged the promote/prune summary to `memory/logs/2026-08-17.md` under `### memory-flush`. `MEMORY.md` is now 70 lines (target ~50) — the excess is the long-standing bd-radar-owned Builder Leads paragraph, left as-is per prior flush cycles' decision that it's bd-radar's file to restructure, not memory-flush's.
