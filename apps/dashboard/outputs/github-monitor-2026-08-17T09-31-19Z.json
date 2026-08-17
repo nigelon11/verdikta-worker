@@ -1,0 +1,194 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "summary-section",
+        "separator-1",
+        "info-section",
+        "separator-2",
+        "sources-section"
+      ]
+    },
+    "summary-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-repos",
+        "stat-action"
+      ]
+    },
+    "stat-repos": {
+      "type": "Stat",
+      "props": {
+        "label": "Repos scanned",
+        "value": "5"
+      }
+    },
+    "stat-action": {
+      "type": "Stat",
+      "props": {
+        "label": "Need action",
+        "value": "0"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "info-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "info-heading",
+        "pr-28",
+        "pr-27",
+        "pr-26",
+        "pr-18",
+        "alert-arbiter-9",
+        "more-items"
+      ]
+    },
+    "info-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Review Items",
+        "level": "h3"
+      }
+    },
+    "pr-28": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#28 — mumuzhong3 fix for issue #16, no CI configured, idle ~553h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "GitHub"
+      }
+    },
+    "pr-27": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#27 — mumuzhong3 fix for issue #14, no CI configured, idle ~553h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "GitHub"
+      }
+    },
+    "pr-26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#26 — operator's own rubricCid fix, no CI configured, idle ~636h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "GitHub"
+      }
+    },
+    "pr-18": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#18 — bingmokaka ETH-prepay fix, no CI configured, idle ~782h",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "GitHub"
+      }
+    },
+    "alert-arbiter-9": {
+      "type": "Alert",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "message": "draft, Gitleaks Secret Scan still FAILURE, idle ~807h",
+        "type": "warning"
+      }
+    },
+    "more-items": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more items",
+        "variant": "muted"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sources-heading",
+        "sources-grid"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Status",
+        "level": "h3"
+      }
+    },
+    "sources-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 5,
+        "gap": "md"
+      },
+      "children": [
+        "badge-apps",
+        "badge-arbiter",
+        "badge-dispatcher",
+        "badge-docs",
+        "badge-roadmap"
+      ]
+    },
+    "badge-apps": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "default"
+      }
+    },
+    "badge-arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "default"
+      }
+    },
+    "badge-dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "default"
+      }
+    },
+    "badge-docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "default"
+      }
+    },
+    "badge-roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "default"
+      }
+    }
+  }
+}

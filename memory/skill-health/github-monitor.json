@@ -1,15 +1,14 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-08-16T09:21:27Z",
+  "last_analyzed": "2026-08-17T09:31:19Z",
   "quality_score": 3,
-  "assessment": "Completed monitoring task adequately across 5 repos; correctly reported stable state with 11 INFO items and zero actionable findings (ACT_NOW=0, REVIEW=0); properly logged without over-reporting.",
-  "flags": [],
-  "avg_score": 3.63,
+  "assessment": "Skill ran successfully with clear output and documented limitations, but findings are identical to every run since 08-04 — stale signal despite proper execution.",
+  "flags": [
+    "stale_data",
+    "low_quality"
+  ],
+  "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-07-18",
-      "score": 4
-    },
     {
       "date": "2026-07-19",
       "score": 4
@@ -124,6 +123,10 @@
     },
     {
       "date": "2026-08-16",
+      "score": 3
+    },
+    {
+      "date": "2026-08-17",
       "score": 3
     }
   ]
