@@ -1,0 +1,102 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "AI agents that transact onchain — 2026-08-17"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_tldr",
+        "text_tldr",
+        "sep_1",
+        "storylink_stripe",
+        "text_details",
+        "sep_2",
+        "heading_glance",
+        "text_glance",
+        "sep_3",
+        "text_closing"
+      ]
+    },
+    "heading_tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      }
+    },
+    "text_tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Stripe closed a $7B+ acquisition of AI model-gateway OpenRouter; everything else in the onchain-agent-payments/oracle niche today was recycled token promo or already-stale news.",
+        "variant": "lead"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_stripe": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Stripe acquires AI model gateway OpenRouter for $7B+",
+        "source": "TechCrunch",
+        "href": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+      }
+    },
+    "text_details": {
+      "type": "Text",
+      "props": {
+        "text": "Stripe finalized its purchase of OpenRouter — the unified API gateway routing 500+ models from 80+ providers — at a valuation 5x the $1.3B mark it hit just three months ago in a $113M Series B (May 2026, Sequoia/a16z/Menlo/CapitalG). Why it matters: a payments giant now owns both the settlement rails and the AI-routing layer agents call through — a preview of the integrated payments+AI stack that agent-commerce and AI-judged bounty platforms will increasingly compete or interoperate with.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_glance": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      }
+    },
+    "text_glance": {
+      "type": "Text",
+      "props": {
+        "text": "Today's X signal on \"agent payments\" was token-promo spam (NAPS liquidity pool, an Aegis testnet demo, generic Injective SDK posts) · web candidates (Coldcard breach recap, Internet Court, x402 monthly stats) were all >36h stale or already covered in prior digests.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_closing": {
+      "type": "Text",
+      "props": {
+        "text": "11th thin/empty day in 12 for this specific niche, even as adjacent AI-infra M&A accelerates.",
+        "variant": "muted"
+      }
+    }
+  }
+}

@@ -1,15 +1,15 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-16T14:07:39Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-sourced finding (peer-reviewed x402 security audit) directly relevant to Verdikta's trust/dispute-resolution value proposition; rigorous filtering of 20 candidates down to 1 high-quality item; good documentation and logging.",
-  "flags": [],
-  "avg_score": 3.87,
+  "last_analyzed": "2026-08-17T14:08:37Z",
+  "quality_score": 3,
+  "assessment": "Completed task competently with proper multi-source verification, but thin signal (1 item in 12 days, mostly stale/spam content) suggests topic saturation or search strategy drift.",
+  "flags": [
+    "low_quality",
+    "stale_data",
+    "generic_content"
+  ],
+  "avg_score": 3.83,
   "history": [
-    {
-      "date": "2026-07-19",
-      "score": 4
-    },
     {
       "date": "2026-07-20",
       "score": 4
@@ -125,6 +125,10 @@
     {
       "date": "2026-08-16",
       "score": 4
+    },
+    {
+      "date": "2026-08-17",
+      "score": 3
     }
   ]
 }
