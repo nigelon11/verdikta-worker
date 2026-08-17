@@ -1,0 +1,30 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "marker",
+        "prompt"
+      ]
+    },
+    "marker": {
+      "type": "Text",
+      "props": {
+        "text": "[write-tweet::revise]",
+        "variant": "caption"
+      }
+    },
+    "prompt": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "lead"
+      }
+    }
+  }
+}

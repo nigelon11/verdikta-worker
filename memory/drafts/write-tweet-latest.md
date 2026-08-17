@@ -2,54 +2,54 @@
 type: Reference
 ---
 
-## Tweet Drafts: x402's security audit found a payment protocol, not a judgment layer
+## Tweet Drafts: Verdikta's rubric holds while outsiders start using it unprompted
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> x402 facilitators handle payment. Nobody built the layer that handles blame.
+> A protocol that pays out zero twice on purpose is more trustworthy than one that always pays.
 
-**1b. Data drop**
-> 15 of 15 audited x402 facilitators failed security review. All of them.
+**1b. Observation**
+> Five bounties posted by strangers on Verdikta in two weeks. Zero of them needed the founders.
 
 ### Tier 2 — Two-punch
-**2a. Observation**
-> Every x402 facilitator tested at USENIX this week broke under audit. Payment settlement was never the hard problem — accountability was.
+**2a. Data drop**
+> Verdikta's math bounties expired twice with zero submissions. The reward doubled both times. The rubric never did.
 
 **2b. Reframe**
-> x402 just crossed a security review with a 0% pass rate — 15 for 15. The industry keeps optimizing for speed of payment when the real bottleneck is who's liable when it fails.
+> Nobody solved the Lonely Runner conjecture for a Verdikta bounty. That's the point — the AI judge isn't grading on a curve.
 
 ### Tier 3 — Paragraph
 **3a. Data drop**
-> USENIX researchers tested 15 x402 payment facilitators — Coinbase, Thirdweb, PayAI, Mogami among them — covering 99% of live volume. All 15 failed. Free-shopping, asset-theft, service-denial, gas-abuse: 31 vulnerabilities, in a protocol agents already move real money through.
+> Two straight rounds of Verdikta's open math bounties closed at zero submissions — R(5,5), the Lonely Runner conjecture, ten bounty-months of exposure. No partial credit, no softened rubric. The reward just doubled again instead of the bar moving.
 
 **3b. Narrative**
-> Same week x402 crossed a payment milestone, a USENIX audit tested 15 facilitators covering 99% of that volume. Every one violated a security rule. The "free shopping" bug lets a request settle off-chain while the on-chain payment silently fails — a gap nobody priced in.
+> The real Verdikta story this week isn't code, it's who's using it: independent creators now post their own bounties — own rubrics, own jury configs, no platform help. Five in two weeks. One already closed at 93 percent, paid on-chain automatically. That's protocol, not product.
 
 ### Tier 4 — Long tweet
-**4a. Structural critique**
-> The x402 ecosystem spent a year racing to add facilitators, chains, and merchant integrations. This week a USENIX-reviewed audit tested 15 of them — Coinbase included — covering 99% of tracked volume. All 15 failed. 31 vulnerabilities: services paid without settlement, settlement without service, facilitators drainable by the flows they're supposed to secure. Payment rails were never the constraint. Judging whether a transaction happened correctly — and who's on the hook when it didn't — is. That's a dispute problem, not a routing problem, and almost nobody in this stack builds for it.
+**4a. Reframe**
+> Most AI judges quietly loosen the bar the moment nobody clears it. Verdikta's math bounties did the opposite. Round one — R(5,5), the Lonely Runner conjecture, a perfect-cuboid existence question — expired with zero submissions. The team doubled the reward and re-ran the exact same rubric. Round two: zero submissions again. Ten bounty-months of exposure, two clean rejections, no partial credit handed out to make the numbers look better. A bounty system is only as credible as what it's willing to not pay out. This one just proved it twice.
 
-**4b. Builder's breakdown**
-> Here's what the x402 audit actually found: 31 distinct vulnerabilities across 15 payment facilitators, spanning free-shopping (service delivered, payment never finalizes), asset-theft (facilitator itself drained), service-denial, and gas-abuse. Not edge cases — structural gaps in how these systems check off-chain claims against on-chain settlement. 99% of tracked x402 volume runs through facilitators with at least one of these holes open right now. An agent paying for something has no way to know if it got what it paid for until someone builds the layer that checks.
+**4b. Narrative**
+> The adoption signal to watch for any bounty protocol isn't total value locked, it's who shows up uninvited. This week, independent creators started posting bounties on Verdikta without any platform involvement — their own dev.to writeups, their own rubrics, their own jury configs. Five bounties in two weeks. Some expired, some found winners — one closed with a 93 percent-scoring submission, paid automatically on-chain. Nobody asked them to build this. That's the difference between a product with users and a protocol with an ecosystem.
 
 ### Tier 5 — Thread opener
-**5a. Thesis-first**
-> x402 just failed its first real security audit. 15 facilitators tested. 15 failed. This is the tell that agent payments have a judgment problem, not a plumbing problem.
+**5a. Sardonic/ironic**
+> Verdikta just had its best week with zero merged code and zero new features.
 ---
-- The audit: USENIX '26, 15 facilitators (Coinbase, Thirdweb, PayAI, Mogami), 99% of tracked volume
-- The four bug classes: free-shopping, asset-theft, service-denial, gas-abuse
-- Why "can it pay" was always the easy question
-- What a judgment layer sitting on top of settlement actually has to check
-- Where agent-to-agent commerce stands right now
+- 0 merged PRs, 0 commits across all 5 public repos this week
+- but the math-bounty rubric just survived its 2nd straight zero-submission round without softening
+- meanwhile independent creators started posting their own bounties on the protocol, unprompted
+- one already closed at 93%, paid automatically on-chain
+- real signal isn't shipping velocity — it's whether the system holds when nobody's watching
 
-**5b. Narrative**
-> Coinbase's own x402 facilitator failed a security audit this week. So did the other 14 tested. Here's why that's not really a Coinbase problem.
+**5b. Observation**
+> The most interesting Verdikta bounty this month wasn't posted by Verdikta.
 ---
-- What the audit tested and found: 31 vulnerabilities, 4 bug classes
-- Why it hit every facilitator tested, not just the weak implementations
-- The pattern: verification happens off-chain, settlement happens on-chain — the gap between the two is where all 31 live
-- What "accountability" means once settlement alone can't be trusted
-- The missing piece: a layer that judges outcomes, not just moves money
+- an independent creator posted 5 bounties on Verdikta in 2 weeks, no platform involvement
+- each used pre-committed rubrics, locked escrow, multi-model juries
+- some expired unsolved, one closed with a 93%-scoring winner paid automatically
+- meanwhile Verdikta's own math bounties expired twice at zero submissions, rubric untouched
+- a judge that says no, and outsiders trusting it anyway — that's what real protocol adoption looks like
 
-**Best overall:** 4a — the structural critique lands the full argument (audit → bug classes → reframe) with the hardest numbers.
-**Best per tier:** 1a (one-liner) · 2b (two-punch) · 3a (paragraph) · 4a (long tweet) · 5a (thread opener)
+**Best overall:** 3b — pairs the rubric-integrity proof with the strongest available signal (unprompted third-party adoption) in one paragraph, no padding.
+**Best per tier:** 1a (one-liner) · 2a (two-punch) · 3b (paragraph) · 4b (long tweet) · 5b (thread opener)
