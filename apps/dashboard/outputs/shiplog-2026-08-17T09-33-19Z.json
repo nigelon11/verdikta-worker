@@ -1,0 +1,123 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "ℹ️ Shiplog: Aug 10 → 17"
+      },
+      "children": [
+        "heading-main",
+        "text-intro",
+        "sep-1",
+        "text-findings-1",
+        "text-findings-2",
+        "sep-2",
+        "heading-traction",
+        "table-traction",
+        "sep-3",
+        "story-article",
+        "text-twitter"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "verdikta shiplog — aug 10 → aug 17",
+        "level": "h2"
+      }
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet week on the public repos: 0 merged PRs, 0 commits, 1 star (verdikta-arbiter). Two key developments worth noting:"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-findings-1": {
+      "type": "Text",
+      "props": {
+        "text": "The open math-bounty rubric held for a second straight round — zero submissions across two full rounds, ten bounty-months of exposure, no partial credit given. Reward doubles each round instead of the bar moving.",
+        "variant": "body"
+      }
+    },
+    "text-findings-2": {
+      "type": "Text",
+      "props": {
+        "text": "External creators are now posting their own bounties on Verdikta independently (dev.to guides, own rubrics/juries) — one already closed with a 93%-scoring winner, paid automatically on-chain. Real usage outside the core team.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-traction": {
+      "type": "Heading",
+      "props": {
+        "text": "Traction",
+        "level": "h3"
+      }
+    },
+    "table-traction": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Stars",
+          "Change"
+        ],
+        "rows": [
+          [
+            "verdikta-arbiter",
+            "23",
+            "+1"
+          ],
+          [
+            "verdikta-docs",
+            "72",
+            "—"
+          ],
+          [
+            "verdikta-applications",
+            "24",
+            "—"
+          ],
+          [
+            "verdikta-dispatcher",
+            "17",
+            "—"
+          ],
+          [
+            "verdikta-roadmap",
+            "0",
+            "—"
+          ]
+        ]
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "story-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Shiplog: Aug 10 → 17",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-08-17.md",
+        "source": "Verdikta Worker"
+      }
+    },
+    "text-twitter": {
+      "type": "Text",
+      "props": {
+        "text": "@verdikta19633",
+        "variant": "muted"
+      }
+    }
+  }
+}
