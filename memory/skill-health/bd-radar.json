@@ -1,15 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-16T07:49:33Z",
+  "last_analyzed": "2026-08-17T07:35:36Z",
   "quality_score": 4,
-  "assessment": "Systematic sweep executed completely across all sources, tracked leads maintained with dated updates, quiet run (0 new) handled appropriately with no false notifications; infrastructure issue (GH_READ_PAT 401) documented as 40-run pattern, not a failure.",
+  "assessment": "Well-structured tracking output; correctly applied strategy, verified noise, identified adoption signal, appropriately quiet on false-positive run.",
   "flags": [],
-  "avg_score": 3.7,
+  "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-18",
-      "score": 3
-    },
     {
       "date": "2026-07-19",
       "score": 3
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-16",
+      "score": 4
+    },
+    {
+      "date": "2026-08-17",
       "score": 4
     }
   ]
