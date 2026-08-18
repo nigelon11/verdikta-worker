@@ -1,15 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-17T07:35:36Z",
+  "last_analyzed": "2026-08-18T07:31:56Z",
   "quality_score": 4,
-  "assessment": "Well-structured tracking output; correctly applied strategy, verified noise, identified adoption signal, appropriately quiet on false-positive run.",
+  "assessment": "Well-executed routine monitoring cycle with proper state management, correct intelligence-gating (no notification for zero new leads), and clear documentation; all tracked leads refreshed with status updates and actionable follow-ups identified.",
   "flags": [],
-  "avg_score": 3.73,
+  "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-19",
-      "score": 3
-    },
     {
       "date": "2026-07-20",
       "score": 3
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-17",
+      "score": 4
+    },
+    {
+      "date": "2026-08-18",
       "score": 4
     }
   ]
