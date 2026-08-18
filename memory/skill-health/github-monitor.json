@@ -1,18 +1,14 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-08-17T09:31:19Z",
-  "quality_score": 3,
-  "assessment": "Skill ran successfully with clear output and documented limitations, but findings are identical to every run since 08-04 — stale signal despite proper execution.",
+  "last_analyzed": "2026-08-18T09:09:48Z",
+  "quality_score": 2,
+  "assessment": "Skill executed without errors but reported unchanged findings for 14th consecutive day and sent notification despite zero new signal, violating stated policy that 'no-change runs should send nothing'.",
   "flags": [
     "stale_data",
     "low_quality"
   ],
-  "avg_score": 3.6,
+  "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-07-19",
-      "score": 4
-    },
     {
       "date": "2026-07-20",
       "score": 4
@@ -128,6 +124,10 @@
     {
       "date": "2026-08-17",
       "score": 3
+    },
+    {
+      "date": "2026-08-18",
+      "score": 2
     }
   ]
 }

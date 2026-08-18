@@ -1,0 +1,325 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "reviews_section",
+        "separator1",
+        "sources_section"
+      ]
+    },
+    "reviews_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5",
+        "item_more"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1",
+        "link1",
+        "meta1"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Review • verdikta-applications#28",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "link1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mumuzhong3's rubric-validator fix (issue #16)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/28",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "meta1": {
+      "type": "Text",
+      "props": {
+        "text": "Idle 577h • No CI configured",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2",
+        "link2",
+        "meta2"
+      ]
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Review • verdikta-applications#27",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "link2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mumuzhong3's terminal-bounty fix (issue #14)",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/27",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "meta2": {
+      "type": "Text",
+      "props": {
+        "text": "Idle 577h • No CI configured",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3",
+        "link3",
+        "meta3"
+      ]
+    },
+    "badge3": {
+      "type": "Badge",
+      "props": {
+        "text": "Review • verdikta-applications#26",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "link3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "operator's rubricCid heal fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/26",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "meta3": {
+      "type": "Text",
+      "props": {
+        "text": "Idle 660h • No CI configured",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4",
+        "link4",
+        "meta4"
+      ]
+    },
+    "badge4": {
+      "type": "Badge",
+      "props": {
+        "text": "Review • verdikta-applications#18",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "link4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "bingmokaka's ETH-prepay fix",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/18",
+        "source": "verdikta-applications"
+      },
+      "children": []
+    },
+    "meta4": {
+      "type": "Text",
+      "props": {
+        "text": "Idle 806h • No CI configured",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5",
+        "alert5",
+        "link5",
+        "meta5"
+      ]
+    },
+    "badge5": {
+      "type": "Badge",
+      "props": {
+        "text": "Note • verdikta-arbiter#9",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "alert5": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Draft PR, Gitleaks Secret Scan still FAILURE (draft-capped, not ACT NOW)"
+      },
+      "children": []
+    },
+    "link5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Gitleaks Secret Scan",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "verdikta-arbiter"
+      },
+      "children": []
+    },
+    "meta5": {
+      "type": "Text",
+      "props": {
+        "text": "Idle 830h",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item_more": {
+      "type": "Text",
+      "props": {
+        "text": "…and 6 more",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sources_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sources_heading",
+        "sources_grid"
+      ]
+    },
+    "sources_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "sources_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "source_app",
+        "source_arbiter",
+        "source_dispatcher",
+        "source_docs",
+        "source_roadmap"
+      ]
+    },
+    "source_app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "source_arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "source_dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "source_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "source_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap ✓",
+        "variant": "default"
+      },
+      "children": []
+    }
+  }
+}
