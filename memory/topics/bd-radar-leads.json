@@ -4,8 +4,15 @@
       "key": "github:s97472091-pixel",
       "class": "building",
       "who": "s97472091-pixel (\"pipsss\")",
-      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97. Continued Jul7-14: 3 'evidence screenshot' case-study repos (bounty #144 math/logic analysis) + a hosted verdikta-playbook site (scoring criteria/failure patterns/checklist from 170+ submissions) + a Medium deep-dive on bounty #40 (99/100 score). Jul16: new evidence-screenshot repo for bounty #147 — sustained escalating pace, still unprompted. Quiet 07-17 through 07-25 (9 consecutive quiet days), then broke the streak 07-26 20:07 UTC with `verdikta-agent` — a complete autonomous bounty-hunting agent (BountyMonitor/ViabilityScorer/VerdiktaAPI/SubmissionTracker, viability-scoring formula, live bounty numbers up to #160 in its README example output), the most ambitious artifact yet. Same evening (20:17 UTC), @AjAkmarudi72937 (x:AjAkmarudi72937, tracked separately) tweeted \"I built\" this exact repo and linked it — strong circumstantial evidence AjAkmarudi72937 and s97472091-pixel are the same operator running a GitHub+X pair, which would explain AjAkmarudi72937's early 'possibly scripted' evangelism pattern. 17-day quiet streak broken 2026-08-12 15:37 UTC by a minor commit (added a GitHub Pages index.html to the existing verdikta-case-study-1 repo, publishing already-known content, not a new artifact) — low-signal but confirms the account is still active. Quiet again 08-13 through 08-17 (5 more days, no new pushes, confirmed via direct repo-list check).",
-      "links": ["https://github.com/s97472091-pixel/verdikta-sdk-v2", "https://github.com/s97472091-pixel/verdikta-integration-guide", "https://github.com/s97472091-pixel/verdikta-bounty-workshop", "https://s97472091-pixel.github.io/verdikta-playbook/", "https://github.com/s97472091-pixel/verdikta-bounty-147", "https://github.com/s97472091-pixel/verdikta-agent"],
+      "signal": "Python SDK (verdikta-sdk, verdikta-sdk-v2) + integration guide + bounty workshop, all shipped Jun30-Jul7; PR #632 to aaronjmars/aeon verdikta-hunter skill; completed bounty #97. Continued Jul7-14: 3 'evidence screenshot' case-study repos (bounty #144 math/logic analysis) + a hosted verdikta-playbook site (scoring criteria/failure patterns/checklist from 170+ submissions) + a Medium deep-dive on bounty #40 (99/100 score). Jul16: new evidence-screenshot repo for bounty #147 \u2014 sustained escalating pace, still unprompted. Quiet 07-17 through 07-25 (9 consecutive quiet days), then broke the streak 07-26 20:07 UTC with `verdikta-agent` \u2014 a complete autonomous bounty-hunting agent (BountyMonitor/ViabilityScorer/VerdiktaAPI/SubmissionTracker, viability-scoring formula, live bounty numbers up to #160 in its README example output), the most ambitious artifact yet. Same evening (20:17 UTC), @AjAkmarudi72937 (x:AjAkmarudi72937, tracked separately) tweeted \"I built\" this exact repo and linked it \u2014 strong circumstantial evidence AjAkmarudi72937 and s97472091-pixel are the same operator running a GitHub+X pair, which would explain AjAkmarudi72937's early 'possibly scripted' evangelism pattern. 17-day quiet streak broken 2026-08-12 15:37 UTC by a minor commit (added a GitHub Pages index.html to the existing verdikta-case-study-1 repo, publishing already-known content, not a new artifact) \u2014 low-signal but confirms the account is still active. Quiet again 08-13 through 08-18 (6 more days, no new pushes, confirmed via direct events check).",
+      "links": [
+        "https://github.com/s97472091-pixel/verdikta-sdk-v2",
+        "https://github.com/s97472091-pixel/verdikta-integration-guide",
+        "https://github.com/s97472091-pixel/verdikta-bounty-workshop",
+        "https://s97472091-pixel.github.io/verdikta-playbook/",
+        "https://github.com/s97472091-pixel/verdikta-bounty-147",
+        "https://github.com/s97472091-pixel/verdikta-agent"
+      ],
       "fit": 3,
       "score": 15,
       "date_found": "2026-07-10"
@@ -14,8 +21,10 @@
       "key": "github:aaronjmars/aeon-verdikta-hunter",
       "class": "integrating",
       "who": "aaronjmars/aeon-agent (renamed from aeon 2026-07-14, 10-star public Aeon framework fork) + maintainer @aaronjmars",
-      "signal": "Built in-tree verdikta-hunter skill Jul1-6, accidentally dropped in restructure PR #647, issue #681 (opened by nigelon11) got a 'will keep an eye on it once refactor lands' reply, closed 2026-07-08. Repo renamed aeon->aeon-agent by 2026-07-14 (301 redirect confirmed, same maintainer/stars); skill still not restored. Continues pushing daily (07-29: pushed 06:47 UTC, automation-only, confirmed no verdikta-hunter dir in skills/ listing) — no human commits since 06-05, verdikta-hunter still absent. Still absent as of 08-17 (pushed 06:09 UTC, automation-only; repo now 11★, up from 10) — no restoration in 6+ weeks.",
-      "links": ["https://github.com/aaronjmars/aeon-agent"],
+      "signal": "Built in-tree verdikta-hunter skill Jul1-6, accidentally dropped in restructure PR #647, issue #681 (opened by nigelon11) got a 'will keep an eye on it once refactor lands' reply, closed 2026-07-08. Repo renamed aeon->aeon-agent by 2026-07-14 (301 redirect confirmed, same maintainer/stars); skill still not restored. Continues pushing daily (07-29: pushed 06:47 UTC, automation-only, confirmed no verdikta-hunter dir in skills/ listing) \u2014 no human commits since 06-05, verdikta-hunter still absent. Still absent as of 08-17 (pushed 06:09 UTC, automation-only; repo now 11\u2605, up from 10) \u2014 no restoration in 6+ weeks.",
+      "links": [
+        "https://github.com/aaronjmars/aeon-agent"
+      ],
       "fit": 3,
       "score": 12,
       "date_found": "2026-07-10"
@@ -24,8 +33,12 @@
       "key": "x:Fishhead8u",
       "class": "mentioning",
       "who": "@Fishhead8u",
-      "signal": "Friction complaint about targeted-bounty pay/access, 2026-07-08. 2026-07-17: follow-up post, same theme — asking to be made eligible for targeted bounties and for solvable (not decades-unsolved) problems to be posted. 2026-08-13 18:36 UTC: tone shift — first genuinely technical reply to @verdikta19633, proposing binding the execution trace directly to the signed receipt to kill 'he-said-she-said' disputes, and asking a real protocol question about state drift between the oracle check and settlement. Still 0 engagement/no bio signal, but worth a direct technical reply from the account.",
-      "links": ["https://x.com/Fishhead8u/status/2074929843800601076", "https://x.com/Fishhead8u/status/2078206590977524179", "https://x.com/Fishhead8u/status/2087971631129878636"],
+      "signal": "Friction complaint about targeted-bounty pay/access, 2026-07-08. 2026-07-17: follow-up post, same theme \u2014 asking to be made eligible for targeted bounties and for solvable (not decades-unsolved) problems to be posted. 2026-08-13 18:36 UTC: tone shift \u2014 first genuinely technical reply to @verdikta19633, proposing binding the execution trace directly to the signed receipt to kill 'he-said-she-said' disputes, and asking a real protocol question about state drift between the oracle check and settlement. Still 0 engagement/no bio signal, but worth a direct technical reply from the account.",
+      "links": [
+        "https://x.com/Fishhead8u/status/2074929843800601076",
+        "https://x.com/Fishhead8u/status/2078206590977524179",
+        "https://x.com/Fishhead8u/status/2087971631129878636"
+      ],
       "fit": 1,
       "score": 2,
       "date_found": "2026-07-10"
@@ -34,8 +47,17 @@
       "key": "x:AjAkmarudi72937",
       "class": "mentioning",
       "who": "@AjAkmarudi72937",
-      "signal": "3 posts 2026-07-07 explaining Verdikta bounty flow to CN Web3 audience, organic evangelism (previously flagged as possibly scripted by mention-radar). 2026-07-14: 3 more posts, now substantive not templated — quotes/links a Medium deep-dive (by s97472091, the tracked builder) analyzing bounty #40's 99/100 score, and shares s97472091-pixel's new verdikta-playbook site. 2026-07-26 evening (19:03-20:17 UTC): 9-post burst — (1) claimed \"I built an autonomous agent for Verdikta bounties on Base L2\" linking https://github.com/s97472091-pixel/verdikta-agent (first-person claim over the *tracked builder's* repo — strong sign AjAkmarudi72937 and s97472091-pixel are the same operator, not independent amplification); (2) a Medium writeup \"I Tried to Cheat a Verdikta Bounty — Here's What Happened\" (5 attempts, 3 zeros/1 one-percent/1 forty-nine, on-chain proof) — genuinely citable proof the AI arbiter resists gaming, good material for content/digest work; (3) a 6-tweet \"6+ wins, 0 tricks\" bounty-hunting lessons thread (rubric design, multi-model consensus, on-chain settlement, creator/hunter strategy). 2026-07-28 14:45 UTC: a new, more analytical post — frames Verdikta's rubric-scored signed receipts as the answer to \"who arbitrates a disputed settlement\" at a projected $190-500B agent-executed-settlement scale by 2030, a shift toward higher-level protocol argument rather than tactical bounty-hunting content; still low engagement (1 like, 7 views). 2026-08-13 15:54 UTC: continues the protocol-argument register — distinguishes x402 (payment) from dispute resolution, framing Verdikta as the audit-trail/signed-judgment layer x402 doesn't provide. 2026-08-15 14:13 UTC: another reply in the same register, directly asking @verdikta19633 whether its model works as the 'verification layer' on top of agent identity/permissions systems — still low engagement (0 likes, 3 views), but now a sustained multi-week cadence of substantive protocol questions rather than one-off posts.",
-      "links": ["https://x.com/AjAkmarudi72937/status/2074605184676958704", "https://x.com/AjAkmarudi72937/status/2077103364916273584", "https://x.com/AjAkmarudi72937/status/2081474014099472663", "https://x.com/AjAkmarudi72937/status/2081469348041179480", "https://medium.com/@muhamadafif014/i-tried-to-cheat-a-verdikta-bounty-heres-what-happened-60765362341e", "https://x.com/AjAkmarudi72937/status/2082115152674193489", "https://x.com/AjAkmarudi72937/status/2087930852483428659", "https://x.com/AjAkmarudi72937/status/2088630208945610909"],
+      "signal": "3 posts 2026-07-07 explaining Verdikta bounty flow to CN Web3 audience, organic evangelism (previously flagged as possibly scripted by mention-radar). 2026-07-14: 3 more posts, now substantive not templated \u2014 quotes/links a Medium deep-dive (by s97472091, the tracked builder) analyzing bounty #40's 99/100 score, and shares s97472091-pixel's new verdikta-playbook site. 2026-07-26 evening (19:03-20:17 UTC): 9-post burst \u2014 (1) claimed \"I built an autonomous agent for Verdikta bounties on Base L2\" linking https://github.com/s97472091-pixel/verdikta-agent (first-person claim over the *tracked builder's* repo \u2014 strong sign AjAkmarudi72937 and s97472091-pixel are the same operator, not independent amplification); (2) a Medium writeup \"I Tried to Cheat a Verdikta Bounty \u2014 Here's What Happened\" (5 attempts, 3 zeros/1 one-percent/1 forty-nine, on-chain proof) \u2014 genuinely citable proof the AI arbiter resists gaming, good material for content/digest work; (3) a 6-tweet \"6+ wins, 0 tricks\" bounty-hunting lessons thread (rubric design, multi-model consensus, on-chain settlement, creator/hunter strategy). 2026-07-28 14:45 UTC: a new, more analytical post \u2014 frames Verdikta's rubric-scored signed receipts as the answer to \"who arbitrates a disputed settlement\" at a projected $190-500B agent-executed-settlement scale by 2030, a shift toward higher-level protocol argument rather than tactical bounty-hunting content; still low engagement (1 like, 7 views). 2026-08-13 15:54 UTC: continues the protocol-argument register \u2014 distinguishes x402 (payment) from dispute resolution, framing Verdikta as the audit-trail/signed-judgment layer x402 doesn't provide. 2026-08-15 14:13 UTC: another reply in the same register, directly asking @verdikta19633 whether its model works as the 'verification layer' on top of agent identity/permissions systems \u2014 still low engagement (0 likes, 3 views), but now a sustained multi-week cadence of substantive protocol questions rather than one-off posts.",
+      "links": [
+        "https://x.com/AjAkmarudi72937/status/2074605184676958704",
+        "https://x.com/AjAkmarudi72937/status/2077103364916273584",
+        "https://x.com/AjAkmarudi72937/status/2081474014099472663",
+        "https://x.com/AjAkmarudi72937/status/2081469348041179480",
+        "https://medium.com/@muhamadafif014/i-tried-to-cheat-a-verdikta-bounty-heres-what-happened-60765362341e",
+        "https://x.com/AjAkmarudi72937/status/2082115152674193489",
+        "https://x.com/AjAkmarudi72937/status/2087930852483428659",
+        "https://x.com/AjAkmarudi72937/status/2088630208945610909"
+      ],
       "fit": 2,
       "score": 4,
       "date_found": "2026-07-10"
@@ -44,8 +66,10 @@
       "key": "github:bingmokaka",
       "class": "integrating",
       "who": "bingmokaka",
-      "signal": "PR #18 to verdikta-applications ('fix: align bounty submission scripts with ETH prepay') — fixed real ABI/flow bugs in the onboarding scripts (ethMaxBudget, payable startPreparedSubmission, stuck-submission diagnostics), 796/797 lines across 2 files, node --check + validate_contract_config.js testing evidence, closes issue #17 (nigelon11). Account is a serial cross-ecosystem bounty hunter (17 forked repos spanning bug-bounty/grant platforms) rather than a dedicated Verdikta builder, but this is a real, tested code contribution to the bounty-submission flow.",
-      "links": ["https://github.com/verdikta/verdikta-applications/pull/18"],
+      "signal": "PR #18 to verdikta-applications ('fix: align bounty submission scripts with ETH prepay') \u2014 fixed real ABI/flow bugs in the onboarding scripts (ethMaxBudget, payable startPreparedSubmission, stuck-submission diagnostics), 796/797 lines across 2 files, node --check + validate_contract_config.js testing evidence, closes issue #17 (nigelon11). Account is a serial cross-ecosystem bounty hunter (17 forked repos spanning bug-bounty/grant platforms) rather than a dedicated Verdikta builder, but this is a real, tested code contribution to the bounty-submission flow.",
+      "links": [
+        "https://github.com/verdikta/verdikta-applications/pull/18"
+      ],
       "fit": 3,
       "score": 9,
       "date_found": "2026-07-12"
@@ -53,9 +77,12 @@
     {
       "key": "github:NSPG13/agent-bounties",
       "class": "adjacent",
-      "who": "NSPG13/agent-bounties — \"Agent Bounties\" (competitor, not a builder-on-Verdikta lead)",
-      "signal": "Open-source AI-agent bounty protocol on Base (post/fund/claim/solve/verify/pay flow, MCP tools, x402, agent wallets) — same wedge as Verdikta. Repo created 2026-07-08, shipping fast (288 merged PRs by 2026-07-16, several/day). docs/competitor-learning-plan.md contains a detailed writeup of Verdikta's design pulled from the agents API, bounty app, and whitepaper (bounties.verdikta.org/agents, verdikta.org/whitepaper) with explicit \"avoid\" lessons (mandatory API keys, solver-paid evaluation, unbounded AI authority, consensus-without-appeal). This is competitive intelligence, not a partnership candidate — flagging for operator awareness, not outreach. Still actively shipping as of 2026-08-12 (pushed 04:21 UTC, 186 open issues up from 166 on 08-09 and 76 on 07-26, 9 stars up from 6) — sustained fast pace, no material design-direction change to report this run. 08-15: 187 open issues (flat, +1), 9 stars (unchanged), still pushing daily — pace has plateaued rather than continuing to accelerate. 08-16: a live product site (agentbounty.org, $2.4M paid out claim, 342 active bounties) surfaced in a general search but shows no code/team link back to this repo — treating as a separate, unrelated platform, not a rebrand. 08-17: 186 open issues (flat, -1), 9 stars (unchanged), pushed 00:53 UTC — pace still plateaued.",
-      "links": ["https://github.com/NSPG13/agent-bounties", "https://github.com/NSPG13/agent-bounties/blob/main/docs/competitor-learning-plan.md"],
+      "who": "NSPG13/agent-bounties \u2014 \"Agent Bounties\" (competitor, not a builder-on-Verdikta lead)",
+      "signal": "Open-source AI-agent bounty protocol on Base (post/fund/claim/solve/verify/pay flow, MCP tools, x402, agent wallets) \u2014 same wedge as Verdikta. Repo created 2026-07-08, shipping fast (288 merged PRs by 2026-07-16, several/day). docs/competitor-learning-plan.md contains a detailed writeup of Verdikta's design pulled from the agents API, bounty app, and whitepaper (bounties.verdikta.org/agents, verdikta.org/whitepaper) with explicit \"avoid\" lessons (mandatory API keys, solver-paid evaluation, unbounded AI authority, consensus-without-appeal). This is competitive intelligence, not a partnership candidate \u2014 flagging for operator awareness, not outreach. Still actively shipping as of 2026-08-12 (pushed 04:21 UTC, 186 open issues up from 166 on 08-09 and 76 on 07-26, 9 stars up from 6) \u2014 sustained fast pace, no material design-direction change to report this run. 08-15: 187 open issues (flat, +1), 9 stars (unchanged), still pushing daily \u2014 pace has plateaued rather than continuing to accelerate. 08-16: a live product site (agentbounty.org, $2.4M paid out claim, 342 active bounties) surfaced in a general search but shows no code/team link back to this repo \u2014 treating as a separate, unrelated platform, not a rebrand. 08-17: 186 open issues (flat, -1), 9 stars (unchanged), pushed 00:53 UTC \u2014 pace still plateaued.",
+      "links": [
+        "https://github.com/NSPG13/agent-bounties",
+        "https://github.com/NSPG13/agent-bounties/blob/main/docs/competitor-learning-plan.md"
+      ],
       "fit": 3,
       "score": 3,
       "date_found": "2026-07-16"
@@ -63,9 +90,14 @@
     {
       "key": "x:Project0_Z",
       "class": "mentioning",
-      "who": "@Project0_Z (\"Sintoide\" — bio: co-founder DePINLA, AI/agent-economy builder)",
-      "signal": "2026-07-16: unprompted reply pitching Verdikta's AI-jury evaluation layer as a drop-in scoring backend for a third party's bounty/DAO Discord bot governance repo — \"that part's already solved... could plug into the bot via API instead of building scoring logic from scratch,\" offered to share docs. Organic third-party advocacy, not self-promotion of their own bounty activity. Note: bio references \"Zeta_v1\" which is superficially similar to the unrelated `Zetav1` GitHub bounty-farming spam cluster (fake Canonical-Wallet PRs against verdikta-docs/verdikta-dispatcher) — checked, no other overlap (different platform, different behavior pattern, tweet content is substantive not templated); treating as coincidental naming, not the same actor. Low engagement (0 likes, 53 views). 2026-07-17: second, distinct unprompted pitch — commented on an \"agoragentic-integrations\" adapter-catalog repo (11 free wrappers, scaling past 50) suggesting Verdikta's AI-jury to keep the catalog verified as it grows. Two organic pitches to two different third-party repos within 2 days. 2026-07-26 (21:56-21:59 UTC): 2 more unprompted posts explaining Verdikta's rubric-based evaluation directly to their own followers (not pitching a third-party repo this time) — 4th/5th instance of unprompted advocacy for this account, still very low engagement (0-1 views/likes) but a consistent, repeat pattern worth a direct reply/DM.",
-      "links": ["https://x.com/Project0_Z/status/2077905210949652681", "https://x.com/Project0_Z/status/2078102241005773112", "https://x.com/Project0_Z/status/2081499690344857833", "https://x.com/Project0_Z/status/2081498987211682152"],
+      "who": "@Project0_Z (\"Sintoide\" \u2014 bio: co-founder DePINLA, AI/agent-economy builder)",
+      "signal": "2026-07-16: unprompted reply pitching Verdikta's AI-jury evaluation layer as a drop-in scoring backend for a third party's bounty/DAO Discord bot governance repo \u2014 \"that part's already solved... could plug into the bot via API instead of building scoring logic from scratch,\" offered to share docs. Organic third-party advocacy, not self-promotion of their own bounty activity. Note: bio references \"Zeta_v1\" which is superficially similar to the unrelated `Zetav1` GitHub bounty-farming spam cluster (fake Canonical-Wallet PRs against verdikta-docs/verdikta-dispatcher) \u2014 checked, no other overlap (different platform, different behavior pattern, tweet content is substantive not templated); treating as coincidental naming, not the same actor. Low engagement (0 likes, 53 views). 2026-07-17: second, distinct unprompted pitch \u2014 commented on an \"agoragentic-integrations\" adapter-catalog repo (11 free wrappers, scaling past 50) suggesting Verdikta's AI-jury to keep the catalog verified as it grows. Two organic pitches to two different third-party repos within 2 days. 2026-07-26 (21:56-21:59 UTC): 2 more unprompted posts explaining Verdikta's rubric-based evaluation directly to their own followers (not pitching a third-party repo this time) \u2014 4th/5th instance of unprompted advocacy for this account, still very low engagement (0-1 views/likes) but a consistent, repeat pattern worth a direct reply/DM.",
+      "links": [
+        "https://x.com/Project0_Z/status/2077905210949652681",
+        "https://x.com/Project0_Z/status/2078102241005773112",
+        "https://x.com/Project0_Z/status/2081499690344857833",
+        "https://x.com/Project0_Z/status/2081498987211682152"
+      ],
       "fit": 1,
       "score": 2,
       "date_found": "2026-07-17"
@@ -74,8 +106,11 @@
       "key": "github:mumuzhong3",
       "class": "integrating",
       "who": "mumuzhong3",
-      "signal": "PR #27 ('fix(validate): treat terminal bounties as INFO not ERROR', closes #14) and PR #28 ('fix(validate): now sees juryNodes', closes #16) to verdikta-applications, opened 2026-07-24. Real, substantial, tested fixes: #27 is 306 lines across 4 files with 14 new jest tests (81/81 passing) fixing a UI bug where every AWARDED/CLOSED/EXPIRED bounty rendered a false red error chip; #28 is 315 lines closing a validator gap that let a rubric pass pre-check then 400 on /jobs/create. Both MERGEABLE, no CI failures. PR body proactively asks nigelon11 about a payment path for non-bounty-board issue fixes — genuine unprompted contributor engagement, not a bounty submission. bd-radar's 07-25 run only checked this account's *fork* commit log (0 independent commits there, dropped as drive-by) and missed that the same account had opened these direct upstream PRs on 07-24; memory-flush (07-26) flagged the gap. Account: 10 public repos, 0 followers, no bio — thin profile, but the PRs themselves are the strongest single-run technical-contribution signal since bingmokaka's #18.",
-      "links": ["https://github.com/verdikta/verdikta-applications/pull/27", "https://github.com/verdikta/verdikta-applications/pull/28"],
+      "signal": "PR #27 ('fix(validate): treat terminal bounties as INFO not ERROR', closes #14) and PR #28 ('fix(validate): now sees juryNodes', closes #16) to verdikta-applications, opened 2026-07-24. Real, substantial, tested fixes: #27 is 306 lines across 4 files with 14 new jest tests (81/81 passing) fixing a UI bug where every AWARDED/CLOSED/EXPIRED bounty rendered a false red error chip; #28 is 315 lines closing a validator gap that let a rubric pass pre-check then 400 on /jobs/create. Both MERGEABLE, no CI failures. PR body proactively asks nigelon11 about a payment path for non-bounty-board issue fixes \u2014 genuine unprompted contributor engagement, not a bounty submission. bd-radar's 07-25 run only checked this account's *fork* commit log (0 independent commits there, dropped as drive-by) and missed that the same account had opened these direct upstream PRs on 07-24; memory-flush (07-26) flagged the gap. Account: 10 public repos, 0 followers, no bio \u2014 thin profile, but the PRs themselves are the strongest single-run technical-contribution signal since bingmokaka's #18.",
+      "links": [
+        "https://github.com/verdikta/verdikta-applications/pull/27",
+        "https://github.com/verdikta/verdikta-applications/pull/28"
+      ],
       "fit": 3,
       "score": 9,
       "date_found": "2026-07-26"
