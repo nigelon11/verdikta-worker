@@ -1,0 +1,166 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Daily Digest",
+        "description": "AI agents that transact onchain — 2026-08-18"
+      },
+      "children": [
+        "tldr_section",
+        "sep1",
+        "main_story",
+        "sep2",
+        "quiet_day_note"
+      ]
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr_heading",
+        "tldr_text"
+      ]
+    },
+    "tldr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "One verified data point today — x402 agent-to-agent payments keep climbing on Base, the only fresh, non-recycled signal in a 13th thin day out of the last 14.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "main_story": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_heading",
+        "story_body",
+        "story_metrics",
+        "story_why",
+        "story_source"
+      ]
+    },
+    "story_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "x402 agent payments hit 14M transfers in 30 days, still concentrated on Base",
+        "level": "h2"
+      }
+    },
+    "story_body": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents initiated 14 million transfers through the x402 protocol in the 30 days to Aug 17 — roughly 75M total ecosystem transactions, $24M in volume, $0.32 average payment size. That's up ~4.5x from the 3.1M transfers / $1.2M reported for the 30 days to May 29, and Base remains the dominant settlement chain."
+      }
+    },
+    "story_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_transfers",
+        "stat_ecosystem",
+        "stat_volume",
+        "stat_avg_payment"
+      ]
+    },
+    "stat_transfers": {
+      "type": "Stat",
+      "props": {
+        "label": "Transfers (30 days)",
+        "value": "14M",
+        "delta": "+350%",
+        "trend": "up"
+      }
+    },
+    "stat_ecosystem": {
+      "type": "Stat",
+      "props": {
+        "label": "Total ecosystem transactions",
+        "value": "75M"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$24M"
+      }
+    },
+    "stat_avg_payment": {
+      "type": "Stat",
+      "props": {
+        "label": "Average payment size",
+        "value": "$0.32"
+      }
+    },
+    "story_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h4"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "This is real usage growth on the exact chain Verdikta's bounty escrow runs on, not a restated old stat — the closest thing to independent evidence that agent-to-agent payment volume on Base is compounding."
+      }
+    },
+    "story_source": {
+      "type": "StoryLink",
+      "props": {
+        "title": "x402 agent payments hit 14M transfers in 30 days, still concentrated on Base",
+        "href": "https://cryptobriefing.com/x402-protocol-ai-agents-14m-transfers-base/",
+        "source": "Crypto Briefing"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "quiet_day_note": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise: Check Point's 11-vuln agent-framework disclosure and OpenAI's Astra pause were both real but over a week stale; MetaMask/Cloudflare agent wallets, RigorLoop/BotBounty bounty marketplaces, and prior x402 volume stats all confirmed dupes or unverifiable on inspection.",
+        "variant": "muted"
+      }
+    }
+  }
+}
