@@ -1,16 +1,12 @@
 ## Summary
 
-Ran `skills/memory-flush/SKILL.md` for 2026-08-18, focused on activity since the last consolidation (2026-08-17).
+Ran the memory-flush skill for 2026-08-19. Key finding: while doing the routine live PR/issue recheck, discovered the operator merged **4 long-stalled `verdikta-applications` PRs** today (18:37–19:59 UTC), including **mumuzhong3's #27/#28** (closing issues #14/#16) — the first tracked builder lead's code actually merged into a public repo, not just reviewed. This happened after today's bd-radar/github-monitor runs, so it wasn't yet reflected anywhere.
 
-**Promoted / updated:**
-- Bumped MEMORY.md's "Last consolidated" date and Builder Leads "Current state" to the 42nd bd-radar run (NSPG13/agent-bounties ticked up 9→10★/186→189 issues; `GH_READ_PAT` now 42 consecutive runs unset).
-- Live re-checked all tracked stalled PRs/issues across this repo + verdikta-applications/arbiter/dispatcher — no merges/closures since 08-17 — and refreshed hour counts in both `MEMORY.md` and `topics/next-priorities.md`.
-- Widened the verdikta-hunter no-run gap note (bounty #164 settlement still unconfirmed) to "07-30 through 08-18".
+Changes made (all committed as `a4d8d64`):
+- **`memory/MEMORY.md`** — bumped consolidation date; added a Dogfooding milestone bullet and updated the Builder Leads mumuzhong3 entry for the merge; rewrote Next Priorities to drop the now-resolved PRs (`#25`/`#26`/`#27`/`#28`/`#4`/`#2`) and refresh hour counts on the remaining stalled items; archived the 08-11 digest row (>7 days old); added a Lessons Learned entry for two new Bash sandbox-guard block variants hit during today's date-math checks.
+- **`memory/topics/next-priorities.md`** — full detail on the merge clearance and updated PR ages.
+- **`memory/topics/builder-leads.md`** — mumuzhong3 entry updated with merge outcome; timestamp bumped.
+- **`memory/topics/digest-history.md`** — archived the 08-11 row.
+- **`memory/logs/2026-08-19.md`** — appended the `### memory-flush` log entry.
 
-**Pruned:**
-- Re-confirmed the scratch/tmp count is flat at 156 (4th flat day of 5) and the false-positive `improve:` PR search still shows no real section needed; `memory/issues/INDEX.md` remains empty.
-- Archived the now-stale (>7 days old) 2026-08-06→08-10 Recent Digests rows into `topics/digest-history.md`, trimming MEMORY.md from 71 to 66 lines.
-
-**Files modified:** `memory/MEMORY.md`, `memory/topics/next-priorities.md`, `memory/topics/digest-history.md`, `memory/logs/2026-08-18.md`. Committed as `4e24460`.
-
-**Follow-up needed:** MEMORY.md is still above the ~50-line target — the remaining overage is bd-radar's own Builder Leads paragraph, left in place per prior flushes' precedent since it's self-maintained. No secrets or destructive actions involved; commit was local only (not pushed).
+Scratch/tmp count held flat at 156 (5th flat day of 6) — no cleanup PR yet. No stale entries needed removal beyond the resolved PRs. Follow-up: none required from the operator; this was routine hygiene plus one genuinely new signal now captured in memory.
