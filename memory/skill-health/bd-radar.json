@@ -1,15 +1,14 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-18T07:31:56Z",
-  "quality_score": 4,
-  "assessment": "Well-executed routine monitoring cycle with proper state management, correct intelligence-gating (no notification for zero new leads), and clear documentation; all tracked leads refreshed with status updates and actionable follow-ups identified.",
-  "flags": [],
-  "avg_score": 3.77,
+  "last_analyzed": "2026-08-19T07:40:50Z",
+  "quality_score": 2,
+  "assessment": "Executes correctly with proper file/memory updates, but auth blocker (GH_READ_PAT 401 for 43 consecutive runs) limits GitHub discovery, and zero new leads for 43 runs fails primary mission despite comprehensive search sweep.",
+  "flags": [
+    "api_error",
+    "low_quality"
+  ],
+  "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-20",
-      "score": 3
-    },
     {
       "date": "2026-07-21",
       "score": 4
@@ -125,6 +124,10 @@
     {
       "date": "2026-08-18",
       "score": 4
+    },
+    {
+      "date": "2026-08-19",
+      "score": 2
     }
   ]
 }

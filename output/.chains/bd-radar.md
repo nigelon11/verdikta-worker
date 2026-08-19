@@ -1,19 +1,23 @@
-Run complete — the pre-existing untracked files (`.notify-sent-hashes`, `notify`, `notify-jsonrender`) are unrelated infra scripts already present at session start, left untouched.
-
 ## Summary
 
-Ran the 42nd `bd-radar` cycle for 2026-08-18:
-- **GitHub:** `GH_READ_PAT` still returns 401 (42 consecutive runs) — fell back to `gh api`/`gh search` with the default token, which covers all 5 watched repos. No new forks with independent activity, no new third-party issues/PRs beyond the already-tracked `mumuzhong3`/`bingmokaka` PRs.
-- **X (xAI x_search):** 6 posts since 08-15, all from already-tracked accounts (`@verdikta19633` official, `@AjAkmarudi72937`) — no new handles.
-- **Web:** No new HN/Reddit/builder discussion; unrelated "Agent Bounty" platforms checked and dropped (name-coincidence only).
-- **Result: 0 new lead keys.** All 8 tracked leads carried forward with refreshed status (`s97472091-pixel` now 6 days quiet; `aaronjmars/aeon-agent`'s verdikta-hunter skill still not restored; `NSPG13/agent-bounties` up to 189 open issues/10★).
+Executed the `bd-radar` skill (43rd run, dry-run not requested). Swept GitHub (forks/issues via `gh api`, `GH_READ_PAT` still 401/unset — 43 consecutive runs, no functional impact via public fallback), `gh search` discovery, X (xAI `x_search`, since 08-16), and web/HN/Reddit for new Verdikta builder signal.
 
-**Files changed (committed as `9067e52`):**
-- `output/articles/bd-radar-2026-08-18.md` — new ranked digest
-- `memory/topics/builder-leads.md` — appended 42nd-run entry, bumped timestamp
-- `memory/topics/bd-radar-leads.json` — refreshed s97472091-pixel quiet-streak note
-- `memory/logs/2026-08-18.md` — new `### bd-radar` log block
+**Result: 0 new leads.** All 8 previously-tracked leads carried forward with incremental status updates:
+- `s97472091-pixel` (building) — 7th consecutive quiet day since last activity (08-12)
+- `mumuzhong3` / `bingmokaka` (integrating) — PRs #27/#28/#18 still open/unreviewed
+- `aaronjmars/aeon-agent` (integrating) — verdikta-hunter skill still not restored, 11★ unchanged
+- `NSPG13/agent-bounties` (adjacent/competitor) — 194 open issues (up from 189), 10★ unchanged
+- `@AjAkmarudi72937`, `@Fishhead8u`, `@Project0_Z` (mentioning) — no new activity this run
 
-**Notification:** none sent — no new `building`/`integrating` lead this run (quiet-by-design per the skill's gating rule).
+One new X handle (`@Juliann03274253`) surfaced but was a content-free "added to list" notification, checked and dropped. No new GitHub forks, issues, or ecosystem repos found beyond the known set.
 
-**Follow-up needed:** `GH_READ_PAT` remains unset/401 for 42 straight runs (no functional impact yet, already tracked in `Next Priorities`); `mumuzhong3`/`bingmokaka` PRs (#27/#28/#18 on `verdikta-applications`) remain unreviewed and are worth an operator merge.
+**Files updated:**
+- `output/articles/bd-radar-2026-08-19.md` — ranked digest (new file)
+- `memory/logs/2026-08-19.md` — `### bd-radar` log entry (new file)
+- `memory/topics/bd-radar-leads.json` — incremental status text on 3 lead entries
+- `memory/topics/builder-leads.md` — 43rd-run entry appended
+- `memory/MEMORY.md` — Builder Leads and Next Priorities sections bumped
+
+**Notification:** not sent — gated on ≥1 new `building`/`integrating` lead this run; none found, consistent with quiet-by-design behavior.
+
+**Follow-up needed:** `GH_READ_PAT` remains unset/401 after 43 consecutive runs (operator action, already tracked in Next Priorities).
