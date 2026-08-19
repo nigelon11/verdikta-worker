@@ -1,0 +1,312 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-08-19"
+      },
+      "children": [
+        "heading-tldr",
+        "text-tldr",
+        "sep1",
+        "heading-aws",
+        "story-aws",
+        "stack-aws-details",
+        "text-aws-why",
+        "sep2",
+        "alert-quiet",
+        "stack-stale-items"
+      ]
+    },
+    "heading-tldr": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-tldr": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day — the one verifiable development is AWS taking its agent-payment rail from preview to production, expanding standard support and safety caps for autonomous machine payments.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-aws": {
+      "type": "Heading",
+      "props": {
+        "text": "AWS makes agent payments a mainstream cloud primitive",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "story-aws": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Amazon Bedrock AgentCore Payments is now generally available",
+        "href": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/",
+        "source": "AWS Machine Learning Blog",
+        "score": "Aug 18"
+      },
+      "children": []
+    },
+    "stack-aws-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-aws-1",
+        "text-aws-2",
+        "text-aws-3",
+        "text-aws-4"
+      ]
+    },
+    "text-aws-1": {
+      "type": "Text",
+      "props": {
+        "text": "Moved from preview to general availability (Aug 18)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-aws-2": {
+      "type": "Text",
+      "props": {
+        "text": "Added second payment standard (Stripe/Tempo's MPP) alongside x402",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-aws-3": {
+      "type": "Text",
+      "props": {
+        "text": "Includes \"upto\" spending-ceiling scheme and one-click Coinbase credential setup",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-aws-4": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare joins as merchant-side integration alongside Coinbase and Stripe Privy wallets",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-aws-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Every payment session now enforces a hard max-spend + expiry check at the infrastructure layer before AWS will sign a transaction — a hyperscaler shipping deterministic spend guardrails as a default, not an add-on, raises the bar for what \"safe\" agent payments means industry-wide.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert-quiet": {
+      "type": "Alert",
+      "props": {
+        "title": "Quiet news day",
+        "message": "14th thin/empty day in the last 15. Everything else checked out stale or recycled.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "stack-stale-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stale-okx",
+        "stale-legal",
+        "stale-visa",
+        "stale-cloudflare",
+        "stale-chainlink",
+        "stale-coinbase"
+      ]
+    },
+    "stale-okx": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-okx",
+        "badge-stale-okx"
+      ]
+    },
+    "text-stale-okx": {
+      "type": "Text",
+      "props": {
+        "text": "OKX's \"new\" agent payment protocol",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-okx": {
+      "type": "Badge",
+      "props": {
+        "text": "Apr 30",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stale-legal": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-legal",
+        "badge-stale-legal"
+      ]
+    },
+    "text-stale-legal": {
+      "type": "Text",
+      "props": {
+        "text": "The \"Legal Context Protocol\" dispute layer (same AAA effort flagged stale before)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-legal": {
+      "type": "Badge",
+      "props": {
+        "text": "Jun 25",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stale-visa": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-visa",
+        "badge-stale-visa"
+      ]
+    },
+    "text-stale-visa": {
+      "type": "Text",
+      "props": {
+        "text": "Visa's Agent Score/Agentic Directory",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-visa": {
+      "type": "Badge",
+      "props": {
+        "text": "Jun 10",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stale-cloudflare": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-cloudflare",
+        "badge-stale-cloudflare"
+      ]
+    },
+    "text-stale-cloudflare": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare Kitesurf/Wallets (already covered)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-cloudflare": {
+      "type": "Badge",
+      "props": {
+        "text": "Aug 4-6",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stale-chainlink": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-chainlink",
+        "badge-stale-chainlink"
+      ]
+    },
+    "text-stale-chainlink": {
+      "type": "Text",
+      "props": {
+        "text": "Chainlink's \"AI agent product\" (recap of the Aug 14 Chainlink-for-Agents launch)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-chainlink": {
+      "type": "Badge",
+      "props": {
+        "text": "Aug 14",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stale-coinbase": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stale-coinbase",
+        "badge-stale-coinbase"
+      ]
+    },
+    "text-stale-coinbase": {
+      "type": "Text",
+      "props": {
+        "text": "Coinbase's 69K-agent/165M-tx/$50M stat (still the same April figure recirculating)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge-stale-coinbase": {
+      "type": "Badge",
+      "props": {
+        "text": "April (recycled)",
+        "variant": "secondary"
+      },
+      "children": []
+    }
+  }
+}
