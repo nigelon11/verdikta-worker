@@ -1,0 +1,122 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "badge-info",
+        "separator-1",
+        "heading-prs",
+        "prs-stack",
+        "separator-2",
+        "heading-repos",
+        "repos-table"
+      ]
+    },
+    "badge-info": {
+      "type": "Badge",
+      "props": {
+        "text": "INFO",
+        "variant": "secondary"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pending Pull Requests",
+        "level": "h3"
+      }
+    },
+    "prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-1",
+        "pr-2",
+        "pr-3"
+      ]
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "Draft • Gitleaks Secret Scan failing • draft-capped, not urgent • Idle ~879h since 2026-07-14"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "Draft • CodeQL passing • Idle ~879h since 2026-07-14"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "Zetav1's forensic-CID docs PR • Idle ~997h since 2026-07-09"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-repos": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "repos-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
