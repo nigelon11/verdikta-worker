@@ -1,0 +1,40 @@
+{
+  "root": "card1",
+  "state": {},
+  "elements": {
+    "card1": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "stack1"
+      ]
+    },
+    "stack1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge1",
+        "alert1"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "write-tweet::revise",
+        "variant": "outline"
+      }
+    },
+    "alert1": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Want to refine this draft? Reply with a change and I'll revise it."
+      }
+    }
+  }
+}
