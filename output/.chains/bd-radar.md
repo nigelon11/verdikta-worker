@@ -1,23 +1,13 @@
 ## Summary
 
-Executed the `bd-radar` skill (43rd run, dry-run not requested). Swept GitHub (forks/issues via `gh api`, `GH_READ_PAT` still 401/unset — 43 consecutive runs, no functional impact via public fallback), `gh search` discovery, X (xAI `x_search`, since 08-16), and web/HN/Reddit for new Verdikta builder signal.
+Ran bd-radar's 44th cycle (2026-08-20). Swept GitHub (forks/issues/PRs across all 5 watched repos + `gh search` on all configured terms), X (xAI `x_search`, http=200), and web/HN/Reddit — **0 new lead keys**. All 8 tracked leads carried forward unchanged, except one status update: `mumuzhong3`'s PRs #27/#28 to `verdikta-applications` are now confirmed **merged** (2026-08-19) — the first third-party fix actually shipped to a public Verdikta repo, not just reviewed. `GH_READ_PAT` remains 401/unset (44 consecutive runs; no functional impact, public API fallback covers everything).
 
-**Result: 0 new leads.** All 8 previously-tracked leads carried forward with incremental status updates:
-- `s97472091-pixel` (building) — 7th consecutive quiet day since last activity (08-12)
-- `mumuzhong3` / `bingmokaka` (integrating) — PRs #27/#28/#18 still open/unreviewed
-- `aaronjmars/aeon-agent` (integrating) — verdikta-hunter skill still not restored, 11★ unchanged
-- `NSPG13/agent-bounties` (adjacent/competitor) — 194 open issues (up from 189), 10★ unchanged
-- `@AjAkmarudi72937`, `@Fishhead8u`, `@Project0_Z` (mentioning) — no new activity this run
+**Files created/modified** (committed as `449834b`):
+- `output/articles/bd-radar-2026-08-20.md` — ranked lead digest
+- `memory/logs/2026-08-20.md` — `### bd-radar` log block
+- `memory/topics/bd-radar-leads.json` — updated mumuzhong3 merge status, s97472091-pixel quiet-day count, NSPG13 pace check
+- `memory/topics/builder-leads.md` — appended today's detailed run entry
 
-One new X handle (`@Juliann03274253`) surfaced but was a content-free "added to list" notification, checked and dropped. No new GitHub forks, issues, or ecosystem repos found beyond the known set.
+**Notification:** not sent — gated on ≥1 new `building`/`integrating` lead key; the mumuzhong3 merge is a status change on an existing lead, not a new one.
 
-**Files updated:**
-- `output/articles/bd-radar-2026-08-19.md` — ranked digest (new file)
-- `memory/logs/2026-08-19.md` — `### bd-radar` log entry (new file)
-- `memory/topics/bd-radar-leads.json` — incremental status text on 3 lead entries
-- `memory/topics/builder-leads.md` — 43rd-run entry appended
-- `memory/MEMORY.md` — Builder Leads and Next Priorities sections bumped
-
-**Notification:** not sent — gated on ≥1 new `building`/`integrating` lead this run; none found, consistent with quiet-by-design behavior.
-
-**Follow-up needed:** `GH_READ_PAT` remains unset/401 after 43 consecutive runs (operator action, already tracked in Next Priorities).
+**Follow-up for the operator:** `GH_READ_PAT` still needs fixing (44 runs unset) before GitHub rate limits become a real constraint on the fallback path.
