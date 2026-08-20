@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-08-19T23:37:34Z
+timestamp: 2026-08-20T23:40:00Z
 ---
 
 # Digest History Archive
@@ -13,6 +13,7 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | Date | Type | Key Topics |
 |------|------|------------|
 | 2026-07-09 | AI agents that transact onchain | Ritual TEE bounty judge, AIsa funding, Moonbeam→Base |
+| 2026-08-12 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 5th consecutive thin/empty day, 0 items cleared the bar; the two loudest X candidates (x402 "165M txs/69K agents", x402 "$50B/200M payments") turned out to be recycled April/early-Aug stats reframed as new by the posting accounts, not fresh events; rest was dupes (Coldcard, Apple bug-bounty cap) or 2+wk stale (MoonPay PayBox, IoTeX Quicksilver) or unverified token/promo posts; no notification sent |
 | 2026-07-10 | AI agents that transact onchain | GenLayer Internet Court (AI jury), Ethereum Foundation AI-agent CVE find |
 | 2026-07-11 | AI agents that transact onchain | Zscaler live prompt-injection draining agent wallets, thin news day |
 | 2026-07-12 | AI agents that transact onchain | Occa Labs x402/Solana settlement layer ships live, Robinhood extends agentic trading to crypto |
