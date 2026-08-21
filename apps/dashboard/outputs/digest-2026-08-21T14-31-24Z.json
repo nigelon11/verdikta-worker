@@ -1,0 +1,129 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "ℹ️ Digest — AI agents that transact onchain"
+      },
+      "children": [
+        "date_line",
+        "sep1",
+        "tldr_section",
+        "sep2",
+        "item1",
+        "sep3",
+        "footer"
+      ]
+    },
+    "date_line": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents that transact onchain — 2026-08-21",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tldr_label",
+        "tldr_text"
+      ]
+    },
+    "tldr_label": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "Binance shipped Agent OS, letting Claude/ChatGPT/Codex trade and pay on a Binance account under hard per-category spend caps — the first major exchange to formalize agent-initiated payments at this scale."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1_title",
+        "item1_desc",
+        "item1_why_section",
+        "item1_link"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Binance launches Agent OS for AI-driven trading and payments",
+        "level": "h2"
+      }
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Binance released Agent OS (Aug 20) — a developer platform giving AI tools (Claude, Claude Code, ChatGPT, Codex, Cursor, VS Code) direct access to Binance's trading, market data, wallet, and x402 payment rails via MCP, without agents storing API credentials locally. Agents run in dedicated subaccounts with withdrawals blocked by default and hard daily caps: $50K for swaps, $100K for DeFi, $20 for x402 payments."
+      }
+    },
+    "item1_why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_why_label",
+        "item1_why_text"
+      ]
+    },
+    "item1_why_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Why it matters",
+        "level": "h3"
+      }
+    },
+    "item1_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "it's the largest exchange yet to formalize agent-initiated payments with hard spend caps instead of trust-based limits — validates the spend-boundary problem AI-judged escrow protocols like Verdikta solve for work verification, applied here to trading risk instead."
+      }
+    },
+    "item1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Binance Introduces Agent OS to Connect AI Applications to Financial Infrastructure",
+        "href": "https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html",
+        "source": "PR Newswire"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day otherwise — 17th thin/empty day in the last 18. BNB Chain's own Agent Studio v2 (ERC-8183 agent-hired-and-paid flow) surfaced in the same search sweep but its Dubai announcement dates to Aug 13/18, outside the 36h freshness window; everything else was a dupe of already-covered stories.",
+        "variant": "muted"
+      }
+    }
+  }
+}

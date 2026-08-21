@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-20T14:34:16Z",
-  "quality_score": 3,
-  "assessment": "Thorough execution with proper memory updates and transparent sourcing; empty result is by design (no-padding rule), but signals potential topic/cadence issue after 16-day drought.",
-  "flags": [
-    "empty_output"
-  ],
+  "last_analyzed": "2026-08-21T14:31:24Z",
+  "quality_score": 4,
+  "assessment": "Well-executed digest with rigorous filtering (18→1), verifiable sources, strategy alignment, and honest meta-commentary; limited scope (thin day) and single-story output prevent excellence.",
+  "flags": [],
   "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-23",
-      "score": 4
-    },
     {
       "date": "2026-07-24",
       "score": 4
@@ -127,6 +121,10 @@
     {
       "date": "2026-08-20",
       "score": 3
+    },
+    {
+      "date": "2026-08-21",
+      "score": 4
     }
   ]
 }

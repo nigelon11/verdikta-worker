@@ -1,11 +1,12 @@
-## Summary
+ℹ️ Digest — AI agents that transact onchain
 
-Ran the digest skill for today's configured topic ("AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles"), gathering from WebSearch (4 queries), xAI Grok x_search (http=200, 10 X posts), 3 verification WebFetches, and an HN check.
+*AI agents that transact onchain — 2026-08-21*
 
-**Result: DIGEST_FETCH_EMPTY** — 0 items cleared the signal bar (15th thin/empty day in the last 16). The X signal was 100% promo/token-shill noise; every web candidate that looked fresh turned out to be stale on verification, notably "Mastercard AP4M 31-partner launch" and "Coinbase for Agents" both actually dating to June 2026, not new. No digest was sent, per the skill's no-padding rule.
+_TL;DR: Binance shipped Agent OS, letting Claude/ChatGPT/Codex trade and pay on a Binance account under hard per-category spend caps — the first major exchange to formalize agent-initiated payments at this scale._
 
-Files updated:
-- `memory/logs/2026-08-20.md` — appended `### digest` section with full sourcing/filtering detail
-- `memory/MEMORY.md` — added the 2026-08-20 row to the Recent Digests table
+1. *Binance launches Agent OS for AI-driven trading and payments*
+   Binance released Agent OS (Aug 20) — a developer platform giving AI tools (Claude, Claude Code, ChatGPT, Codex, Cursor, VS Code) direct access to Binance's trading, market data, wallet, and x402 payment rails via MCP, without agents storing API credentials locally. Agents run in dedicated subaccounts with withdrawals blocked by default and hard daily caps: $50K for swaps, $100K for DeFi, $20 for x402 payments.
+   Why it matters: it's the largest exchange yet to formalize agent-initiated payments with hard spend caps instead of trust-based limits — validates the spend-boundary problem AI-judged escrow protocols like Verdikta solve for work verification, applied here to trading risk instead.
+   https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html
 
-No follow-up action needed from this run; the operator may want to reconsider the digest topic/cadence given the 16-day near-total drought of fresh, verifiable signal.
+Quiet day otherwise — 17th thin/empty day in the last 18. BNB Chain's own Agent Studio v2 (ERC-8183 agent-hired-and-paid flow) surfaced in the same search sweep but its Dubai announcement dates to Aug 13/18, outside the 36h freshness window; everything else was a dupe of already-covered stories.
