@@ -114,6 +114,20 @@
       "fit": 3,
       "score": 9,
       "date_found": "2026-07-26"
+    },
+    {
+      "key": "github:Svector-anu/svectors-lab",
+      "class": "integrating",
+      "who": "Svector-anu/svectors-lab (\"svector\", blockchain engineer/SWE, x:svector_eth) — 33-follower Aeon framework fork",
+      "signal": "Fork of aaronjmars/aeon. On 2026-08-15 (commit 5c98c8b9), the operator merge-synced with upstream — which had dropped verdikta-hunter in PR #647 (the same drop already tracked under aaronjmars/aeon-agent) — and then deliberately restored/kept it locally rather than losing it: aeon.yml now carries an explicit hand-written comment, \"LOCAL-ONLY: removed from upstream's skill catalog (#647); kept here deliberately, dir preserved after sync,\" with the skill set enabled:true on workflow_dispatch (not cron) \"until a real discover run is verified against a live VERDIKTA_API_KEY.\" This is a real, active human operator, not a bot — same commit history shows deliberate curation elsewhere (e.g. \"chore(aeon): disable price-alert (too noisy)\", a fixed duplicate-key bug from the sync). No verdikta-specific workflow run found in Actions history yet (only scheduler/messages runs as of 2026-08-21), so no live discover/hunt has fired — intent confirmed, execution not yet started. Needs VERDIKTA_API_KEY (+ VERDIKTA_WALLET_KEY to eventually submit) to go live. Found via a separate Aeon-fleet fork-digest article (anajuliabit/aeon) that flagged Svector-anu as one of the fleet's \"heaviest customizers\" with verdikta-hunter among 3 fork-only skills it enabled.",
+      "links": [
+        "https://github.com/Svector-anu/svectors-lab",
+        "https://github.com/Svector-anu/svectors-lab/blob/main/aeon.yml",
+        "https://x.com/svector_eth"
+      ],
+      "fit": 3,
+      "score": 12,
+      "date_found": "2026-08-21"
     }
   ],
   "surfaced": [
@@ -124,6 +138,7 @@
     "github:bingmokaka",
     "github:NSPG13/agent-bounties",
     "x:Project0_Z",
-    "github:mumuzhong3"
+    "github:mumuzhong3",
+    "github:Svector-anu/svectors-lab"
   ]
 }

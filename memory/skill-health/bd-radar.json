@@ -1,15 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-20T07:56:58Z",
+  "last_analyzed": "2026-08-21T07:49:46Z",
   "quality_score": 4,
-  "assessment": "Well-structured multi-source sweep with proper logging; found concrete signal (mumuzhong3 merge confirmation) and correctly gated notification per strategy.",
+  "assessment": "Substantive, well-structured cycle with actionable lead discovery and proper documentation; one lingering auth issue (GH_READ_PAT) mitigated but unresolved across 45 runs.",
   "flags": [],
   "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-22",
-      "score": 4
-    },
     {
       "date": "2026-07-23",
       "score": 3
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-20",
+      "score": 4
+    },
+    {
+      "date": "2026-08-21",
       "score": 4
     }
   ]

@@ -1,0 +1,144 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "BD Radar — new lead"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-link",
+        "operator-badges",
+        "details-section",
+        "status-alert",
+        "action-section",
+        "digest-link"
+      ]
+    },
+    "repo-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Svector-anu/svectors-lab",
+        "href": "https://github.com/Svector-anu/svectors-lab",
+        "source": "GitHub"
+      }
+    },
+    "operator-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "operator-badge",
+        "lead-class-badge"
+      ]
+    },
+    "operator-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "@svector_eth"
+      }
+    },
+    "lead-class-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "integrating-class lead",
+        "variant": "secondary"
+      }
+    },
+    "details-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "detail-fork",
+        "detail-preservation",
+        "detail-note",
+        "detail-status"
+      ]
+    },
+    "detail-fork": {
+      "type": "Text",
+      "props": {
+        "text": "Forked Aeon framework and deliberately kept verdikta-hunter alive after upstream sync dropped it",
+        "variant": "body"
+      }
+    },
+    "detail-preservation": {
+      "type": "Text",
+      "props": {
+        "text": "verdikta-hunter preservation: explicit 'kept here deliberately' note added 08-15",
+        "variant": "caption"
+      }
+    },
+    "detail-note": {
+      "type": "Text",
+      "props": {
+        "text": "Configuration status: live but not yet run",
+        "variant": "caption"
+      }
+    },
+    "detail-status": {
+      "type": "Badge",
+      "props": {
+        "text": "configured",
+        "variant": "outline"
+      }
+    },
+    "status-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Blocker",
+        "message": "Blocked on VERDIKTA_API_KEY — awaiting key to enable first discover run",
+        "type": "warning"
+      }
+    },
+    "action-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-heading",
+        "action-text"
+      ]
+    },
+    "action-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Suggested move",
+        "level": "h4"
+      }
+    },
+    "action-text": {
+      "type": "Text",
+      "props": {
+        "text": "DM @svector_eth offering a VERDIKTA_API_KEY to get their first live discover run going",
+        "variant": "body"
+      }
+    },
+    "digest-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full digest",
+        "href": "output/articles/bd-radar-2026-08-21.md",
+        "source": "BD Radar"
+      }
+    }
+  }
+}
