@@ -1,15 +1,11 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-08-20T21:05:05Z",
-  "quality_score": 5,
-  "assessment": "Generated substantive tweet drafts with live API research, strategic alignment to Verdikta adoption, and clean execution; all outputs properly logged and saved.",
+  "last_analyzed": "2026-08-21T21:12:36Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured output with strategic topic selection, successful live API enrichment (http=200), 10 quality drafts across tiers, clear methodology, and good logging — aligns with strategy priorities; no issues flagged.",
   "flags": [],
   "avg_score": 4.03,
   "history": [
-    {
-      "date": "2026-07-22",
-      "score": 4
-    },
     {
       "date": "2026-07-23",
       "score": 4
@@ -125,6 +121,10 @@
     {
       "date": "2026-08-20",
       "score": 5
+    },
+    {
+      "date": "2026-08-21",
+      "score": 4
     }
   ]
 }
