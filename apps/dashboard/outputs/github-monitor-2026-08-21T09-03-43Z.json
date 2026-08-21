@@ -1,0 +1,156 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs_section",
+        "separator_1",
+        "repos_section"
+      ]
+    },
+    "prs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "prs_label",
+        "pr_1",
+        "pr_2",
+        "pr_3"
+      ]
+    },
+    "prs_label": {
+      "type": "Text",
+      "props": {
+        "text": "Pull Requests",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "pr_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 — draft PR, Gitleaks Secret Scan FAILURE, idle ~902h",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "pr_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5 — draft PR, CI passing, idle ~902h",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "pr_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1 — PR idle ~1021h, Vercel passing",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "repos_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repos_label",
+        "repos_badges"
+      ]
+    },
+    "repos_label": {
+      "type": "Text",
+      "props": {
+        "text": "Repository Status",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "repos_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_applications",
+        "badge_arbiter",
+        "badge_dispatcher",
+        "badge_docs",
+        "badge_roadmap"
+      ]
+    },
+    "badge_applications": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_arbiter": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_dispatcher": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_roadmap": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "secondary"
+      },
+      "children": []
+    }
+  }
+}
