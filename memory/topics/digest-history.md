@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-08-20T23:40:00Z
+timestamp: 2026-08-21T23:40:00Z
 ---
 
 # Digest History Archive
@@ -43,3 +43,4 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-08-09 | AI agents that transact onchain | DIGEST_THIN — MetaMask launches Agent Wallet (self-custodial, spend caps/allowlists, $10K/mo loss coverage, Claude Code/Cursor/OpenClaw support), first top-tier wallet to ship dedicated AI-agent transaction infra; otherwise dead day, Sapiom $35M raise/OSL AgentPay/x402 Foundation/Google VRP overhaul/OpenAI containment story all stale or off-angle |
 | 2026-08-10 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 3rd thin/empty day running, 0 items cleared the bar; OSL AgentPay recirculated (dupe of 08-07), Injective/POSCO/LG CNS trade-finance pilot verified but >36h stale, Dendra Network ($DNDR) verifiable-AI-inference-plus-bounty concept held back as unverified token-promo, no notification sent |
 | 2026-08-11 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 4th consecutive thin/empty day, 0 items cleared the bar; everything found was either >36h stale (Bitcoin Red Team AI-vuln-hunt Aug 6, Hush Security $30M raise Jul 28, AWS Bedrock AgentCore Payments/Ant Group Anvita/Keyrock $73M report all May-Jul), a dupe of 08-09/08-10 (MetaMask Agent Wallet, OSL AgentPay), or thin single-account X promo posts (Injective Nova Program recap of a Jul 25 event, aixbt agent-identity thread); no notification sent |
+| 2026-08-13 | AI agents that transact onchain | DIGEST_THIN — 6th consecutive thin/empty day; SKALE Labs launches Agent Pit (Aug 12), a Polymarket-mirroring paper-trading sandbox for training AI trading agents before real deployment — otherwise dead day, OSL AgentPay/MetaMask/Cloudflare/MoonPay wallets and the OpenAI/HuggingFace/Meta rogue-agent hack wave all recirculated dupes, Fireblocks x402 Foundation/ORA funding/"Bounty AI" marketplace all confirmed stale on inspection |
