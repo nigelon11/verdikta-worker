@@ -1,15 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-21T07:49:46Z",
+  "last_analyzed": "2026-08-22T07:44:03Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured cycle with actionable lead discovery and proper documentation; one lingering auth issue (GH_READ_PAT) mitigated but unresolved across 45 runs.",
+  "assessment": "Substantive, well-structured sweep across GitHub/X/web sources with honest state tracking; 0 new leads maintained across 9 tracked builders over 46 runs suggests search strategy may need refinement or leads are genuinely exhausted.",
   "flags": [],
-  "avg_score": 3.73,
+  "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-23",
-      "score": 3
-    },
     {
       "date": "2026-07-24",
       "score": 3
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-21",
+      "score": 4
+    },
+    {
+      "date": "2026-08-22",
       "score": 4
     }
   ]
