@@ -1,14 +1,13 @@
-Changes look correct — `memory/MEMORY.md` updated and `memory/logs/2026-08-20.md` created (the other untracked files are generated scripts/dedup logs, not mine to touch).
-
 ## Summary
 
-Ran mention-radar for **Verdikta** (var override):
+Ran `mention-radar` for target **Verdikta** (var override, single target).
 
-- **X/Twitter** (X.AI `x_search`, http=200, X_SOURCE=api, window 2026-08-13→08-20): 0 third-party mentions found across keyword + semantic search.
-- **Broader web** (WebSearch — Reddit, HN, Farcaster, Product Hunt, blogs, GitHub Discussions): 0 organic third-party mentions — only first-party docs.verdikta.org/docs.verdikta.com and github.com/verdikta results.
-- **GitHub stars**: verdikta-docs=72, verdikta-applications=24, verdikta-arbiter=23, verdikta-dispatcher=17, verdikta-roadmap=0 — all flat (Δ0) vs the last run (08-18).
-- **Result:** 2nd consecutive QUIET cycle. Per skill step 7 (all quiet, no star delta >5), no notification sent.
+- **X/Twitter (Path A, X.AI `x_search`, http=200):** 2 keyword searches over 2026-08-15→08-22, excluding `@verdikta19633` — 0 third-party mentions found.
+- **Broader web (WebSearch — Reddit, HN, Product Hunt, Farcaster, blogs, GitHub Discussions):** only first-party results (verdikta.org, docs.verdikta.com, github.com/verdikta) — no organic third-party discussion.
+- **GitHub star deltas:** verdikta-docs=72, verdikta-applications=24, verdikta-arbiter=23, verdikta-dispatcher=17, verdikta-roadmap=0 — all flat vs. the 08-20 baseline (Δ0 everywhere, none crossing the >5 threshold).
 
-Files modified: `memory/logs/2026-08-20.md` (new log entry), `memory/MEMORY.md` (updated mention-radar skill row). The GH Actions workflow auto-commits these on run completion — no manual commit needed.
+Per skill step 7 (all quiet, no star delta >5), no notification was sent — logged `MENTION_RADAR_QUIET`.
 
-No follow-up action needed; two consecutive quiet cycles is consistent with prior periods and not yet a pattern worth flagging to the operator.
+**File created:** `memory/logs/2026-08-22.md` with the `### Mention Radar` entry (per `commits: false` in the skill frontmatter, no manual git commit was made — left for the workflow's post-run handling).
+
+No follow-up actions needed; next scheduled run per the every-2-days cadence.
