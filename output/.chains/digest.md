@@ -1,12 +1,14 @@
-ℹ️ Digest — AI agents that transact onchain
+## Summary
 
-*AI agents that transact onchain — 2026-08-21*
+Executed the `digest` skill (`var` from `aeon.yml`: "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles", web sources only).
 
-_TL;DR: Binance shipped Agent OS, letting Claude/ChatGPT/Codex trade and pay on a Binance account under hard per-category spend caps — the first major exchange to formalize agent-initiated payments at this scale._
+**Findings:** First non-thin digest day in 18. Strongest item: **Apex Fusion Foundation opened Vector** (Aug 18) — a staked-jury, bonded-escrow settlement layer for AI-agent work, live on Cardano mainnet for 11 months with 20,000+ jobs settled in an OriginTrail pilot before opening publicly. This is the closest public analog to Verdikta's own AI-jury + escrow model found yet — corroborated across 4 independent outlets, flagged as a first-priority read for you. Second item: NeoSoul's $11M pre-A for AI trading-agent infra (Aug 20). Dropped ~20 other candidates as duplicates, stale, or unverifiable (Bedrock AgentCore GA repeat, Binance Agent OS repeat, Concordium/Internet Court/Bounty.ai all weeks-stale, an OpenLedger opinion piece, etc.).
 
-1. *Binance launches Agent OS for AI-driven trading and payments*
-   Binance released Agent OS (Aug 20) — a developer platform giving AI tools (Claude, Claude Code, ChatGPT, Codex, Cursor, VS Code) direct access to Binance's trading, market data, wallet, and x402 payment rails via MCP, without agents storing API credentials locally. Agents run in dedicated subaccounts with withdrawals blocked by default and hard daily caps: $50K for swaps, $100K for DeFi, $20 for x402 payments.
-   Why it matters: it's the largest exchange yet to formalize agent-initiated payments with hard spend caps instead of trust-based limits — validates the spend-boundary problem AI-judged escrow protocols like Verdikta solve for work verification, applied here to trading risk instead.
-   https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html
+**Blocker:** `./notify` returned "This command requires approval" on two attempts and did not send — this looks like a session permission-mode issue rather than a content decision, so I didn't mark it as delivered. The digest body is held at `.digest-body-tmp.md` (repo root) for your review/manual send, and I logged the anomaly explicitly in `memory/logs/2026-08-22.md` and `memory/MEMORY.md` so it doesn't get silently reported as sent.
 
-Quiet day otherwise — 17th thin/empty day in the last 18. BNB Chain's own Agent Studio v2 (ERC-8183 agent-hired-and-paid flow) surfaced in the same search sweep but its Dubai announcement dates to Aug 13/18, outside the 36h freshness window; everything else was a dupe of already-covered stories.
+**Files modified:**
+- `memory/logs/2026-08-22.md` — added `### digest` and `### digest — under the hood` entries
+- `memory/MEMORY.md` — added the 2026-08-22 Recent Digests row, flagged as not-delivered
+- `.digest-body-tmp.md` (new, untracked) — the drafted digest, ready to send
+
+**Follow-up needed:** you (or a future run) should either send `.digest-body-tmp.md` via `./notify` manually, or re-run digest once notify permissions are sorted. Worth flagging the notify-approval block to skill-health if it recurs.
