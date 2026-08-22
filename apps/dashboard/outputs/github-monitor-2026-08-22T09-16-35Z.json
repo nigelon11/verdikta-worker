@@ -1,0 +1,166 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_prs",
+        "separator_1",
+        "stack_repos"
+      ]
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_prs",
+        "storylink_8",
+        "alert_9",
+        "storylink_5",
+        "storylink_1"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "storylink_8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "Idle 62h, no CI configured"
+      },
+      "children": []
+    },
+    "alert_9": {
+      "type": "Alert",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "message": "Draft PR idle ~39d, Gitleaks Secret Scan FAILURE — https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "type": "error"
+      },
+      "children": []
+    },
+    "storylink_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "Draft PR idle ~39d, CodeQL passing"
+      },
+      "children": []
+    },
+    "storylink_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "Idle ~44d (Zetav1 forensic-CID docs), Vercel deploy succeeded"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_repos",
+        "grid_repos"
+      ]
+    },
+    "heading_repos": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "grid_repos": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "badge_app",
+        "badge_arb",
+        "badge_disp",
+        "badge_docs",
+        "badge_road"
+      ]
+    },
+    "badge_app": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-applications: ok",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_arb": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-arbiter: ok",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_disp": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-dispatcher: ok",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-docs: ok",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_road": {
+      "type": "Badge",
+      "props": {
+        "text": "verdikta-roadmap: ok",
+        "variant": "outline"
+      },
+      "children": []
+    }
+  }
+}
