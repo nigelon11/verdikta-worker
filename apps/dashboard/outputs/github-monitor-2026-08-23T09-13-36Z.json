@@ -1,0 +1,107 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info-indicator",
+        "separator-0",
+        "heading-prs",
+        "stack-prs",
+        "separator-1",
+        "heading-repos",
+        "repo-status"
+      ]
+    },
+    "info-indicator": {
+      "type": "Text",
+      "props": {
+        "text": "▶ INFO",
+        "variant": "muted"
+      }
+    },
+    "separator-0": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-1",
+        "pr-2",
+        "pr-3",
+        "pr-4"
+      ]
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "source": "Note — idle 86h, no CI configured",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8"
+      }
+    },
+    "pr-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9 (draft)",
+        "source": "Note — Gitleaks Secret Scan failing, idle 950h",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9"
+      }
+    },
+    "pr-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5 (draft)",
+        "source": "Note — CodeQL passing, idle 950h",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5"
+      }
+    },
+    "pr-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "source": "Note — idle 1069h, Vercel passing",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-repos": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "repo-status": {
+      "type": "Text",
+      "props": {
+        "text": "sources: verdikta-applications=ok, verdikta-arbiter=ok, verdikta-dispatcher=ok, verdikta-docs=ok, verdikta-roadmap=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
