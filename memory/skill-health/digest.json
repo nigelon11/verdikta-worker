@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-22T14:10:05Z",
+  "last_analyzed": "2026-08-23T14:17:58Z",
   "quality_score": 4,
-  "assessment": "Substantive research with direct protocol analog (Apex Fusion Vector), well-sourced across 4 outlets, strategically aligned. Blocked on notify permission but properly escalated; research quality is 4-star despite incomplete delivery.",
+  "assessment": "Well-executed filtering logic; correctly identified spam/dupes/stale content and applied freshness rules; properly documented decision-making and memory updates; correct behavior to skip notification on thin day per spec.",
   "flags": [],
   "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-25",
-      "score": 4
-    },
     {
       "date": "2026-07-26",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-22",
+      "score": 4
+    },
+    {
+      "date": "2026-08-23",
       "score": 4
     }
   ]

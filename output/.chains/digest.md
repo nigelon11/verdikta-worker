@@ -1,14 +1,13 @@
 ## Summary
 
-Executed the `digest` skill (`var` from `aeon.yml`: "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles", web sources only).
+Ran the `digest` skill for 2026-08-23 with `var=""` (default web sources, tracked-topic focus: AI agents that transact onchain / agent payments / AI-judged bounties / oracles).
 
-**Findings:** First non-thin digest day in 18. Strongest item: **Apex Fusion Foundation opened Vector** (Aug 18) — a staked-jury, bonded-escrow settlement layer for AI-agent work, live on Cardano mainnet for 11 months with 20,000+ jobs settled in an OriginTrail pilot before opening publicly. This is the closest public analog to Verdikta's own AI-jury + escrow model found yet — corroborated across 4 independent outlets, flagged as a first-priority read for you. Second item: NeoSoul's $11M pre-A for AI trading-agent infra (Aug 20). Dropped ~20 other candidates as duplicates, stale, or unverifiable (Bedrock AgentCore GA repeat, Binance Agent OS repeat, Concordium/Internet Court/Bounty.ai all weeks-stale, an OpenLedger opinion piece, etc.).
+**Result: DIGEST_FETCH_EMPTY** — 0 of ~16 web candidates and 7 X posts cleared the filter bar (19th thin/empty day in the last 20). X signal was 100% token-promo/spam via xAI x_search. Web candidates were either recycled dupes of stories already covered in the 08-17→08-22 digests (x402 payment stats, Amazon Bedrock GA, Stripe/OpenRouter, Binance Agent OS), verified stale-on-inspection despite fresh framing (OSL AgentPay, a Show HN "BountyBook" USDC-escrow marketplace, Kustodia, Yield.xyz, OKX, GenLayer Internet Court), or pure speculation with no confirmed facts (a Binance Agent OS "safeguards" hot-take piece). One genuinely new item — Google's A2A protocol formally joining the Linux Foundation's Agentic AI Foundation — was dropped for being ~72h stale with no new-development justification per the skill's 36h freshness rule.
 
-**Blocker:** `./notify` returned "This command requires approval" on two attempts and did not send — this looks like a session permission-mode issue rather than a content decision, so I didn't mark it as delivered. The digest body is held at `.digest-body-tmp.md` (repo root) for your review/manual send, and I logged the anomaly explicitly in `memory/logs/2026-08-22.md` and `memory/MEMORY.md` so it doesn't get silently reported as sent.
+Per the skill's constraints, no notification was sent (never pad a thin day).
 
 **Files modified:**
-- `memory/logs/2026-08-22.md` — added `### digest` and `### digest — under the hood` entries
-- `memory/MEMORY.md` — added the 2026-08-22 Recent Digests row, flagged as not-delivered
-- `.digest-body-tmp.md` (new, untracked) — the drafted digest, ready to send
+- `memory/logs/2026-08-23.md` — appended `### digest` and `### digest — under the hood` sections
+- `memory/MEMORY.md` — added the 2026-08-23 row to the Recent Digests table
 
-**Follow-up needed:** you (or a future run) should either send `.digest-body-tmp.md` via `./notify` manually, or re-run digest once notify permissions are sorted. Worth flagging the notify-approval block to skill-health if it recurs.
+**Follow-up:** none required — this is a normal thin-day outcome per the skill spec, no operator decision needed.
