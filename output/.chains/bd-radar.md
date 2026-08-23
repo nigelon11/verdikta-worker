@@ -1,16 +1,15 @@
-Pushed successfully.
+Committed. Per the skill's notification gate (step 6), no self-notify is warranted — no new `building` or `integrating` class lead this run, so staying quiet to avoid lead-noise.
 
 ## Summary
 
-Ran the `bd-radar` skill (46th run). Swept GitHub (forks/issues on all 5 watched public `verdikta/*` repos, `gh search` discovery), X (xAI `x_search`, 3-day window), and web (WebSearch for HN/Reddit/organic mentions). Result: **0 new leads** — all 9 previously tracked leads (1 building, 4 integrating, 1 adjacent/competitor, 3 mentioning) carried forward unchanged. Notable: X search returned zero posts in the lookback window — the first fully empty X window since tracking began — and `NSPG13/agent-bounties`'s open-issue count climbed to 210 (from 194) with no design-direction change. `GH_READ_PAT` remains unset (46 consecutive runs, no functional impact — public API fallback still covers everything).
+Ran `bd-radar` (47th cycle) for 2026-08-23. Findings:
+- **0 new leads** — all 9 tracked leads (s97472091-pixel, aaronjmars/aeon-agent, Svector-anu/svectors-lab, bingmokaka, mumuzhong3, NSPG13/agent-bounties, @AjAkmarudi72937, @Fishhead8u, @Project0_Z) carried forward unchanged.
+- GitHub forks/issues: skipped, `GH_READ_PAT` still unset (47 consecutive runs, no functional impact — public API fallback covers all 5 repos).
+- `gh search` discovery: no new ecosystem repos. Re-confirmed `LeoYeAI/openclaw-master-skills`, `modbender/skill-library-mcp`, and `dvcrn/openclaw-skills-marketplace` are just aggregator mirrors of the operator's own `verdikta-bounties-onboarding` skill (owner `nigelon11`), not third-party leads. Also spotted two stale, unconnected GenLayer "AI-judged bounty" repos — noise, not new signal.
+- X search (xAI, since 08-20): **0 posts** — 2nd consecutive empty window.
+- Web (HN/Reddit/general): no organic third-party discussion.
+- `NSPG13/agent-bounties` (competitor watch): 207 open issues, down slightly from 210 — no design-direction change.
 
-Per the skill's gated notify rule, no notification was sent (quiet run, no new building/integrating-class lead).
+**Files changed:** `output/articles/bd-radar-2026-08-23.md` (new digest), `memory/logs/2026-08-23.md` (new log), `memory/MEMORY.md` (Builder Leads current-state line updated). Committed directly to `main` (`4285172`), matching this repo's established pattern for memory/log/article updates.
 
-Files created/modified and committed to `main`:
-- `output/articles/bd-radar-2026-08-22.md` — ranked lead digest
-- `memory/topics/bd-radar-leads.json` — state update (score/signal refresh, no new keys)
-- `memory/topics/builder-leads.md` — day-by-day detail log
-- `memory/logs/2026-08-22.md` — `### bd-radar` block (merged alongside a concurrent `mention-radar` run's log entry)
-- `memory/MEMORY.md` — refreshed current-state summary
-
-No follow-up actions needed from this run beyond the standing, already-flagged item: fix `GH_READ_PAT` before GitHub rate limits bite.
+**No notification sent** — quiet run, no high-intent lead per the skill's notify gate. Follow-up: `GH_READ_PAT` remains unset (47 runs); flagged previously in Next Priorities, no new action needed from this run.
