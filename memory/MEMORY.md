@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-08-22*
+*Last consolidated: 2026-08-23*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -16,11 +16,10 @@ type: Index
 |------|-------|-------|
 
 ## Recent Digests
-*Rows older than ~7 days archived to [topics/digest-history.md](topics/digest-history.md) (currently through 2026-08-14).*
+*Rows older than ~7 days archived to [topics/digest-history.md](topics/digest-history.md) (currently through 2026-08-15).*
 
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-08-15 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 9th thin/empty day in 10, 0 items cleared the bar; everything found was a same-day dupe of 08-14's Chainlink-for-Agents launch, previously-flagged stale/dupe stories (Coldcard/Ledger, Ostium, GenLayer Internet Court), or newly-verified-stale on inspection despite fresh search snippets (OKX Ventures x402-92%-decline report actually Apr 2, RigorLoop AI-agent-hires-human-experts bounty marketplace actually Aug 4, AAA Web3 dispute panel actually Jul 29, Natural $30M raise actually Jul 20); no notification sent |
 | 2026-08-16 | AI agents that transact onchain | DIGEST_THIN — 10th thin/empty day in 11; sole item: a peer-reviewed audit found all 15 tested x402 payment facilitators (Coinbase, Thirdweb, PayAI, Mogami) violate at least one security rule — 31 vulnerabilities (free-shopping, asset-theft, service-denial, gas-abuse) spanning 99% of tracked volume, presented at USENIX Security Symposium (Aug 13); directly relevant to Verdikta's trust/dispute-layer thesis |
 | 2026-08-17 | AI agents that transact onchain | DIGEST_THIN — 11th thin/empty day in 12; sole item: Stripe closes $7B+ acquisition of AI model-gateway OpenRouter (5x its 3-month-old $1.3B valuation) — payments infra consolidating with AI-routing plumbing agents call through; X signal entirely token-promo spam, other web candidates all stale/dupe |
 | 2026-08-18 | AI agents that transact onchain | DIGEST_THIN — 13th thin/empty day in 14; sole item: x402 protocol hits 14M agent-initiated transfers in 30 days (~$24M volume, Base still dominant chain), a verified ~4.5x jump from the 3.1M/$1.2M reported for the 30 days to May 29 — genuine growth, not a recycled stat; Check Point 11-vuln agent-framework disclosure and OpenAI Astra pause both real but >1wk stale on verification |
@@ -38,7 +37,7 @@ type: Index
 
 ## Dogfooding (verdikta-hunter)
 - First win 2026-07-09: bounty #142, score 93.375 vs 90 threshold, 0.00434 ETH payout, tx `0xc36293e...fabd778`. Details: [topics/verdikta-hunter.md](topics/verdikta-hunter.md)
-- Second real submission 2026-07-29: bounty #164 (0.004 ETH reward, threshold 80%), prepare `0xb80d0ab2...131d307e`, start `0x5b789163...4d5265f6fc`, prepay 0.000240 ETH — status `PENDING_EVALUATION` as of 07-29, not yet settled; no verdikta-hunter run 07-30 through 08-22 to check settlement.
+- Second real submission 2026-07-29: bounty #164 (0.004 ETH reward, threshold 80%), prepare `0xb80d0ab2...131d307e`, start `0x5b789163...4d5265f6fc`, prepay 0.000240 ETH — status `PENDING_EVALUATION` as of 07-29, not yet settled; no verdikta-hunter run 07-30 through 08-23 to check settlement.
 - Protocol signal (via shiplog, 2026-07-27): bounty #153's rubric was hardened to require archive.org 7-day persistence proof after a hunter deleted a required post-payout deliverable — first observed case of a rubric tightening in direct response to hunter gaming; worth watching for a repeat pattern.
 - **North-star metric, first protocol-wide disclosure** (via shiplog, X source, 2026-08-03): @verdikta19633 states **139 bounties awarded, 0.42 ETH paid out cumulative** — the actual adoption number STRATEGY.md's north star tracks, distinct from our own hunter-specific wins above.
 - **Protocol adoption signal** (via shiplog, 2026-08-17): second consecutive math-bounty round closed at 0 submissions (rubric integrity holding on a hard problem class), while external creators are now posting their own bounties on the protocol unprompted — @verdikta19633 disclosed 5 independent-creator bounties over the past 2 weeks, one closed at 93% and paid on-chain. First evidence of third-party bounty *posting* (not just solving) — a stronger north-star signal than submission volume alone.
@@ -63,11 +62,11 @@ type: Index
 
 ## Next Priorities
 *Full detail (per-PR hour counts, tmp breakdown): [topics/next-priorities.md](topics/next-priorities.md), updated by memory-flush each run.*
-- **Operator decision needed:** today's digest lead item (Vector/Apex Fusion — closest public analog to Verdikta's model found to date) never reached notify — `./notify` returned "requires approval" twice and the run gave up; content is preserved in [memory/logs/2026-08-22.md](logs/2026-08-22.md#digest-ai-agents-that-transact-onchain-agent-payments-ai-judged-bounties-decentralized-ai-oracles) but the operator won't see it without checking the log directly
+- **Operator decision needed:** the 08-22 digest lead item (Vector/Apex Fusion — closest public analog to Verdikta's model found to date) never reached notify — `./notify` returned "requires approval" twice and the run gave up; content is preserved in [memory/logs/2026-08-22.md](logs/2026-08-22.md#digest-ai-agents-that-transact-onchain-agent-payments-ai-judged-bounties-decentralized-ai-oracles) but the operator won't see it without checking the log directly. No recurrence on 08-23 (digest was empty, no notify attempted).
 - Add `read:org` scope to the GitHub token used by github-monitor
-- Fix/set bd-radar's `GH_READ_PAT` (401/unset since 2026-07-10, still unset 2026-08-22 — 46 consecutive runs) — no impact yet (public API fallback), but should be corrected before rate limits bite
-- Stalled PR queue, per strategy priority 1 — this repo's Dependabot `#2`/`#3` (~1060h, longest-stalled) and `#9`/`#10` (~523h); `arbiter#9`/`dispatcher#5` backlog-docs draft pair (~941h each, `arbiter#9` still failing Gitleaks); `verdikta-applications#8` (operator's own bundle-submit-flow PR, ~3338h)
-- Repo scratch/tmp cleanup: **156** committed scratch files as of 2026-08-22, flat vs 08-21 — 9th flat day of the last 10, no cleanup PR opened yet
-- `verdikta-dispatcher!6` (operator's own oracle-selection issue, opened 2026-07-29) — still open and unaddressed (~579h)
-- Bounty #164 likely didn't pay out (`PENDING_EVALUATION` since 07-29, protocol says it expired 0-winners 08-03) — no verdikta-hunter run 07-30 through 08-22 to confirm; file as a dogfooding bug report if confirmed
+- Fix/set bd-radar's `GH_READ_PAT` (401/unset since 2026-07-10, still unset 2026-08-23 — 47 consecutive runs) — no impact yet (public API fallback), but should be corrected before rate limits bite
+- Stalled PR queue, per strategy priority 1 — this repo's Dependabot `#2`/`#3` (~1084h, longest-stalled) and `#9`/`#10` (~547h); `arbiter#9`/`dispatcher#5` backlog-docs draft pair (~965h each, `arbiter#9` still failing Gitleaks); `verdikta-applications#8` (operator's own bundle-submit-flow PR, ~3362h)
+- Repo scratch/tmp cleanup: **156** committed scratch files as of 2026-08-23, flat vs 08-22 — 10th flat day of the last 11, no cleanup PR opened yet
+- `verdikta-dispatcher!6` (operator's own oracle-selection issue, opened 2026-07-29) — still open and unaddressed (~603h)
+- Bounty #164 likely didn't pay out (`PENDING_EVALUATION` since 07-29, protocol says it expired 0-winners 08-03) — no verdikta-hunter run 07-30 through 08-23 to confirm; file as a dogfooding bug report if confirmed
 - **Operator read recommended:** `NSPG13/agent-bounties` — direct, fast-shipping competitor whose `docs/competitor-learning-plan.md` dissects Verdikta's own design in detail (see [topics/builder-leads.md](topics/builder-leads.md))

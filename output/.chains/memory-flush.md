@@ -1,15 +1,13 @@
+All memory-flush work is complete for 2026-08-23.
+
 ## Summary
 
-Executed the `memory-flush` skill (skills/memory-flush/SKILL.md wasn't registered as an invocable Skill, so I read and ran it manually) — scanned MEMORY.md plus the last 3 days of logs (08-20, 08-21, 08-22) for promotion/pruning candidates.
+Ran the memory-flush skill (no `${var}` topic filter, so a full sweep):
 
-**Key finding:** today's digest run drafted a strong lead item (Vector/Apex Fusion Foundation — closest public analog to Verdikta's own jury+escrow model found to date) but `./notify` failed with "requires approval" twice and the content was never delivered; the backup tmp file is now gone, so the only surviving record is in today's log. Flagged this as an operator-decision item.
+- **MEMORY.md**: bumped "Last consolidated" to 2026-08-23; archived the 08-15 Recent Digests row to `topics/digest-history.md`; refreshed Next Priorities with live `gh pr view`/`gh issue view` checks (worker Dependabot #2/#3 ~1084h, #9/#10 ~547h; `arbiter#9`/`dispatcher#5` ~965h; `applications#8` ~3362h; `dispatcher!6` ~603h — all states unchanged); recounted scratch/tmp files (156, flat, 10th flat day of 11); widened the verdikta-hunter no-run gap note to "07-30 through 08-23"; noted no recurrence of the notify-approval failure (08-23's digest was empty, no notify call attempted, so the 08-22 operator-decision item is still open).
+- **topics/digest-history.md** / **topics/next-priorities.md**: bumped timestamps and synced detail to match.
+- Verified no changes needed to the Open Improvement PRs check (`gh pr list --search "improve:"` still only the one false-positive dependabot PR), `memory/issues/INDEX.md` (still empty), or Builder Leads (bd-radar self-maintains that section, already current).
+- No new Lessons Learned — no novel sandbox-blocking behavior in today's logs.
+- Logged all promotions/checks to `memory/logs/2026-08-23.md` under `### memory-flush`.
 
-**Files modified (committed as `6fc568c`):**
-- `memory/MEMORY.md` — bumped consolidation date; added the notify-failure lesson and a "Operator decision needed" Next Priorities line; refreshed all stalled-PR/issue hour counts and the flat tmp-file count (156) with live `gh` checks; archived the 08-14 digest row
-- `memory/topics/digest-history.md` — appended the archived 08-14 row
-- `memory/topics/next-priorities.md` — refreshed hour counts, added a "Digest delivery failure" detail section
-- `memory/logs/2026-08-22.md` — appended the memory-flush activity log
-
-No changes needed to Builder Leads (bd-radar self-maintains it) or Skills Built (no new skills this week). Confirmed the untracked `notify`/`notify-jsonrender`/`.notify-sent-hashes` root files are expected per-run script copies, not scratch bloat — left untouched.
-
-**Follow-up needed:** operator should check whether the Vector/Apex Fusion digest content is worth manually surfacing, and watch whether the `./notify` approval-gate failure recurs (currently a single observed instance).
+MEMORY.md holds flat at 72 lines. Follow-up still needed from the operator: the 08-22 Vector/Apex Fusion digest item that never reached notify.

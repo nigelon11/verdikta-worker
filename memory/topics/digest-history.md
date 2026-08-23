@@ -3,7 +3,7 @@ type: Reference
 title: Digest history archive
 description: Archived rows from MEMORY.md's Recent Digests table, older than the ~7-day window kept inline
 tags: [digest, archive]
-timestamp: 2026-08-22T23:40:00Z
+timestamp: 2026-08-23T23:40:00Z
 ---
 
 # Digest History Archive
@@ -45,3 +45,4 @@ Older rows moved out of [MEMORY.md](../MEMORY.md)'s Recent Digests table to keep
 | 2026-08-11 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 4th consecutive thin/empty day, 0 items cleared the bar; everything found was either >36h stale (Bitcoin Red Team AI-vuln-hunt Aug 6, Hush Security $30M raise Jul 28, AWS Bedrock AgentCore Payments/Ant Group Anvita/Keyrock $73M report all May-Jul), a dupe of 08-09/08-10 (MetaMask Agent Wallet, OSL AgentPay), or thin single-account X promo posts (Injective Nova Program recap of a Jul 25 event, aixbt agent-identity thread); no notification sent |
 | 2026-08-13 | AI agents that transact onchain | DIGEST_THIN — 6th consecutive thin/empty day; SKALE Labs launches Agent Pit (Aug 12), a Polymarket-mirroring paper-trading sandbox for training AI trading agents before real deployment — otherwise dead day, OSL AgentPay/MetaMask/Cloudflare/MoonPay wallets and the OpenAI/HuggingFace/Meta rogue-agent hack wave all recirculated dupes, Fireblocks x402 Foundation/ORA funding/"Bounty AI" marketplace all confirmed stale on inspection |
 | 2026-08-14 | AI agents that transact onchain | First 2-item day since 08-07: Chainlink launches "Chainlink for Agents" (dedicated AI-agent infra stack — CRE, CCIP, Confidential Compute); Coinbase Business extends x402 checkout to its 5,000-merchant base — framed against x402's own 93%-YTD volume decline (infra buildout outpacing real agent demand) |
+| 2026-08-15 | AI agents that transact onchain | DIGEST_FETCH_EMPTY — 9th thin/empty day in 10, 0 items cleared the bar; everything found was a same-day dupe of 08-14's Chainlink-for-Agents launch, previously-flagged stale/dupe stories (Coldcard/Ledger, Ostium, GenLayer Internet Court), or newly-verified-stale on inspection despite fresh search snippets (OKX Ventures x402-92%-decline report actually Apr 2, RigorLoop AI-agent-hires-human-experts bounty marketplace actually Aug 4, AAA Web3 dispute panel actually Jul 29, Natural $30M raise actually Jul 20); no notification sent |
