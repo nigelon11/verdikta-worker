@@ -1,15 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-23T14:17:58Z",
+  "last_analyzed": "2026-08-24T14:28:54Z",
   "quality_score": 4,
-  "assessment": "Well-executed filtering logic; correctly identified spam/dupes/stale content and applied freshness rules; properly documented decision-making and memory updates; correct behavior to skip notification on thin day per spec.",
+  "assessment": "Well-executed digest with disciplined filtering (36h freshness, dedup); 2 sourced findings with concrete data (Solana x402 volume, Virtuals Protocol launch); clear methodology and transparent reasoning on inclusions/exclusions.",
   "flags": [],
   "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-26",
-      "score": 4
-    },
     {
       "date": "2026-07-27",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-23",
+      "score": 4
+    },
+    {
+      "date": "2026-08-24",
       "score": 4
     }
   ]

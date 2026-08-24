@@ -1,0 +1,200 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Digest",
+        "description": "AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-08-24"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "tldr-section",
+        "sep-1",
+        "news-section",
+        "sep-2",
+        "signal-section"
+      ]
+    },
+    "tldr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tldr-heading",
+        "tldr-text"
+      ]
+    },
+    "tldr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TL;DR",
+        "level": "h3"
+      }
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "Solana flipped x402's chain-dominance numbers this week while Virtuals Protocol opened fractional AI-agent ownership to Solana users the same day — thin on hard infra news otherwise."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "news-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "news-item-1",
+        "news-item-2"
+      ]
+    },
+    "news-item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story-1",
+        "details-text-1",
+        "why-section-1"
+      ]
+    },
+    "story-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Solana overtakes Base as x402's dominant chain — 3.3M USDC agent payments in one week",
+        "href": "https://cryptobriefing.com/ai-agents-x402-usdc-solana-transfers/",
+        "source": "CryptoBriefing"
+      }
+    },
+    "details-text-1": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents moved 3.3M USDC over x402 on Solana in the week to Aug 24 — 65% of the prior 90 days' cumulative total (5.1M transfers) — per Token Terminal data reported by CryptoBriefing and mirrored on CoinDesk. Solana now handles roughly 70% of x402's monthly volume; typical transaction is under $0.50.",
+        "variant": "caption"
+      }
+    },
+    "why-section-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading-1",
+        "why-text-1"
+      ]
+    },
+    "why-heading-1": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters",
+        "variant": "lead"
+      }
+    },
+    "why-text-1": {
+      "type": "Text",
+      "props": {
+        "text": "This reverses the chain-dominance read from the last tracked figure (Base led as of Aug 18's 14M/30-day stat) — a real shift in where agent-payment infra is concentrating, not just volume growth."
+      }
+    },
+    "news-item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story-2",
+        "details-text-2",
+        "why-section-2"
+      ]
+    },
+    "story-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Virtuals Protocol opens fractional AI-agent ownership to Solana users",
+        "href": "https://solanacompass.com/news/virtuals-protocol-opens-ai-agent-ownership-to-solana-users-sets-august-24-date",
+        "source": "SolanaCompass"
+      }
+    },
+    "details-text-2": {
+      "type": "Text",
+      "props": {
+        "text": "Virtuals Protocol launched Solana support (Aug 24) letting users hold token stakes in autonomous on-chain agents that trade and share revenue — 70% to creators, 30% to treasury — via its Agent Commerce Protocol. 28,212 VIRTUAL holders on Solana and a $17.3M market cap as of Aug 23.",
+        "variant": "caption"
+      }
+    },
+    "why-section-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading-2",
+        "why-text-2"
+      ]
+    },
+    "why-heading-2": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters",
+        "variant": "lead"
+      }
+    },
+    "why-text-2": {
+      "type": "Text",
+      "props": {
+        "text": "This is a bet on tokenized ownership of agent economic activity itself, distinct from payment-rail plumbing — a different growth vector than the infra stories this digest usually tracks."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "signal-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "signal-heading",
+        "signal-text"
+      ]
+    },
+    "signal-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Signal note",
+        "level": "h3"
+      }
+    },
+    "signal-text": {
+      "type": "Text",
+      "props": {
+        "text": "Thin day — only 2 items cleared the bar. X signal (10 posts) was mostly promo/ambassador content (Concordium, 1inch, Binance recaps); a Polymarket/UMA oracle lawsuit over a mis-resolved Bitcoin-sale market is directly relevant to Verdikta's dispute-layer thesis but the filing (Jul 3) and vote (Jun 4) are both weeks stale, so it's held back per the freshness rule.",
+        "variant": "caption"
+      }
+    }
+  }
+}

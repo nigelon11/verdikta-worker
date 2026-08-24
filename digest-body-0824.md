@@ -1,5 +1,3 @@
-ℹ️ Digest
-
 *AI agents that transact onchain — agent payments, AI-judged bounties, decentralized AI oracles — 2026-08-24*
 
 _TL;DR: Solana flipped x402's chain-dominance numbers this week while Virtuals Protocol opened fractional AI-agent ownership to Solana users the same day — thin on hard infra news otherwise._
