@@ -1,0 +1,155 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Shiplog: Aug 17 → 24"
+      },
+      "children": [
+        "heading_period",
+        "text_intro",
+        "sep1",
+        "heading_prs",
+        "pr_stack",
+        "sep2",
+        "heading_traction",
+        "text_traction_note",
+        "table_repos",
+        "sep3",
+        "text_handle",
+        "link_article"
+      ]
+    },
+    "heading_period": {
+      "type": "Heading",
+      "props": {
+        "text": "verdikta shiplog — aug 17 → aug 24",
+        "level": "h2"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "5 PRs merged into verdikta-applications this window — first real code movement in two weeks. the bytes:",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Merged PRs",
+        "level": "h3"
+      }
+    },
+    "pr_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4"
+      ]
+    },
+    "pr1": {
+      "type": "Text",
+      "props": {
+        "text": "rubricCid fix (#26): /rubric was 404ing on chain-synced bounties — now derives + heals the CID from the evaluation package"
+      }
+    },
+    "pr2": {
+      "type": "Text",
+      "props": {
+        "text": "classMap jury enforcement (#4): tightened which models can serve on a jury, killed stale guidance"
+      }
+    },
+    "pr3": {
+      "type": "Text",
+      "props": {
+        "text": "two third-party fixes landed and stuck: mumuzhong3's #27/#28 close out issues #14/#16 (terminal-bounty INFO handling, juryNodes visibility in rubric validation) — first flagged as a lead back in july, now confirmed shipped"
+      }
+    },
+    "pr4": {
+      "type": "Text",
+      "props": {
+        "text": "rest of the public repos (verdikta-arbiter, verdikta-dispatcher, verdikta-roadmap) stayed quiet — 0 commits, 0 merged PRs"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_traction": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Traction",
+        "level": "h3"
+      }
+    },
+    "text_traction_note": {
+      "type": "Text",
+      "props": {
+        "text": "all 5 repos flat this window",
+        "variant": "muted"
+      }
+    },
+    "table_repos": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Stars"
+        ],
+        "rows": [
+          [
+            "verdikta-docs",
+            "72"
+          ],
+          [
+            "verdikta-applications",
+            "24"
+          ],
+          [
+            "verdikta-arbiter",
+            "23"
+          ],
+          [
+            "verdikta-dispatcher",
+            "17"
+          ],
+          [
+            "verdikta-roadmap",
+            "0"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_handle": {
+      "type": "Text",
+      "props": {
+        "text": "@verdikta19633"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Shiplog Article",
+        "href": "https://github.com/nigelon11/verdikta-worker/blob/main/output/articles/shiplog-2026-08-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

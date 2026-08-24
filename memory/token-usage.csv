@@ -234,4 +234,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-23,write-tweet,claude-sonnet-5,2553,15368,2564637,62297
 2026-08-23,memory-flush,claude-sonnet-5,2281,15021,1896988,67869
 2026-08-24,bd-radar,claude-sonnet-5,4119,32370,7141684,269419
-2026-08-24,github-monitor,claude-sonnet-5,2414,8129,2095238,57003
+2026-08-24,shiplog,claude-sonnet-5,2559,14886,2698553,56352
