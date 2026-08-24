@@ -1,15 +1,24 @@
-Committed. Per the skill's notification gate (step 6), no self-notify is warranted — no new `building` or `integrating` class lead this run, so staying quiet to avoid lead-noise.
+All checks pass. Run complete.
 
 ## Summary
 
-Ran `bd-radar` (47th cycle) for 2026-08-23. Findings:
-- **0 new leads** — all 9 tracked leads (s97472091-pixel, aaronjmars/aeon-agent, Svector-anu/svectors-lab, bingmokaka, mumuzhong3, NSPG13/agent-bounties, @AjAkmarudi72937, @Fishhead8u, @Project0_Z) carried forward unchanged.
-- GitHub forks/issues: skipped, `GH_READ_PAT` still unset (47 consecutive runs, no functional impact — public API fallback covers all 5 repos).
-- `gh search` discovery: no new ecosystem repos. Re-confirmed `LeoYeAI/openclaw-master-skills`, `modbender/skill-library-mcp`, and `dvcrn/openclaw-skills-marketplace` are just aggregator mirrors of the operator's own `verdikta-bounties-onboarding` skill (owner `nigelon11`), not third-party leads. Also spotted two stale, unconnected GenLayer "AI-judged bounty" repos — noise, not new signal.
-- X search (xAI, since 08-20): **0 posts** — 2nd consecutive empty window.
-- Web (HN/Reddit/general): no organic third-party discussion.
-- `NSPG13/agent-bounties` (competitor watch): 207 open issues, down slightly from 210 — no design-direction change.
+Executed `bd-radar` (48th run, MODE=execute, no `var` override).
 
-**Files changed:** `output/articles/bd-radar-2026-08-23.md` (new digest), `memory/logs/2026-08-23.md` (new log), `memory/MEMORY.md` (Builder Leads current-state line updated). Committed directly to `main` (`4285172`), matching this repo's established pattern for memory/log/article updates.
+**Result: 0 new leads.** All 9 tracked leads carried forward unchanged.
 
-**No notification sent** — quiet run, no high-intent lead per the skill's notify gate. Follow-up: `GH_READ_PAT` remains unset (47 runs); flagged previously in Next Priorities, no new action needed from this run.
+Sources swept:
+- **GitHub forks/issues** (`GH_READ_PAT`): confirmed unset via a live 401 "Bad credentials" — logged `BD_RADAR_SOURCE_MISS`, fell back to the default token (`gh api`), which covers all 5 public watched repos directly. No new independent forks or third-party issues/PRs.
+- **`gh search repos`/`gh search code`** across all 5 configured terms: no new ecosystem repos — re-confirmed known noise (OpenClaw skill-marketplace mirrors, `moltbook_data`, two coincidental-name repos, `sparkleware`, `anajuliabit/aeon`).
+- **X (xAI `x_search`, http=200)**: 1 hit, a false positive (unrelated Turkish text) — 3rd near-empty 3-day window in a row.
+- **Web (WebSearch)**: no new third-party discussion; one off-wedge domain (`agentbounty.ai`) checked and dropped.
+- Status re-checks: `mumuzhong3` PRs still merged, `bingmokaka` PR still closed-superseded, `Svector-anu/svectors-lab` still blocked on `VERDIKTA_API_KEY`, `NSPG13/agent-bounties` issue count down slightly (normal churn), `s97472091-pixel` now a 12th consecutive quiet day on Verdikta specifically.
+
+**Files written:**
+- `output/articles/bd-radar-2026-08-24.md` — ranked digest (new)
+- `memory/logs/2026-08-24.md` — `### bd-radar` log block (new)
+- `memory/topics/bd-radar-leads.json` — refreshed 2 lead status notes (no new keys)
+- `memory/topics/builder-leads.md` — appended 08-23 (catch-up, was missing) + 08-24 day entries
+- `memory/MEMORY.md` — bumped "Current state" line
+- Also backfilled a stray missing `type:` frontmatter on `memory/logs/2026-08-20.md` (pre-existing OKF violation from an unrelated skill) so `okf-validate.mjs` passes clean.
+
+**Notification: none sent** — quiet run, no new building/integrating-class lead, per skill's gating rule. The GitHub Actions harness will auto-commit these file changes; no manual git action needed from this run.
