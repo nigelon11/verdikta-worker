@@ -1,13 +1,20 @@
-All memory-flush work is complete for 2026-08-23.
-
 ## Summary
 
-Ran the memory-flush skill (no `${var}` topic filter, so a full sweep):
+Ran the `memory-flush` skill, focusing on the last 3 days of activity (08-22 → 08-24). Findings promoted/pruned in `memory/MEMORY.md`, `memory/topics/next-priorities.md`, and `memory/topics/digest-history.md`:
 
-- **MEMORY.md**: bumped "Last consolidated" to 2026-08-23; archived the 08-15 Recent Digests row to `topics/digest-history.md`; refreshed Next Priorities with live `gh pr view`/`gh issue view` checks (worker Dependabot #2/#3 ~1084h, #9/#10 ~547h; `arbiter#9`/`dispatcher#5` ~965h; `applications#8` ~3362h; `dispatcher!6` ~603h — all states unchanged); recounted scratch/tmp files (156, flat, 10th flat day of 11); widened the verdikta-hunter no-run gap note to "07-30 through 08-23"; noted no recurrence of the notify-approval failure (08-23's digest was empty, no notify call attempted, so the 08-22 operator-decision item is still open).
-- **topics/digest-history.md** / **topics/next-priorities.md**: bumped timestamps and synced detail to match.
-- Verified no changes needed to the Open Improvement PRs check (`gh pr list --search "improve:"` still only the one false-positive dependabot PR), `memory/issues/INDEX.md` (still empty), or Builder Leads (bd-radar self-maintains that section, already current).
-- No new Lessons Learned — no novel sandbox-blocking behavior in today's logs.
-- Logged all promotions/checks to `memory/logs/2026-08-23.md` under `### memory-flush`.
+**Promoted/refreshed:**
+- Bumped "Last consolidated" to 2026-08-24.
+- Archived the 08-16 Recent Digests row (>7 days old) into `topics/digest-history.md`.
+- Live-checked all stalled PRs/issues via `gh` and refreshed ages: worker Dependabot #2/#3 (~1108h), #9/#10 (~571h), `arbiter#9`/`dispatcher#5` (~989h), `applications#8` (~3385h), `dispatcher!6` (~627h) — all still OPEN, no state changes.
+- Recounted scratch/tmp files: **158** (+2 vs 08-23), breaking an 11-day flat streak — noted in both Lessons Learned and Next Priorities.
+- Widened the verdikta-hunter no-run gap note to "07-30 through 08-24" (bounty #164 settlement still unconfirmed).
+- Bumped `GH_READ_PAT` unset counter to 48 consecutive runs.
 
-MEMORY.md holds flat at 72 lines. Follow-up still needed from the operator: the 08-22 Vector/Apex Fusion digest item that never reached notify.
+**Pruned/updated stale entries:**
+- Softened the `./notify` fail-closed lesson — no recurrence on 08-23 or 08-24, now flagged as a likely one-off.
+- Updated the digest-delivery-failure entry to note no recurrence in either follow-up day; operator decision on the 08-22 Vector item is still outstanding (unchanged).
+- Confirmed no "Open Improvement PRs" section needed (only the known false-positive dependabot PR).
+- Confirmed `memory/issues/INDEX.md` still empty and untracked root files (`notify`, `notify-jsonrender`, `.notify-sent-hashes`) are expected, not bloat.
+- Left Builder Leads section untouched (bd-radar self-maintains it, already current for 08-24).
+
+MEMORY.md holds flat at 72 lines. Logged the flush summary to `memory/logs/2026-08-24.md` under `### memory-flush`.
