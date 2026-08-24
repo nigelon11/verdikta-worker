@@ -1,0 +1,116 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info_heading",
+        "pr_stack",
+        "separator",
+        "sources_heading",
+        "repo_table"
+      ]
+    },
+    "info_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "pr_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4"
+      ]
+    },
+    "pr1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "idle 110h, no CI configured, not review-requested"
+      }
+    },
+    "pr2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "draft, Gitleaks Secret Scan FAILURE, idle 974h"
+      }
+    },
+    "pr3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "draft, CodeQL passing, idle 974h"
+      }
+    },
+    "pr4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "idle 1093h, Vercel deploy passing"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      }
+    },
+    "repo_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
