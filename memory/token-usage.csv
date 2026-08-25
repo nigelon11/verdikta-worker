@@ -242,3 +242,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-25,github-monitor,claude-sonnet-5,2386,7156,1077738,54260
 2026-08-25,digest,claude-sonnet-5,6040,12963,2727618,152141
 2026-08-25,write-tweet,claude-sonnet-5,2408,16508,2209107,71432
+2026-08-25,memory-flush,claude-sonnet-5,2408,13572,1588162,45661
