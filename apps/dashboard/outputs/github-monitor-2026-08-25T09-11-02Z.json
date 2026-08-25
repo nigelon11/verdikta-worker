@@ -1,0 +1,126 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "5 repos scanned, 0 need action"
+      },
+      "children": [
+        "info-section",
+        "separator",
+        "sources-section"
+      ]
+    },
+    "info-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-info",
+        "pr-8",
+        "pr-9",
+        "pr-5",
+        "pr-1"
+      ]
+    },
+    "heading-info": {
+      "type": "Heading",
+      "props": {
+        "text": "Pending Pull Requests",
+        "level": "h2"
+      }
+    },
+    "pr-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-applications#8",
+        "href": "https://github.com/verdikta/verdikta-applications/pull/8",
+        "source": "no CI configured, idle 134h"
+      }
+    },
+    "pr-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-arbiter#9",
+        "href": "https://github.com/verdikta/verdikta-arbiter/pull/9",
+        "source": "draft, Gitleaks Secret Scan FAILURE, idle 998h"
+      }
+    },
+    "pr-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-dispatcher#5",
+        "href": "https://github.com/verdikta/verdikta-dispatcher/pull/5",
+        "source": "draft, CodeQL passing, idle 998h"
+      }
+    },
+    "pr-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "verdikta-docs#1",
+        "href": "https://github.com/verdikta/verdikta-docs/pull/1",
+        "source": "Vercel SUCCESS, idle 1117h"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sources-heading",
+        "sources-table"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h2"
+      }
+    },
+    "sources-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repository",
+          "Status"
+        ],
+        "rows": [
+          [
+            "verdikta-applications",
+            "ok"
+          ],
+          [
+            "verdikta-arbiter",
+            "ok"
+          ],
+          [
+            "verdikta-dispatcher",
+            "ok"
+          ],
+          [
+            "verdikta-docs",
+            "ok"
+          ],
+          [
+            "verdikta-roadmap",
+            "ok"
+          ]
+        ]
+      }
+    }
+  }
+}
