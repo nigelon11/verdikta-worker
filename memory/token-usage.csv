@@ -240,3 +240,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-24,memory-flush,claude-sonnet-5,2537,16822,2027719,67512
 2026-08-25,bd-radar,claude-sonnet-5,4408,14521,2144462,118452
 2026-08-25,github-monitor,claude-sonnet-5,2386,7156,1077738,54260
+2026-08-25,digest,claude-sonnet-5,6040,12963,2727618,152141
