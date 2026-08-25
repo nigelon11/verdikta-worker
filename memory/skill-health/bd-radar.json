@@ -1,15 +1,11 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-24T07:41:53Z",
+  "last_analyzed": "2026-08-25T08:00:20Z",
   "quality_score": 4,
-  "assessment": "Thorough execution with complete source sweep, proper fallbacks, clear documentation of null result, and proper data maintenance; limited by 0 new leads in a quiet market window.",
+  "assessment": "Thorough execution with comprehensive search, clear diagnostics, proper error handling (401 fallback), and honest reporting of zero new leads; well-documented output and identified follow-up action.",
   "flags": [],
   "avg_score": 3.77,
   "history": [
-    {
-      "date": "2026-07-26",
-      "score": 4
-    },
     {
       "date": "2026-07-27",
       "score": 4
@@ -124,6 +120,10 @@
     },
     {
       "date": "2026-08-24",
+      "score": 4
+    },
+    {
+      "date": "2026-08-25",
       "score": 4
     }
   ]
