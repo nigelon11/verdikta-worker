@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-08-25T14:29:50Z",
-  "quality_score": 3,
-  "assessment": "Thorough execution (13 WebSearch + 8 WebFetch + xAI + HN checks) and correct no-padding judgment; but 22/23 empty-digest pattern signals topic sparsity or scope mismatch requiring review",
-  "flags": [
-    "low_quality"
-  ],
+  "last_analyzed": "2026-08-26T14:12:11Z",
+  "quality_score": 4,
+  "assessment": "Substantive output with verified signal, good filtering judgment, proper sourcing, and honest process reporting; minor deduction for thin yield (2 items) and the acknowledged double-notify bug.",
+  "flags": [],
   "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-28",
-      "score": 4
-    },
     {
       "date": "2026-07-29",
       "score": 4
@@ -127,6 +121,10 @@
     {
       "date": "2026-08-25",
       "score": 3
+    },
+    {
+      "date": "2026-08-26",
+      "score": 4
     }
   ]
 }
