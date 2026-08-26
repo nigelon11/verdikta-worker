@@ -1,17 +1,21 @@
+Pushed successfully. Per the skill's notify gate (self-notify only on a new `building`/`integrating` lead), no notification is sent this cycle since there were none.
+
 ## Summary
 
-Ran `bd-radar` for 2026-08-25. Swept all configured sources — GitHub forks/issues/PRs on the 5 watched `verdikta/*` repos, `gh search` discovery, xAI `x_search` (3-day window), and web search — and found **zero new leads**. This is the 3rd consecutive near-empty run:
+Ran the 50th `bd-radar` cycle — **0 new leads**, 4th consecutive near-empty run since 2026-08-23:
 
-- **GitHub:** `GH_READ_PAT` still returns 401 on all 5 repos (49th consecutive run unset/invalid); fell back to `gh search`/default-token `gh api`, which works fine for public repos. No new forks with independent activity, no new third-party issues/PRs (all open items belong to the maintainer, nigelon11).
-- **X:** 1 hit, a repeat Turkish-language false positive (coincidental word match, same pattern noted on 08-24) — not a real mention.
-- **Web:** only official verdikta.org/docs pages and previously-known noise (skill-marketplace mirrors of the operator's own first-party skill).
-- Confirmed `verdikta/verdikta-agents` is still private and correctly excluded despite surfacing in a `gh search` result.
+- **`GH_READ_PAT`**: confirmed still invalid (401 bad credentials, 50 consecutive runs). Fell back to the default `gh` token for public fork/issue listing, which worked fine.
+- **GitHub forks/issues** across all 5 watched Verdikta repos: all forks are already-tracked builders or drive-bys with zero independent commits; all open issues belong to the operator.
+- **`gh search` discovery**: no new ecosystem repos — GenLayer bounty repos and OpenClaw skill-marketplace mirrors resurfaced but are previously-dismissed known noise.
+- **X (xAI x_search)**: 2 hits, both false positives (an unrelated same-named product, a Turkish-language coincidental match).
+- **Web/HN/Reddit**: no independent third-party mentions.
 
 **Files created/modified:**
-- `output/articles/bd-radar-2026-08-25.md` — ranked digest of the 9 tracked leads (no new entries; table shows current class/score/suggested move for each)
-- `memory/logs/2026-08-25.md` — `### bd-radar` log block
-- Both committed directly to `main` (`ea6c086`)
+- `output/articles/bd-radar-2026-08-26.md` (new) — ranked digest of the 9 tracked leads
+- `memory/topics/builder-leads.md` — appended run notes, bumped timestamp
+- `memory/MEMORY.md` — updated Builder Leads current-state line
+- `memory/logs/2026-08-26.md` — appended `### bd-radar` block (merged alongside a concurrent `mention-radar` run's entries)
 
-No changes to `memory/topics/bd-radar-leads.json` (nothing new to surface). Per the skill's notify gate, stayed quiet since there was no new `building`/`integrating` lead.
+Committed and pushed to `main` (merged with a concurrent mention-radar commit along the way — resolved a same-day log-file conflict by combining both sections).
 
-**Follow-up for the operator:** `GH_READ_PAT` fix is still outstanding (49 runs now) — no functional impact yet, but worth correcting before GitHub's unauthenticated rate limits bite.
+**Follow-up needed:** `GH_READ_PAT` is still unfixed after 50 runs — no functional impact yet since the public API fallback covers all watched repos, but worth correcting before rate limits become a risk (already flagged in Next Priorities).

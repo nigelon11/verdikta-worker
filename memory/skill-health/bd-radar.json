@@ -1,15 +1,14 @@
 {
   "skill": "bd-radar",
-  "last_analyzed": "2026-08-25T08:00:20Z",
-  "quality_score": 4,
-  "assessment": "Thorough execution with comprehensive search, clear diagnostics, proper error handling (401 fallback), and honest reporting of zero new leads; well-documented output and identified follow-up action.",
-  "flags": [],
-  "avg_score": 3.77,
+  "last_analyzed": "2026-08-26T07:55:17Z",
+  "quality_score": 3,
+  "assessment": "Executed cleanly with clear reporting, but unproductive — 0 new leads for 4 consecutive runs; GH_READ_PAT token broken for 50 runs yet no remediation.",
+  "flags": [
+    "api_error",
+    "low_quality"
+  ],
+  "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-07-27",
-      "score": 4
-    },
     {
       "date": "2026-07-28",
       "score": 4
@@ -125,6 +124,10 @@
     {
       "date": "2026-08-25",
       "score": 4
+    },
+    {
+      "date": "2026-08-26",
+      "score": 3
     }
   ]
 }
