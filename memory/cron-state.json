@@ -77,14 +77,14 @@
   },
   "bd-radar": {
     "last_dispatch": "2026-08-26T07:49:07Z",
-    "last_status": "dispatched",
-    "last_success": "2026-08-25T08:00:22Z",
-    "total_runs": 47,
-    "total_successes": 47,
+    "last_status": "success",
+    "last_success": "2026-08-26T07:55:18Z",
+    "total_runs": 48,
+    "total_successes": 48,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1,
-    "last_quality_score": 4
+    "last_quality_score": 3
   },
   "shiplog": {
     "last_dispatch": "2026-08-24T09:08:21Z",
