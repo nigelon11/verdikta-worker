@@ -1,8 +1,8 @@
 {
   "skill": "mention-radar",
-  "last_analyzed": "2026-08-24T07:36:36Z",
+  "last_analyzed": "2026-08-26T07:51:43Z",
   "quality_score": 4,
-  "assessment": "Completed skill successfully with multi-source coverage, correct API calls (http=200), trend tracking (4 consecutive quiet cycles), and flagged a naming-collision watch item; appropriately withheld notification per rules. No errors, sound judgment, solid execution of a 'no signal' outcome.",
+  "assessment": "Well-executed monitoring run with proper filtering logic, correct decision-making on QUIET threshold, and clean documentation—appropriate signal for routine weeks with no organic mentions.",
   "flags": [],
   "avg_score": 3.92,
   "history": [
@@ -100,6 +100,10 @@
     },
     {
       "date": "2026-08-24",
+      "score": 4
+    },
+    {
+      "date": "2026-08-26",
       "score": 4
     }
   ]
